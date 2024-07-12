@@ -116,12 +116,12 @@
                     'text-black': isScrolled,
                     'text-white': !isScrolled,
                   }"
-                  >Our business</a
+                  >Our Business</a
                 >
               </li>
               <li>
                 <a
-                  href="#contact-us"
+                  href="#vision-mission"
                   :class="{
                     'hover:underline': true,
                     uppercase: true,
@@ -134,7 +134,7 @@
               </li>
               <li>
                 <a
-                  href="#activities"
+                  href="#footer"
                   :class="{
                     'hover:underline': true,
                     uppercase: true,
@@ -142,7 +142,7 @@
                     'text-black': isScrolled,
                     'text-white': !isScrolled,
                   }"
-                  >Activities</a
+                  >footer</a
                 >
               </li>
             </ul>
@@ -166,7 +166,7 @@
 
     <!-- Content Sections -->
     <main>
-      <section id="about-us" class="bg-white flex flex-col min-h-screen">
+      <section id="about-us" class="bg-white flex flex-col min-h-screen p-4">
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
         >
@@ -174,8 +174,8 @@
           <span class="text-[#286f9b]">Frontec</span>
         </p>
         <img src="../assets/img/machining-1.png" alt="" class="mx-auto mt-16" />
-        <div class="flex flex-row mx-auto mt-16 text-justify mb-14">
-          <p class="ml-40 mr-5">
+        <div class="flex flex-col md:flex-row mx-auto mt-16 text-justify mb-14">
+          <p class="md:w-1/2 p-4 lg:ml-40 lg:mr-5">
             <span class="text-[32px] font-semibold">Founded in 2008,</span>
             Frontec Group began its business with Frontec Agritama Engineering
             <b>(FAE)</b>, manufacturing material handling products such as
@@ -187,8 +187,8 @@
             manufactures several feed mill machines, including hammer mills,
             mixers, and dust collectors.
           </p>
-          <div class="border-l-2 border-black"></div>
-          <p class="mr-40 ml-5">
+          <div class="border-l-2 border-black hidden md:block"></div>
+          <p class="md:w-1/2 p-4 lg:mr-40 lg:ml-5">
             To meet the needs of the feed and grain industry, Frontec Group
             established a new company, Frontec Global Niagatama <b>(FGN)</b>,
             which provides material handling spare parts. Frontec has been
@@ -202,31 +202,39 @@
           </p>
         </div>
       </section>
-      <section id="why-frontec" class="bg-[#313C44] flex flex-row min-h-screen">
+      <section
+        id="why-frontec"
+        class="bg-[#313C44] flex flex-col md:flex-row min-h-screen p-4"
+      >
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap my-auto mx-16"
         >
           <span class="text-white">Why </span>
           <span class="text-[#F7F6BB]">Frontec?</span>
         </p>
-        <div class="text-white my-auto mx-auto flex flex-col">
+        <div class="text-white my-auto mx-auto flex flex-col space-y-8">
           <div class="flex flex-row">
-            <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="">
-            <div class="my-10">
-              <p class="font-bold text-2xl">Providing quality engineering solutions</p>
-              <p class="text-md">we go beyond our customers expectations</p>
+            <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="" />
+            <div>
+              <p class="font-bold text-2xl">
+                Providing quality engineering solutions
+              </p>
+              <p class="text-md">we go beyond our customers' expectations</p>
             </div>
           </div>
           <div class="flex flex-row">
-            <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="">
-            <div class="my-10">
+            <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="" />
+            <div>
               <p class="font-bold text-2xl">Diverse products and services</p>
-              <p class="text-md">from consuktancy to equipment manufacturing and project installation.</p>
+              <p class="text-md">
+                from consultancy to equipment manufacturing and project
+                installation.
+              </p>
             </div>
           </div>
           <div class="flex flex-row">
-            <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="">
-            <div class="my-10">
+            <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="" />
+            <div>
               <p class="font-bold text-2xl">Professional human capitals</p>
               <p class="text-md">setting new benchmarks in performance.</p>
             </div>
@@ -234,19 +242,71 @@
         </div>
         <img class="m-auto" src="../assets/img/why-frontec.png" alt="" />
       </section>
-      <section id="our-business" class="flex min-h-screen">
-        <img class="my-auto" src="../assets/img/business.png" alt="">
-        <ul class="font-bold">
-          <li>Poultry</li>
-          <li>Aqua Feed Mill</li>
-          <li>Dairy Product</li>
-        </ul>
+      <section
+        id="our-business"
+        class="flex flex-col md:flex-row min-h-[75vh] py-4 mx-28 text-justify"
+      >
+        <img class="my-auto ml-20" src="../assets/img/business.png" alt="" />
+        <div class="my-auto ml-16 mr-20">
+          <p>
+            We produce all kinds of machineries, as well as integrated feed mill
+            plants to mix all kinds of feed especially for:
+          </p>
+          <ul class="list-disc list-inside font-bold">
+            <li>Poultry</li>
+            <li>Aqua Feed Mill</li>
+            <li>Dairy Products</li>
+          </ul>
+          <br />
+          <p>
+            As a leading manufacturer in grain handling, our company excels in
+            its field, particularly in feed mill technology.
+            <span class="font-bold">We offer comprehensive services</span> that
+            cover a wide range of needs:
+          </p>
+          <ul class="list-disc list-inside font-bold">
+            <li>Feasibility Studies</li>
+            <li>Design</li>
+            <li>Manufacturing</li>
+            <li>Erection</li>
+            <li>Installation of Automation & Control Systems</li>
+            <li>Commissioning</li>
+          </ul>
+          <p>
+            Our expertise ensures that every project is executed with precision,
+            from initial planning to final implementation.
+          </p>
+        </div>
       </section>
-      <section id="contact-us" class="py-20 bg-blue-500">
-        Contact Us Content
+      <section
+        id="vision-mission"
+        class="flex flex-col md:flex-row justify-center items-center min-h-screen bg-gray-100"
+      >
+        <div
+          class="flex flex-col md:flex-row border-solid border-2 border-slate-300 rounded-lg"
+        >
+          <div
+            class="p-16 md:p-64 border-b-2 md:border-b-0 md:border-r-2 border-slate-300 hover:bg-[url('../assets/img/vision.jpg')] hover:bg-cover hover:bg-center group hover:duration-700 hover:ease-out"
+          >
+            <span
+              class="text-shadow-md font-extrabold text-[40px] tracking-normal leading-normal whitespace-nowrap mx-auto mt-16 text-[#313C44] group-hover:text-[#F7F6BB]"
+            >
+              VISION
+            </span>
+          </div>
+          <div
+            class="p-16 md:p-64 bg-[#313C44] hover:bg-[url('../assets/img/mission.jpg')] hover:bg-cover hover:bg-center group hover:duration-700 hover:ease-out"
+          >
+            <span
+              class="text-shadow-md font-extrabold text-4xl tracking-normal leading-normal whitespace-nowrap mx-auto mt-16 text-[#F7F6BB] group-hover:text-[#313C44]"
+            >
+              MISSION
+            </span>
+          </div>
+        </div>
       </section>
-      <section id="activities" class="py-20 bg-gray-100">
-        Activities Content
+      <section id="footer" class="py-20 bg-blue-50">
+        <div class="container mx-auto px-4">footer Content</div>
       </section>
     </main>
   </div>
@@ -288,5 +348,9 @@ export default {
 <style scoped>
 .header {
   transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.text-shadow-md {
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 </style>
