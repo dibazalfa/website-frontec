@@ -134,7 +134,7 @@
               </li>
               <li>
                 <a
-                  href="#footer"
+                  href="#our-clients"
                   :class="{
                     'hover:underline': true,
                     uppercase: true,
@@ -142,7 +142,7 @@
                     'text-black': isScrolled,
                     'text-white': !isScrolled,
                   }"
-                  >footer</a
+                  >our-clients</a
                 >
               </li>
             </ul>
@@ -279,46 +279,109 @@
         </div>
       </section>
       <section
-      id="vision-mission"
-      class="flex flex-col md:flex-row justify-center items-center min-h-screen bg-gray-100"
-    >
-      <div
-        class="flex flex-col md:flex-row border-solid border-2 border-slate-300 rounded-lg"
+        id="vision-mission"
+        class="flex flex-col md:flex-row justify-center items-center min-h-screen"
       >
-        <!-- Vision Box -->
         <div
-          class="p-16 md:p-64 border-b-2 md:border-b-0 md:border-r-2 border-slate-300 hover:bg-[url('../assets/img/vision.jpg')] hover:bg-cover hover:bg-center group hover:duration-700 hover:ease-out"
-          @mouseover="hoverVision = true"
-          @mouseleave="hoverVision = false"
+          class="flex flex-col md:flex-row border-solid border-2 border-slate-300 rounded-lg"
         >
-          <span
-            :class="{'text-[#F7F6BB]': hoverVision, 'text-[#313C44]': !hoverVision}"
-            class="text-shadow-md font-extrabold text-[40px] tracking-normal leading-normal whitespace-nowrap mx-auto mt-16"
+          <div
+            class="p-16 md:p-64 border-b-2 md:border-b-0 md:border-r-2 border-slate-300 hover:bg-[url('../assets/img/vision.jpg')] hover:bg-cover hover:bg-center group hover:duration-700 hover:ease-out"
           >
-            VISION
-          </span>
+            <span
+              class="text-shadow-md font-extrabold text-[40px] tracking-normal leading-normal whitespace-nowrap mx-auto mt-16 text-[#313C44] group-hover:text-[#F7F6BB]"
+            >
+              VISION
+            </span>
+          </div>
+          <div
+            class="p-16 md:p-64 bg-[#313C44] hover:bg-[url('../assets/img/mission.jpg')] hover:bg-cover hover:bg-center group hover:duration-700 hover:ease-out"
+          >
+            <span
+              class="text-shadow-md font-extrabold text-4xl tracking-normal leading-normal whitespace-nowrap mx-auto mt-16 text-[#F7F6BB] group-hover:text-[#313C44]"
+            >
+              MISSION
+            </span>
+          </div>
         </div>
-        <!-- Mission Box -->
-        <div
-          class="p-16 md:p-64 bg-[#313C44] hover:bg-[url('../assets/img/mission.jpg')] hover:bg-cover hover:bg-center group hover:duration-700 hover:ease-out"
-          @mouseover="hoverMission = true"
-          @mouseleave="hoverMission = false"
+      </section>
+      <section id="our-clients" class="flex flex-col min-h-[75vh] items-center">
+        <p
+          class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mb-8"
         >
-          <span
-            :class="{'text-[#313C44]': hoverMission, 'text-[#F7F6BB]': !hoverMission}"
-            class="text-shadow-md font-extrabold text-4xl tracking-normal leading-normal whitespace-nowrap mx-auto mt-16"
-          >
-            MISSION
-          </span>
-          <p v-if="hoverVision" class="text-center text-white mt-4">
-            Our vision is to excel in engineering solutions, offering innovation, reliability, and sustainability to ensure the success of our customers and partners.
-          </p>
+          <span class="text-[#154214]">Our </span>
+          <span class="text-[#286f9b]">Client</span>
+        </p>
+        <div class="w-full overflow-x-auto border-t border-b border-gray-300">
+          <div class="flex space-x-8 justify-center py-20 px-4 min-w-max">
+            <img
+              src="../assets/img/client-1.png"
+              alt="Client Logo 1"
+              class="h-24"
+            />
+            <img
+              src="../assets/img/client-2.png"
+              alt="Client Logo 2"
+              class="h-24"
+            />
+            <img
+              src="../assets/img/client-3.png"
+              alt="Client Logo 3"
+              class="h-24"
+            />
+            <img
+              src="../assets/img/client-4.png"
+              alt="Client Logo 4"
+              class="h-24"
+            />
+            <img
+              src="../assets/img/client-5.png"
+              alt="Client Logo 5"
+              class="h-24"
+            />
+            <img
+              src="../assets/img/client-6.png"
+              alt="Client Logo 6"
+              class="h-24"
+            />
+            <img
+              src="../assets/img/client-7.png"
+              alt="Client Logo 7"
+              class="h-24"
+            />
+            <img
+              src="../assets/img/client-8.png"
+              alt="Client Logo 8"
+              class="h-24"
+            />
+          </div>
         </div>
-      </div>
-    </section>
-
-      <section id="footer" class="py-20 bg-blue-50">
-        <div class="container mx-auto px-4">footer Content</div>
+      </section>
+      <section id="footer" class="bg-[#313C44] text-white py-8">
+        <div class="container mx-auto flex items-center justify-between">
+          <div class="flex space-x-4 ml-20">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <img src="../assets/img/ic-baseline-facebook.svg" alt="Facebook" class="h-8" />
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <img src="../assets/img/mage-x.svg" alt="Twitter" class="h-8" />
+            </a>
+          </div>
+          <p>&copy; 2021 Frontec Group. All rights reserved.</p>
+          <div>
+            <a href="contact-us.html" class="text-white font-bold mr-20"
+              >Contact Us</a
+            >
+          </div>
+        </div>
       </section>
     </main>
   </div>
