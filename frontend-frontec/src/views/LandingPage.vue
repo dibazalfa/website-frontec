@@ -279,32 +279,44 @@
         </div>
       </section>
       <section
-        id="vision-mission"
-        class="flex flex-col md:flex-row justify-center items-center min-h-screen bg-gray-100"
+      id="vision-mission"
+      class="flex flex-col md:flex-row justify-center items-center min-h-screen bg-gray-100"
+    >
+      <div
+        class="flex flex-col md:flex-row border-solid border-2 border-slate-300 rounded-lg"
       >
+        <!-- Vision Box -->
         <div
-          class="flex flex-col md:flex-row border-solid border-2 border-slate-300 rounded-lg"
+          class="p-16 md:p-64 border-b-2 md:border-b-0 md:border-r-2 border-slate-300 hover:bg-[url('../assets/img/vision.jpg')] hover:bg-cover hover:bg-center group hover:duration-700 hover:ease-out"
+          @mouseover="hoverVision = true"
+          @mouseleave="hoverVision = false"
         >
-          <div
-            class="p-16 md:p-64 border-b-2 md:border-b-0 md:border-r-2 border-slate-300 hover:bg-[url('../assets/img/vision.jpg')] hover:bg-cover hover:bg-center group hover:duration-700 hover:ease-out"
+          <span
+            :class="{'text-[#F7F6BB]': hoverVision, 'text-[#313C44]': !hoverVision}"
+            class="text-shadow-md font-extrabold text-[40px] tracking-normal leading-normal whitespace-nowrap mx-auto mt-16"
           >
-            <span
-              class="text-shadow-md font-extrabold text-[40px] tracking-normal leading-normal whitespace-nowrap mx-auto mt-16 text-[#313C44] group-hover:text-[#F7F6BB]"
-            >
-              VISION
-            </span>
-          </div>
-          <div
-            class="p-16 md:p-64 bg-[#313C44] hover:bg-[url('../assets/img/mission.jpg')] hover:bg-cover hover:bg-center group hover:duration-700 hover:ease-out"
-          >
-            <span
-              class="text-shadow-md font-extrabold text-4xl tracking-normal leading-normal whitespace-nowrap mx-auto mt-16 text-[#F7F6BB] group-hover:text-[#313C44]"
-            >
-              MISSION
-            </span>
-          </div>
+            VISION
+          </span>
         </div>
-      </section>
+        <!-- Mission Box -->
+        <div
+          class="p-16 md:p-64 bg-[#313C44] hover:bg-[url('../assets/img/mission.jpg')] hover:bg-cover hover:bg-center group hover:duration-700 hover:ease-out"
+          @mouseover="hoverMission = true"
+          @mouseleave="hoverMission = false"
+        >
+          <span
+            :class="{'text-[#313C44]': hoverMission, 'text-[#F7F6BB]': !hoverMission}"
+            class="text-shadow-md font-extrabold text-4xl tracking-normal leading-normal whitespace-nowrap mx-auto mt-16"
+          >
+            MISSION
+          </span>
+          <p v-if="hoverVision" class="text-center text-white mt-4">
+            Our vision is to excel in engineering solutions, offering innovation, reliability, and sustainability to ensure the success of our customers and partners.
+          </p>
+        </div>
+      </div>
+    </section>
+
       <section id="footer" class="py-20 bg-blue-50">
         <div class="container mx-auto px-4">footer Content</div>
       </section>
@@ -317,9 +329,15 @@ import { ref, onMounted } from "vue";
 
 export default {
   setup() {
+    // State for hover interactions
+    const hoverVision = ref(false);
+    const hoverMission = ref(false);
+
+    // State for scroll position and current language
     const isScrolled = ref(false);
     const currentLanguage = ref("en");
 
+    // Function to handle scroll
     const handleScroll = () => {
       if (window.scrollY > 50) {
         isScrolled.value = true;
@@ -328,15 +346,20 @@ export default {
       }
     };
 
+    // Function to set the current language
     const setLanguage = (language) => {
       currentLanguage.value = language;
     };
 
+    // Lifecycle hook to add event listener after component is mounted
     onMounted(() => {
       window.addEventListener("scroll", handleScroll);
     });
 
+    // Return all reactive states and methods to be accessible in the template
     return {
+      hoverVision,
+      hoverMission,
       isScrolled,
       currentLanguage,
       setLanguage,

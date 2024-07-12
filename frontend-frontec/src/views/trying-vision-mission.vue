@@ -1,0 +1,380 @@
+<template>
+    <div>
+      <header
+        class="relative h-screen bg-cover bg-center bg-[url(../assets/img/landing-page.jpg)]"
+      >
+        <div
+          :class="[
+            {
+              'fixed w-full bg-white shadow-lg': isScrolled,
+              'bg-transparent': !isScrolled,
+            },
+            'transition-all duration-300 ease-in-out z-50 top-0 left-0 right-0',
+          ]"
+        >
+          <div
+            class="container mx-auto px-4 py-3 flex justify-between items-center"
+          >
+            <!-- Language Switcher -->
+            <div class="flex items-center">
+              <div
+                @click="setLanguage('id')"
+                :class="[
+                  {
+                    'bg-gray-600 shadow-lg ring-black ring-1':
+                      currentLanguage === 'id',
+                    'bg-gray-200': currentLanguage !== 'id',
+                  },
+                  'p-2 rounded-l cursor-pointer transition-colors duration-300',
+                ]"
+              >
+                <img
+                  src="../assets/img/image-15.png"
+                  alt="ID"
+                  class="w-6 h-6 rounded-lg"
+                />
+              </div>
+              <div
+                @click="setLanguage('en')"
+                :class="[
+                  {
+                    'bg-gray-600 shadow-lg ring-black ring-1':
+                      currentLanguage === 'en',
+                    'bg-gray-200': currentLanguage !== 'en',
+                  },
+                  'p-2 rounded-r cursor-pointer transition-colors duration-300',
+                ]"
+              >
+                <img
+                  src="../assets/img/image-16.png"
+                  alt="EN"
+                  class="w-6 h-6 rounded-lg"
+                />
+              </div>
+            </div>
+            <!-- Navbar -->
+            <nav>
+              <ul class="flex space-x-6">
+                <li>
+                  <a
+                    href="#about-us"
+                    :class="{
+                      'hover:underline': true,
+                      uppercase: true,
+                      'font-bold': true,
+                      'text-black': isScrolled,
+                      'text-white': !isScrolled,
+                    }"
+                    >About Us</a
+                  >
+                </li>
+                <li class="relative group">
+                  <a
+                    href="#why-frontec"
+                    :class="{
+                      'hover:underline': true,
+                      uppercase: true,
+                      'font-bold': true,
+                      'text-black': isScrolled,
+                      'text-white': !isScrolled,
+                    }"
+                    >Our Products</a
+                  >
+                  <ul
+                    class="absolute left-0 mt-2 w-48 bg-white shadow-lg hidden group-hover:block"
+                  >
+                    <li>
+                      <a
+                        href="#product1"
+                        class="block px-4 py-2 hover:bg-gray-200"
+                        >Product 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#product2"
+                        class="block px-4 py-2 hover:bg-gray-200"
+                        >Product 2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#product3"
+                        class="block px-4 py-2 hover:bg-gray-200"
+                        >Product 3</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="#our-business"
+                    :class="{
+                      'hover:underline': true,
+                      uppercase: true,
+                      'font-bold': true,
+                      'text-black': isScrolled,
+                      'text-white': !isScrolled,
+                    }"
+                    >Our Business</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#vision-mission"
+                    :class="{
+                      'hover:underline': true,
+                      uppercase: true,
+                      'font-bold': true,
+                      'text-black': isScrolled,
+                      'text-white': !isScrolled,
+                    }"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#footer"
+                    :class="{
+                      'hover:underline': true,
+                      uppercase: true,
+                      'font-bold': true,
+                      'text-black': isScrolled,
+                      'text-white': !isScrolled,
+                    }"
+                    >footer</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!-- Company Logo -->
+            <div class="flex flex-col items-center space-y-4">
+              <img
+                src="../assets/img/main-logo-1.png"
+                alt="Logo 1"
+                class="w-auto h-8"
+              />
+              <img
+                src="../assets/img/main-logo-global-1.png"
+                alt="Logo 2"
+                class="w-auto h-8"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+  
+      <!-- Content Sections -->
+      <main>
+        <section id="about-us" class="bg-white flex flex-col min-h-screen p-4">
+          <p
+            class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
+          >
+            <span class="text-[#154214]">About </span>
+            <span class="text-[#286f9b]">Frontec</span>
+          </p>
+          <img src="../assets/img/machining-1.png" alt="" class="mx-auto mt-16" />
+          <div class="flex flex-col md:flex-row mx-auto mt-16 text-justify mb-14">
+            <p class="md:w-1/2 p-4 lg:ml-40 lg:mr-5">
+              <span class="text-[32px] font-semibold">Founded in 2008,</span>
+              Frontec Group began its business with Frontec Agritama Engineering
+              <b>(FAE)</b>, manufacturing material handling products such as
+              bucket elevators, chain conveyors, screw conveyors, and grader
+              cleaners. Frontec has continued to develop its engineering
+              technology and expand its product range. The company also produces
+              corn dryers with various burner options, depending on the most
+              efficient resources near the plant. Additionally, Frontec
+              manufactures several feed mill machines, including hammer mills,
+              mixers, and dust collectors.
+            </p>
+            <div class="border-l-2 border-black hidden md:block"></div>
+            <p class="md:w-1/2 p-4 lg:mr-40 lg:ml-5">
+              To meet the needs of the feed and grain industry, Frontec Group
+              established a new company, Frontec Global Niagatama <b>(FGN)</b>,
+              which provides material handling spare parts. Frontec has been
+              appointed by
+              <b>Zhenjiang Sanwei Conveying Equipment Co., Ltd.</b> as the
+              exclusive distributor of its conveying spare parts in Indonesia. The
+              company also supplies complete storage solutions, having been
+              appointed by world-class silo manufacturer Altuntas Group from
+              Turkey as the exclusive distributor of grain silos for the
+              Indonesian market.
+            </p>
+          </div>
+        </section>
+        <section
+          id="why-frontec"
+          class="bg-[#313C44] flex flex-col md:flex-row min-h-screen p-4"
+        >
+          <p
+            class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap my-auto mx-16"
+          >
+            <span class="text-white">Why </span>
+            <span class="text-[#F7F6BB]">Frontec?</span>
+          </p>
+          <div class="text-white my-auto mx-auto flex flex-col space-y-8">
+            <div class="flex flex-row">
+              <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="" />
+              <div>
+                <p class="font-bold text-2xl">
+                  Providing quality engineering solutions
+                </p>
+                <p class="text-md">we go beyond our customers' expectations</p>
+              </div>
+            </div>
+            <div class="flex flex-row">
+              <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="" />
+              <div>
+                <p class="font-bold text-2xl">Diverse products and services</p>
+                <p class="text-md">
+                  from consultancy to equipment manufacturing and project
+                  installation.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-row">
+              <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="" />
+              <div>
+                <p class="font-bold text-2xl">Professional human capitals</p>
+                <p class="text-md">setting new benchmarks in performance.</p>
+              </div>
+            </div>
+          </div>
+          <img class="m-auto" src="../assets/img/why-frontec.png" alt="" />
+        </section>
+        <section
+          id="our-business"
+          class="flex flex-col md:flex-row min-h-[75vh] py-4 mx-28 text-justify"
+        >
+          <img class="my-auto ml-20" src="../assets/img/business.png" alt="" />
+          <div class="my-auto ml-16 mr-20">
+            <p>
+              We produce all kinds of machineries, as well as integrated feed mill
+              plants to mix all kinds of feed especially for:
+            </p>
+            <ul class="list-disc list-inside font-bold">
+              <li>Poultry</li>
+              <li>Aqua Feed Mill</li>
+              <li>Dairy Products</li>
+            </ul>
+            <br />
+            <p>
+              As a leading manufacturer in grain handling, our company excels in
+              its field, particularly in feed mill technology.
+              <span class="font-bold">We offer comprehensive services</span> that
+              cover a wide range of needs:
+            </p>
+            <ul class="list-disc list-inside font-bold">
+              <li>Feasibility Studies</li>
+              <li>Design</li>
+              <li>Manufacturing</li>
+              <li>Erection</li>
+              <li>Installation of Automation & Control Systems</li>
+              <li>Commissioning</li>
+            </ul>
+            <p>
+              Our expertise ensures that every project is executed with precision,
+              from initial planning to final implementation.
+            </p>
+          </div>
+        </section>
+        <section
+        id="vision-mission"
+        class="flex flex-col md:flex-row justify-center items-center min-h-screen bg-gray-100"
+      >
+        <div
+          class="flex flex-col md:flex-row border-solid border-2 border-slate-300 rounded-lg"
+        >
+          <!-- Vision Box -->
+          <div
+            class="p-16 md:p-64 border-b-2 md:border-b-0 md:border-r-2 border-slate-300 hover:bg-[url('../assets/img/vision.jpg')] hover:bg-cover hover:bg-center group hover:duration-700 hover:ease-out"
+            @mouseover="hoverVision = true"
+            @mouseleave="hoverVision = false"
+          >
+            <span
+              :class="{'text-[#F7F6BB]': hoverVision, 'text-[#313C44]': !hoverVision}"
+              class="text-shadow-md font-extrabold text-[40px] tracking-normal leading-normal whitespace-nowrap mx-auto mt-16"
+            >
+              VISION
+            </span>
+          </div>
+          <!-- Mission Box -->
+          <div
+            class="p-16 md:p-64 bg-[#313C44] hover:bg-[url('../assets/img/mission.jpg')] hover:bg-cover hover:bg-center group hover:duration-700 hover:ease-out"
+            @mouseover="hoverMission = true"
+            @mouseleave="hoverMission = false"
+          >
+            <span
+              :class="{'text-[#313C44]': hoverMission, 'text-[#F7F6BB]': !hoverMission}"
+              class="text-shadow-md font-extrabold text-4xl tracking-normal leading-normal whitespace-nowrap mx-auto mt-16"
+            >
+              MISSION
+            </span>
+            <p v-if="hoverVision" class="text-center text-white mt-4">
+              Our vision is to excel in engineering solutions, offering innovation, reliability, and sustainability to ensure the success of our customers and partners.
+            </p>
+          </div>
+        </div>
+      </section>
+  
+        <section id="footer" class="py-20 bg-blue-50">
+          <div class="container mx-auto px-4">footer Content</div>
+        </section>
+      </main>
+    </div>
+  </template>
+  
+  <script>
+  import { ref, onMounted } from "vue";
+  
+  export default {
+    setup() {
+      // State for hover interactions
+      const hoverVision = ref(false);
+      const hoverMission = ref(false);
+  
+      // State for scroll position and current language
+      const isScrolled = ref(false);
+      const currentLanguage = ref("en");
+  
+      // Function to handle scroll
+      const handleScroll = () => {
+        if (window.scrollY > 50) {
+          isScrolled.value = true;
+        } else {
+          isScrolled.value = false;
+        }
+      };
+  
+      // Function to set the current language
+      const setLanguage = (language) => {
+        currentLanguage.value = language;
+      };
+  
+      // Lifecycle hook to add event listener after component is mounted
+      onMounted(() => {
+        window.addEventListener("scroll", handleScroll);
+      });
+  
+      // Return all reactive states and methods to be accessible in the template
+      return {
+        hoverVision,
+        hoverMission,
+        isScrolled,
+        currentLanguage,
+        setLanguage,
+      };
+    },
+  };
+  </script>
+  
+  <style scoped>
+  .header {
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .text-shadow-md {
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  </style>
+  
