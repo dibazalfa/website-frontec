@@ -1,7 +1,7 @@
 <template>
   <div>
     <header
-      class="relative h-screen bg-cover bg-center bg-[url(../assets/img/landing-page.jpg)]"
+      class="relative min-h-[346px] bg-cover bg-center bg-[url(../assets/img/our-products.png)]"
     >
       <div
         :class="[
@@ -31,7 +31,7 @@
               <img
                 src="../assets/img/image-15.png"
                 alt="ID"
-                class="w-6 h-6 rounded-lg"
+                class="w-6 h-6 rounded-full"
               />
             </div>
             <div
@@ -48,7 +48,7 @@
               <img
                 src="../assets/img/image-16.png"
                 alt="EN"
-                class="w-6 h-6 rounded-lg"
+                class="w-6 h-6 rounded-full"
               />
             </div>
           </div>
@@ -56,8 +56,8 @@
           <nav>
             <ul class="flex space-x-6">
               <li>
-                <a
-                  href="#about-us"
+                <router-link
+                  to="/"
                   :class="{
                     'hover:underline': true,
                     uppercase: true,
@@ -65,12 +65,12 @@
                     'text-black': isScrolled,
                     'text-white': !isScrolled,
                   }"
-                  >About Us</a
+                  >About Us</router-link
                 >
               </li>
               <li class="relative group">
-                <a
-                  href="#why-frontec"
+                <router-link
+                to="/our-products"
                   :class="{
                     'hover:underline': true,
                     uppercase: true,
@@ -78,7 +78,7 @@
                     'text-black': isScrolled,
                     'text-white': !isScrolled,
                   }"
-                  >Our Products</a
+                  >Our Products</router-link
                 >
                 <ul
                   class="absolute left-0 mt-2 w-48 bg-white shadow-lg hidden group-hover:block"
@@ -116,12 +116,12 @@
                     'text-black': isScrolled,
                     'text-white': !isScrolled,
                   }"
-                  >Our business</a
+                  >Our Business</a
                 >
               </li>
               <li>
                 <a
-                  href="#contact-us"
+                  href="#vision-mission"
                   :class="{
                     'hover:underline': true,
                     uppercase: true,
@@ -134,7 +134,7 @@
               </li>
               <li>
                 <a
-                  href="#activities"
+                  href="#our-clients"
                   :class="{
                     'hover:underline': true,
                     uppercase: true,
@@ -142,7 +142,7 @@
                     'text-black': isScrolled,
                     'text-white': !isScrolled,
                   }"
-                  >Activities</a
+                  >our-clients</a
                 >
               </li>
             </ul>
@@ -166,87 +166,45 @@
 
     <!-- Content Sections -->
     <main>
-      <section id="about-us" class="bg-white flex flex-col min-h-screen">
+      <section id="our-products" class="bg-white flex flex-col min-h-screen p-4">
         <p
-          class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
+          class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-12"
         >
-          <span class="text-[#154214]">About </span>
-          <span class="text-[#286f9b]">Frontec</span>
+          <span class="text-[#154214]">Our </span>
+          <span class="text-[#286f9b]">Products</span>
         </p>
-        <img src="../assets/img/machining-1.png" alt="" class="mx-auto mt-16" />
-        <div class="flex flex-row mx-auto mt-16 text-justify mb-14">
-          <p class="ml-40 mr-5">
-            <span class="text-[32px] font-semibold">Founded in 2008,</span>
-            Frontec Group began its business with Frontec Agritama Engineering
-            <b>(FAE)</b>, manufacturing material handling products such as
-            bucket elevators, chain conveyors, screw conveyors, and grader
-            cleaners. Frontec has continued to develop its engineering
-            technology and expand its product range. The company also produces
-            corn dryers with various burner options, depending on the most
-            efficient resources near the plant. Additionally, Frontec
-            manufactures several feed mill machines, including hammer mills,
-            mixers, and dust collectors.
-          </p>
-          <div class="border-l-2 border-black"></div>
-          <p class="mr-40 ml-5">
-            To meet the needs of the feed and grain industry, Frontec Group
-            established a new company, Frontec Global Niagatama <b>(FGN)</b>,
-            which provides material handling spare parts. Frontec has been
-            appointed by
-            <b>Zhenjiang Sanwei Conveying Equipment Co., Ltd.</b> as the
-            exclusive distributor of its conveying spare parts in Indonesia. The
-            company also supplies complete storage solutions, having been
-            appointed by world-class silo manufacturer Altuntas Group from
-            Turkey as the exclusive distributor of grain silos for the
-            Indonesian market.
-          </p>
-        </div>
       </section>
-      <section id="why-frontec" class="bg-[#313C44] flex flex-row min-h-screen">
-        <p
-          class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap my-auto mx-16"
-        >
-          <span class="text-white">Why </span>
-          <span class="text-[#F7F6BB]">Frontec?</span>
-        </p>
-        <div class="text-white my-auto mx-auto flex flex-col">
-          <div class="flex flex-row">
-            <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="">
-            <div class="my-10">
-              <p class="font-bold text-2xl">Providing quality engineering solutions</p>
-              <p class="text-md">we go beyond our customers expectations</p>
-            </div>
+      <section class="flex flex-col m-auto">
+        <img class="m-auto" src="../assets/img/material-handling.png" alt="">
+        <img class="m-auto" src="../assets/img/feedmill.png" alt="">
+        <img class="m-auto" src="../assets/img/grain-storage.png" alt="">
+        <img class="m-auto" src="../assets/img/spare-parts.png" alt="">
+      </section>
+      <section id="footer" class="bg-[#313C44] text-white py-8">
+        <div class="container mx-auto flex items-center justify-between">
+          <div class="flex space-x-4 ml-20">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <img src="../assets/img/ic-baseline-facebook.svg" alt="Facebook" class="h-8" />
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <img src="../assets/img/mage-x.svg" alt="Twitter" class="h-8" />
+            </a>
           </div>
-          <div class="flex flex-row">
-            <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="">
-            <div class="my-10">
-              <p class="font-bold text-2xl">Diverse products and services</p>
-              <p class="text-md">from consuktancy to equipment manufacturing and project installation.</p>
-            </div>
-          </div>
-          <div class="flex flex-row">
-            <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="">
-            <div class="my-10">
-              <p class="font-bold text-2xl">Professional human capitals</p>
-              <p class="text-md">setting new benchmarks in performance.</p>
-            </div>
+          <p>&copy; 2021 Frontec Group. All rights reserved.</p>
+          <div>
+            <a href="contact-us.html" class="text-white font-bold mr-20"
+              >Contact Us</a
+            >
           </div>
         </div>
-        <img class="m-auto" src="../assets/img/why-frontec.png" alt="" />
-      </section>
-      <section id="our-business" class="flex min-h-screen">
-        <img class="my-auto" src="../assets/img/business.png" alt="">
-        <ul class="font-bold">
-          <li>Poultry</li>
-          <li>Aqua Feed Mill</li>
-          <li>Dairy Product</li>
-        </ul>
-      </section>
-      <section id="contact-us" class="py-20 bg-blue-500">
-        Contact Us Content
-      </section>
-      <section id="activities" class="py-20 bg-gray-100">
-        Activities Content
       </section>
     </main>
   </div>
@@ -288,5 +246,9 @@ export default {
 <style scoped>
 .header {
   transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.text-shadow-md {
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 </style>
