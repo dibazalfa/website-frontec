@@ -158,13 +158,42 @@
 </template>
 
 <script>
+import { ref, onMounted, onUnmounted } from "vue";
+
 export default {
   name: "AppHeader",
-  props: ["isScrolled", "currentLanguage"],
-  methods: {
-    setLanguage(lang) {
-      this.$emit("update:currentLanguage", lang);
-    },
+  props: {
+    initialLanguage: {
+      type: String,
+      default: "en"
+    }
+  },
+  setup(props, { emit }) {
+    const isScrolled = ref(false);
+    const currentLanguage = ref(props.initialLanguage);
+
+    const handleScroll = () => {
+      isScrolled.value = window.scrollY > 50;
+    };
+
+    const setLanguage = (lang) => {
+      currentLanguage.value = lang;
+      emit("update:currentLanguage", lang);
+    };
+
+    onMounted(() => {
+      window.addEventListener("scroll", handleScroll);
+    });
+
+    onUnmounted(() => {
+      window.removeEventListener("scroll", handleScroll);
+    });
+
+    return {
+      isScrolled,
+      currentLanguage,
+      setLanguage,
+    };
   },
 };
 </script>

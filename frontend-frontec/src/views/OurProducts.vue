@@ -63,33 +63,6 @@ export default {
   components: {
     AppHeader
   },
-  
-  setup() {
-    const isScrolled = ref(false);
-    const currentLanguage = ref("en");
-
-    const handleScroll = () => {
-      isScrolled.value = window.scrollY > 50;
-    };
-
-    const setLanguage = (lang) => {
-      currentLanguage.value = lang;
-    };
-
-    onMounted(() => {
-      window.addEventListener("scroll", handleScroll);
-    });
-
-    onUnmounted(() => {
-      window.removeEventListener("scroll", handleScroll);
-    });
-
-    return {
-      isScrolled,
-      currentLanguage,
-      setLanguage,
-    };
-  },
 };
 </script>
 

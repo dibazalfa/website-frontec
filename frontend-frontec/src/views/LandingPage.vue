@@ -255,50 +255,6 @@ export default {
   components: {
     AppHeader
   },
-
-  setup() {
-    // State for hover interactions
-    const hoverVision = ref(false);
-    const hoverMission = ref(false);
-
-    // State for scroll position and current language
-    const isScrolled = ref(false);
-    const currentLanguage = ref("en");
-
-    // Function to handle scroll
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        isScrolled.value = true;
-      } else {
-        isScrolled.value = false;
-      }
-    };
-
-    // Function to set the current language
-    const setLanguage = (language) => {
-      currentLanguage.value = language;
-    };
-
-    // Lifecycle hook to add event listener after component is mounted
-    onMounted(() => {
-      window.addEventListener("scroll", handleScroll);
-    });
-
-    // Return all reactive states and methods to be accessible in the template
-    return {
-      hoverVision,
-      hoverMission,
-      isScrolled,
-      currentLanguage,
-      setLanguage,
-    };
-  },
-  data() {
-    return {
-      // hoverVision: false,
-      // hoverMission: false,
-    };
-  },
 };
 </script>
 
