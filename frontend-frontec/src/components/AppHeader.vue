@@ -100,7 +100,7 @@
             </li>
             <li>
               <a
-                href="#our-business"
+                href="#our-companies"
                 :class="{
                   'hover:underline': true,
                   uppercase: true,
@@ -108,12 +108,12 @@
                   'text-black': isScrolled,
                   'text-white': !isScrolled,
                 }"
-                >Our Business</a
+                >Our Companies</a
               >
             </li>
             <li>
               <a
-                href="#vision-mission"
+                href="#contact-us"
                 :class="{
                   'hover:underline': true,
                   uppercase: true,
@@ -126,7 +126,7 @@
             </li>
             <li>
               <a
-                href="#our-clients"
+                href="#activites"
                 :class="{
                   'hover:underline': true,
                   uppercase: true,
@@ -134,7 +134,7 @@
                   'text-black': isScrolled,
                   'text-white': !isScrolled,
                 }"
-                >our-clients</a
+                >Activities</a
               >
             </li>
           </ul>
