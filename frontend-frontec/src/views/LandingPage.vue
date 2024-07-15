@@ -148,14 +148,14 @@
             </ul>
           </nav>
           <!-- Company Logo -->
-          <div class="flex flex-col items-center space-y-4">
+          <div class="flex flex-col items-center space-y-4 mr-6">
             <img
-              src="../assets/img/main-logo-1.png"
+              src="../assets/img/FAE kecil.png"
               alt="Logo 1"
               class="w-auto h-8"
             />
             <img
-              src="../assets/img/main-logo-global-1.png"
+              src="../assets/img/FGN kecil.png"
               alt="Logo 2"
               class="w-auto h-8"
             />
