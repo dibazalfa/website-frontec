@@ -1,6 +1,7 @@
 <template>
    <div>
     <AppHeader
+    class="relative min-h-[346px] bg-cover bg-center bg-[url(../assets/img/our-products.png)]"
   :isScrolled="isScrolled"
   :currentLanguage="currentLanguage"
   :links="navLinks"
@@ -56,7 +57,7 @@
 
 <script>
 import { ref, onMounted, onUnmounted } from "vue";
-import AppHeader from '../views/AppHeader.vue';
+import AppHeader from '../components/AppHeader.vue';
 
 export default {
   components: {
