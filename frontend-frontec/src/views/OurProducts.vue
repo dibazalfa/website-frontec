@@ -16,7 +16,7 @@
           class="container mx-auto px-4 py-3 flex justify-between items-center"
         >
           <!-- Language Switcher -->
-          <div class="flex items-center">
+          <div class="flex items-center ml-16">
             <div
               @click="setLanguage('id')"
               :class="[
@@ -148,14 +148,14 @@
             </ul>
           </nav>
           <!-- Company Logo -->
-          <div class="flex flex-col items-center space-y-4">
+          <div class="flex flex-col items-center space-y-4 mr-6">
             <img
-              src="../assets/img/main-logo-1.png"
+              src="../assets/img/FAE kecil.png"
               alt="Logo 1"
               class="w-auto h-8"
             />
             <img
-              src="../assets/img/main-logo-global-1.png"
+              src="../assets/img/FGN kecil.png"
               alt="Logo 2"
               class="w-auto h-8"
             />
@@ -166,21 +166,21 @@
 
     <!-- Content Sections -->
     <main>
-      <section id="our-products" class="bg-white flex flex-col min-h-screen p-4">
-        <p
-          class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-12"
-        >
-          <span class="text-[#154214]">Our </span>
-          <span class="text-[#286f9b]">Products</span>
-        </p>
+      <section id="our-products" class="bg-white flex flex-col p-4 md:p-8 lg:p-12">
+  <p
+    class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[30px] sm:text-[35px] md:text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-8 md:mt-12 lg:mt-16"
+  >
+    <span class="text-[#154214]">Our </span>
+    <span class="text-[#286f9b]">Products</span>
+  </p>
       </section>
       <section class="flex flex-col m-auto">
-        <img class="m-auto" src="../assets/img/material-handling.png" alt="">
-        <img class="m-auto" src="../assets/img/feedmill.png" alt="">
-        <img class="m-auto" src="../assets/img/grain-storage.png" alt="">
-        <img class="m-auto" src="../assets/img/spare-parts.png" alt="">
+        <img class="my-auto mx-48 pb-4" src="../assets/img/material-handling.png" alt="">
+        <img class="my-auto mx-48 pb-4" src="../assets/img/feedmill.png" alt="">
+        <img class="my-auto mx-48 pb-4" src="../assets/img/grain-storage.png" alt="">
+        <img class="my-auto mx-48 pb-4" src="../assets/img/spare-parts.png" alt="">
       </section>
-      <section id="footer" class="bg-[#313C44] text-white py-8">
+      <section id="footer" class="bg-[#313C44] text-white py-8 mt-16">
         <div class="container mx-auto flex items-center justify-between">
           <div class="flex space-x-4 ml-20">
             <a

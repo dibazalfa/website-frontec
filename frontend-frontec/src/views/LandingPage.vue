@@ -315,20 +315,19 @@
         </div>
       </section>
 
-      <section id="our-clients" class="flex flex-col min-h-[75vh] items-center">
+      <section id="our-clients" class="flex flex-col min-h-[70vh] items-center">
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mb-8"
         >
           <span class="text-[#154214]">Our </span>
-          <span class="text-[#286f9b]">Client</span>
+          <span class="text-[#286f9b]">Clients</span>
         </p>
-        <div class="w-full border-t border-b border-gray-300">
-          <div class="grid grid-cols-3 gap-8 justify-center py-20 px-4">
+          <div class="grid grid-cols-3 gap-8 justify-center py-16 px-4">
             <div class="col-span-5 flex justify-center space-x-8">
               <img
                 src="../assets/img/client-1.png"
                 alt="Client Logo 1"
-                class="h-24"
+                class="h-32"
               />
               <img
                 src="../assets/img/client-2.png"
@@ -351,7 +350,7 @@
                 class="h-24"
               />
             </div>
-            <div class="col-span-3 flex justify-center">
+            <div class="col-span-5 flex justify-center">
               <img
                 src="../assets/img/client-4.png"
                 alt="Client Logo 4"
@@ -369,7 +368,6 @@
               />
             </div>
           </div>
-        </div>
       </section>
 
       <section id="footer" class="bg-[#313C44] text-white py-8">
