@@ -25,6 +25,5 @@
   </script>
   
   <style scoped>
-  /* Styling for the footer can be scoped here */
   </style>
   

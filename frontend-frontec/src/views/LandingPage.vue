@@ -218,7 +218,6 @@
 </template>
 
 <script>
-import { ref, onMounted, onUnmounted } from "vue";
 import AppHeader from '../components/AppHeader.vue';
 import Footer from '../components/Footer.vue';
 
