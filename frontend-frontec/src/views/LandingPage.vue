@@ -1,12 +1,12 @@
 <template>
   <div>
     <AppHeader
-    class="relative min-h-screen bg-cover bg-center bg-[url(../assets/img/landing-page.jpg)]"
-  :isScrolled="isScrolled"
-  :currentLanguage="currentLanguage"
-  :links="navLinks"
-  @update:currentLanguage="setLanguage"
-/>
+      class="relative min-h-screen bg-cover bg-center bg-[url(../assets/img/landing-page.jpg)]"
+      :isScrolled="isScrolled"
+      :currentLanguage="currentLanguage"
+      :links="navLinks"
+      @update:currentLanguage="setLanguage"
+    />
     <!-- Content Sections -->
     <main>
       <section id="about-us" class="bg-white flex flex-col min-h-screen p-4">
@@ -16,6 +16,9 @@
           <span class="text-[#154214]">About </span>
           <span class="text-[#286f9b]">Frontec</span>
         </p>
+        <p>{{ $t("message") }}</p>
+        <button @click="changeLanguage('en')">English</button>
+        <button @click="changeLanguage('id')">Bahasa Indonesia</button>
         <img src="../assets/img/machining-1.png" alt="" class="mx-auto mt-16" />
         <div class="flex flex-col md:flex-row mx-auto mt-16 text-justify mb-14">
           <p class="md:w-1/2 p-4 lg:ml-40 lg:mr-5">
@@ -165,52 +168,52 @@
           <span class="text-[#154214]">Our </span>
           <span class="text-[#286f9b]">Clients</span>
         </p>
-          <div class="grid grid-cols-3 gap-8 justify-center py-16 px-4">
-            <div class="col-span-5 flex justify-center space-x-8">
-              <img
-                src="../assets/img/client-1.png"
-                alt="Client Logo 1"
-                class="h-32"
-              />
-              <img
-                src="../assets/img/client-2.png"
-                alt="Client Logo 2"
-                class="h-24"
-              />
-              <img
-                src="../assets/img/client-3.png"
-                alt="Client Logo 3"
-                class="h-24"
-              />
-              <img
-                src="../assets/img/client-7.png"
-                alt="Client Logo 7"
-                class="h-24"
-              />
-              <img
-                src="../assets/img/client-8.png"
-                alt="Client Logo 8"
-                class="h-24"
-              />
-            </div>
-            <div class="col-span-5 flex justify-center">
-              <img
-                src="../assets/img/client-4.png"
-                alt="Client Logo 4"
-                class="h-24 p-5"
-              />
-              <img
-                src="../assets/img/client-5.png"
-                alt="Client Logo 5"
-                class="h-24 p-5"
-              />
-              <img
-                src="../assets/img/client-6.png"
-                alt="Client Logo 6"
-                class="h-24 p-5"
-              />
-            </div>
+        <div class="grid grid-cols-3 gap-8 justify-center py-16 px-4">
+          <div class="col-span-5 flex justify-center space-x-8">
+            <img
+              src="../assets/img/client-1.png"
+              alt="Client Logo 1"
+              class="h-32"
+            />
+            <img
+              src="../assets/img/client-2.png"
+              alt="Client Logo 2"
+              class="h-24"
+            />
+            <img
+              src="../assets/img/client-3.png"
+              alt="Client Logo 3"
+              class="h-24"
+            />
+            <img
+              src="../assets/img/client-7.png"
+              alt="Client Logo 7"
+              class="h-24"
+            />
+            <img
+              src="../assets/img/client-8.png"
+              alt="Client Logo 8"
+              class="h-24"
+            />
           </div>
+          <div class="col-span-5 flex justify-center">
+            <img
+              src="../assets/img/client-4.png"
+              alt="Client Logo 4"
+              class="h-24 p-5"
+            />
+            <img
+              src="../assets/img/client-5.png"
+              alt="Client Logo 5"
+              class="h-24 p-5"
+            />
+            <img
+              src="../assets/img/client-6.png"
+              alt="Client Logo 6"
+              class="h-24 p-5"
+            />
+          </div>
+        </div>
       </section>
       <Footer></Footer>
     </main>
@@ -218,13 +221,19 @@
 </template>
 
 <script>
-import AppHeader from '../components/AppHeader.vue';
-import Footer from '../components/Footer.vue';
+import AppHeader from "../components/AppHeader.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   components: {
     AppHeader,
-    Footer
+    Footer,
+  },
+  name: "LandingPage",
+  methods: {
+    changeLanguage(lang) {
+      this.$i18n.locale = lang;
+    },
   },
 };
 </script>
