@@ -1,3 +1,6 @@
 {
-    "message": "halo i18n !!"
+  "landingPage": {
+    "title": "Selamat datang di halaman utama kami",
+    "description": "Ini adalah deskripsi halaman utama dalam Bahasa Indonesia."
   }
+}

@@ -16,9 +16,10 @@
           <span class="text-[#154214]">About </span>
           <span class="text-[#286f9b]">Frontec</span>
         </p>
-        <p>{{ $t("message") }}</p>
-        <button @click="changeLanguage('en')">English</button>
-        <button @click="changeLanguage('id')">Bahasa Indonesia</button>
+
+        <h1>{{ $t('landingPage.title') }}</h1>
+        <p>{{ $t('landingPage.description') }}</p>
+    
         <img src="../assets/img/machining-1.png" alt="" class="mx-auto mt-16" />
         <div class="flex flex-col md:flex-row mx-auto mt-16 text-justify mb-14">
           <p class="md:w-1/2 p-4 lg:ml-40 lg:mr-5">
@@ -223,6 +224,7 @@
 <script>
 import AppHeader from "../components/AppHeader.vue";
 import Footer from "../components/Footer.vue";
+import { useI18n } from "vue-i18n";
 
 export default {
   components: {
@@ -230,10 +232,12 @@ export default {
     Footer,
   },
   name: "LandingPage",
-  methods: {
-    changeLanguage(lang) {
-      this.$i18n.locale = lang;
-    },
+  setup() {
+    const { t } = useI18n();
+
+    return {
+      t,
+    };
   },
 };
 </script>

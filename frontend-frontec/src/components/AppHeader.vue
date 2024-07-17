@@ -1,6 +1,5 @@
 <template>
-  <header
-  >
+  <header>
     <div
       :class="[
         {
@@ -18,12 +17,10 @@
           <div
             @click="setLanguage('id')"
             :class="[
-              {
-                'bg-gray-600 shadow-lg ring-black ring-1':
-                  currentLanguage === 'id',
-                'bg-gray-200': currentLanguage !== 'id',
-              },
               'p-2 rounded-l cursor-pointer transition-colors duration-300',
+              currentLanguage === 'id'
+                ? 'bg-gray-600 shadow-lg ring-black ring-1'
+                : 'bg-gray-200',
             ]"
           >
             <img
@@ -35,12 +32,10 @@
           <div
             @click="setLanguage('en')"
             :class="[
-              {
-                'bg-gray-600 shadow-lg ring-black ring-1':
-                  currentLanguage === 'en',
-                'bg-gray-200': currentLanguage !== 'en',
-              },
               'p-2 rounded-r cursor-pointer transition-colors duration-300',
+              currentLanguage === 'en'
+                ? 'bg-gray-600 shadow-lg ring-black ring-1'
+                : 'bg-gray-200',
             ]"
           >
             <img
@@ -159,26 +154,22 @@
 
 <script>
 import { ref, onMounted, onUnmounted } from "vue";
+import { useI18n } from "vue-i18n";
 
 export default {
   name: "AppHeader",
-  props: {
-    initialLanguage: {
-      type: String,
-      default: "en"
-    }
-  },
-  setup(props, { emit }) {
+  setup() {
     const isScrolled = ref(false);
-    const currentLanguage = ref(props.initialLanguage);
+    const { locale } = useI18n();
+    const currentLanguage = ref(locale.value);
 
     const handleScroll = () => {
       isScrolled.value = window.scrollY > 50;
     };
 
     const setLanguage = (lang) => {
+      locale.value = lang;
       currentLanguage.value = lang;
-      emit("update:currentLanguage", lang);
     };
 
     onMounted(() => {
