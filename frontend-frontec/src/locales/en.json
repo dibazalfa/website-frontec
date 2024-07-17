@@ -1,6 +1,13 @@
 {
   "landingPage": {
-    "title": "Welcome to our Landing Page",
-    "description": "This is the landing page description in English."
+    "about1": "<span class='text-[32px] font-semibold'>Founded in 2008,</span> Frontec Group began its business with Frontec Agritama Engineering <b>(FAE)</b>, manufacturing material handling products such as bucket elevators, chain conveyors, screw conveyors, and grader cleaners. Frontec has continued to develop its engineering technology and expand its product range. The company also produces corn dryers with various burner options, depending on the most efficient resources near the plant. Additionally, Frontec manufactures several feed mill machines, including hammer mills, mixers, and dust collectors.",
+    "about2": "To meet the needs of the feed and grain industry, Frontec Group established a new company, Frontec Global Niagatama <b>(FGN)</b>, which provides material handling spare parts. Frontec has been appointed by <b>Zhenjiang Sanwei Conveying Equipment Co., Ltd.</b> as the exclusive distributor of its conveying spare parts in Indonesia. The company also supplies complete storage solutions, having been appointed by world-class silo manufacturer Altuntas Group from Turkey as the exclusive distributor of grain silos for the Indonesian market."
+  },
+  "navbar": {
+    "about": "About Us",
+    "products": "Our Products",
+    "companies": "Our Companies",
+    "contact": "Contact Us",
+    "activities": "Activities"
   }
 }

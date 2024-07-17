@@ -58,7 +58,7 @@
                   'text-black': isScrolled,
                   'text-white': !isScrolled,
                 }"
-                >About Us</router-link
+                >{{ $t('navbar.about') }}</router-link
               >
             </li>
             <li class="relative group">
@@ -71,7 +71,7 @@
                   'text-black': isScrolled,
                   'text-white': !isScrolled,
                 }"
-                >Our Products</router-link
+                >{{ $t('navbar.products') }}</router-link
               >
               <ul
                 class="absolute left-0 mt-2 w-48 bg-white shadow-lg hidden group-hover:block"
@@ -103,7 +103,7 @@
                   'text-black': isScrolled,
                   'text-white': !isScrolled,
                 }"
-                >Our Companies</a
+                >{{ $t('navbar.companies') }}</a
               >
             </li>
             <li>
@@ -116,7 +116,7 @@
                   'text-black': isScrolled,
                   'text-white': !isScrolled,
                 }"
-                >Contact Us</a
+                >{{ $t('navbar.contact') }}</a
               >
             </li>
             <li>
@@ -129,7 +129,7 @@
                   'text-black': isScrolled,
                   'text-white': !isScrolled,
                 }"
-                >Activities</a
+                >{{ $t('navbar.activities') }}</a
               >
             </li>
           </ul>
@@ -163,6 +163,8 @@ export default {
     const { locale } = useI18n();
     const currentLanguage = ref(locale.value);
 
+    const { t } = useI18n();
+
     const handleScroll = () => {
       isScrolled.value = window.scrollY > 50;
     };
@@ -184,6 +186,7 @@ export default {
       isScrolled,
       currentLanguage,
       setLanguage,
+      t,
     };
   },
 };

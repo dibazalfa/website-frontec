@@ -16,37 +16,12 @@
           <span class="text-[#154214]">About </span>
           <span class="text-[#286f9b]">Frontec</span>
         </p>
-
-        <h1>{{ $t('landingPage.title') }}</h1>
-        <p>{{ $t('landingPage.description') }}</p>
     
         <img src="../assets/img/machining-1.png" alt="" class="mx-auto mt-16" />
         <div class="flex flex-col md:flex-row mx-auto mt-16 text-justify mb-14">
-          <p class="md:w-1/2 p-4 lg:ml-40 lg:mr-5">
-            <span class="text-[32px] font-semibold">Founded in 2008,</span>
-            Frontec Group began its business with Frontec Agritama Engineering
-            <b>(FAE)</b>, manufacturing material handling products such as
-            bucket elevators, chain conveyors, screw conveyors, and grader
-            cleaners. Frontec has continued to develop its engineering
-            technology and expand its product range. The company also produces
-            corn dryers with various burner options, depending on the most
-            efficient resources near the plant. Additionally, Frontec
-            manufactures several feed mill machines, including hammer mills,
-            mixers, and dust collectors.
-          </p>
+          <p class="md:w-1/2 p-4 lg:ml-40 lg:mr-5" v-html="t('landingPage.about1')"></p>
           <div class="border-l-2 border-black hidden md:block"></div>
-          <p class="md:w-1/2 p-4 lg:mr-40 lg:ml-5">
-            To meet the needs of the feed and grain industry, Frontec Group
-            established a new company, Frontec Global Niagatama <b>(FGN)</b>,
-            which provides material handling spare parts. Frontec has been
-            appointed by
-            <b>Zhenjiang Sanwei Conveying Equipment Co., Ltd.</b> as the
-            exclusive distributor of its conveying spare parts in Indonesia. The
-            company also supplies complete storage solutions, having been
-            appointed by world-class silo manufacturer Altuntas Group from
-            Turkey as the exclusive distributor of grain silos for the
-            Indonesian market.
-          </p>
+          <p class="md:w-1/2 p-4 lg:mr-40 lg:ml-5" v-html="t('landingPage.about2')"></p>
         </div>
       </section>
       <section
