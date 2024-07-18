@@ -1,11 +1,9 @@
 <template>
   <div>
     <AppHeader
-      class="relative min-h-screen bg-cover bg-center bg-[url(../assets/img/landing-page.jpg)]"
+      class="relative min-h-screen bg-cover bg-center" 
+      :style="{ backgroundImage: `url(${background})` }"
       :isScrolled="isScrolled"
-      :currentLanguage="currentLanguage"
-      :links="navLinks"
-      @update:currentLanguage="setLanguage"
     />
     <!-- Content Sections -->
     <main>
@@ -17,7 +15,7 @@
           <span class="text-[#286f9b]">Frontec</span>
         </p>
     
-        <img src="../assets/img/machining-1.png" alt="" class="mx-auto mt-16" />
+        <img :src="machining1" alt="" class="mx-auto mt-16" />
         <div class="flex flex-col md:flex-row mx-auto mt-16 text-justify mb-14">
           <p class="md:w-1/2 p-4 lg:ml-40 lg:mr-5" v-html="t('landingPage.about1')"></p>
           <div class="border-l-2 border-black hidden md:block"></div>
@@ -36,7 +34,7 @@
         </p>
         <div class="text-white my-auto mx-auto flex flex-col space-y-8">
           <div class="flex flex-row">
-            <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="" />
+            <img class="my-auto mr-5" :src="vectorYes" alt="" />
             <div>
               <p class="font-bold text-2xl">
                 {{ t('landingPage.point1') }}
@@ -45,7 +43,7 @@
             </div>
           </div>
           <div class="flex flex-row">
-            <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="" />
+            <img class="my-auto mr-5" :src="vectorYes" alt="" />
             <div>
               <p class="font-bold text-2xl">{{ t('landingPage.point2') }}</p>
               <p class="text-md">
@@ -54,20 +52,20 @@
             </div>
           </div>
           <div class="flex flex-row">
-            <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="" />
+            <img class="my-auto mr-5" :src="vectorYes" alt="" />
             <div>
               <p class="font-bold text-2xl">{{ t('landingPage.point3') }}</p>
               <p class="text-md">{{ t('landingPage.sub-point3') }}</p>
             </div>
           </div>
         </div>
-        <img class="m-auto" src="../assets/img/why-frontec.png" alt="" />
+        <img class="m-auto" :src="whyFrontec" alt="" />
       </section>
       <section
         id="our-business"
         class="flex flex-col md:flex-row min-h-[75vh] py-4 mx-28 text-justify"
       >
-        <img class="my-auto ml-20" src="../assets/img/business.png" alt="" />
+        <img class="my-auto ml-20" :src="business" alt="" />
         <div class="my-auto ml-16 mr-20">
           <p>
             {{ t('landingPage.desc1') }}
@@ -133,44 +131,44 @@
         <div class="grid grid-cols-3 gap-8 justify-center py-16 px-4">
           <div class="col-span-5 flex justify-center space-x-8">
             <img
-              src="../assets/img/client-1.png"
+              :src="client1"
               alt="Client Logo 1"
               class="h-32"
             />
             <img
-              src="../assets/img/client-2.png"
+              :src="client2"
               alt="Client Logo 2"
               class="h-24"
             />
             <img
-              src="../assets/img/client-3.png"
+              :src="client3"
               alt="Client Logo 3"
               class="h-24"
             />
             <img
-              src="../assets/img/client-7.png"
+              :src="client7"
               alt="Client Logo 7"
               class="h-24"
             />
             <img
-              src="../assets/img/client-8.png"
+              :src="client8"
               alt="Client Logo 8"
               class="h-24"
             />
           </div>
           <div class="col-span-5 flex justify-center">
             <img
-              src="../assets/img/client-4.png"
+              :src="client4"
               alt="Client Logo 4"
               class="h-24 p-5"
             />
             <img
-              src="../assets/img/client-5.png"
+              :src="client5"
               alt="Client Logo 5"
               class="h-24 p-5"
             />
             <img
-              src="../assets/img/client-6.png"
+              :src="client6"
               alt="Client Logo 6"
               class="h-24 p-5"
             />
@@ -187,6 +185,21 @@ import AppHeader from "../components/AppHeader.vue";
 import Footer from "../components/Footer.vue";
 import { useI18n } from "vue-i18n";
 
+import background from "@/assets/img/landing-page/landing-page.jpg";
+import machining1 from "@/assets/img/landing-page/machining-1.png";
+import machining2 from "@/assets/img/landing-page/machining-2.png";
+import whyFrontec from "@/assets/img/landing-page/why-frontec.png";
+import business from "@/assets/img/landing-page/business.png";
+import vectorYes from "@/assets/img/landing-page/vector-yes.png";
+import client1 from "@/assets/img/landing-page/client-1.png";
+import client2 from "@/assets/img/landing-page/client-2.png";
+import client3 from "@/assets/img/landing-page/client-3.png";
+import client4 from "@/assets/img/landing-page/client-4.png";
+import client5 from "@/assets/img/landing-page/client-5.png";
+import client6 from "@/assets/img/landing-page/client-6.png";
+import client7 from "@/assets/img/landing-page/client-7.png";
+import client8 from "@/assets/img/landing-page/client-8.png";
+
 export default {
   components: {
     AppHeader,
@@ -200,6 +213,24 @@ export default {
       t,
     };
   },
+  data() {
+    return {
+      background,
+      machining1,
+      machining2,
+      whyFrontec,
+      business,
+      vectorYes,
+      client1,
+      client2,
+      client3,
+      client4,
+      client5,
+      client6,
+      client7,
+      client8,
+    };
+  }
 };
 </script>
 

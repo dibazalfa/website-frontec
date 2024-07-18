@@ -1,11 +1,9 @@
 <template>
   <div>
     <AppHeader
-      class="relative min-h-[346px] bg-cover bg-center bg-[url(../assets/img/our-products.png)]"
+      class="relative min-h-[346px] bg-cover bg-center"
+      :style="{ backgroundImage: `url(${background})` }"
       :isScrolled="isScrolled"
-      :currentLanguage="currentLanguage"
-      :links="navLinks"
-      @update:currentLanguage="setLanguage"
     />
 
     <!-- Content Sections -->
@@ -25,7 +23,7 @@
         <div class="my-auto mx-48 pb-4">
           <img
             @click="toggleActive('materialHandling')"
-            src="../assets/img/material-handling.png"
+            :src="materialHandling"
             alt=""
           />
           <div
@@ -34,35 +32,35 @@
           >
             <div class="flex flex-col">
               <img
-                src="../assets/img/material-handling/Corn Dryer.png"
+                :src="cornDryer"
                 alt=""
               />
               <p class="mx-auto">Corn Dryer</p>
             </div>
             <div class="flex flex-col">
               <img
-                src="../assets/img/material-handling/Bucket Elevator.png"
+                :src="bucketElevator"
                 alt=""
               />
               <p class="mx-auto">Bucket Elevator</p>
             </div>
             <div class="flex flex-col">
               <img
-                src="../assets/img/material-handling/Grader Cleaner.png"
+                :src="graderCleaner"
                 alt=""
               />
               <p class="mx-auto">Grader Cleaner</p>
             </div>
             <div class="flex flex-col">
               <img
-                src="../assets/img/material-handling/Screw Conveyor.png"
+                :src="screwConveyor"
                 alt=""
               />
               <p class="mx-auto">Screw Conveyor</p>
             </div>
             <div class="flex flex-col">
               <img
-                src="../assets/img/material-handling/Chain Conveyor.png"
+                :src="chainConveyor"
                 alt=""
               />
               <p class="mx-auto">Chain Conveyor</p>
@@ -72,7 +70,7 @@
         <div class="my-auto mx-48 pb-4">
           <img
             @click="toggleActive('feedMill')"
-            src="../assets/img/feedmill.png"
+            :src="feedMill"
             alt=""
           />
           <div
@@ -80,19 +78,19 @@
             class="p-12 border-2 border-slate-300 rounded-lg flex"
           >
             <div class="flex flex-col">
-              <img src="../assets/img/feedmill/Mixer.png" alt="" />
+              <img :src="mixer" alt="" />
               <p class="mx-auto">Mixer</p>
             </div>
             <div class="flex flex-col">
-              <img src="../assets/img/feedmill/Dust Collector.png" alt="" />
+              <img :src="dustCollector" alt="" />
               <p class="mx-auto">Dust Collector</p>
             </div>
             <div class="flex flex-col">
-              <img src="../assets/img/feedmill/Hammermill.png" alt="" />
+              <img :src="hammermill" alt="" />
               <p class="mx-auto">Hammermill</p>
             </div>
             <div class="flex flex-col">
-              <img src="../assets/img/feedmill/Cooler.png" alt="" />
+              <img :src="cooler" alt="" />
               <p class="mx-auto">Cooler</p>
             </div>
           </div>
@@ -100,7 +98,7 @@
         <div class="my-auto mx-48 pb-4">
           <img
             @click="toggleActive('grainStorage')"
-            src="../assets/img/grain-storage.png"
+            :src="grainStorage"
             alt=""
           />
           <div
@@ -108,12 +106,12 @@
             class="p-12 border-2 border-slate-300 rounded-lg flex"
           >
             <div class="flex flex-col ml-64 mr-5">
-              <img src="../assets/img/grain-storage/Hopper Silo.png" alt="" />
+              <img :src="hopperSilo" alt="" />
               <p class="mx-auto mt-2">Hopper Silo</p>
             </div>
             <div class="flex flex-col mr-64 ml-5">
               <img
-                src="../assets/img/grain-storage/Flat Bottom Silo.png"
+                :src="flatBottomSilo"
                 alt=""
               />
               <p class="mx-auto mt-2">Flat Bottom Silo</p>
@@ -123,7 +121,7 @@
         <div class="my-auto mx-48 pb-4">
           <img
             @click="toggleActive('spareParts')"
-            src="../assets/img/spare-parts.png"
+            :src="spareParts"
             alt=""
           />
           <div
@@ -133,7 +131,7 @@
             <div class="flex flex-col items-center">
               <img
                 class="w-32 h-32 object-contain"
-                src="../assets/img/spare-parts/Bucket Elevator Components.png"
+                :src="bucketElevatorComponents"
                 alt=""
               />
               <p class="text-center">Bucket Elevator Components</p>
@@ -141,7 +139,7 @@
             <div class="flex flex-col items-center">
               <img
                 class="w-32 h-32 object-contain"
-                src="../assets/img/spare-parts/Belt Conveyor Components.png"
+                :src="beltConveyorComponents"
                 alt=""
               />
               <p class="text-center">Belt Conveyor Components</p>
@@ -149,7 +147,7 @@
             <div class="flex flex-col items-center">
               <img
                 class="w-32 h-32 object-contain"
-                src="../assets/img/spare-parts/Drag Conveyor Components.png"
+                :src="dragConveyorComponents"
                 alt=""
               />
               <p class="text-center">Drag Conveyor Components</p>
@@ -157,7 +155,7 @@
             <div class="flex flex-col items-center">
               <img
                 class="w-32 h-32 object-contain"
-                src="../assets/img/spare-parts/See All.png"
+                :src="seeAll"
                 alt=""
               />
               <p class="text-center">See All</p>
@@ -174,6 +172,31 @@
 import AppHeader from "../components/AppHeader.vue";
 import Footer from "../components/Footer.vue";
 
+import background from "@/assets/img/our-products/our-products.png";
+import materialHandling from "@/assets/img/our-products/material-handling.png";
+import feedMill from "@/assets/img/our-products/feedmill.png";
+import grainStorage from "@/assets/img/our-products/grain-storage.png";
+import spareParts from "@/assets/img/our-products/spare-parts.png";
+
+import bucketElevator from "@/assets/img/material-handling/Bucket Elevator.png";
+import chainConveyor from "@/assets/img/material-handling/Chain Conveyor.png";
+import cornDryer from "@/assets/img/material-handling/Corn Dryer.png";
+import graderCleaner from "@/assets/img/material-handling/Grader Cleaner.png";
+import screwConveyor from "@/assets/img/material-handling/Screw Conveyor.png";
+
+import cooler from "@/assets/img/feedmill/Cooler.png";
+import dustCollector from "@/assets/img/feedmill/Dust Collector.png";
+import hammermill from "@/assets/img/feedmill/Hammermill.png";
+import mixer from "@/assets/img/feedmill/Mixer.png";
+
+import flatBottomSilo from "@/assets/img/grain-storage/Flat Bottom Silo.png";
+import hopperSilo from "@/assets/img/grain-storage/Hopper Silo.png";
+
+import beltConveyorComponents from "@/assets/img/spare-parts/Belt Conveyor Components.png";
+import bucketElevatorComponents from "@/assets/img/spare-parts/Bucket Elevator Components.png";
+import dragConveyorComponents from "@/assets/img/spare-parts/Drag Conveyor Components.png";
+import seeAll from "@/assets/img/spare-parts/See All.png";
+
 export default {
   components: {
     AppHeader,
@@ -187,6 +210,26 @@ export default {
         grainStorage: false,
         spareParts: false,
       },
+      background,
+      materialHandling,
+      feedMill,
+      grainStorage,
+      spareParts,
+      bucketElevator,
+      chainConveyor,
+      cornDryer,
+      graderCleaner,
+      screwConveyor,
+      cooler,
+      dustCollector,
+      hammermill,
+      mixer,
+      flatBottomSilo,
+      hopperSilo,
+      beltConveyorComponents,
+      bucketElevatorComponents,
+      dragConveyorComponents,
+      seeAll,
     };
   },
   methods: {
