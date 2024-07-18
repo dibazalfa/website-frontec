@@ -1,7 +1,24 @@
 {
   "landingPage": {
-  "about1": "<span class='text-[32px] font-semibold'>Didirikan pada tahun 2008,</span> Frontec Group memulai bisnisnya dengan Frontec Agritama Engineering <b>(FAE)</b>, memproduksi produk penanganan material seperti elevator ember, konveyor rantai, konveyor sekrup, dan pembersih grader. Frontec terus mengembangkan teknologi rekayasa dan memperluas jangkauan produknya. Perusahaan juga memproduksi pengering jagung dengan berbagai opsi pembakar, tergantung pada sumber daya yang paling efisien di dekat pabrik. Selain itu, Frontec memproduksi beberapa mesin pabrik pakan, termasuk hammer mill, mixer, dan kolektor debu.",
-  "about2": "Untuk memenuhi kebutuhan industri pakan dan biji-bijian, Frontec Group mendirikan perusahaan baru, Frontec Global Niagatama <b>(FGN)</b>, yang menyediakan suku cadang penanganan material. Frontec telah ditunjuk oleh <b>Zhenjiang Sanwei Conveying Equipment Co., Ltd.</b> sebagai distributor eksklusif suku cadang pengangkutannya di Indonesia. Perusahaan juga memasok solusi penyimpanan lengkap, yang telah ditunjuk oleh produsen silo kelas dunia Altuntas Group dari Turki sebagai distributor eksklusif biji-bijian. silo untuk pasar Indonesia."
+    "about": "Tentang ",
+    "about1": "<span class=\"text-[32px] font-semibold\">Didirikan pada tahun 2008,</span> Frontec Group memulai bisnisnya dengan Frontec Agritama Engineering <b>(FAE)</b>, memproduksi produk penanganan material seperti elevator ember, konveyor rantai, konveyor sekrup, dan pembersih grader. Frontec terus mengembangkan teknologi rekayasa dan memperluas jangkauan produknya. Perusahaan juga memproduksi pengering jagung dengan berbagai opsi pembakar, tergantung pada sumber daya yang paling efisien di dekat pabrik. Selain itu, Frontec memproduksi beberapa mesin pabrik pakan, termasuk hammer mill, mixer, dan kolektor debu.",
+    "about2": "Untuk memenuhi kebutuhan industri pakan dan biji-bijian, Frontec Group mendirikan perusahaan baru, Frontec Global Niagatama <b>(FGN)</b>, yang menyediakan suku cadang penanganan material. Frontec telah ditunjuk oleh <b>Zhenjiang Sanwei Conveying Equipment Co., Ltd.</b> sebagai distributor eksklusif suku cadang pengangkutannya di Indonesia. Perusahaan juga memasok solusi penyimpanan lengkap, yang telah ditunjuk oleh produsen silo kelas dunia Altuntas Group dari Turki sebagai distributor eksklusif biji-bijian. silo untuk pasar Indonesia.",
+    "why": "Mengapa ",
+    "point1": "Memberikan solusi yang berkualitas",
+    "sub-point1": "kami melampaui harapan pelanggan kami.",
+    "point2": "Produk dan layanan yang beragam",
+    "sub-point2": "dari konsultasi hingga pembuatan peralatan dan instalasi proyek.",
+    "point3": "Sumber daya manusia yang profesional",
+    "sub-point3": "menetapkan tolok ukur baru dalam kinerja.",
+    "desc1" : "Kami memproduksi semua jenis mesin, serta pabrik pabrik pakan terintegrasi untuk mencampur semua jenis pakan terutama untuk:",
+    "desc2" : "Sebagai produsen terkemuka dalam penanganan biji-bijian, perusahaan kami unggul dalam bidangnya, terutama dalam teknologi pabrik pakan. <b>Kami menawarkan layanan komprehensif</b> yang mencakup berbagai macam kebutuhan:",
+    "desc3" : "Keahlian kami memastikan bahwa setiap proyek dijalankan dengan presisi, mulai dari perencanaan awal hingga implementasi akhir.",
+    "vision-title":"VISI",
+    "vision":"Visi kami adalah unggul dalam solusi teknik, menawarkan inovasi, keandalan, dan keberlanjutan untuk memastikan kesuksesan pelanggan dan mitra kami.",
+    "mission-title":"MISI",
+    "mission":"Misi kami adalah memimpin industri teknik dengan memberikan layanan yang unggul, ide-ide inovatif, dan komitmen yang teguh kepada pelanggan dan mitra bisnis kami.",
+    "our-clients":"<span class=\"text-[#154214]\">Klien </span><span class=\"text-[#286f9b]\">Kami</span>",
+    "a":""
   },
   "navbar": {
     "about": "Tentang",

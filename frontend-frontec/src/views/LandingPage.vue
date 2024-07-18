@@ -13,7 +13,7 @@
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
         >
-          <span class="text-[#154214]">About </span>
+          <span class="text-[#154214]">{{ t('landingPage.about') }} </span>
           <span class="text-[#286f9b]">Frontec</span>
         </p>
     
@@ -31,7 +31,7 @@
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap my-auto mx-16"
         >
-          <span class="text-white">Why </span>
+          <span class="text-white">{{ t('landingPage.why') }}</span>
           <span class="text-[#F7F6BB]">Frontec?</span>
         </p>
         <div class="text-white my-auto mx-auto flex flex-col space-y-8">
@@ -39,26 +39,25 @@
             <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="" />
             <div>
               <p class="font-bold text-2xl">
-                Providing quality engineering solutions
+                {{ t('landingPage.point1') }}
               </p>
-              <p class="text-md">we go beyond our customers' expectations</p>
+              <p class="text-md">{{ t('landingPage.sub-point1') }}</p>
             </div>
           </div>
           <div class="flex flex-row">
             <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="" />
             <div>
-              <p class="font-bold text-2xl">Diverse products and services</p>
+              <p class="font-bold text-2xl">{{ t('landingPage.point2') }}</p>
               <p class="text-md">
-                from consultancy to equipment manufacturing and project
-                installation.
+                {{ t('landingPage.sub-point2') }}
               </p>
             </div>
           </div>
           <div class="flex flex-row">
             <img class="my-auto mr-5" src="../assets/vector-yes.png" alt="" />
             <div>
-              <p class="font-bold text-2xl">Professional human capitals</p>
-              <p class="text-md">setting new benchmarks in performance.</p>
+              <p class="font-bold text-2xl">{{ t('landingPage.point3') }}</p>
+              <p class="text-md">{{ t('landingPage.sub-point3') }}</p>
             </div>
           </div>
         </div>
@@ -71,8 +70,7 @@
         <img class="my-auto ml-20" src="../assets/img/business.png" alt="" />
         <div class="my-auto ml-16 mr-20">
           <p>
-            We produce all kinds of machineries, as well as integrated feed mill
-            plants to mix all kinds of feed especially for:
+            {{ t('landingPage.desc1') }}
           </p>
           <ul class="list-disc list-inside font-bold">
             <li>Poultry</li>
@@ -80,12 +78,7 @@
             <li>Dairy Products</li>
           </ul>
           <br />
-          <p>
-            As a leading manufacturer in grain handling, our company excels in
-            its field, particularly in feed mill technology.
-            <span class="font-bold">We offer comprehensive services</span> that
-            cover a wide range of needs:
-          </p>
+          <p v-html="t('landingPage.desc2')"></p>
           <ul class="list-disc list-inside font-bold">
             <li>Feasibility Studies</li>
             <li>Design</li>
@@ -95,8 +88,7 @@
             <li>Commissioning</li>
           </ul>
           <p>
-            Our expertise ensures that every project is executed with precision,
-            from initial planning to final implementation.
+            {{ t('landingPage.desc3') }}
           </p>
         </div>
       </section>
@@ -114,24 +106,20 @@
             <span
               class="text-shadow-md font-extrabold text-[40px] tracking-normal leading-normal whitespace-nowrap mx-auto text-[#313C44]"
             >
-              VISION
+              {{ t('landingPage.vision-title') }}
             </span>
             <p class="mt-4">
-              Our vision is to excel in engineering solutions, offering
-              innovation, reliability, and sustainability to ensure the success
-              of our customers and partners.
+              {{ t('landingPage.vision') }}
             </p>
           </div>
           <div class="p-14 md:p-32 bg-[#313C44]">
             <span
               class="text-shadow-md font-extrabold text-4xl tracking-normal leading-normal whitespace-nowrap mx-auto mt-16 text-[#F7F6BB]"
             >
-              MISSION
+            {{ t('landingPage.mission-title') }}
             </span>
             <p class="text-white mt-4">
-              Our mission is to lead the engineering industry by delivering
-              superior service, innovative ideas, and steadfast commitment to
-              our customers and business partners.
+              {{ t('landingPage.mission') }}
             </p>
           </div>
         </div>
@@ -139,10 +127,8 @@
 
       <section id="our-clients" class="flex flex-col min-h-[70vh] items-center">
         <p
-          class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mb-8"
+          v-html="t('landingPage.our-clients')" class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mb-8"
         >
-          <span class="text-[#154214]">Our </span>
-          <span class="text-[#286f9b]">Clients</span>
         </p>
         <div class="grid grid-cols-3 gap-8 justify-center py-16 px-4">
           <div class="col-span-5 flex justify-center space-x-8">

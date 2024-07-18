@@ -1,7 +1,24 @@
 {
   "landingPage": {
-    "about1": "<span class='text-[32px] font-semibold'>Founded in 2008,</span> Frontec Group began its business with Frontec Agritama Engineering <b>(FAE)</b>, manufacturing material handling products such as bucket elevators, chain conveyors, screw conveyors, and grader cleaners. Frontec has continued to develop its engineering technology and expand its product range. The company also produces corn dryers with various burner options, depending on the most efficient resources near the plant. Additionally, Frontec manufactures several feed mill machines, including hammer mills, mixers, and dust collectors.",
-    "about2": "To meet the needs of the feed and grain industry, Frontec Group established a new company, Frontec Global Niagatama <b>(FGN)</b>, which provides material handling spare parts. Frontec has been appointed by <b>Zhenjiang Sanwei Conveying Equipment Co., Ltd.</b> as the exclusive distributor of its conveying spare parts in Indonesia. The company also supplies complete storage solutions, having been appointed by world-class silo manufacturer Altuntas Group from Turkey as the exclusive distributor of grain silos for the Indonesian market."
+    "about": "About ",
+    "about1": "<span class=\"text-[32px] font-semibold\">Founded in 2008,</span> Frontec Group began its business with Frontec Agritama Engineering <b>(FAE)</b>, manufacturing material handling products such as bucket elevators, chain conveyors, screw conveyors, and grader cleaners. Frontec has continued to develop its engineering technology and expand its product range. The company also produces corn dryers with various burner options, depending on the most efficient resources near the plant. Additionally, Frontec manufactures several feed mill machines, including hammer mills, mixers, and dust collectors.",
+    "about2": "To meet the needs of the feed and grain industry, Frontec Group established a new company, Frontec Global Niagatama <b>(FGN)</b>, which provides material handling spare parts. Frontec has been appointed by <b>Zhenjiang Sanwei Conveying Equipment Co., Ltd.</b> as the exclusive distributor of its conveying spare parts in Indonesia. The company also supplies complete storage solutions, having been appointed by world-class silo manufacturer Altuntas Group from Turkey as the exclusive distributor of grain silos for the Indonesian market.",
+    "why": "Why ",
+    "point1": "Providing quality engineering solutions",
+    "sub-point1": "we go beyond our customers' expectations",
+    "point2": "Diverse products and services",
+    "sub-point2": "from consultancy to equipment manufacturing and project installation.",
+    "point3": "Professional human capitals",
+    "sub-point3": "setting new benchmarks in performance.",
+    "desc1" : "We produce all kinds of machineries, as well as integrated feed mill plants to mix all kinds of feed especially for:",
+    "desc2" : "As a leading manufacturer in grain handling, our company excels in its field, particularly in feed mill technology. <b> We offer comprehensive services</b> that cover a wide range of needs:",
+    "desc3" : "Our expertise ensures that every project is executed with precision, from initial planning to final implementation.",
+    "vision-title":"VISION",
+    "vision":"Our vision is to excel in engineering solutions, offering innovation, reliability, and sustainability to ensure the success of our customers and partners.",
+    "mission-title":"MISSION",
+    "mission":"Our mission is to lead the engineering industry by delivering superior service, innovative ideas, and steadfast commitment to our customers and business partners.",
+    "our-clients":"<span class=\"text-[#154214]\">Our </span><span class=\"text-[#286f9b]\">Clients</span>",
+    "a":""
   },
   "navbar": {
     "about": "About Us",
