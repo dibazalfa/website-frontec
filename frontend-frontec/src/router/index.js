@@ -14,7 +14,12 @@ const router = createRouter({
       path: '/our-products',
       name: 'our-products',
       component: () => import('../views/OurProducts.vue')
-    }
+    },
+    {
+      path: '/spare-parts',
+      name: 'spare-parts',
+      component: () => import('../views/SpareParts.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

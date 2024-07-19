@@ -31,48 +31,29 @@
             class="p-12 border-2 border-slate-300 rounded-lg flex"
           >
             <div class="flex flex-col">
-              <img
-                :src="cornDryer"
-                alt=""
-              />
+              <img :src="cornDryer" alt="" />
               <p class="mx-auto">Corn Dryer</p>
             </div>
             <div class="flex flex-col">
-              <img
-                :src="bucketElevator"
-                alt=""
-              />
+              <img :src="bucketElevator" alt="" />
               <p class="mx-auto">Bucket Elevator</p>
             </div>
             <div class="flex flex-col">
-              <img
-                :src="graderCleaner"
-                alt=""
-              />
+              <img :src="graderCleaner" alt="" />
               <p class="mx-auto">Grader Cleaner</p>
             </div>
             <div class="flex flex-col">
-              <img
-                :src="screwConveyor"
-                alt=""
-              />
+              <img :src="screwConveyor" alt="" />
               <p class="mx-auto">Screw Conveyor</p>
             </div>
             <div class="flex flex-col">
-              <img
-                :src="chainConveyor"
-                alt=""
-              />
+              <img :src="chainConveyor" alt="" />
               <p class="mx-auto">Chain Conveyor</p>
             </div>
           </div>
         </div>
         <div class="my-auto mx-48 pb-4">
-          <img
-            @click="toggleActive('feedMill')"
-            :src="feedMill"
-            alt=""
-          />
+          <img @click="toggleActive('feedMill')" :src="feedMill" alt="" />
           <div
             v-if="isActive.feedMill"
             class="p-12 border-2 border-slate-300 rounded-lg flex"
@@ -110,20 +91,13 @@
               <p class="mx-auto mt-2">Hopper Silo</p>
             </div>
             <div class="flex flex-col mr-64 ml-5">
-              <img
-                :src="flatBottomSilo"
-                alt=""
-              />
+              <img :src="flatBottomSilo" alt="" />
               <p class="mx-auto mt-2">Flat Bottom Silo</p>
             </div>
           </div>
         </div>
         <div class="my-auto mx-48 pb-4">
-          <img
-            @click="toggleActive('spareParts')"
-            :src="spareParts"
-            alt=""
-          />
+          <img @click="toggleActive('spareParts')" :src="spareParts" alt="" />
           <div
             v-if="isActive.spareParts"
             class="p-12 border-2 border-slate-300 rounded-lg grid grid-cols-4 gap-8"
@@ -153,12 +127,10 @@
               <p class="text-center">Drag Conveyor Components</p>
             </div>
             <div class="flex flex-col items-center">
-              <img
-                class="w-32 h-32 object-contain"
-                :src="seeAll"
-                alt=""
-              />
-              <p class="text-center">See All</p>
+              <router-link to="/spare-parts">
+                <img class="w-32 h-32 object-contain" :src="seeAll" alt="" />
+                <p class="text-center">See All</p>
+              </router-link>
             </div>
           </div>
         </div>
