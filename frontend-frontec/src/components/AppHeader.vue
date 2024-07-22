@@ -107,8 +107,9 @@
                 >
               </li>
               <li>
-                <a
+                <router-link
                   href="#contact-us"
+                  to="/contact-us"
                   :class="{
                     'hover:underline': true,
                     uppercase: true,
@@ -116,7 +117,7 @@
                     'text-black': isScrolled,
                     'text-white': !isScrolled,
                   }"
-                  >{{ $t('navbar.contact') }}</a
+                  >{{ $t('navbar.contact') }}</router-link
                 >
               </li>
               <li>

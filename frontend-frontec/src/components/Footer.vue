@@ -20,8 +20,8 @@
       </div>
       <p>&copy; 2021 Frontec Group. All rights reserved.</p>
       <div>
-        <a href="contact-us.html" class="text-white font-bold mr-20"
-          >Contact Us</a
+        <router-link to="/contact-us" class="text-white font-bold mr-20"
+          >Contact Us</router-link
         >
       </div>
     </div>
