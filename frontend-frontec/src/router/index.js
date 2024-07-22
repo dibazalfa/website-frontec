@@ -20,6 +20,11 @@ const router = createRouter({
       name: 'spare-parts',
       component: () => import('../views/SpareParts.vue')
     },
+    {
+      path: '/activities',
+      name: 'activities',
+      component: () => import('../views/Activities.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

@@ -120,8 +120,8 @@
                 >
               </li>
               <li>
-                <a
-                  href="#activites"
+                <router-link
+                  to="/activities"
                   :class="{
                     'hover:underline': true,
                     uppercase: true,
@@ -129,7 +129,7 @@
                     'text-black': isScrolled,
                     'text-white': !isScrolled,
                   }"
-                  >{{ $t('navbar.activities') }}</a
+                  >{{ $t('navbar.activities') }}</router-link
                 >
               </li>
             </ul>
