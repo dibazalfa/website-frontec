@@ -14,16 +14,13 @@
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
         >
-          <span class="text-[#154214]">Activities</span>
+          <span class="text-[#154214]">{{ t('activities.activities') }}</span>
         </p>
         <div class="relative w-full flex justify-center mt-8">
           <p
             class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[32px] w-2/3 p-4 z-10 mt-48"
+            v-html="t('activities.motto')"
           >
-            We believe when it comes to sustainability, there is nothing more
-            <br />
-            important than trust. That's why we commit to grow together <br />
-            along with our customers to reach our goal consistently.
           </p>
           <p
             class="absolute top-1/2 left-0 transform -translate-y-1/2 text-[300px] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-24"

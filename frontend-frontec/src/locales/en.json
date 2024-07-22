@@ -26,5 +26,10 @@
     "companies": "Our Companies",
     "contact": "Contact Us",
     "activities": "Activities"
+  },
+  "activities": {
+    "activities": "Activities",
+    "motto": "We believe when it comes to sustainability, there is nothing more <br> important than trust. That's why we commit to grow together <br> along with our customers to reach our goal consistently.",
+    "":""
   }
 }
