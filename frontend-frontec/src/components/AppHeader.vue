@@ -94,8 +94,8 @@
                 </ul>
               </li>
               <li>
-                <a
-                  href="#our-companies"
+                <router-link
+                  to="/our-companies"
                   :class="{
                     'hover:underline': true,
                     uppercase: true,
@@ -103,7 +103,7 @@
                     'text-black': isScrolled,
                     'text-white': !isScrolled,
                   }"
-                  >{{ $t('navbar.companies') }}</a
+                  >{{ $t('navbar.companies') }}</router-link
                 >
               </li>
               <li>
