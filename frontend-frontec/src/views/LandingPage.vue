@@ -1,13 +1,13 @@
 <template>
   <div>
-    <AppHeader
+    <AppHeader 
       class="relative min-h-screen bg-cover bg-center" 
       :style="{ backgroundImage: `url(${background})` }"
       :isScrolled="isScrolled"
     />
     <!-- Content Sections -->
     <main>
-      <section id="about-us" class="bg-white flex flex-col min-h-screen p-4">
+      <section id="about-us" class="bg-white flex flex-col min-h-screen p-4" >
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
         >
