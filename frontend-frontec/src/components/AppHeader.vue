@@ -1,6 +1,6 @@
   <template>
     <header>
-      <div
+      <div 
         :class="[
           {
             'fixed w-full bg-white shadow-lg': isScrolled,
@@ -8,6 +8,7 @@
           },
           'transition-all duration-300 ease-in-out z-50 top-0 left-0 right-0',
         ]"
+        
       >
         <div
           class="container mx-auto px-4 py-3 flex justify-between items-center"

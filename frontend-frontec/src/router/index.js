@@ -35,6 +35,11 @@ const router = createRouter({
       name: 'our-companies',
       component: () => import('../views/OurCompanies.vue')
     },
+    {
+      path: '/parallax',
+      name: 'pempek',
+      component: () => import('../views/Parallax.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
