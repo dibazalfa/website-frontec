@@ -5,7 +5,7 @@
       :style="{ backgroundImage: `url(${background})` }"
       :isScrolled="isScrolled"
     />
-    <main>
+    <main class="overflow-x-hidden">
       <section class="bg-white flex flex-col p-4 md:p-8 lg:p-12">
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[30px] sm:text-[35px] md:text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto"
