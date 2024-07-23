@@ -42,9 +42,9 @@
             >
               <img :src="FAE" class="object-contain mb-8 w-full max-w-xs" />
               <p class="text-justify">
-                Started in 2008, Frontec initially focused on manufacturing material handling products. Since then, it has expanded significantly to include feed mill machinery, in line with the growth of the feed and grain industry in Indonesia.
+                  {{ t('companies.fae1') }}
                 <br /><br />
-                Frontec also produces continuous grain dryers, particularly corn dryers, with capacities ranging from 5 tph to 40 tph. The company continually develops its R&D department to meet and even exceed global standards. Additionally, Frontec offers engineering design, construction, and installation services. With this comprehensive range of products and services, Frontec is recognized as a leading manufacturer and construction company in the feed and grain industry in Indonesia.
+                  {{ t('companies.fae2') }}
               </p>
             </div>
             <div
@@ -67,7 +67,7 @@
             >
               <img :src="FGN" class="object-contain mb-8 w-full max-w-xs" />
               <p class="text-justify">
-                Frontec Global Niagatama, a sister company of Frontec Agritama Engineering founded in 2013 in order to fulfill the needs of material handling spare parts not only for Frontec group but for the whole industry in Indonesia. Frontec is officially appointed by Zhenjiang Sanwei Conveying Equipment Co., Ltd as an exclusive distributor for its products in Indonesia.
+                {{ t('companies.fgn') }}
               </p>
             </div>
             <div

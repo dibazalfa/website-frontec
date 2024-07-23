@@ -117,7 +117,7 @@ import AppHeader from "../components/AppHeader.vue";
 import Footer from "../components/Footer.vue";
 import { useI18n } from "vue-i18n";
 
-import background from "@/assets/img/landing-page/landing-page.jpg";
+import background from "@/assets/img/landing-page/landing-page.png";
 import machining1 from "@/assets/img/landing-page/machining-1.png";
 import machining2 from "@/assets/img/landing-page/machining-2.png";
 import whyFrontec from "@/assets/img/landing-page/why-frontec.png";
