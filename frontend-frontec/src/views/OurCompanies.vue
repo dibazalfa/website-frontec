@@ -14,10 +14,14 @@
           <span class="text-[#286f9b]">Companies</span>
         </p>
       </section>
-      <section v-motion :initial="{ opacity: 0, x: 0, y: 0 }" :enter="{ opacity: 1, x: 0, y: 20, transition: { duration: 800, ease: 'easeOut' } }" class="flex">
+      <section
+        v-motion
+        :initial="{ opacity: 0, x: 0, y: 10 }"
+        :enter="{ opacity: 1, x: 0, y: -10, transition: { duration: 1000, ease: 'easeOut' } }"
+        class="flex justify-center p-4"
+      >
         <iframe
-          class="mx-auto"
-          width="560"
+          class="w-full max-w-xl"
           height="315"
           src="https://www.youtube.com/embed/oB6cCU2O7P0"
           frameborder="0"
@@ -26,38 +30,55 @@
         >
         </iframe>
       </section>
-      <section class="flex justify-center mt-16">
+      <section class="flex justify-center mt-16 px-4">
         <div class="flex flex-col items-center w-full md:w-3/4 lg:w-2/3 relative">
-          <div class="absolute w-px bg-gray-300 top-0 bottom-0 h-full mx-24"></div>
-          <div class="flex flex-col md:flex-row items-start w-full">
-            <div v-motion :initial="{ opacity: 0, x: -400 }" :enter="{ opacity: 1, x: -200, transition: { duration: 1800, ease: 'easeIn' } }" class="w-full md:w-1/2 p-4 lg:ml-40 lg:mr-5">
-              <img :src="FAE" class="object-contain mb-8" />
+          <div class="hidden lg:block absolute w-px bg-gray-300 top-0 bottom-0 h-full mx-24"></div>
+          <div class="flex flex-col md:flex-row items-center w-full">
+            <div
+              v-motion
+              :initial="{ opacity: 0, x: -100 }"
+              :enter="{ opacity: 1, x: 0, transition: { duration: 1800, ease: 'easeIn' } }"
+              class="w-full md:w-1/2 p-4 flex flex-col items-center"
+            >
+              <img :src="FAE" class="object-contain mb-8 w-full max-w-xs" />
               <p class="text-justify">
-              Started its business in 2008, manufacturing material handling products and
-              significantly it has been growing to manufacture feed mill machineries in line with the development of feed and grain industry
-              in Indonesia. <br /><br />
-              Frontec also produces continuous grain dryer, especially corn dryer,
-              which capacity range from 5 tph to 40 tph. Frontec keeps on
-              developing its R&D department in order to meet and even surpass the
-              global standard. Not to mention that Frontec offers engineering
-              design, construction and installation services. With this wide range
-              product and services, therefore Frontec is considered as leading
-              manufacture and construction company in feed and grain industry in
-              Indonesia.
+                Started in 2008, Frontec initially focused on manufacturing material handling products. Since then, it has expanded significantly to include feed mill machinery, in line with the growth of the feed and grain industry in Indonesia.
+                <br /><br />
+                Frontec also produces continuous grain dryers, particularly corn dryers, with capacities ranging from 5 tph to 40 tph. The company continually develops its R&D department to meet and even exceed global standards. Additionally, Frontec offers engineering design, construction, and installation services. With this comprehensive range of products and services, Frontec is recognized as a leading manufacturer and construction company in the feed and grain industry in Indonesia.
               </p>
             </div>
+            <div
+              v-motion
+              :initial="{ opacity: 0, x: 100 }"
+              :enter="{ opacity: 1, x: 0, transition: { duration: 1800, ease: 'easeIn' } }"
+              class="hidden lg:block md:w-1/2 p-4 flex flex-col items-center lg:items-start lg:ml-12"
+            >
+              <div class="flex justify-center items-center w-72 h-72 border-4 border-[#1327C3] rounded-full">
+                <p class="text-[30px] font-serif font-bold text-[#1327C3] leading-none">Est. 2008</p>
+              </div>
+            </div>
           </div>
-          <div class="flex flex-col md:flex-row items-end w-full mt-14">
-            <div v-motion :initial="{ opacity: 0, x: 800 }" :enter="{ opacity: 1, x: 530, transition: { duration: 2400, ease: 'easeIn' } }" class="w-full md:w-1/2 p-4 lg:mr-40 lg:ml-5">
-              <img :src="FGN" class="object-contain mb-8" />
+          <div class="flex flex-col md:flex-row items-center w-full mt-14">
+            <div
+              v-motion
+              :initial="{ opacity: 0, x: -100 }"
+              :enter="{ opacity: 1, x: 0, transition: { duration: 2800, ease: 'easeIn' } }"
+              class="w-full md:w-1/2 p-4 flex flex-col items-center"
+            >
+              <img :src="FGN" class="object-contain mb-8 w-full max-w-xs" />
               <p class="text-justify">
-                Frontec Global Niagatama a sister company of Frontec Agritama
-                Engineering founded in 2013 in order to fulfill the needs of
-                material handling spare parts not only for Frontec group but for the
-                whole industry in Indonesia. Frontec is officially appointed by
-                Zhenjiang Sanwei Conveying Equipment Co., Ltd as an exclusive
-                distributor for its products in Indonesia.
+                Frontec Global Niagatama, a sister company of Frontec Agritama Engineering founded in 2013 in order to fulfill the needs of material handling spare parts not only for Frontec group but for the whole industry in Indonesia. Frontec is officially appointed by Zhenjiang Sanwei Conveying Equipment Co., Ltd as an exclusive distributor for its products in Indonesia.
               </p>
+            </div>
+            <div
+              v-motion
+              :initial="{ opacity: 0, x: 100 }"
+              :enter="{ opacity: 1, x: 0, transition: { duration: 2800, ease: 'easeIn' } }"
+              class="hidden lg:block md:w-1/2 p-4 flex flex-col items-center lg:items-start lg:ml-12"
+            >
+              <div class="flex justify-center items-center w-72 h-72 border-4 border-[#007D17] rounded-full">
+                <p class="text-[30px] font-serif font-bold text-[#007D17] leading-none">Est. 2013</p>
+              </div>
             </div>
           </div>
         </div>
@@ -82,22 +103,22 @@ export default {
     AppHeader,
     Footer,
   },
-    name: "OurCompanies",
-    setup() {
-      const { t } = useI18n();
-  
-      return {
-        t,
-      };
-    },
-    data() {
-      return {
-        background,
-        FAE,
-        FGN
-      };
-    },
-  };
+  name: "OurCompanies",
+  setup() {
+    const { t } = useI18n();
+
+    return {
+      t,
+    };
+  },
+  data() {
+    return {
+      background,
+      FAE,
+      FGN
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -115,5 +136,9 @@ export default {
 
 .absolute {
   position: absolute;
+}
+
+.shadow-lg {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 </style>
