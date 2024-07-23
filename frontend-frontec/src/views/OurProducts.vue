@@ -7,7 +7,7 @@
     />
 
     <!-- Content Sections -->
-    <main>
+    <main class="overflow-x-hidden">
       <section
         id="our-products"
         class="bg-white flex flex-col p-4 md:p-8 lg:p-12"

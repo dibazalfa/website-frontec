@@ -6,7 +6,7 @@
       :isScrolled="isScrolled"
     />
     <!-- Content Sections -->
-    <main>
+    <main class="overflow-x-hidden">
       <section class="flex flex-row mx-auto">
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
@@ -15,27 +15,27 @@
           <span class="text-[#286f9b]">Us</span>
         </p>
       </section>
-      <section class="flex mt-10">
-        <div class="flex flex-col w-1/3">
+      <section class="flex flex-col mt-10 md:flex-row">
+        <div class="flex flex-col w-1/3 mx-auto">
           <img :src="FAE" alt="FAE" class="p-2 w-48 self-end mr-12" />
           <img :src="FGN" alt="FGN" class="p-2 w-48 self-end mr-12" />
         </div>
-        <div class="flex flex-col w-1/3">
+        <div class="flex flex-col w-1/3 mx-auto">
           <p class="font-bold">Head Office</p>
           <p>
             Komp. Pergudangan Safe & Lock Block C-2376, Jl. Lingkar Timur,
             Sidoarjo, East Java - Indonesia
           </p>
           <div class="flex">
-            <img :src="phone" alt="" class="pr-2" />
+            <img :src="phone" alt="" class="pr-2 object-contain" />
             <p>Telp +6231 8066135 (Hunting)</p>
           </div>
           <div class="flex">
-            <img :src="email" alt="" class="pr-4" />
+            <img :src="email" alt="" class="pr-4 object-contain" />
             <p>marketing@frontec.co.id</p>
           </div>
         </div>
-        <div class="flex w-1/3">
+        <div class="flex w-1/3 mx-auto">
           <a
             href="https://www.facebook.com/pages/CV.%2520Frontec%2520Agritama%2520Engineering/1689781144429808/"
           >

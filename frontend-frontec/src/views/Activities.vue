@@ -6,7 +6,8 @@
       :isScrolled="isScrolled"
     />
     <!-- Content Sections -->
-    <main>
+    <main class="overflow-x-hidden">
+      <!-- About Us Section -->
       <section
         id="about-us"
         class="relative bg-white flex flex-col min-h-screen p-4"
@@ -18,7 +19,7 @@
         </p>
         <div class="relative w-full flex justify-center mt-8">
           <p
-            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[32px] w-2/3 p-4 z-10 mt-48"
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[24px] md:text-[32px] w-2/3 p-4 z-10 mt-48"
             v-html="t('activities.motto')"
           >
           </p>
@@ -34,59 +35,49 @@
           </p>
         </div>
       </section>
+
+      <!-- Images Section -->
       <section class="flex flex-col min-h-screen">
-        <div class="flex mx-auto">
-          <div class="mr-5">
-            <img :src="img1" alt="img1" class="object-contain" />
-          </div>
-          <div class="flex flex-col justify-end">
-            <img :src="img2" alt="img2" class="object-contain self-end" />
-          </div>
+        <div class="flex flex-col md:flex-row justify-center mx-auto space-y-4 md:space-y-0 md:space-x-4">
+          <img :src="img1" alt="img1" class="object-contain w-full md:w-1/2" />
+          <img :src="img2" alt="img2" class="object-contain w-full md:w-1/2 self-end" />
         </div>
-        <div class="relative flex flex-row justify-between">
-          <div class="ml-[94px] mt-[450px] relative z-10">
-            <img :src="img4" alt="img4" class="object-contain" />
-          </div>
-          <div class="absolute right-0 mr-[74px] z-10">
-            <img :src="img3" alt="img3" class="object-contain" />
-          </div>
-          <div class="ml-[94px] mt-[1115px] absolute z-10">
-            <img :src="img6" alt="img6" class="object-contain" />
-          </div>
-          <div class="absolute right-0 mr-[72px] z-20 mt-[800px]">
-            <img :src="img5" alt="img5" class="object-contain" />
-          </div>
+        <div class="relative flex flex-col md:flex-row justify-between mt-8 space-y-4 md:space-y-0 md:space-x-4">
+          <img :src="img4" alt="img4" class="object-contain w-full md:w-auto md:ml-24" />
+          <img :src="img3" alt="img3" class="object-contain w-full md:w-auto md:absolute md:right-24" />
+          <img :src="img6" alt="img6" class="object-contain w-full md:w-auto md:ml-24 md:mt-[450px]" />
+          <img :src="img5" alt="img5" class="object-contain w-full md:w-auto md:absolute md:right-24 md:mt-[350px]" />
         </div>
         <p
-            class="ml-4 absolute left-0 transform -translate-y-1/2 text-[300px] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[600px]"
-          >
-            TRUST
-          </p>
-          <p
-            class="absolute right-0 mr-10 transform -translate-y-1/2 text-[150px] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[800px]"
-          >
-            COMMITMENT
-          </p>
-          <p
-            class="ml-4 absolute left-0 transform -translate-y-1/2 text-[300px] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[980px]"
-          >
-            TRUST
-          </p>
-          <p
-            class="absolute right-0 mr-10 transform -translate-y-1/2 text-[150px] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[1200px]"
-          >
-            COMMITMENT
-          </p>
-          <p
-            class="ml-4 absolute left-0 transform -translate-y-1/2 text-[300px] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[1750px]"
-          >
-            TRUST
-          </p>
-          <p
-            class="absolute right-0 mr-10 transform -translate-y-1/2 text-[150px] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[1950px]"
-          >
-            COMMITMENT
-          </p>
+          class="absolute left-0 transform -translate-y-1/2 text-[100px] md:text-[300px] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[600px]"
+        >
+          TRUST
+        </p>
+        <p
+          class="absolute right-0 mr-10 transform -translate-y-1/2 text-[50px] md:text-[150px] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[800px]"
+        >
+          COMMITMENT
+        </p>
+        <p
+          class="absolute left-0 transform -translate-y-1/2 text-[100px] md:text-[300px] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[980px]"
+        >
+          TRUST
+        </p>
+        <p
+          class="absolute right-0 mr-10 transform -translate-y-1/2 text-[50px] md:text-[150px] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[1200px]"
+        >
+          COMMITMENT
+        </p>
+        <p
+          class="absolute left-0 transform -translate-y-1/2 text-[100px] md:text-[300px] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[1750px]"
+        >
+          TRUST
+        </p>
+        <p
+          class="absolute right-0 mr-10 transform -translate-y-1/2 text-[50px] md:text-[150px] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[1950px]"
+        >
+          COMMITMENT
+        </p>
       </section>
       <Footer class="mt-[600px]"></Footer>
     </main>
