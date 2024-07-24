@@ -1,24 +1,24 @@
-<!-- src/components/Footer.vue -->
 <template>
   <section id="footer" class="bg-[#313C44] text-white py-8 mt-16">
-    <div class="container mx-auto flex items-center justify-between">
+    <div
+      class="container mx-auto flex flex-col items-center justify-between md:flex-row"
+    >
       <div class="flex space-x-4 ml-20">
         <a
-          href="https://www.facebook.com"
-          target="_blank"
-          aria-label="Facebook"
+          href="https://www.facebook.com/pages/CV.%2520Frontec%2520Agritama%2520Engineering/1689781144429808/"
         >
-          <img
-            :src="facebook"
-            alt="Facebook"
-            class="h-8"
-          />
+          <img :src="facebook" alt="Facebook" class="h-8" />
         </a>
-        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-          <img :src="x" alt="Twitter" class="h-8" />
+        <a href="https://www.instagram.com/frontec.co/">
+          <img :src="instagram" alt="instagram" class="h-8" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/frontec-agritama-engineering/mycompany/verification/"
+        >
+          <img :src="linkedin" alt="linkedin" class="h-8" />
         </a>
       </div>
-      <p>&copy; 2021 Frontec Group. All rights reserved.</p>
+      <p>&copy; 2024 Frontec Group. All rights reserved.</p>
       <div>
         <router-link to="/contact-us" class="text-white font-bold mr-20"
           >Contact Us</router-link
@@ -29,8 +29,10 @@
 </template>
 
 <script>
-import facebook from "@/assets/img/footer/ic-baseline-facebook.svg";
-import x from "@/assets/img/footer/mage-x.svg";
+import facebook from "@/assets/img/footer/fb.png";
+import instagram from "@/assets/img/footer/instagram.png";
+import linkedin from "@/assets/img/footer/linkedin.png";
+import x from "@/assets/img/footer/x.png";
 
 export default {
   name: "Footer",
@@ -38,6 +40,8 @@ export default {
     return {
       facebook,
       x,
+      instagram,
+      linkedin,
     };
   },
 };
