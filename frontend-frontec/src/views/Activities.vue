@@ -1,19 +1,18 @@
 <template>
-  <div>
+  <div class="flex flex-col min-h-screen">
     <AppHeader
       class="relative min-h-[346px] bg-cover bg-center"
       :style="{ backgroundImage: `url(${background})` }"
       :isScrolled="isScrolled"
     />
     <!-- Content Sections -->
-    <main class="overflow-x-hidden">
-      <!-- About Us Section -->
+    <main class="flex-1 overflow-x-hidden">
       <section
         id="about-us"
         class="relative bg-white flex flex-col min-h-screen p-4"
       >
         <p
-          class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
+          class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] sm:text-[30px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
         >
           <span class="text-[#154214]">{{ t('activities.activities') }}</span>
         </p>
@@ -24,63 +23,73 @@
           >
           </p>
           <p
-            class="absolute top-1/2 left-0 transform -translate-y-1/2 text-[300px] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-24"
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 text-[30vw] sm:text-[15vw] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-24"
           >
             TRUST
           </p>
           <p
-            class="absolute top-1/2 right-0 transform -translate-y-1/2 text-[150px] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-72"
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 text-[15vw] sm:text-[10vw] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-72"
           >
             COMMITMENT
           </p>
         </div>
       </section>
-
-      <!-- Images Section -->
-      <section class="flex flex-col min-h-screen">
-        <div class="flex flex-col md:flex-row justify-center mx-auto space-y-4 md:space-y-0 md:space-x-4">
-          <img :src="img1" alt="img1" class="object-contain w-full md:w-1/2" />
-          <img :src="img2" alt="img2" class="object-contain w-full md:w-1/2 self-end" />
+      <section class="flex flex-col min-h-screen pb-20">
+        <div class="flex flex-wrap justify-center mx-auto">
+          <div class="mr-5 mb-5">
+            <img :src="img1" alt="img1" class="object-contain max-w-full" />
+          </div>
+          <div class="flex flex-col justify-end mb-5">
+            <img :src="img2" alt="img2" class="object-contain self-end max-w-full" />
+          </div>
         </div>
-        <div class="relative flex flex-col md:flex-row justify-between mt-8 space-y-4 md:space-y-0 md:space-x-4">
-          <img :src="img4" alt="img4" class="object-contain w-full md:w-auto md:ml-24" />
-          <img :src="img3" alt="img3" class="object-contain w-full md:w-auto md:absolute md:right-24" />
-          <img :src="img6" alt="img6" class="object-contain w-full md:w-auto md:ml-24 md:mt-[450px]" />
-          <img :src="img5" alt="img5" class="object-contain w-full md:w-auto md:absolute md:right-24 md:mt-[350px]" />
+        <div class="relative flex flex-wrap justify-between">
+          <div class="ml-[94px] mt-[450px] relative z-10">
+            <img :src="img4" alt="img4" class="object-contain max-w-full" />
+          </div>
+          <div class="absolute right-0 mr-[74px] z-10">
+            <img :src="img3" alt="img3" class="object-contain max-w-full" />
+          </div>
+          <div class="ml-[94px] mt-[1115px] relative z-10">
+            <img :src="img6" alt="img6" class="object-contain max-w-full" />
+          </div>
+          <div class="absolute right-0 mr-[72px] z-20 mt-[800px]">
+            <img :src="img5" alt="img5" class="object-contain max-w-full" />
+          </div>
         </div>
         <p
-          class="absolute left-0 transform -translate-y-1/2 text-[100px] md:text-[300px] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[600px]"
+          class="ml-4 absolute left-0 transform -translate-y-1/2 text-[30vw] sm:text-[15vw] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[600px]"
         >
           TRUST
         </p>
         <p
-          class="absolute right-0 mr-10 transform -translate-y-1/2 text-[50px] md:text-[150px] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[800px]"
+          class="absolute right-0 mr-10 transform -translate-y-1/2 text-[15vw] sm:text-[10vw] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[800px]"
         >
           COMMITMENT
         </p>
         <p
-          class="absolute left-0 transform -translate-y-1/2 text-[100px] md:text-[300px] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[980px]"
+          class="ml-4 absolute left-0 transform -translate-y-1/2 text-[30vw] sm:text-[15vw] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[980px]"
         >
           TRUST
         </p>
         <p
-          class="absolute right-0 mr-10 transform -translate-y-1/2 text-[50px] md:text-[150px] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[1200px]"
+          class="absolute right-0 mr-10 transform -translate-y-1/2 text-[15vw] sm:text-[10vw] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[1200px]"
         >
           COMMITMENT
         </p>
         <p
-          class="absolute left-0 transform -translate-y-1/2 text-[100px] md:text-[300px] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[1750px]"
+          class="ml-4 absolute left-0 transform -translate-y-1/2 text-[30vw] sm:text-[15vw] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[1750px]"
         >
           TRUST
         </p>
         <p
-          class="absolute right-0 mr-10 transform -translate-y-1/2 text-[50px] md:text-[150px] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[1950px]"
+          class="absolute right-0 mr-10 transform -translate-y-1/2 text-[15vw] sm:text-[10vw] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[1950px]"
         >
           COMMITMENT
         </p>
       </section>
-      <Footer class="mt-[600px]"></Footer>
     </main>
+    <Footer class="mt-auto"></Footer>
   </div>
 </template>
 
