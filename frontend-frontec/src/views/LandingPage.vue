@@ -2,7 +2,6 @@
   <div>
     <AppHeader
       class="relative min-h-screen bg-cover bg-center"
-      :style="{ backgroundImage: `url(${background})` }"
     />
     <!-- Content Sections -->
     <main class="overflow-x-hidden">
@@ -152,12 +151,13 @@ import AppHeader from "../components/AppHeader.vue";
 import Footer from "../components/Footer.vue";
 import { useI18n } from "vue-i18n";
 
-import background from "@/assets/img/landing-page/landing-page.png";
+import background from "@/assets/img/landing-page/background1.png";
 import machining1 from "@/assets/img/landing-page/machining-1.png";
 import machining2 from "@/assets/img/landing-page/machining-2.png";
 import whyFrontec from "@/assets/img/landing-page/why-frontec.png";
 import business from "@/assets/img/landing-page/business.png";
 import vectorYes from "@/assets/img/landing-page/vector-yes.png";
+import right from "@/assets/img/landing-page/right.png";
 
 import client1 from "@/assets/img/client/client1.png";
 import client2 from "@/assets/img/client/client2.png";
@@ -204,6 +204,7 @@ export default {
       whyFrontec,
       business,
       vectorYes,
+      right,
       client1,
       client2,
       client3,

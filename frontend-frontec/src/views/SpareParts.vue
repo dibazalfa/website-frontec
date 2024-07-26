@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import AppHeader from "../components/AppHeader.vue";
+import AppHeader from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 
 import background from "@/assets/img/spare-parts/bgSpareParts.png";

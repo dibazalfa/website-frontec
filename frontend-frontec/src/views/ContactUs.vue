@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import AppHeader from "../components/AppHeader.vue";
+import AppHeader from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import { useI18n } from "vue-i18n";
 

@@ -1,19 +1,18 @@
 <template>
-  <header>
+  <header class="relative min-h-screen">
+    <CarouselBackground class="absolute inset-0 z-0" />
     <div
       :class="[
         {
           'fixed w-full bg-white shadow-lg': isScrolled,
           'bg-transparent': !isScrolled,
         },
-        'transition-all duration-300 ease-in-out z-50 top-0 left-0 right-0',
+        'transition-all duration-300 ease-in-out z-10 top-0 left-0 right-0',
       ]"
     >
-      <div
-        class="container mx-auto px-4 py-3 flex justify-between items-center max-w-screen-xl flex-wrap p-4"
-      >
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center max-w-screen-xl flex-wrap p-4">
         <!-- Language Switcher -->
-        <div class="flex flex-col md:flex-row items-center ml-16">
+        <div class="flex flex-col md:flex-row items-center ml-16 z-20">
           <div
             @click="setLanguage('id')"
             :class="[
@@ -41,7 +40,7 @@
         <button
           @click="toggleNavbar"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 z-20"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -62,7 +61,7 @@
             />
           </svg>
         </button>
-        <nav :class="['md:flex', navbarOpen ? 'block' : 'hidden']" id="navbar-default">
+        <nav :class="['md:flex', navbarOpen ? 'block' : 'hidden']" id="navbar-default" class="z-20">
           <ul
             class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent md:dark:bg-transparent-900 dark:border-gray-700"
           >
@@ -88,7 +87,6 @@
                 @click="toggleDropdown"
                 >{{ $t("navbar.products") }}</router-link
               >
-              
             </li>
             <li>
               <router-link
@@ -127,7 +125,7 @@
           </ul>
         </nav>
         <!-- Company Logo -->
-        <div class="flex flex-col items-center space-y-4 mr-6">
+        <div class="flex flex-col items-center space-y-4 mr-6 z-20">
           <img :src="faeLogo" alt="Logo 1" class="w-auto h-8" />
           <img :src="fgnLogo" alt="Logo 2" class="w-auto h-8" />
         </div>
@@ -139,6 +137,7 @@
 <script>
 import { ref, onMounted, onUnmounted } from "vue";
 import { useI18n } from "vue-i18n";
+import CarouselBackground from './CarouselBackground.vue'; 
 
 import faeLogo from "@/assets/img/header/faeLogo.png";
 import fgnLogo from "@/assets/img/header/fgnLogo.png";
@@ -147,6 +146,9 @@ import en from "@/assets/img/header/english.png";
 
 export default {
   name: "AppHeader",
+  components: {
+    CarouselBackground, // Register the CarouselBackground component
+  },
   setup() {
     const isScrolled = ref(false);
     const navbarOpen = ref(false);
