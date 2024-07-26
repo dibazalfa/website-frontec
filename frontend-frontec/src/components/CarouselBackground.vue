@@ -1,5 +1,5 @@
 <template>
-  <div id="carousel" class="relative h-full">
+  <div id="carousel" class="relative h-full font-inter">
     <div class="overflow-hidden h-full relative">
       <div
         v-for="(slide, index) in slides"
@@ -16,6 +16,24 @@
         }"
       >
         <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+        <!-- Tambahkan tulisan di sini -->
+        <div
+          v-if="slide.text"
+          class="absolute z-10"
+          :class="{
+            'left-10 top-1/4': slide.position === 'left',
+            'right-[150px] top-[300px]': slide.position === 'right',
+          }"
+        >
+          <div
+            v-for="(line, idx) in slide.text"
+            :key="idx"
+            :class="line.classes"
+            :style="{ fontSize: line.size, color: line.color }"
+          >
+            {{ line.text }}
+          </div>
+        </div>
       </div>
     </div>
     <div
@@ -90,9 +108,65 @@ export default {
   data() {
     return {
       slides: [
-        { image: background1 },
-        { image: background2 },
-        { image: background3 },
+        {
+          image: background1,
+          text: [
+            {
+              text: "Trusted Partner in",
+              size: "60px",
+              color: "#F7F6BB",
+              classes:
+                "font-semibold italic text-shadow-md mt-[70px] ml-[150px] leading-none",
+            },
+            {
+              text: "Feed and Grain",
+              size: "80px",
+              color: "#FFEA71",
+              classes:
+                "font-bold italic text-shadow-md mt-3 ml-[150px] leading-none",
+            },
+            {
+              text: "Technology",
+              size: "60px",
+              color: "#F7F6BB",
+              classes:
+                "font-semibold italic text-shadow-md mt-3 ml-[150px] leading-none",
+            },
+          ],
+          position: "left",
+        },
+        {
+          image: background2,
+          text: [
+            {
+              text: "Grain Storage",
+              size: "80px",
+              color: "#F7F6BB",
+              classes: "font-bold italic text-shadow-md",
+            },
+          ],
+          position: "right",
+        },
+        {
+          image: background3,
+          text: [
+            {
+              text: "Feedmill",
+              size: "80px",
+              color: "#F7F6BB",
+              classes:
+                "font-bold italic text-shadow-md ml-[870px] leading-none",
+            },
+            {
+              text: "Equipments",
+              size: "80px",
+              color: "#F7F6BB",
+              classes:
+                "font-bold italic text-shadow-md mt-[10px] ml-[870px] leading-none",
+            },
+          ],
+          position: "right"
+        },
       ],
       currentSlide: 0,
     };
@@ -106,11 +180,11 @@ export default {
         (this.currentSlide - 1 + this.slides.length) % this.slides.length;
     },
   },
-  mounted() {
-    setInterval(() => {
-      this.nextSlide();
-    }, 5000);
-  },
+  // mounted() {
+  //   setInterval(() => {
+  //     this.nextSlide();
+  //   }, 5000);
+  // },
 };
 </script>
 
@@ -126,5 +200,11 @@ export default {
 }
 .opacity-100 {
   opacity: 1;
+}
+.text-shadow-md {
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.font-inter {
+  font-family: "Inter", sans-serif;
 }
 </style>

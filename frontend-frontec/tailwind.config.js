@@ -6,7 +6,14 @@ export default {
     'node_modules/flowbite/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+      textShadow: {
+        'md': '0 4px 6px rgba(0, 0, 0, 0.1)',
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin'),
