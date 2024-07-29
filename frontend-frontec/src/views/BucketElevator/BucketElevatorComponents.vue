@@ -10,7 +10,7 @@
     <!-- Main Content -->
     <main class="flex-1 flex flex-col md:flex-row overflow-x-hidden">
       <!-- Main Content Section -->
-      <section class="flex-1 min-h-screen p-4 mt-10 md:ml-16">
+      <section class="flex-1 min-h-screen p-4 mt-10 md:ml-24">
         <!-- Main content goes here -->
         <p
           class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
