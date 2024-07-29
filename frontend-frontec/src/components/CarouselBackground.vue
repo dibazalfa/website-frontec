@@ -16,23 +16,26 @@
         }"
       >
         <div class="absolute inset-0 bg-black bg-opacity-10"></div>
-        <div class="absolute inset-0 flex items-center z-10 flex-col md:flex-row">
+        <!-- Tambahkan tulisan dan gambar di sini -->
+        <div class="absolute inset-0 flex items-center z-10 flex-wrap md:flex-nowrap">
+          <!-- Gambar di sebelah kiri -->
           <div
             v-if="slide.leftImage"
-            class="w-full md:w-1/2 h-full flex justify-center items-center p-4 md:p-0"
+            class="w-full md:w-1/2 h-full flex justify-center items-center"
           >
             <img
               :src="slide.leftImage"
               alt="Left Image"
-              class="max-w-full max-h-full object-contain mt-4 md:mt-[80px] ml-0 md:ml-[65px]"
+              class="max-w-full max-h-full object-contain mt-[80px] ml-[65px] md:ml-0"
             />
           </div>
+          <!-- Teks di sebelah kanan -->
           <div
             v-if="slide.text"
-            class="w-full md:w-1/2 h-full flex flex-col justify-center p-4 md:p-0"
+            class="w-full md:w-1/2 h-full flex flex-col justify-center"
             :class="{
-              'items-start': slide.position === 'left',
-              'items-end text-right': slide.position === 'right',
+              'items-start pl-4 md:pl-0': slide.position === 'left',
+              'items-end pr-4 md:pr-10 text-right': slide.position === 'right',
             }"
           >
             <div
@@ -126,24 +129,24 @@ export default {
           text: [
             {
               text: "Trusted Partner in",
-              size: "60px",
+              size: "6vw",
               color: "#F7F6BB",
               classes:
-                "font-semibold italic text-shadow-md ml-[170px] leading-none md:leading-tight",
+                "font-semibold italic text-shadow-md ml-[10%] leading-none",
             },
             {
               text: "Feed and Grain",
-              size: "80px",
+              size: "8vw",
               color: "#FFEA71",
               classes:
-                "font-bold italic text-shadow-md ml-[170px] leading-none md:leading-tight",
+                "font-bold italic text-shadow-md mt-3 ml-[10%] leading-none",
             },
             {
               text: "Technology",
-              size: "60px",
+              size: "6vw",
               color: "#F7F6BB",
               classes:
-                "font-semibold italic text-shadow-md ml-[170px] leading-none md:leading-tight",
+                "font-semibold italic text-shadow-md mt-3 ml-[10%] leading-none",
             },
           ],
           position: "left",
@@ -154,9 +157,9 @@ export default {
           text: [
             {
               text: "Grain Storage",
-              size: "80px",
+              size: "8vw",
               color: "#F7F6BB",
-              classes: "font-bold italic text-shadow-md mr-[100px] leading-none md:leading-tight",
+              classes: "font-bold italic text-shadow-md mr-[10%] leading-none",
             },
           ],
           position: "right",
@@ -167,17 +170,17 @@ export default {
           text: [
             {
               text: "Feedmill",
-              size: "80px",
+              size: "8vw",
               color: "#F7F6BB",
               classes:
-                "font-bold italic text-shadow-md mt-[50px] ml-[80px] leading-none md:leading-tight",
+                "font-bold italic text-shadow-md mt-[10%] ml-[10%] leading-none",
             },
             {
               text: "Equipments",
-              size: "80px",
+              size: "8vw",
               color: "#F7F6BB",
               classes:
-                "font-bold italic text-shadow-md mt-[10px] ml-[80px] leading-none md:leading-tight",
+                "font-bold italic text-shadow-md mt-[5%] ml-[10%] leading-none",
             },
           ],
           position: "left",
@@ -195,11 +198,11 @@ export default {
         (this.currentSlide - 1 + this.slides.length) % this.slides.length;
     },
   },
-  // mounted() {
-  //   setInterval(() => {
-  //     this.nextSlide();
-  //   }, 5000);
-  // },
+  mounted() {
+    setInterval(() => {
+      this.nextSlide();
+    }, 5000);
+  },
 };
 </script>
 
@@ -228,16 +231,6 @@ export default {
 @media (min-width: 768px) {
   .text-responsive {
     font-size: initial; /* Reset to initial font size for larger screens */
-  }
-}
-@media (max-width: 768px) {
-  .text-responsive {
-    font-size: 4vw; /* Smaller font size for mobile devices */
-  }
-}
-@media (max-width: 480px) {
-  .text-responsive {
-    font-size: 3vw; /* Even smaller font size for very small devices */
   }
 }
 </style>
