@@ -16,10 +16,10 @@
         }"
       >
         <div class="absolute inset-0 bg-black bg-opacity-10"></div>
-        <div class="absolute inset-0 flex items-center z-10 flex-wrap md:flex-nowrap">
+        <div class="absolute inset-0 flex items-center z-10 flex-col md:flex-row">
           <div
             v-if="slide.leftImage"
-            class="w-full md:w-1/2 h-full flex justify-center items-center p-4 md:p-0"
+            class="w-full md:w-1/2 h-1/2 md:h-full flex justify-center items-center p-4 md:p-0 order-1 md:order-none"
           >
             <img
               :src="slide.leftImage"
@@ -29,7 +29,7 @@
           </div>
           <div
             v-if="slide.text"
-            class="w-full md:w-1/2 h-full flex flex-col justify-center p-4 md:p-0"
+            class="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-center p-4 md:p-0 order-2 md:order-none"
             :class="{
               'items-start': slide.position === 'left',
               'items-end text-right': slide.position === 'right',
