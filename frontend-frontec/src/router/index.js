@@ -40,6 +40,11 @@ const router = createRouter({
       name: 'pempek',
       component: () => import('../views/Parallax.vue')
     },
+    {
+      path: '/bucket-elevator-components',
+      name: 'bucket-elevator-components',
+      component: () => import('../views/BucketElevator/BucketElevatorComponents.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
