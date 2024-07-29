@@ -16,10 +16,12 @@
         }"
       >
         <div class="absolute inset-0 bg-black bg-opacity-10"></div>
-        <div class="absolute inset-0 flex items-center z-10 flex-col md:flex-row">
+        <div
+          class="absolute inset-0 flex items-center z-10 flex-wrap md:flex-nowrap"
+        >
           <div
             v-if="slide.leftImage"
-            class="w-full md:w-1/2 h-1/2 md:h-full flex justify-center items-center p-4 md:p-0 order-1 md:order-none"
+            class="w-full md:w-1/2 h-full flex justify-center items-center p-4 md:p-0"
           >
             <img
               :src="slide.leftImage"
@@ -29,7 +31,7 @@
           </div>
           <div
             v-if="slide.text"
-            class="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-center p-4 md:p-0 order-2 md:order-none"
+            class="w-full md:w-1/2 h-full flex flex-col justify-center p-4 md:p-0"
             :class="{
               'items-start': slide.position === 'left',
               'items-end text-right': slide.position === 'right',
@@ -114,8 +116,10 @@
 <script>
 import background1 from "@/assets/img/landing-page/background1.png";
 import background from "@/assets/img/landing-page/background.png";
-import leftImage2 from "@/assets/img/landing-page/grain-storage.png"; 
-import leftImage3 from "@/assets/img/landing-page/feedmill.png"; 
+import leftImage2 from "@/assets/img/landing-page/grain-storage.png";
+import leftImage3 from "@/assets/img/landing-page/feedmill.png";
+import leftImage4 from "@/assets/img/landing-page/material-handling.png";
+import leftImage5 from "@/assets/img/landing-page/spare-parts.png";
 
 export default {
   data() {
@@ -156,10 +160,11 @@ export default {
               text: "Grain Storage",
               size: "5vw",
               color: "#F7F6BB",
-              classes: "font-bold italic text-shadow-md mr-[10%] md:mr-[100px] leading-none md:leading-tight",
+              classes:
+                "font-bold italic text-shadow-md ml-[10%] md:ml-[100px] leading-none md:leading-tight",
             },
           ],
-          position: "right",
+          position: "left",
         },
         {
           image: background,
@@ -178,6 +183,41 @@ export default {
               color: "#F7F6BB",
               classes:
                 "font-bold italic text-shadow-md mt-[1%] md:mt-[10px] ml-[10%] md:ml-[80px] leading-none md:leading-tight",
+            },
+          ],
+          position: "left",
+        },
+        {
+          image: background,
+          leftImage: leftImage4,
+          text: [
+            {
+              text: "Material",
+              size: "5vw",
+              color: "#F7F6BB",
+              classes:
+                "font-bold italic text-shadow-md mt-[5%] md:mt-[50px] ml-[10%] md:ml-[80px] leading-none md:leading-tight",
+            },
+            {
+              text: "Handling",
+              size: "5vw",
+              color: "#F7F6BB",
+              classes:
+                "font-bold italic text-shadow-md mt-[1%] md:mt-[10px] ml-[10%] md:ml-[80px] leading-none md:leading-tight",
+            },
+          ],
+          position: "left",
+        },
+        {
+          image: background,
+          leftImage: leftImage5,
+          text: [
+            {
+              text: "Spare Parts",
+              size: "5vw",
+              color: "#F7F6BB",
+              classes:
+                "font-bold italic text-shadow-md ml-[10%] md:ml-[100px] leading-none md:leading-tight",
             },
           ],
           position: "left",
