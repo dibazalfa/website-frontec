@@ -16,22 +16,36 @@
         }"
       >
         <div class="absolute inset-0 bg-black bg-opacity-10"></div>
-        <!-- Tambahkan tulisan di sini -->
-        <div
-          v-if="slide.text"
-          class="absolute z-10"
-          :class="{
-            'left-10 top-1/4': slide.position === 'left',
-            'right-[150px] top-[300px]': slide.position === 'right',
-          }"
-        >
+        <!-- Tambahkan tulisan dan gambar di sini -->
+        <div class="absolute inset-0 flex items-center z-10">
+          <!-- Gambar di sebelah kiri -->
           <div
-            v-for="(line, idx) in slide.text"
-            :key="idx"
-            :class="line.classes"
-            :style="{ fontSize: line.size, color: line.color }"
+            v-if="slide.leftImage"
+            class="w-1/2 h-full flex justify-center items-center"
           >
-            {{ line.text }}
+            <img
+              :src="slide.leftImage"
+              alt="Left Image"
+              class="max-w-full max-h-full object-contain mt-[80px] ml-[65px]"
+            />
+          </div>
+          <!-- Teks di sebelah kanan -->
+          <div
+            v-if="slide.text"
+            class="w-1/2 h-full flex flex-col justify-center"
+            :class="{
+              'items-start': slide.position === 'left',
+              'items-end pr-10 text-right': slide.position === 'right',
+            }"
+          >
+            <div
+              v-for="(line, idx) in slide.text"
+              :key="idx"
+              :class="line.classes"
+              :style="{ fontSize: line.size, color: line.color }"
+            >
+              {{ line.text }}
+            </div>
           </div>
         </div>
       </div>
@@ -101,8 +115,9 @@
 
 <script>
 import background1 from "@/assets/img/landing-page/background1.png";
-import background2 from "@/assets/img/landing-page/background2.png";
-import background3 from "@/assets/img/landing-page/background3.png";
+import background from "@/assets/img/landing-page/background.png";
+import leftImage2 from "@/assets/img/landing-page/grain-storage.png"; 
+import leftImage3 from "@/assets/img/landing-page/feedmill.png"; 
 
 export default {
   data() {
@@ -116,56 +131,58 @@ export default {
               size: "60px",
               color: "#F7F6BB",
               classes:
-                "font-semibold italic text-shadow-md mt-[70px] ml-[150px] leading-none",
+                "font-semibold italic text-shadow-md ml-[170px] leading-none",
             },
             {
               text: "Feed and Grain",
               size: "80px",
               color: "#FFEA71",
               classes:
-                "font-bold italic text-shadow-md mt-3 ml-[150px] leading-none",
+                "font-bold italic text-shadow-md mt-3 ml-[170px] leading-none",
             },
             {
               text: "Technology",
               size: "60px",
               color: "#F7F6BB",
               classes:
-                "font-semibold italic text-shadow-md mt-3 ml-[150px] leading-none",
+                "font-semibold italic text-shadow-md mt-3 ml-[170px] leading-none",
             },
           ],
           position: "left",
         },
         {
-          image: background2,
+          image: background,
+          leftImage: leftImage2,
           text: [
             {
               text: "Grain Storage",
               size: "80px",
               color: "#F7F6BB",
-              classes: "font-bold italic text-shadow-md",
+              classes: "font-bold italic text-shadow-md mr-[100px] leading-none",
             },
           ],
           position: "right",
         },
         {
-          image: background3,
+          image: background,
+          leftImage: leftImage3,
           text: [
             {
               text: "Feedmill",
               size: "80px",
               color: "#F7F6BB",
               classes:
-                "font-bold italic text-shadow-md ml-[870px] leading-none",
+                "font-bold italic text-shadow-md mt-[50px] ml-[80px] leading-none",
             },
             {
               text: "Equipments",
               size: "80px",
               color: "#F7F6BB",
               classes:
-                "font-bold italic text-shadow-md mt-[10px] ml-[870px] leading-none",
+                "font-bold italic text-shadow-md mt-[10px] ml-[80px] leading-none",
             },
           ],
-          position: "right"
+          position: "left",
         },
       ],
       currentSlide: 0,
@@ -202,7 +219,7 @@ export default {
   opacity: 1;
 }
 .text-shadow-md {
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Adjusted opacity for better visibility */
 }
 .font-inter {
   font-family: "Inter", sans-serif;
