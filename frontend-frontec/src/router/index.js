@@ -65,6 +65,16 @@ const router = createRouter({
       name: 'bolt-sets',
       component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/BoltSetsFastener.vue')
     },
+    {
+      path: '/elevator-bucket',
+      name: 'elevator-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/ElevatorBucket.vue')
+    },
+    {
+      path: '/pulley-slide-lagging',
+      name: 'pulley-slide-lagging',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/PulleySlideLagging/PulleySlideLagging.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

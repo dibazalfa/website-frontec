@@ -13,46 +13,54 @@
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
         <!-- Main content goes here -->
         <p class="text-[40px] mt-7 text-[#286F9B] font-bold text-shadow-md">
-          Bolt Sets & Fastener
+          Elevator Bucket
         </p>
         <div class="flex flex-col md:flex-row mt-12">
           <!-- <router-link to="/pvc-solid-woven"> -->
-          <img :src="bolt1" alt="" class="object-contain" />
+          <img :src="bucket1" alt="" class="object-contain" />
           <!-- </router-link> -->
           <!-- <router-link to="/rubber-belt"> -->
-          <img :src="bolt2" alt="" class="object-contain md:ml-12" />
+          <img :src="bucket2" alt="" class="object-contain md:ml-12" />
           <!-- </router-link> -->
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <!-- <router-link to="/oil-fire"> -->
-          <img :src="bolt3" alt="" class="object-contain" />
+          <img :src="bucket3" alt="" class="object-contain" />
           <!-- </router-link> -->
           <!-- <router-link to="/oil-fire"> -->
-          <img :src="bolt4" alt="" class="object-contain md:ml-12" />
-          <!-- </router-link> -->
-        </div>
-        <div class="flex flex-col md:flex-row mt-10">
-          <!-- <router-link to="/oil-fire"> -->
-          <img :src="bolt5" alt="" class="object-contain" />
-          <!-- </router-link> -->
-          <!-- <router-link to="/oil-fire"> -->
-          <img :src="bolt6" alt="" class="object-contain md:ml-12" />
+          <img :src="bucket4" alt="" class="object-contain md:ml-12" />
           <!-- </router-link> -->
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <!-- <router-link to="/oil-fire"> -->
-          <img :src="bolt7" alt="" class="object-contain" />
+          <img :src="bucket5" alt="" class="object-contain" />
           <!-- </router-link> -->
           <!-- <router-link to="/oil-fire"> -->
-          <img :src="bolt8" alt="" class="object-contain md:ml-12" />
+          <img :src="bucket6" alt="" class="object-contain md:ml-12" />
           <!-- </router-link> -->
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <!-- <router-link to="/oil-fire"> -->
-          <img :src="bolt9" alt="" class="object-contain" />
+          <img :src="bucket7" alt="" class="object-contain" />
           <!-- </router-link> -->
           <!-- <router-link to="/oil-fire"> -->
-          <img :src="bolt10" alt="" class="object-contain md:ml-12" />
+          <img :src="bucket8" alt="" class="object-contain md:ml-12" />
+          <!-- </router-link> -->
+        </div>
+        <div class="flex flex-col md:flex-row mt-10">
+          <!-- <router-link to="/oil-fire"> -->
+          <img :src="bucket9" alt="" class="object-contain" />
+          <!-- </router-link> -->
+          <!-- <router-link to="/oil-fire"> -->
+          <img :src="bucket10" alt="" class="object-contain md:ml-12" />
+          <!-- </router-link> -->
+        </div>
+        <div class="flex flex-col md:flex-row mt-10">
+          <!-- <router-link to="/oil-fire"> -->
+          <img :src="bucket11" alt="" class="object-contain" />
+          <!-- </router-link> -->
+          <!-- <router-link to="/oil-fire"> -->
+          <img :src="bucket12" alt="" class="object-contain md:ml-12" />
           <!-- </router-link> -->
         </div>
       </section>
@@ -74,13 +82,13 @@
             </router-link>
             <router-link to="/bolt-sets">
               <p
-                class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+                class="text-[18px] px-4 py-8 border-b border-black"
               >
                 Bolt Sets & Fastener
               </p>
             </router-link>
             <router-link to="/elevator-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white">
                 Elevator Bucket
               </p>
             </router-link>
@@ -107,16 +115,18 @@ import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/spare-parts/bgSpareParts.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 
-import bolt1 from "@/assets/img/spare-parts/bolt1.png";
-import bolt2 from "@/assets/img/spare-parts/bolt2.png";
-import bolt3 from "@/assets/img/spare-parts/bolt3.png";
-import bolt4 from "@/assets/img/spare-parts/bolt4.png";
-import bolt5 from "@/assets/img/spare-parts/bolt5.png";
-import bolt6 from "@/assets/img/spare-parts/bolt6.png";
-import bolt7 from "@/assets/img/spare-parts/bolt7.png";
-import bolt8 from "@/assets/img/spare-parts/bolt8.png";
-import bolt9 from "@/assets/img/spare-parts/bolt9.png";
-import bolt10 from "@/assets/img/spare-parts/bolt10.png";
+import bucket1 from "@/assets/img/spare-parts/bucket1.png";
+import bucket2 from "@/assets/img/spare-parts/bucket2.png";
+import bucket3 from "@/assets/img/spare-parts/bucket3.png";
+import bucket4 from "@/assets/img/spare-parts/bucket4.png";
+import bucket5 from "@/assets/img/spare-parts/bucket5.png";
+import bucket6 from "@/assets/img/spare-parts/bucket6.png";
+import bucket7 from "@/assets/img/spare-parts/bucket7.png";
+import bucket8 from "@/assets/img/spare-parts/bucket8.png";
+import bucket9 from "@/assets/img/spare-parts/bucket9.png";
+import bucket10 from "@/assets/img/spare-parts/bucket10.png";
+import bucket11 from "@/assets/img/spare-parts/bucket11.png";
+import bucket12 from "@/assets/img/spare-parts/bucket12.png";
 
 export default {
   components: {
@@ -127,16 +137,18 @@ export default {
     return {
       background,
       sanwei,
-      bolt1,
-      bolt2,
-      bolt3,
-      bolt4,
-      bolt5,
-      bolt6,
-      bolt7,
-      bolt8,
-      bolt9,
-      bolt10,
+      bucket1,
+      bucket2,
+      bucket3,
+      bucket4,
+      bucket5,
+      bucket6,
+      bucket7,
+      bucket8,
+      bucket9,
+      bucket10,
+      bucket11,
+      bucket12
     };
   },
 };

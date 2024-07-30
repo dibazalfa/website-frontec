@@ -58,8 +58,6 @@
       <aside class="w-full md:w-1/3 min-h-screen p-4 md:sticky md:top-0 h-full">
         <!-- Sidebar content goes here -->
         <div class="flex flex-col mt-10">
-          <p class="text-[20px] mx-auto">In Partnership with:</p>
-          <img :src="sanwei" alt="" class="w-64 mx-auto mt-10" />
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
@@ -85,6 +83,8 @@
               </p>
             </router-link>
           </div>
+          <p class="text-[20px] mx-auto mt-10">In Partnership with:</p>
+          <img :src="sanwei" alt="" class="w-64 mx-auto mt-2" />
         </div>
       </aside>
     </main>

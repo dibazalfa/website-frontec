@@ -103,7 +103,7 @@
             class="p-12 border-2 border-slate-300 rounded-lg grid grid-cols-4 gap-8"
           >
             <div class="flex flex-col items-center">
-              <router-link to="/pvc-solid-woven">
+              <router-link to="/elevator-bucket">
                 <img
                   class="w-32 h-32 object-contain"
                   :src="bucketElevatorComponents"
