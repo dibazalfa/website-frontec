@@ -14,14 +14,13 @@
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] sm:text-[30px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
         >
-          <span class="text-[#154214]">{{ t('activities.activities') }}</span>
+          <span class="text-[#154214]">{{ t("activities.activities") }}</span>
         </p>
         <div class="relative w-full flex justify-center mt-8">
           <p
             class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[24px] md:text-[32px] w-2/3 p-4 z-10 mt-48"
             v-html="t('activities.motto')"
-          >
-          </p>
+          ></p>
           <p
             class="absolute top-1/2 left-0 transform -translate-y-1/2 text-[30vw] sm:text-[15vw] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-24"
           >
@@ -40,7 +39,11 @@
             <img :src="img1" alt="img1" class="object-contain max-w-full" />
           </div>
           <div class="flex flex-col justify-end mb-5">
-            <img :src="img2" alt="img2" class="object-contain self-end max-w-full" />
+            <img
+              :src="img2"
+              alt="img2"
+              class="object-contain self-end max-w-full"
+            />
           </div>
         </div>
         <div class="relative flex flex-wrap justify-between">
@@ -50,7 +53,7 @@
           <div class="absolute right-0 mr-[74px] z-10">
             <img :src="img3" alt="img3" class="object-contain max-w-full" />
           </div>
-          <div class="ml-[94px] mt-[1115px] relative z-10">
+          <div class="ml-[94px] mt-[20px] relative z-10">
             <img :src="img6" alt="img6" class="object-contain max-w-full" />
           </div>
           <div class="absolute right-0 mr-[72px] z-20 mt-[800px]">
