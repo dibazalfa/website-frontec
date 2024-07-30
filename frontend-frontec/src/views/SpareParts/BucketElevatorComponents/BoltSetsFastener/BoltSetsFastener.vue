@@ -16,44 +16,44 @@
           Bolt Sets & Fastener
         </p>
         <div class="flex flex-col md:flex-row mt-12">
-          <!-- <router-link to="/pvc-solid-woven"> -->
+          <router-link to="/fang-bolt">
           <img :src="bolt1" alt="" class="object-contain" />
-          <!-- </router-link> -->
-          <!-- <router-link to="/rubber-belt"> -->
+          </router-link>
+          <router-link to="/euro-belt">
           <img :src="bolt2" alt="" class="object-contain md:ml-12" />
-          <!-- </router-link> -->
+          </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
-          <!-- <router-link to="/oil-fire"> -->
+          <router-link to="/domed-washer">
           <img :src="bolt3" alt="" class="object-contain" />
-          <!-- </router-link> -->
-          <!-- <router-link to="/oil-fire"> -->
+          </router-link>
+          <router-link to="/large-flat-washer">
           <img :src="bolt4" alt="" class="object-contain md:ml-12" />
-          <!-- </router-link> -->
+          </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
-          <!-- <router-link to="/oil-fire"> -->
+          <router-link to="/spring-washer">
           <img :src="bolt5" alt="" class="object-contain" />
-          <!-- </router-link> -->
-          <!-- <router-link to="/oil-fire"> -->
+          </router-link>
+          <router-link to="/hexagon-nut">
           <img :src="bolt6" alt="" class="object-contain md:ml-12" />
-          <!-- </router-link> -->
+          </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
-          <!-- <router-link to="/oil-fire"> -->
+          <router-link to="/nyloc-nut">
           <img :src="bolt7" alt="" class="object-contain" />
-          <!-- </router-link> -->
-          <!-- <router-link to="/oil-fire"> -->
+          </router-link>
+          <router-link to="/flange-nut">
           <img :src="bolt8" alt="" class="object-contain md:ml-12" />
-          <!-- </router-link> -->
+          </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
-          <!-- <router-link to="/oil-fire"> -->
+          <router-link to="/belt-fastener-s123">
           <img :src="bolt9" alt="" class="object-contain" />
-          <!-- </router-link> -->
-          <!-- <router-link to="/oil-fire"> -->
+          </router-link>
+          <router-link to="/belt-fastener-s45">
           <img :src="bolt10" alt="" class="object-contain md:ml-12" />
-          <!-- </router-link> -->
+          </router-link>
         </div>
       </section>
 

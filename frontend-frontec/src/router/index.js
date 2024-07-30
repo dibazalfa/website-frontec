@@ -75,6 +75,56 @@ const router = createRouter({
       name: 'pulley-slide-lagging',
       component: () => import('../views/SpareParts/BucketElevatorComponents/PulleySlideLagging/PulleySlideLagging.vue')
     },
+    {
+      path: '/fang-bolt',
+      name: 'fang-bolt',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/FangBolt.vue')
+    },
+    {
+      path: '/euro-bolt',
+      name: 'euro-bolt',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/EuroBolt.vue')
+    },
+    {
+      path: '/domed-washer',
+      name: 'domed-washer',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/DomedWasher.vue')
+    },
+    {
+      path: '/large-flat-washer',
+      name: 'large-flat-washer',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/LargeFlatWasher.vue')
+    },
+    {
+      path: '/spring-washer',
+      name: 'spring-washer',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/SpringWasher.vue')
+    },
+    {
+      path: '/hexagon-nut',
+      name: 'hexagon-nut',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/HexagonNut.vue')
+    },
+    {
+      path: '/nyloc-nut',
+      name: 'nyloc-nut',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/NylocNut.vue')
+    },
+    {
+      path: '/flange-nut',
+      name: 'flange-nut',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/FlangeNut.vue')
+    },
+    {
+      path: '/belt-fastener-s123',
+      name: 'belt-fastener-s123',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/BeltFastenerS123.vue')
+    },
+    {
+      path: '/belt-fastener-s45',
+      name: 'belt-fastener-s45',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/BeltFastenerS45.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
