@@ -8,12 +8,12 @@
     />
 
     <!-- Main Content -->
-    <main class="flex-1 flex flex-col md:flex-row overflow-x-hidden">
+    <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
-      <section class="flex-1 min-h-screen p-4 mt-10 md:ml-24">
+      <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
         <!-- Main content goes here -->
         <p
-          class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
         >
           PVC Solid Woven Elevator Belt
         </p>
@@ -171,7 +171,7 @@
       </section>
 
       <!-- Sidebar -->
-      <aside class="w-full md:w-1/3 min-h-screen p-4 sticky top-20">
+      <aside class="w-full md:w-1/3 min-h-screen p-4 md:sticky md:top-0 h-full">
         <!-- Sidebar content goes here -->
         <div class="flex flex-col mt-10">
           <p class="text-[20px] mx-auto">In Partnership with:</p>
@@ -179,21 +179,25 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <p class="text-[20px] font-bold p-4 border-b border-black">
-              Bucket Elevator Components
-            </p>
+            <router-link to="/elevator-belt">
+              <p class="text-[20px] font-bold p-4 border-b border-black">
+                Elevator Belt
+              </p>
+            </router-link>
             <p
               class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
             >
-              Elevator Belt
+              PVC Solid <br />
+              Woven Elevator Belt
             </p>
-            <p class="text-[18px] px-4 py-8 border-b border-black">
-              Bolt Sets & Fastener
-            </p>
-            <p class="text-[18px] px-4 py-8 border-b border-black">
-              Elevator Bucket
-            </p>
-            <p class="text-[18px] px-4 py-8">Pulley Slide Lagging</p>
+            <router-link to="/rubber-belt">
+              <p class="text-[18px] px-4 py-8 border-b border-black">Rubber</p>
+            </router-link>
+            <router-link to="/oil-fire">
+              <p class="text-[18px] px-4 py-8 border-b border-black">
+                Oil & Fire Resistant
+              </p>
+            </router-link>
           </div>
         </div>
       </aside>
@@ -205,11 +209,11 @@
 </template>
 
 <script>
-import AppHeader from "../../components/Header.vue";
-import Footer from "../../components/Footer.vue";
-import background from "../../assets/img/spare-parts/bgSpareParts.png";
-import pvc from "../../assets/img/spare-parts/pvc.png";
-import sanwei from "../../assets/img/spare-parts/sanwei.png";
+import AppHeader from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+import background from "@/assets/img/spare-parts/bgSpareParts.png";
+import pvc from "@/assets/img/spare-parts/pvc.png";
+import sanwei from "@/assets/img/spare-parts/sanwei.png";
 
 export default {
   components: {
@@ -235,12 +239,6 @@ export default {
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Additional styling for fixed sidebar */
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 .bg-gray-100 {
   background-color: #f7fafc;
 }
@@ -255,5 +253,37 @@ export default {
 
 .p-4 {
   padding: 1rem;
+}
+
+/* Styling for the main content and sidebar */
+.main {
+  flex: 1;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+section {
+  overflow-y: auto; /* Enables scrolling on the main content */
+}
+
+.sidebar {
+  position: relative;
+  top: 0;
+  overflow-y: auto;
+}
+
+.sticky-element {
+  position: sticky;
+  top: 10px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative; /* Disable sticky on mobile if needed */
+  }
 }
 </style>

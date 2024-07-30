@@ -41,9 +41,29 @@ const router = createRouter({
       component: () => import('../views/Parallax.vue')
     },
     {
-      path: '/bucket-elevator-components',
-      name: 'bucket-elevator-components',
-      component: () => import('../views/BucketElevator/BucketElevatorComponents.vue')
+      path: '/pvc-solid-woven',
+      name: 'pvc-solid-woven',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBelt/PVCSolidWoven.vue')
+    },
+    {
+      path: '/elevator-belt',
+      name: 'elevator-belt',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBelt/ElevatorBelt.vue')
+    },
+    {
+      path: '/rubber-belt',
+      name: 'rubber-belt',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBelt/Rubber.vue')
+    },
+    {
+      path: '/oil-fire',
+      name: 'oil-fire',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBelt/OilFireResistant.vue')
+    },
+    {
+      path: '/bolt-sets',
+      name: 'bolt-sets',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/BoltSetsFastener.vue')
     },
   ],
   scrollBehavior(to, from, savedPosition) {
