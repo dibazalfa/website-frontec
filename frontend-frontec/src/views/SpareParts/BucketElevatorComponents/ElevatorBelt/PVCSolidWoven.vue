@@ -19,12 +19,8 @@
         </p>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="pvc" alt="" class="object-contain" />
-          <div
-            class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
-          >
-            <p
-              class="bg-black text-white w-36 px-6 py-2 rounded-full text-center font-bold uppercase"
-            >
+          <div class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]">
+            <p class="bg-black text-white w-36 px-6 py-2 rounded-full text-center font-bold uppercase">
               Features
             </p>
             <ul class="list-disc mt-8 ml-6">
@@ -49,9 +45,7 @@
           </div>
         </div>
         <div class="flex flex-col">
-          <p
-            class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
-          >
+          <p class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6">
             Specifications
           </p>
           <table class="table-auto border-collapse border border-gray-300 mt-6">
@@ -59,18 +53,10 @@
               <tr>
                 <th class="border border-gray-300 px-4 py-2">Size</th>
                 <th class="border border-gray-300 px-4 py-2">Color</th>
-                <th class="border border-gray-300 px-4 py-2">
-                  Tensile Strength N/ mm
-                </th>
-                <th class="border border-gray-300 px-4 py-2">
-                  Elongation @ Rated Load %
-                </th>
-                <th class="border border-gray-300 px-4 py-2">
-                  Cover to Carcass Adhesion Strength N/ mm
-                </th>
-                <th class="border border-gray-300 px-4 py-2">
-                  Working Temperature °C
-                </th>
+                <th class="border border-gray-300 px-4 py-2">Tensile Strength N/ mm</th>
+                <th class="border border-gray-300 px-4 py-2">Elongation @ Rated Load %</th>
+                <th class="border border-gray-300 px-4 py-2">Cover to Carcass Adhesion Strength N/ mm</th>
+                <th class="border border-gray-300 px-4 py-2">Working Temperature °C</th>
               </tr>
             </thead>
             <tbody>
@@ -109,9 +95,7 @@
             </tbody>
           </table>
 
-          <p
-            class="bg-black text-white w-64 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
-          >
+          <p class="bg-black text-white w-64 px-6 py-2 rounded-full text-center font-bold uppercase mt-6">
             Cover Performance
           </p>
           <table class="table-auto border-collapse border border-gray-300 mt-6">
@@ -124,16 +108,12 @@
             </thead>
             <tbody>
               <tr>
-                <td class="border border-gray-300 px-4 py-2">
-                  Tensile Strength
-                </td>
+                <td class="border border-gray-300 px-4 py-2">Tensile Strength</td>
                 <td class="border border-gray-300 px-4 py-2">MPa</td>
                 <td class="border border-gray-300 px-4 py-2">≥ 15.0</td>
               </tr>
               <tr>
-                <td class="border border-gray-300 px-4 py-2">
-                  Elongation @ Break
-                </td>
+                <td class="border border-gray-300 px-4 py-2">Elongation @ Break</td>
                 <td class="border border-gray-300 px-4 py-2">%</td>
                 <td class="border border-gray-300 px-4 py-2">≥ 300</td>
               </tr>
@@ -145,25 +125,17 @@
               <tr>
                 <td class="border border-gray-300 px-4 py-2">Bending Test</td>
                 <td class="border border-gray-300 px-4 py-2"></td>
-                <td class="border border-gray-300 px-4 py-2">
-                  No crack under 2.5 million times of bending
-                </td>
+                <td class="border border-gray-300 px-4 py-2">No crack under 2.5 million times of bending</td>
               </tr>
               <tr>
                 <td class="border border-gray-300 px-4 py-2">Flammability</td>
                 <td class="border border-gray-300 px-4 py-2"></td>
-                <td class="border border-gray-300 px-4 py-2">
-                  Persistence of flame ≤ 6S, no persistence of after glow
-                </td>
+                <td class="border border-gray-300 px-4 py-2">Persistence of flame ≤ 6S, no persistence of after glow</td>
               </tr>
               <tr>
-                <td class="border border-gray-300 px-4 py-2">
-                  Electric Conductivity
-                </td>
+                <td class="border border-gray-300 px-4 py-2">Electric Conductivity</td>
                 <td class="border border-gray-300 px-4 py-2">Ω</td>
-                <td class="border border-gray-300 px-4 py-2">
-                  Surface ≤ 3X10⁸ (customize upon request)
-                </td>
+                <td class="border border-gray-300 px-4 py-2">Surface ≤ 3X10⁸ (customize upon request)</td>
               </tr>
             </tbody>
           </table>
