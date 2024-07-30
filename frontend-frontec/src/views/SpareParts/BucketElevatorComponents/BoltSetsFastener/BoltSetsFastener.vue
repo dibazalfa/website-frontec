@@ -19,7 +19,7 @@
           <router-link to="/fang-bolt">
           <img :src="bolt1" alt="" class="object-contain" />
           </router-link>
-          <router-link to="/euro-belt">
+          <router-link to="/euro-bolt">
           <img :src="bolt2" alt="" class="object-contain md:ml-12" />
           </router-link>
         </div>
