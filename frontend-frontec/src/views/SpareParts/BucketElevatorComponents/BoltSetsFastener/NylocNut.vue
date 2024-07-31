@@ -87,13 +87,11 @@
                 Hexagon Nut
               </p>
             </router-link>
-            <router-link to="/nyloc-nut">
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
-              >
-                Nyloc Nut
-              </p>
-            </router-link>
+            <p
+              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+            >
+              Nyloc Nut
+            </p>
             <router-link to="/flange-nut">
               <p class="text-[18px] px-4 py-8 border-b border-black">
                 Flange Nut

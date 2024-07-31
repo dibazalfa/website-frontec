@@ -92,13 +92,11 @@
                 Nyloc Nut
               </p>
             </router-link>
-            <router-link to="/flange-nut">
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
-              >
-                Flange Nut
-              </p>
-            </router-link>
+            <p
+              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+            >
+              Flange Nut
+            </p>
             <router-link to="/belt-fastener-s123">
               <p class="text-[18px] px-4 py-8 border-b border-black">
                 Belt Fastener S1 S2 S3

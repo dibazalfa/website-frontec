@@ -82,11 +82,9 @@
                 Spring Washer
               </p>
             </router-link>
-            <router-link to="/hexagon-nut">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
-                Hexagon Nut
-              </p>
-            </router-link>
+            <p class="text-[18px] px-4 py-8 border-b border-black">
+              Hexagon Nut
+            </p>
             <router-link to="/nyloc-nut">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"

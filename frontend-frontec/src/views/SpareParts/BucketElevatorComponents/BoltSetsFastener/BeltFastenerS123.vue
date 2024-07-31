@@ -107,13 +107,11 @@
                 Flange Nut
               </p>
             </router-link>
-            <router-link to="/belt-fastener-s123">
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
-              >
-                Belt Fastener S1 S2 S3
-              </p>
-            </router-link>
+            <p
+              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+            >
+              Belt Fastener S1 S2 S3
+            </p>
             <router-link to="/belt-fastener-s45">
               <p class="text-[18px] px-4 py-8 border-b border-black">
                 Belt Fastener S4 S5

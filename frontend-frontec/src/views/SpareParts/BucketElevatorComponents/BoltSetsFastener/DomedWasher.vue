@@ -67,13 +67,11 @@
                 Euro Bolt
               </p>
             </router-link>
-            <router-link to="/domed-washer">
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
-              >
-                Domed Washer
-              </p>
-            </router-link>
+            <p
+              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+            >
+              Domed Washer
+            </p>
             <router-link to="/large-flat-washer">
               <p class="text-[18px] px-4 py-8 border-b border-black">
                 Large Flat Washer

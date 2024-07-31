@@ -17,42 +17,42 @@
         </p>
         <div class="flex flex-col md:flex-row mt-12">
           <router-link to="/fang-bolt">
-          <img :src="bolt1" alt="" class="object-contain" />
+            <img :src="bolt1" alt="" class="object-contain" />
           </router-link>
           <router-link to="/euro-bolt">
-          <img :src="bolt2" alt="" class="object-contain md:ml-12" />
+            <img :src="bolt2" alt="" class="object-contain md:ml-12" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/domed-washer">
-          <img :src="bolt3" alt="" class="object-contain" />
+            <img :src="bolt3" alt="" class="object-contain" />
           </router-link>
           <router-link to="/large-flat-washer">
-          <img :src="bolt4" alt="" class="object-contain md:ml-12" />
+            <img :src="bolt4" alt="" class="object-contain md:ml-12" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/spring-washer">
-          <img :src="bolt5" alt="" class="object-contain" />
+            <img :src="bolt5" alt="" class="object-contain" />
           </router-link>
           <router-link to="/hexagon-nut">
-          <img :src="bolt6" alt="" class="object-contain md:ml-12" />
+            <img :src="bolt6" alt="" class="object-contain md:ml-12" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/nyloc-nut">
-          <img :src="bolt7" alt="" class="object-contain" />
+            <img :src="bolt7" alt="" class="object-contain" />
           </router-link>
           <router-link to="/flange-nut">
-          <img :src="bolt8" alt="" class="object-contain md:ml-12" />
+            <img :src="bolt8" alt="" class="object-contain md:ml-12" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/belt-fastener-s123">
-          <img :src="bolt9" alt="" class="object-contain" />
+            <img :src="bolt9" alt="" class="object-contain" />
           </router-link>
           <router-link to="/belt-fastener-s45">
-          <img :src="bolt10" alt="" class="object-contain md:ml-12" />
+            <img :src="bolt10" alt="" class="object-contain md:ml-12" />
           </router-link>
         </div>
       </section>
@@ -72,13 +72,11 @@
                 Elevator Belt
               </p>
             </router-link>
-            <router-link to="/bolt-sets">
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
-              >
-                Bolt Sets & Fastener
-              </p>
-            </router-link>
+            <p
+              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+            >
+              Bolt Sets & Fastener
+            </p>
             <router-link to="/elevator-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black">
                 Elevator Bucket
