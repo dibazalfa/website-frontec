@@ -1,8 +1,6 @@
 <template>
   <div>
-    <AppHeader
-      class="relative min-h-screen bg-cover bg-center"
-    />
+    <AppHeader class="relative min-h-screen bg-cover bg-center" />
     <!-- Content Sections -->
     <main class="overflow-x-hidden">
       <!-- About Us Section -->
@@ -123,8 +121,18 @@
       </section>
 
       <!-- Catalog Section -->
-      <section>
-        <img :src="catalog" alt="" class="mx-auto mb-6 md:w-1/2">
+      <section class="relative">
+        <a
+          href="https://drive.google.com/file/d/1yXQ8PPwHfbyeWdui-PTyobgi-HlJkzZ8/view"
+          target="_blank"
+        >
+          <p
+            class="bg-white px-16 py-5 rounded-lg text-center font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:text-white hover:bg-[#313C44] hover:underline"
+          >
+            See Our Catalog
+          </p>
+        </a>
+        <img :src="catalog" alt="" class="mx-auto mb-6 md:w-1/2 catalog" />
       </section>
 
       <!-- Our Clients Section -->
@@ -188,7 +196,7 @@ export default {
     AppHeader,
     Footer,
   },
-  
+
   name: "LandingPage",
   setup() {
     const { t } = useI18n();
@@ -200,7 +208,7 @@ export default {
   methods: {
     getClientSrc(index) {
       return this[`client${index}`];
-    }
+    },
   },
   data() {
     return {
