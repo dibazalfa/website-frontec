@@ -11,7 +11,7 @@
           <span class="text-[#154214]">{{ t("landingPage.about") }}</span>
           <span class="text-[#286f9b]">Frontec</span>
         </p>
-        <img :src="machining1" alt="" class="mx-auto mt-16" />
+        <img :src="machining1" alt="" class="mx-auto mt-16 rounded-lg" />
         <div class="flex flex-col md:flex-row mx-auto mt-16 text-justify mb-14">
           <p
             class="md:w-1/2 p-4 lg:ml-40 lg:mr-5"
@@ -165,7 +165,7 @@ import Footer from "../components/Footer.vue";
 import { useI18n } from "vue-i18n";
 
 import background from "@/assets/img/landing-page/background1.png";
-import machining1 from "@/assets/img/landing-page/machining-1.png";
+import machining1 from "@/assets/img/landing-page/frontec.gif";
 import machining2 from "@/assets/img/landing-page/machining-2.png";
 import whyFrontec from "@/assets/img/landing-page/why-frontec.png";
 import business from "@/assets/img/landing-page/business.png";
