@@ -35,20 +35,35 @@
             <p>marketing@frontec.co.id</p>
           </div>
         </div>
-        <div class="flex w-1/3 mx-auto">
-          <a
-            href="https://www.facebook.com/pages/CV.%2520Frontec%2520Agritama%2520Engineering/1689781144429808/"
-          >
-            <img :src="facebook" class="object-contain w-16 h-16 p-2" />
-          </a>
-          <a href="https://www.instagram.com/frontec.co/">
-            <img :src="instagram" class="object-contain w-16 h-16 p-2" />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/frontec-agritama-engineering/mycompany/verification/"
-          >
-            <img :src="linkedin" class="object-contain w-16 h-16 p-2" />
-          </a>
+        <div class="flex flex-col w-1/3 mx-auto">
+          <div class="flex flex-row">
+            <a
+              href="https://www.facebook.com/pages/CV.%2520Frontec%2520Agritama%2520Engineering/1689781144429808/"
+            >
+              <img :src="facebook" class="object-contain w-16 h-16 p-2" />
+            </a>
+            <a href="https://www.instagram.com/frontec.co/">
+              <img :src="instagram" class="object-contain w-16 h-16 p-2" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/frontec-agritama-engineering/mycompany/verification/"
+            >
+              <img :src="linkedin" class="object-contain w-16 h-16 p-2" />
+            </a>
+          </div>
+          <div class="mt-3 w-52">
+            <a
+              aria-label="Chat on WhatsApp"
+              href="https://wa.me/6282319198994"
+              target="_blank"
+            >
+              <img
+                alt="Chat on WhatsApp"
+                :src="whatsapp"
+                class="object-contain"
+              />
+            </a>
+          </div>
         </div>
       </section>
       <section class="flex">
@@ -81,6 +96,7 @@ import email from "@/assets/img/contactUs/email.png";
 import facebook from "@/assets/img/contactUs/facebook.png";
 import instagram from "@/assets/img/contactUs/instagram.png";
 import linkedin from "@/assets/img/contactUs/linkedin.png";
+import whatsapp from "@/assets/img/contactUs/whatsapp.png";
 
 export default {
   components: {
@@ -105,6 +121,7 @@ export default {
       facebook,
       instagram,
       linkedin,
+      whatsapp,
     };
   },
 };
