@@ -56,14 +56,75 @@
           >
             Specifications
           </p>
-          <img :src="spec" alt="" class="object-contain mt-3" />
-
+          <table class="table-auto border-collapse border border-gray-300 mt-6">
+            <thead>
+              <tr class="header-color center-text">
+                <th class="border border-gray-300 px-4 py-2">Size</th>
+                <th class="border border-gray-300 px-4 py-2">Color</th>
+                <th class="border border-gray-300 px-4 py-2">Tensile Strength (N/mm)</th>
+                <th class="border border-gray-300 px-4 py-2">Elongation @ Rated Load</th>
+                <th class="border border-gray-300 px-4 py-2">Cover to Carcass Adhesion Strength (N/mm)</th>
+                <th class="border border-gray-300 px-4 py-2">Working Temperature (°C)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">PU500</td>
+                <td class="border border-gray-300 px-4 py-2" rowspan="2">Yellow</td>
+                <td class="border border-gray-300 px-4 py-2">500</td>
+                <td class="border border-gray-300 px-4 py-2">≤ 1.2</td>
+                <td class="border border-gray-300 px-4 py-2">≥ 8</td>
+                <td class="border border-gray-300 px-4 py-2 center-text" rowspan="2">-30~+70</td>
+              </tr>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">PU700</td>
+                <td class="border border-gray-300 px-4 py-2">700</td>
+                <td class="border border-gray-300 px-4 py-2">≤ 1.2</td>
+                <td class="border border-gray-300 px-4 py-2">≥ 8</td>
+              </tr>
+            </tbody>
+          </table>
           <p
             class="bg-black text-white w-64 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
             Cover Performance
           </p>
-          <img :src="perform" alt="" class="object-contain mt-2" />
+          <table class="table-auto border-collapse border border-gray-300 mt-6">
+            <thead>
+              <tr class="header-color center-text">
+                <th class="border border-gray-300 px-4 py-2">Item</th>
+                <th class="border border-gray-300 px-4 py-2">Unit</th>
+                <th class="border border-gray-300 px-4 py-2">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">Tensile Strength</td>
+                <td class="border border-gray-300 px-4 py-2">MPa</td>
+                <td class="border border-gray-300 px-4 py-2">≥ 15.0</td>
+              </tr>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">Elongation @ Break</td>
+                <td class="border border-gray-300 px-4 py-2">%</td>
+                <td class="border border-gray-300 px-4 py-2">≥ 300</td>
+              </tr>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">Abrasion Loss</td>
+                <td class="border border-gray-300 px-4 py-2">mm3</td>
+                <td class="border border-gray-300 px-4 py-2">≤ 100</td>
+              </tr>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">Processes</td>
+                <td class="border border-gray-300 px-4 py-2"></td>
+                <td class="border border-gray-300 px-4 py-2">Pouring method</td>
+              </tr>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">Electric Conductivity</td>
+                <td class="border border-gray-300 px-4 py-2">Ω</td>
+                <td class="border border-gray-300 px-4 py-2">customization</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -187,4 +248,14 @@ section {
     position: relative; /* Disable sticky on mobile if needed */
   }
 }
+
+.header-color {
+    background-color: #286F9B ;
+    color: white; /* Optional: to make the text color white */
+  }
+
+.center-text {
+    text-align: center;
+  }
+
 </style>

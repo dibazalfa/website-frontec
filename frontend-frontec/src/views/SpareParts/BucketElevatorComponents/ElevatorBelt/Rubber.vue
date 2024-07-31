@@ -43,14 +43,106 @@
           >
             Specifications
           </p>
-          <img :src="spec" alt="" class="object-contain" />
-
+          <table class="table-auto border-collapse border border-gray-300 mt-6">
+          <thead>
+            <tr class="header-color center-text">
+              <th class="border border-gray-300 px-4 py-2" rowspan="2">Model</th>
+              <th class="border border-gray-300 px-4 py-2" rowspan="2">Color</th>
+              <th class="border border-gray-300 px-4 py-2" rowspan="2">Ply</th>
+              <th class="border border-gray-300 px-4 py-2" rowspan="2">Total Tensile Strength (N/mm)</th>
+              <th class="border border-gray-300 px-4 py-2" rowspan="2">Elongation @ Rated Load %</th>
+              <th class="border border-gray-300 px-4 py-2" colspan="2">Adhesion Strength (N/mm)</th>
+              <th class="border border-gray-300 px-4 py-2" rowspan="2">Temperature Range (°C)</th>
+            </tr>
+            <tr class="header-color center-text">
+              <th class="border border-gray-300 px-4 py-2">Ply to Ply</th>
+              <th class="border border-gray-300 px-4 py-2">Cover to Ply</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">600YP</td>
+              <td class="border border-gray-300 px-4 py-2 center-text" rowspan="3">Blue</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">3</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text" rowspan="3">≤ 1.2</td>
+              <td class="border border-gray-300 px-4 py-2 center-text" rowspan="3">≥ 4.5</td>
+              <td class="border border-gray-300 px-4 py-2 center-text" rowspan="3">≥ 3.5</td>
+              <td class="border border-gray-300 px-4 py-2 center-text" rowspan="3">-35~+70</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">800YP</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">4</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">800</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">1000YP</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">5</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1000</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">W400YP</td>
+              <td class="border border-gray-300 px-4 py-2 center-text" rowspan="2">White</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">400</td>
+              <td class="border border-gray-300 px-4 py-2 center-text" rowspan="2">≤ 1.2</td>
+              <td class="border border-gray-300 px-4 py-2 center-text" rowspan="2">≥ 4.5</td>
+              <td class="border border-gray-300 px-4 py-2 center-text" rowspan="2">≥ 3.5</td>
+              <td class="border border-gray-300 px-4 py-2 center-text" rowspan="2">-35~+70</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">W800YP</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">4</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">800</td>
+            </tr>
+          </tbody>
+        </table>
           <p
             class="bg-black text-white w-64 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
             Cover Performance
           </p>
-          <img :src="perform" alt="" class="object-contain mt-2" />
+          <table class="table-auto border-collapse border border-gray-300 mt-6">
+            <thead>
+              <tr class="header-color center-text">
+                <th class="border border-gray-300 px-4 py-2">Item</th>
+                <th class="border border-gray-300 px-4 py-2">Unit</th>
+                <th class="border border-gray-300 px-4 py-2">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">Tensile Strength</td>
+                <td class="border border-gray-300 px-4 py-2">MPa</td>
+                <td class="border border-gray-300 px-4 py-2">≥ 15.0</td>
+              </tr>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">Elongation @ Break</td>
+                <td class="border border-gray-300 px-4 py-2">%</td>
+                <td class="border border-gray-300 px-4 py-2">≥ 300</td>
+              </tr>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">Abrasion Loss</td>
+                <td class="border border-gray-300 px-4 py-2">mm3</td>
+                <td class="border border-gray-300 px-4 py-2">≤ 100</td>
+              </tr>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">Bending Test</td>
+                <td class="border border-gray-300 px-4 py-2"></td>
+                <td class="border border-gray-300 px-4 py-2">No crack under 2.5 million times of bending</td>
+              </tr>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">Flammability</td>
+                <td class="border border-gray-300 px-4 py-2"></td>
+                <td class="border border-gray-300 px-4 py-2">Persistence of flame ≤ 6S, no persistence of after glow</td>
+              </tr>
+              <tr class="center-text">
+                <td class="border border-gray-300 px-4 py-2">Electric Conductivity</td>
+                <td class="border border-gray-300 px-4 py-2">Ω</td>
+                <td class="border border-gray-300 px-4 py-2">Surface ≤ 3X10^8 (customize upon request)</td>
+              </tr>
+            </tbody>
+          </table>          
         </div>
       </section>
 
@@ -176,4 +268,15 @@ section {
     position: relative; /* Disable sticky on mobile if needed */
   }
 }
+
+.header-color {
+    background-color: #286F9B ;
+    color: white; /* Optional: to make the text color white */
+  }
+
+.center-text {
+    text-align: center;
+  }
+
 </style>
+

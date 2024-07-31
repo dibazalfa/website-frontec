@@ -49,7 +49,7 @@
           </p>
           <table class="table-auto border-collapse border border-gray-300 mt-6">
             <thead>
-              <tr>
+              <tr class="header-color">
                 <th class="border border-gray-300 px-4 py-2">Size</th>
                 <th class="border border-gray-300 px-4 py-2">Color</th>
                 <th class="border border-gray-300 px-4 py-2">Tensile Strength N/ mm</th>
@@ -99,7 +99,7 @@
           </p>
           <table class="table-auto border-collapse border border-gray-300 mt-6">
             <thead>
-              <tr>
+              <tr class="header-color">
                 <th class="border border-gray-300 px-4 py-2">Item</th>
                 <th class="border border-gray-300 px-4 py-2">Unit</th>
                 <th class="border border-gray-300 px-4 py-2">Value</th>
@@ -257,4 +257,13 @@ section {
     position: relative; /* Disable sticky on mobile if needed */
   }
 }
+
+.header-color {
+    background-color: #286F9B ;
+    color: white; /* Optional: to make the text color white */
+  }
+
+.center-text {
+    text-align: center;
+  }
 </style>
