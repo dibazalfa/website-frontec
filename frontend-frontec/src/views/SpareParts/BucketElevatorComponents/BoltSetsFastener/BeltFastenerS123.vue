@@ -67,7 +67,11 @@
                 Bolt Sets & Fastener
               </p>
             </router-link>
-            <p class="text-[18px] px-4 py-8 border-b border-black">Fang Bolt</p>
+            <router-link to="/fang-bolt">
+              <p class="text-[18px] px-4 py-8 border-b border-black">
+                Fang Bolt
+              </p>
+            </router-link>
             <router-link to="/euro-bolt">
               <p class="text-[18px] px-4 py-8 border-b border-black">
                 Euro Bolt
@@ -146,7 +150,7 @@ export default {
       sanwei,
       product,
       params,
-      install
+      install,
     };
   },
 };

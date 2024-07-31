@@ -14,7 +14,7 @@
         <p
           class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
         >
-          Euro Bolt
+          AA Industrial Bucket
         </p>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="product" alt="" class="object-contain" />
@@ -27,15 +27,32 @@
               Features
             </p>
             <ul class="list-disc mt-8 ml-6">
-              <li>Carbon Steel（Zinc Plated）</li>
-              <li>Stainless Steel</li>
               <li>
-                Strength Grade：4.8～5.6   Thread Manfacturing Percision：6g
+                AA type plastic bucket is designed to replace traditional steel
+                buckets. Ideal for conveying ore, sand, gravel, coal,
+                fertilizer, clay, salt, limestone, cement etc.
               </li>
+              <li class="font-bold">
+                Heat resistant, abrasion resistant, high strength
+              </li>
+              <li>Design Recommendations</li>
+              <ul class="list-disc ml-6">
+                <li>
+                  Recommended minimum bucket spacing: bucket projection “B” × 2.
+                </li>
+                <li>Mounting holes can be customized on request.</li>
+                <li>Venting holes are available in 5 patterns on request.</li>
+              </ul>
             </ul>
           </div>
         </div>
         <div class="flex flex-col">
+          <p
+            class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
+          >
+            specification
+          </p>
+          <img :src="spec" alt="" class="object-contain mt-6" />
           <p
             class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
@@ -52,61 +69,71 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/bolt-sets">
+            <router-link to="/elevator-bucket">
               <p class="text-[20px] font-bold p-4 border-b border-black">
-                Bolt Sets & Fastener
+                Elevator Bucket
               </p>
             </router-link>
-            <router-link to="/fang-bolt">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
-                Fang Bolt
-              </p>
-            </router-link>
-            <router-link to="/euro-bolt">
+            <router-link to="/aa-industrial-bucket">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
               >
-                Euro Bolt
+                AA Industrial Bucket
               </p>
             </router-link>
-            <router-link to="/domed-washer">
+            <router-link to="/cc-heavy-duty-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black">
-                Domed Washer
+                CC Heavy Duty Bucket
               </p>
             </router-link>
-            <router-link to="/large-flat-washer">
+            <router-link to="/d-heavy-duty-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black">
-                Large Flat Washer
+                D Heavy Duty Bucket
               </p>
             </router-link>
-            <router-link to="/spring-washer">
+            <router-link to="/dk-heavy-duty-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black">
-                Spring Washer
+                DK Heavy Duty Bucket
               </p>
             </router-link>
-            <router-link to="/hexagon-nut">
+            <router-link to="/dl-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black">
-                Hexagon Nut
+                DL Bucket
               </p>
             </router-link>
-            <router-link to="/nyloc-nut">
+            <router-link to="/dm-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black">
-                Nyloc Nut
+                DM Bucket
               </p>
             </router-link>
-            <router-link to="/flange-nut">
+            <router-link to="/eu-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black">
-                Flange Nut
+                EU Bucket
               </p>
             </router-link>
-            <router-link to="/belt-fastener-s123">
+            <router-link to="/sk-heavy-duty-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black">
-                Belt Fastener S1 S2 S3
+                SK Heavy Duty Bucket
               </p>
             </router-link>
-            <router-link to="/belt-fastener-s45">
+            <router-link to="/m-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black">
-                Belt Fastener S4 S5
+                M Bucket
+              </p>
+            </router-link>
+            <router-link to="/fabricated-steel-bucket">
+              <p class="text-[18px] px-4 py-8 border-b border-black">
+                Fabricated Steel Bucket
+              </p>
+            </router-link>
+            <router-link to="/sm-steel-bucket">
+              <p class="text-[18px] px-4 py-8 border-b border-black">
+                SM Steel Bucket
+              </p>
+            </router-link>
+            <router-link to="/sm-steel-bucket">
+              <p class="text-[18px] px-4 py-8 border-b border-black">
+                SS Steel Bucket
               </p>
             </router-link>
           </div>
@@ -125,8 +152,9 @@ import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/spare-parts/bgSpareParts.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 
-import product from "@/assets/img/spare-parts/euro-bolt.png";
-import params from "@/assets/img/spare-parts/euro-params.png";
+import product from "@/assets/img/spare-parts/aa-industrial.png";
+import spec from "@/assets/img/spare-parts/aa-spec.png";
+import params from "@/assets/img/spare-parts/aa-params.png";
 
 export default {
   components: {
@@ -138,6 +166,7 @@ export default {
       background,
       sanwei,
       product,
+      spec,
       params,
     };
   },

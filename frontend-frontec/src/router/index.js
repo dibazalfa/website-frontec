@@ -125,6 +125,66 @@ const router = createRouter({
       name: 'belt-fastener-s45',
       component: () => import('../views/SpareParts/BucketElevatorComponents/BoltSetsFastener/BeltFastenerS45.vue')
     },
+    {
+      path: '/aa-industrial-bucket',
+      name: 'aa-industrial-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/AAIndustrialBucket.vue')
+    },
+    {
+      path: '/cc-heavy-duty-bucket',
+      name: 'cc-heavy-duty-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/CCHeavyDutyBucket.vue')
+    },
+    {
+      path: '/d-heavy-duty-bucket',
+      name: 'd-heavy-duty-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/DHeavyDutyBucket.vue')
+    },
+    {
+      path: '/dk-heavy-duty-bucket',
+      name: 'dk-heavy-duty-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/DKHeavyDutyBucket.vue')
+    },
+    {
+      path: '/dl-bucket',
+      name: 'dl-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/DLBucket.vue')
+    },
+    {
+      path: '/dm-bucket',
+      name: 'dm-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/DMBucket.vue')
+    },
+    {
+      path: '/eu-bucket',
+      name: 'eu-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/EUBucket.vue')
+    },
+    {
+      path: '/sk-heavy-duty-bucket',
+      name: 'sk-heavy-duty-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/SKHeavyDutyBucket.vue')
+    },
+    {
+      path: '/m-bucket',
+      name: 'm-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/MBucket.vue')
+    },
+    {
+      path: '/fabricated-steel-bucket',
+      name: 'fabricated-steel-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/FabricatedSteelBucket.vue')
+    },
+    {
+      path: '/sm-steel-bucket',
+      name: 'sm-steel-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/SMSteelBucket.vue')
+    },
+    {
+      path: '/ss-steel-bucket',
+      name: 'ss-steel-bucket',
+      component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/SSSteelBucket.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

@@ -57,11 +57,11 @@
                 Bolt Sets & Fastener
               </p>
             </router-link>
-            <p
-              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
-            >
-              Fang Bolt
-            </p>
+            <router-link to="/fang-bolt">
+              <p class="text-[18px] px-4 py-8 border-b border-black">
+                Fang Bolt
+              </p>
+            </router-link>
             <router-link to="/euro-bolt">
               <p class="text-[18px] px-4 py-8 border-b border-black">
                 Euro Bolt
