@@ -16,7 +16,7 @@
         >
           Fang Bolt
         </p>
-        <div class="flex flex-col md:flex-row mt-12">
+        <div class="flex flex-col md:flex-row mt-12">          
           <img :src="product" alt="" class="object-contain" />
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
@@ -41,7 +41,79 @@
           >
             parameters
           </p>
-          <img :src="params" alt="" class="object-contain mt-6" />
+          <table class="table-auto border-collapse border border-gray-300 mt-6">
+          <thead>
+            <tr class="header-color center-text">
+              <th class="border border-gray-300 px-4 py-2" colspan="2" rowspan="2">Size</th>
+              <th class="border border-gray-300 px-4 py-2" rowspan="3">Head Diameter (mm)</th>
+              <th class="border border-gray-300 px-4 py-2" colspan="9">Length (mm) and Nominal Weight (Kg/100pcs)</th>
+            </tr>
+            <tr class="header-color center-text">
+              <th class="border border-gray-300 px-4 py-2">25mm</th>
+              <th class="border border-gray-300 px-4 py-2">30mm</th>
+              <th class="border border-gray-300 px-4 py-2">35mm</th>
+              <th class="border border-gray-300 px-4 py-2">40mm</th>
+              <th class="border border-gray-300 px-4 py-2">45mm</th>
+              <th class="border border-gray-300 px-4 py-2">50mm</th>
+            </tr>
+            <tr class="header-color center-text">
+              <th class="border border-gray-300 px-4 py-2">Metric</th>
+              <th class="border border-gray-300 px-4 py-2">Imperial</th>
+              <th class="border border-gray-300 px-4 py-2">1"</th>
+              <th class="border border-gray-300 px-4 py-2">1¼"</th>
+              <th class="border border-gray-300 px-4 py-2">1⅜"</th>
+              <th class="border border-gray-300 px-4 py-2">1½"</th>
+              <th class="border border-gray-300 px-4 py-2">1¾"</th>
+              <th class="border border-gray-300 px-4 py-2">2"</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">M6</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">¼"</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">23</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1.07</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">Δ 1.22</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1.4</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">M8</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">5/16"</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">28</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1.78</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">Δ 1.93</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.1</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.24</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">3/8"</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">31</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.83</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">3.08</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">Δ 3.32</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">3.57</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">3.82</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1/2"</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">-</td>
+            </tr>
+          </tbody>
+        </table>
         </div>
       </section>
 
@@ -194,4 +266,14 @@ section {
     position: relative; /* Disable sticky on mobile if needed */
   }
 }
+
+.header-color {
+    background-color: #286F9B ;
+    color: white; /* Optional: to make the text color white */
+  }
+
+.center-text {
+    text-align: center;
+  }
+
 </style>
