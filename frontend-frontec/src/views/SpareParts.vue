@@ -88,7 +88,7 @@ export default {
           description: "Click above to see product details",
           image: tab1,
           color: "#F7F6BB",
-          route: "/bucket-elevator",
+          route: "/elevator-belt",
         },
         {
           title: "Belt Conveyor Components",

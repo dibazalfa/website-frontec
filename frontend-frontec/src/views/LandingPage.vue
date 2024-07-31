@@ -122,6 +122,11 @@
         </div>
       </section>
 
+      <!-- Catalog Section -->
+      <section>
+        <img :src="catalog" alt="" class="mx-auto mb-6 md:w-1/2">
+      </section>
+
       <!-- Our Clients Section -->
       <section
         id="our-clients"
@@ -158,6 +163,7 @@ import whyFrontec from "@/assets/img/landing-page/why-frontec.png";
 import business from "@/assets/img/landing-page/business.png";
 import vectorYes from "@/assets/img/landing-page/vector-yes.png";
 import right from "@/assets/img/landing-page/right.png";
+import catalog from "@/assets/img/landing-page/catalog.png";
 
 import client1 from "@/assets/img/client/client1.png";
 import client2 from "@/assets/img/client/client2.png";
@@ -205,6 +211,7 @@ export default {
       business,
       vectorYes,
       right,
+      catalog,
       client1,
       client2,
       client3,
