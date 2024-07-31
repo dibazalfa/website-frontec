@@ -120,13 +120,11 @@
                 SK Heavy Duty Bucket
               </p>
             </router-link>
-            <router-link to="/m-bucket">
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
-              >
-                M Bucket
-              </p>
-            </router-link>
+            <p
+              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+            >
+              M Bucket
+            </p>
             <router-link to="/fabricated-steel-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black">
                 Fabricated Steel Bucket

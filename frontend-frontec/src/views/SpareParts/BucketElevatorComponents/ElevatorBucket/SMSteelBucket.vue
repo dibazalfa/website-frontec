@@ -133,17 +133,15 @@
               </p>
             </router-link>
             <router-link to="/fabricated-steel-bucket">
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black"
-              >
+              <p class="text-[18px] px-4 py-8 border-b border-black">
                 Fabricated Steel Bucket
               </p>
             </router-link>
-            <router-link to="/sm-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white">
-                SM Steel Bucket
-              </p>
-            </router-link>
+            <p
+              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+            >
+              SM Steel Bucket
+            </p>
             <router-link to="/ss-steel-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black">
                 SS Steel Bucket

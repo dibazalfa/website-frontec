@@ -137,17 +137,15 @@
               </p>
             </router-link>
             <router-link to="/sm-steel-bucket">
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black"
-              >
+              <p class="text-[18px] px-4 py-8 border-b border-black">
                 SM Steel Bucket
               </p>
             </router-link>
-            <router-link to="/ss-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white">
-                SS Steel Bucket
-              </p>
-            </router-link>
+            <p
+              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+            >
+              SS Steel Bucket
+            </p>
           </div>
           <p class="text-[20px] mx-auto mt-10">In Partnership with:</p>
           <img :src="sanwei" alt="" class="w-64 mx-auto mt-2" />
