@@ -19,13 +19,20 @@
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="product" alt="" class="object-contain" />
           <div
-            class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
+            class="flex flex-col text-justify mt-6 md:mt-0 md:pl-10 text-[16px] md:text-[18px]"
           >
-            <p
-              class="bg-black text-white w-36 px-6 py-2 rounded-full text-center font-bold uppercase"
-            >
-              Features
-            </p>
+            <div class="flex flex-row">
+              <p
+                class="bg-black text-white w-36 px-6 py-3 rounded-full text-center font-bold uppercase shadow-lg"
+              >
+                Features
+              </p>
+              <p
+                class="bg-[#CDCDCD] w-36 py-3 rounded-full text-center uppercase ml-3 shadow-lg"
+              >
+                HDPE/Nylon
+              </p>
+            </div>
             <ul class="list-disc mt-8 ml-6">
               <li>
                 AA type plastic bucket is designed to replace traditional steel
@@ -48,13 +55,13 @@
         </div>
         <div class="flex flex-col">
           <p
-            class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
+            class="bg-black text-white w-48 px-6 py-3 rounded-full text-center font-bold uppercase mt-6 shadow-lg"
           >
             specification
           </p>
           <img :src="spec" alt="" class="object-contain mt-6" />
           <p
-            class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
+            class="bg-black text-white w-48 px-6 py-3 rounded-full text-center font-bold uppercase mt-6 shadow-lg"
           >
             parameters
           </p>
@@ -131,7 +138,7 @@
                 SM Steel Bucket
               </p>
             </router-link>
-            <router-link to="/sm-steel-bucket">
+            <router-link to="/ss-steel-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black">
                 SS Steel Bucket
               </p>
