@@ -185,6 +185,26 @@ const router = createRouter({
       name: 'ss-steel-bucket',
       component: () => import('../views/SpareParts/BucketElevatorComponents/ElevatorBucket/SSSteelBucket.vue')
     },
+    {
+      path: '/belt-conveyor-components',
+      name: 'belt-conveyor-components',
+      component: () => import('../views/SpareParts/BeltConveyorComponents/BeltConveyor.vue')
+    },
+    {
+      path: '/flat-surface-conveyor',
+      name: 'flat-surface-conveyor',
+      component: () => import('../views/SpareParts/BeltConveyorComponents/FlatSurface.vue')
+    },
+    {
+      path: '/patterned-conveyor',
+      name: 'patterned-conveyor',
+      component: () => import('../views/SpareParts/BeltConveyorComponents/Patterned.vue')
+    },
+    {
+      path: '/impact-bar',
+      name: 'impact-bar',
+      component: () => import('../views/SpareParts/BeltConveyorComponents/ImpactBar.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
