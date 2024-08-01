@@ -113,11 +113,13 @@
               <p class="text-center">Bucket Elevator Components</p>
             </div>
             <div class="flex flex-col items-center">
-              <img
-                class="w-32 h-32 object-contain"
-                :src="beltConveyorComponents"
-                alt=""
-              />
+              <router-link to="/belt-conveyor-components">
+                <img
+                  class="w-32 h-32 object-contain"
+                  :src="beltConveyorComponents"
+                  alt=""
+                />
+              </router-link>
               <p class="text-center">Belt Conveyor Components</p>
             </div>
             <div class="flex flex-col items-center">
