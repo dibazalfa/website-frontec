@@ -240,6 +240,31 @@ const router = createRouter({
       name: 'roller-chain',
       component: () => import('../views/SpareParts/DragConveyorComponents/RollerChain.vue')
     },
+    {
+      path: '/screw-conveyor-components',
+      name: 'screw-conveyor-components',
+      component: () => import('../views/SpareParts/ScrewConveyorComponents/ScrewConveyorComponents.vue')
+    },
+    {
+      path: '/continous-screw-flight',
+      name: 'continous-screw-flight',
+      component: () => import('../views/SpareParts/ScrewConveyorComponents/ContinousScrew.vue')
+    },
+    {
+      path: '/sectional-screw-flight',
+      name: 'sectional-screw-flight',
+      component: () => import('../views/SpareParts/ScrewConveyorComponents/SectionalScrew.vue')
+    },
+    {
+      path: '/complete-screw-flight',
+      name: 'complete-screw-flight',
+      component: () => import('../views/SpareParts/ScrewConveyorComponents/CompleteScrew.vue')
+    },
+    {
+      path: '/cont-equal-screw',
+      name: 'cont-equal-screw',
+      component: () => import('../views/SpareParts/ScrewConveyorComponents/ContEqualScrew.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
