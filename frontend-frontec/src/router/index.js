@@ -265,6 +265,36 @@ const router = createRouter({
       name: 'cont-equal-screw',
       component: () => import('../views/SpareParts/ScrewConveyorComponents/ContEqualScrew.vue')
     },
+    {
+      path: '/engineering-plastics',
+      name: 'engineering-plastics',
+      component: () => import('../views/SpareParts/EngineeringPlastics/EngineeringPlastics.vue')
+    },
+    {
+      path: '/uhmwpe-sheet-rod',
+      name: 'uhmwpe-sheet-rod',
+      component: () => import('../views/SpareParts/EngineeringPlastics/UHMWPESheetRod.vue')
+    },
+    {
+      path: '/coated-bolts',
+      name: 'coated-bolts',
+      component: () => import('../views/SpareParts/EngineeringPlastics/CoatedBolts.vue')
+    },
+    {
+      path: '/hdpe-sheet-rod',
+      name: 'hdpe-sheet-rod',
+      component: () => import('../views/SpareParts/EngineeringPlastics/HDPESheetRod.vue')
+    },
+    {
+      path: '/ptfe-sheet-rod',
+      name: 'ptfe-sheet-rod',
+      component: () => import('../views/SpareParts/EngineeringPlastics/PTFESheetRod.vue')
+    },
+    {
+      path: '/pu-sheet-rod',
+      name: 'pu-sheet-rod',
+      component: () => import('../views/SpareParts/EngineeringPlastics/PUSheetRod.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
