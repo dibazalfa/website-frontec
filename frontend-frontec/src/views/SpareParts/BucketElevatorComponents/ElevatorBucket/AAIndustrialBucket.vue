@@ -11,11 +11,19 @@
     <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
+        <div class="flex items-center mt-7">
+          <router-link to="/bolt-sets">
+        <font-awesome-icon
+          icon="circle-arrow-left"
+          class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
+        />
+      </router-link>
         <p
-          class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
         >
-          AA Industrial Bucket
+        AA Industrial Bucket
         </p>
+      </div>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="product" alt="" class="object-contain" />
           <div
@@ -65,6 +73,205 @@
           >
             parameters
           </p>
+          <table class="table-auto border-collapse border border-gray-300 mt-6">
+          <thead>
+            <tr class="header-color center-text">
+              <th class="border border-gray-300 px-4 py-2" rowspan="2">No</th>
+              <th class="border border-gray-300 px-4 py-2" rowspan="2">Model</th>
+              <th class="border border-gray-300 px-4 py-2" colspan="3">Bucket Dimension (mm)</th>
+              <th class="border border-gray-300 px-4 py-2" colspan="3">Capacity (L)</th>
+            </tr>
+            <tr class="header-color center-text">
+              <th class="border border-gray-300 px-4 py-2">Length A</th>
+              <th class="border border-gray-300 px-4 py-2">Proj. B</th>
+              <th class="border border-gray-300 px-4 py-2">Depth C</th>
+              <th class="border border-gray-300 px-4 py-2">Water Level (Z-Y)</th>
+              <th class="border border-gray-300 px-4 py-2">Total Level (X-Y)+10%</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">1</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA4X3</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">103</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">78</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">78</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.21</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.23</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">2</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA5X4</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">3</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">4</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">5</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">6</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">7</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1800</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">8</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">9</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">11</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">13</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">14</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">15</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">17</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">18</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">19</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">20</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+          </tbody>
+        </table>
           <img :src="params" alt="" class="object-contain mt-6" />
         </div>
       </section>
@@ -87,57 +294,57 @@
                 AA Industrial Bucket
               </p>
             <router-link to="/cc-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 CC Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/d-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 D Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/dk-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 DK Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/dl-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 DL Bucket
               </p>
             </router-link>
             <router-link to="/dm-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 DM Bucket
               </p>
             </router-link>
             <router-link to="/eu-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 EU Bucket
               </p>
             </router-link>
             <router-link to="/sk-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 SK Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/m-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 M Bucket
               </p>
             </router-link>
             <router-link to="/fabricated-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Fabricated Steel Bucket
               </p>
             </router-link>
             <router-link to="/sm-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 SM Steel Bucket
               </p>
             </router-link>
             <router-link to="/ss-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 SS Steel Bucket
               </p>
             </router-link>
@@ -156,7 +363,7 @@ import AppHeader from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/spare-parts/bgSpareParts.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
-
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import product from "@/assets/img/spare-parts/aa-industrial.png";
 import spec from "@/assets/img/spare-parts/aa-spec.png";
 import params from "@/assets/img/spare-parts/aa-params.png";
@@ -165,6 +372,7 @@ export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon,
   },
   data() {
     return {
@@ -234,4 +442,14 @@ section {
     position: relative; /* Disable sticky on mobile if needed */
   }
 }
+
+.header-color {
+    background-color: #286F9B ;
+    color: white; /* Optional: to make the text color white */
+  }
+
+.center-text {
+    text-align: center;
+  }
+
 </style>

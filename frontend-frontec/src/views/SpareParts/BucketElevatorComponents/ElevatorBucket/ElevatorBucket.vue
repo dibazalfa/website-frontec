@@ -17,50 +17,50 @@
         </p>
         <div class="flex flex-col md:flex-row mt-12">
           <router-link to="/aa-industrial-bucket">
-            <img :src="bucket1" alt="" class="object-contain" />
+            <img :src="bucket1" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
           </router-link>
           <router-link to="/cc-heavy-duty-bucket">
-            <img :src="bucket2" alt="" class="object-contain md:ml-12" />
+            <img :src="bucket2" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/dk-heavy-duty-bucket">
-            <img :src="bucket3" alt="" class="object-contain" />
+            <img :src="bucket3" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
           </router-link>
           <router-link to="/dl-bucket">
-            <img :src="bucket4" alt="" class="object-contain md:ml-12" />
+            <img :src="bucket4" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/dm-bucket">
-            <img :src="bucket5" alt="" class="object-contain" />
+            <img :src="bucket5" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
           </router-link>
           <router-link to="/eu-bucket">
-            <img :src="bucket6" alt="" class="object-contain md:ml-12" />
+            <img :src="bucket6" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/sk-heavy-duty-bucket">
-            <img :src="bucket7" alt="" class="object-contain" />
+            <img :src="bucket7" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
           </router-link>
           <router-link to="/m-bucket">
-            <img :src="bucket8" alt="" class="object-contain md:ml-12" />
+            <img :src="bucket8" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/fabricated-steel-bucket">
-            <img :src="bucket9" alt="" class="object-contain" />
+            <img :src="bucket9" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
           </router-link>
           <router-link to="/sm-steel-bucket">
-            <img :src="bucket10" alt="" class="object-contain md:ml-12" />
+            <img :src="bucket10" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/ss-steel-bucket">
-            <img :src="bucket11" alt="" class="object-contain" />
+            <img :src="bucket11" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
           </router-link>
           <router-link to="/d-heavy-duty-bucket">
-            <img :src="bucket12" alt="" class="object-contain md:ml-12" />
+            <img :src="bucket12" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
           </router-link>
         </div>
       </section>
@@ -76,12 +76,12 @@
               Bucket Elevator Components
             </p>
             <router-link to="/elevator-belt">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Elevator Belt
               </p>
             </router-link>
             <router-link to="/bolt-sets">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Bolt Sets & Fastener
               </p>
             </router-link>
@@ -91,7 +91,7 @@
               Elevator Bucket
             </p>
             <router-link to="/pulley-slide-lagging">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Pulley Slide Lagging
               </p>
             </router-link>

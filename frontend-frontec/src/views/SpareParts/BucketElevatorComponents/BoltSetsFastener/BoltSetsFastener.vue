@@ -17,42 +17,42 @@
         </p>
         <div class="flex flex-col md:flex-row mt-12">
           <router-link to="/fang-bolt">
-            <img :src="bolt1" alt="" class="object-contain" />
+            <img :src="bolt1" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
           </router-link>
           <router-link to="/euro-bolt">
-            <img :src="bolt2" alt="" class="object-contain md:ml-12" />
+            <img :src="bolt2" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/domed-washer">
-            <img :src="bolt3" alt="" class="object-contain" />
+            <img :src="bolt3" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
           </router-link>
           <router-link to="/large-flat-washer">
-            <img :src="bolt4" alt="" class="object-contain md:ml-12" />
+            <img :src="bolt4" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
           </router-link>
         </div>
-        <div class="flex flex-col md:flex-row mt-10">
+        <div class="flex flex-col md:flex-row mt-10 hover:scale-105 transform transition-transform duration-300">
           <router-link to="/spring-washer">
-            <img :src="bolt5" alt="" class="object-contain" />
+            <img :src="bolt5" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
           </router-link>
           <router-link to="/hexagon-nut">
-            <img :src="bolt6" alt="" class="object-contain md:ml-12" />
+            <img :src="bolt6" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
           </router-link>
         </div>
-        <div class="flex flex-col md:flex-row mt-10">
+        <div class="flex flex-col md:flex-row mt-10 hover:scale-105 transform transition-transform duration-300">
           <router-link to="/nyloc-nut">
-            <img :src="bolt7" alt="" class="object-contain" />
+            <img :src="bolt7" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
           </router-link>
           <router-link to="/flange-nut">
-            <img :src="bolt8" alt="" class="object-contain md:ml-12" />
+            <img :src="bolt8" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/belt-fastener-s123">
-            <img :src="bolt9" alt="" class="object-contain" />
+            <img :src="bolt9" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
           </router-link>
           <router-link to="/belt-fastener-s45">
-            <img :src="bolt10" alt="" class="object-contain md:ml-12" />
+            <img :src="bolt10" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
           </router-link>
         </div>
       </section>
@@ -68,7 +68,7 @@
               Bucket Elevator Components
             </p>
             <router-link to="/elevator-belt">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Elevator Belt
               </p>
             </router-link>
@@ -78,12 +78,12 @@
               Bolt Sets & Fastener
             </p>
             <router-link to="/elevator-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Elevator Bucket
               </p>
             </router-link>
             <router-link to="/pulley-slide-lagging">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Pulley Slide Lagging
               </p>
             </router-link>

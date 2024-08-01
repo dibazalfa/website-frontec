@@ -15,7 +15,7 @@
           <router-link to="/bolt-sets">
         <font-awesome-icon
           icon="circle-arrow-left"
-          class="text-3xl mr-6 cursor-pointer mt-2"
+          class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
         />
       </router-link>
         <p
@@ -104,32 +104,32 @@
               </p>
             </router-link>
             <router-link to="/fang-bolt">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Fang Bolt
               </p>
             </router-link>
             <router-link to="/euro-bolt">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Euro Bolt
               </p>
             </router-link>
             <router-link to="/domed-washer">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Domed Washer
               </p>
             </router-link>
             <router-link to="/large-flat-washer">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Large Flat Washer
               </p>
             </router-link>
             <router-link to="/spring-washer">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Spring Washer
               </p>
             </router-link>
             <router-link to="/hexagon-nut">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Hexagon Nut
               </p>
             </router-link>
@@ -139,17 +139,17 @@
               Nyloc Nut
             </p>
             <router-link to="/flange-nut">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Flange Nut
               </p>
             </router-link>
             <router-link to="/belt-fastener-s123">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Belt Fastener S1 S2 S3
               </p>
             </router-link>
             <router-link to="/belt-fastener-s45">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Belt Fastener S4 S5
               </p>
             </router-link>

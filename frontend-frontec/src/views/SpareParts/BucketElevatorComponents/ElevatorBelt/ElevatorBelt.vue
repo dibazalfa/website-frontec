@@ -7,8 +7,8 @@
       :isScrolled="isScrolled"
     />
 
-    <!-- Main Content -->
-    <main class="flex-1 flex flex-col md:flex-row">
+ <!-- Main Content -->
+ <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
         <!-- Main content goes here -->
@@ -16,15 +16,15 @@
           Elevator Belt
         </p>
         <div class="flex flex-col md:flex-row mt-12">
-          <router-link to="/pvc-solid-woven">
+          <router-link to="/pvc-solid-woven" class="hover:scale-105 transform transition-transform duration-300">
             <img :src="pvc" alt="" class="object-contain" />
           </router-link>
-          <router-link to="/rubber-belt">
-            <img :src="rubber" alt="" class="object-contain md:ml-16" />
+          <router-link to="/rubber-belt" class="hover:scale-105 transform transition-transform duration-300 md:ml-16">
+            <img :src="rubber" alt="" class="object-contain" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
-          <router-link to="/oil-fire">
+          <router-link to="/oil-fire" class="hover:scale-105 transform transition-transform duration-300">
             <img :src="oilFire" alt="" class="object-contain" />
           </router-link>
         </div>
@@ -46,17 +46,17 @@
               Elevator Belt
             </p>
             <router-link to="/bolt-sets">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Bolt Sets & Fastener
               </p>
             </router-link>
             <router-link to="/elevator-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Elevator Bucket
               </p>
             </router-link>
             <router-link to="/pulley-slide-lagging">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Pulley Slide Lagging
               </p>
             </router-link>

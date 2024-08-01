@@ -15,7 +15,7 @@
           <router-link to="/elevator-belt">
         <font-awesome-icon
           icon="circle-arrow-left"
-          class="text-3xl mr-6 cursor-pointer mt-2"
+          class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
         />
       </router-link>
         <p
@@ -148,13 +148,13 @@
               </p>
             </router-link>
             <router-link to="/pvc-solid-woven">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 PVC Solid <br />
                 Woven Elevator Belt
               </p>
             </router-link>
             <router-link to="/rubber-belt">
-              <p class="text-[18px] px-4 py-8 border-b border-black">Rubber</p>
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">Rubber</p>
             </router-link>
             <p
               class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
