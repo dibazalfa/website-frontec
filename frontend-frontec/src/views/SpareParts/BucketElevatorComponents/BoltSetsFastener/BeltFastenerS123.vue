@@ -11,11 +11,19 @@
     <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
+        <div class="flex items-center mt-7">
+          <router-link to="/bolt-sets">
+        <font-awesome-icon
+          icon="circle-arrow-left"
+          class="text-3xl mr-6 cursor-pointer mt-2"
+        />
+      </router-link>
         <p
-          class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
         >
-          Belt Fastener S1 S2 S3
+        Belt Fastener S1 S2 S3
         </p>
+      </div>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="product" alt="" class="object-contain" />
           <div
@@ -45,7 +53,33 @@
           >
             parameters
           </p>
-          <img :src="params" alt="" class="object-contain mt-6" />
+          <table class="table-auto border-collapse border border-gray-300 mt-6">
+          <thead>
+            <tr class="header-color center-text">
+              <th class="border border-gray-300 px-4 py-2">Size</th>
+              <th class="border border-gray-300 px-4 py-2">S1</th>
+              <th class="border border-gray-300 px-4 py-2">S2</th>
+              <th class="border border-gray-300 px-4 py-2">S4</th>
+              <th class="border border-gray-300 px-4 py-2">S5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">Rated Strength KN/m</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1000</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1200</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">Bolt Size (8.8 grade)</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+            </tr>
+          </tbody>
+        </table>
           <p
             class="bg-black text-white w-96 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
@@ -132,7 +166,7 @@ import AppHeader from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/spare-parts/bgSpareParts.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
-
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import product from "@/assets/img/spare-parts/belt-fastener-123.png";
 import params from "@/assets/img/spare-parts/belt-fastener-123-params.png";
 import install from "@/assets/img/spare-parts/belt-fastener-123-install.png";
@@ -141,6 +175,7 @@ export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon,
   },
   data() {
     return {
@@ -210,4 +245,14 @@ section {
     position: relative; /* Disable sticky on mobile if needed */
   }
 }
+
+.header-color {
+    background-color: #286F9B ;
+    color: white; /* Optional: to make the text color white */
+  }
+
+.center-text {
+    text-align: center;
+  }
+
 </style>

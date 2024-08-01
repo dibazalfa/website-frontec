@@ -11,12 +11,19 @@
     <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
-        <!-- Main content goes here -->
+        <div class="flex items-center mt-7">
+          <router-link to="/elevator-belt">
+        <font-awesome-icon
+          icon="circle-arrow-left"
+          class="text-3xl mr-6 cursor-pointer mt-2"
+        />
+      </router-link>
         <p
-          class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
         >
-          Rubber Elevator Belt
+        Oil & Fire Resistant Belt
         </p>
+      </div>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="oil" alt="" class="object-contain" />
           <div
@@ -174,11 +181,13 @@ import oil from "@/assets/img/spare-parts/oil.png";
 import spec from "@/assets/img/spare-parts/oil-spec.png";
 import perform from "@/assets/img/spare-parts/oil-perform.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon,
   },
   data() {
     return {
