@@ -205,6 +205,41 @@ const router = createRouter({
       name: 'impact-bar',
       component: () => import('../views/SpareParts/BeltConveyorComponents/ImpactBar.vue')
     },
+    {
+      path: '/drag-conveyor-components',
+      name: 'drag-conveyor-components',
+      component: () => import('../views/SpareParts/DragConveyorComponents/DragConveyorComponents.vue')
+    },
+    {
+      path: '/drag-sprocket',
+      name: 'drag-sprocket',
+      component: () => import('../views/SpareParts/DragConveyorComponents/DragSprocket.vue')
+    },
+    {
+      path: '/drop-forged-chain',
+      name: 'drop-forged-chain',
+      component: () => import('../views/SpareParts/DragConveyorComponents/DropForgedChain.vue')
+    },
+    {
+      path: '/nylon-gear-wheel',
+      name: 'nylon-gear-wheel',
+      component: () => import('../views/SpareParts/DragConveyorComponents/NylonGearWheel.vue')
+    },
+    {
+      path: '/plastic-flight-bf',
+      name: 'plastic-flight-bf',
+      component: () => import('../views/SpareParts/DragConveyorComponents/PlasticFlightBF.vue')
+    },
+    {
+      path: '/plastic-flight-br',
+      name: 'plastic-flight-br',
+      component: () => import('../views/SpareParts/DragConveyorComponents/PlasticFlightBR.vue')
+    },
+    {
+      path: '/roller-chain',
+      name: 'roller-chain',
+      component: () => import('../views/SpareParts/DragConveyorComponents/RollerChain.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

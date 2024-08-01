@@ -123,11 +123,13 @@
               <p class="text-center">Belt Conveyor Components</p>
             </div>
             <div class="flex flex-col items-center">
-              <img
-                class="w-32 h-32 object-contain"
-                :src="dragConveyorComponents"
-                alt=""
-              />
+              <router-link to="/drag-conveyor-components">
+                <img
+                  class="w-32 h-32 object-contain"
+                  :src="dragConveyorComponents"
+                  alt=""
+                />
+              </router-link>
               <p class="text-center">Drag Conveyor Components</p>
             </div>
             <div class="flex flex-col items-center">
