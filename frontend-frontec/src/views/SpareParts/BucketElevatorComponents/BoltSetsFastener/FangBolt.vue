@@ -12,11 +12,12 @@
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
         <div class="flex items-center mt-7">
+          <router-link to="/bolt-sets">
         <font-awesome-icon
           icon="circle-arrow-left"
-          @click="redirectToBoltSets"
           class="text-3xl mr-6 cursor-pointer mt-2"
         />
+      </router-link>
         <p
           class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
         >
@@ -208,11 +209,6 @@ export default {
     AppHeader,
     Footer,
     FontAwesomeIcon,
-  },
-  methods: {
-    redirectToBoltSets() {
-      this.$router.push({ path: '/bolt-sets' });
-    }
   },
   data() {
     return {

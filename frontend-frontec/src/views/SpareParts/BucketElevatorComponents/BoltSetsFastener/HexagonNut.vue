@@ -11,11 +11,19 @@
     <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
+        <div class="flex items-center mt-7">
+          <router-link to="/bolt-sets">
+        <font-awesome-icon
+          icon="circle-arrow-left"
+          class="text-3xl mr-6 cursor-pointer mt-2"
+        />
+      </router-link>
         <p
-          class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
         >
           Hexagon Nut
         </p>
+      </div>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="product" alt="" class="object-contain" />
           <div
@@ -41,7 +49,45 @@
           >
             parameters
           </p>
-          <img :src="params" alt="" class="object-contain mt-6" />
+          <table class="table-auto border-collapse border border-gray-300 mt-6">
+          <thead>
+            <tr class="header-color center-text">
+              <th class="border border-gray-300 px-4 py-2" colspan="2">Size</th>
+              <th class="border border-gray-300 px-4 py-2" rowspan="2">Thickness (mm)</th>
+              <th class="border border-gray-300 px-4 py-2" rowspan="2">Nominal Weight (Kg/100pcs)</th>
+            </tr>
+            <tr class="header-color center-text">
+              <th class="border border-gray-300 px-4 py-2">Metric</th>
+              <th class="border border-gray-300 px-4 py-2">Imperial</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">M6</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1/4"</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">5.2</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.21</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">M8</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">5/16"</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">6.8</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.45</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">3/8"</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">8.4</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.84</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1/2"</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">10.8</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1.25</td>
+            </tr>
+          </tbody>
+        </table>
         </div>
       </section>
 
@@ -82,12 +128,12 @@
                 Spring Washer
               </p>
             </router-link>
-            <p class="text-[18px] px-4 py-8 border-b border-black">
+            <p class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white">
               Hexagon Nut
             </p>
             <router-link to="/nyloc-nut">
               <p
-                class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+                class="text-[18px] px-4 py-8 border-b border-black"
               >
                 Nyloc Nut
               </p>
@@ -122,7 +168,7 @@ import AppHeader from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/spare-parts/bgSpareParts.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
-
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import product from "@/assets/img/spare-parts/hexagon-nut.png";
 import params from "@/assets/img/spare-parts/hexagon-params.png";
 
@@ -130,6 +176,7 @@ export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon,
   },
   data() {
     return {
@@ -167,7 +214,6 @@ export default {
   padding: 1rem;
 }
 
-/* Styling for the main content and sidebar */
 .main {
   flex: 1;
   overflow-y: hidden;
@@ -176,7 +222,7 @@ export default {
 }
 
 section {
-  overflow-y: auto; /* Enables scrolling on the main content */
+  overflow-y: auto; 
 }
 
 .sidebar {
@@ -195,7 +241,17 @@ section {
   .sidebar {
     width: 100%;
     height: auto;
-    position: relative; /* Disable sticky on mobile if needed */
+    position: relative;
   }
 }
+
+.header-color {
+    background-color: #286F9B ;
+    color: white; /* Optional: to make the text color white */
+  }
+
+.center-text {
+    text-align: center;
+  }
+
 </style>

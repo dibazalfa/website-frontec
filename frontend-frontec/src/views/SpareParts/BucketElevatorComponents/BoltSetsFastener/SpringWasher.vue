@@ -12,11 +12,12 @@
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
         <div class="flex items-center mt-7">
+          <router-link to="/bolt-sets">
         <font-awesome-icon
           icon="circle-arrow-left"
-          @click="redirectToBoltSets"
           class="text-3xl mr-6 cursor-pointer mt-2"
         />
+      </router-link>
         <p
           class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
         >
@@ -52,7 +53,7 @@
           <thead>
             <tr class="header-color center-text">
               <th class="border border-gray-300 px-4 py-2" colspan="2">Size</th>
-              <th class="border border-gray-300 px-4 py-2" rowspan="2">Outer Diameter (mm)</th>
+              <th class="border border-gray-300 px-4 py-2" rowspan="2">Elasticity Test Under the Load (N)</th>
               <th class="border border-gray-300 px-4 py-2" rowspan="2">Thickness (mm)</th>
               <th class="border border-gray-300 px-4 py-2" rowspan="2">Nominal Weight (Kg/100pcs)</th>
             </tr>
@@ -65,34 +66,33 @@
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">M6</td>
               <td class="border border-gray-300 px-4 py-2 center-text">1/4"</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">22</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">1.5</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">0.43</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">7050</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1.6</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.05</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">M8</td>
               <td class="border border-gray-300 px-4 py-2 center-text">5/16"</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">26</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">2</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">0.75</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">12900</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.1</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.11</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
               <td class="border border-gray-300 px-4 py-2 center-text">3/8"</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">32</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">2.0</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">1.16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">20600</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.6</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.21</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
               <td class="border border-gray-300 px-4 py-2 center-text">1/2"</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">40</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">2.0/2.5</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">1.9</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">30000</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">3.1</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.36</td>
             </tr>
           </tbody>
         </table>
-          <img :src="params" alt="" class="object-contain mt-6" />
         </div>
       </section>
 
@@ -183,11 +183,6 @@ export default {
     Footer,
     FontAwesomeIcon,
   },
-  methods: {
-    redirectToBoltSets() {
-      this.$router.push({ path: '/bolt-sets' });
-    }
-  },
   data() {
     return {
       background,
@@ -264,5 +259,5 @@ section {
 .center-text {
     text-align: center;
   }
-  
+
 </style>
