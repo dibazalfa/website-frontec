@@ -11,11 +11,18 @@
     <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
+        <div class="flex items-center mt-7">
+        <font-awesome-icon
+          icon="circle-arrow-left"
+          @click="redirectToBoltSets"
+          class="text-3xl mr-6 cursor-pointer mt-2"
+        />
         <p
-          class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
         >
           Euro Bolt
         </p>
+      </div>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="product" alt="" class="object-contain" />
           <div
@@ -194,7 +201,7 @@ import AppHeader from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/spare-parts/bgSpareParts.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
-
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import product from "@/assets/img/spare-parts/euro-bolt.png";
 import params from "@/assets/img/spare-parts/euro-params.png";
 
@@ -202,6 +209,12 @@ export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon,
+  },
+  methods: {
+    redirectToBoltSets() {
+      this.$router.push({ path: '/bolt-sets' });
+    }
   },
   data() {
     return {
