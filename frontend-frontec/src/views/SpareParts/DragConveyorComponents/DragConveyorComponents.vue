@@ -12,31 +12,41 @@
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
         <!-- Main content goes here -->
-        <p class="text-[40px] mt-7 text-[#286F9B] font-bold text-shadow-md">
-          Drag Conveyor Components
-        </p>
+        <div class="flex items-center mt-7">
+          <router-link to="/spare-parts">
+            <font-awesome-icon
+              icon="circle-arrow-left"
+              class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
+            />
+          </router-link>
+          <p
+            class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          >
+            Drag Conveyor Components
+          </p>
+        </div>
         <div class="flex flex-col md:flex-row mt-12">
           <router-link to="/roller-chain">
-            <img :src="product1" alt="" class="object-contain" />
+            <img :src="product1" alt="" class="object-contain hover:scale-105" />
           </router-link>
           <router-link to="/drop-forged-chain">
-            <img :src="product2" alt="" class="object-contain md:ml-16" />
+            <img :src="product2" alt="" class="object-contain md:ml-16 hover:scale-105" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-12">
           <router-link to="/drag-sprocket">
-            <img :src="product3" alt="" class="object-contain" />
+            <img :src="product3" alt="" class="object-contain hover:scale-105" />
           </router-link>
           <router-link to="/plastic-flight-br">
-            <img :src="product4" alt="" class="object-contain md:ml-16" />
+            <img :src="product4" alt="" class="object-contain md:ml-16 hover:scale-105" />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-12">
           <router-link to="/nylon-gear-wheel">
-            <img :src="product5" alt="" class="object-contain" />
+            <img :src="product5" alt="" class="object-contain hover:scale-105" />
           </router-link>
           <router-link to="/plastic-flight-bf">
-            <img :src="product6" alt="" class="object-contain md:ml-16" />
+            <img :src="product6" alt="" class="object-contain md:ml-16 hover:scale-105" />
           </router-link>
         </div>
       </section>
@@ -69,10 +79,13 @@ import product4 from "@/assets/img/spare-parts/plastic-br-text.png";
 import product5 from "@/assets/img/spare-parts/nylon-gear-text.png";
 import product6 from "@/assets/img/spare-parts/plastic-bf-text.png";
 
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
 export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon
   },
   data() {
     return {

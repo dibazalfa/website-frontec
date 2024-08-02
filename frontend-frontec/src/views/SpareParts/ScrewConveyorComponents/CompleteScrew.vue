@@ -12,7 +12,7 @@
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
         <div class="flex items-center mt-7">
-          <router-link to="/engineering-plastics">
+          <router-link to="/screw-conveyor-components">
             <font-awesome-icon
               icon="circle-arrow-left"
               class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"

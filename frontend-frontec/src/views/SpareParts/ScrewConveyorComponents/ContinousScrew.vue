@@ -12,7 +12,7 @@
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
         <div class="flex items-center mt-7">
-          <router-link to="/engineering-plastics">
+          <router-link to="/screw-conveyor-components">
             <font-awesome-icon
               icon="circle-arrow-left"
               class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
@@ -83,16 +83,22 @@
                 Screw Conveyor Components
               </p>
             </router-link>
-              <p class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white">
-                Continuous Screw Flight
-              </p>
+            <p
+              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+            >
+              Continuous Screw Flight
+            </p>
             <router-link to="/sectional-screw-flight">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Sectional Screw Flight
               </p>
             </router-link>
             <router-link to="/complete-screw-flight">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Complete Screw Flight Unit
               </p>
             </router-link>
@@ -131,7 +137,7 @@ export default {
   components: {
     AppHeader,
     Footer,
-    FontAwesomeIcon
+    FontAwesomeIcon,
   },
   data() {
     return {

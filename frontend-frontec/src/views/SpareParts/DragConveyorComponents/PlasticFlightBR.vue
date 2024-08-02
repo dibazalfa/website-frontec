@@ -11,11 +11,19 @@
     <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
-        <p
-          class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
-        >
-          U-Shaped Plastic Flight Attachment (BR)
-        </p>
+        <div class="flex items-center mt-7">
+          <router-link to="/drag-conveyor-components">
+            <font-awesome-icon
+              icon="circle-arrow-left"
+              class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
+            />
+          </router-link>
+          <p
+            class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          >
+            U-Shaped Plastic Flight Attachment (BR)
+          </p>
+        </div>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="product" alt="" class="object-contain" />
           <div
@@ -48,8 +56,8 @@
               according to customer requirements.
             </li>
             <li>
-              Specifications followed by the suffix “C” for ultra-high
-              molecular weight polyethylene sheet slitting processing, other
+              Specifications followed by the suffix “C” for ultra-high molecular
+              weight polyethylene sheet slitting processing, other
               specifications for injection molding plastic or nylon scraper.
               friction coefficient, good wear resistance and excellent cost
               performance.
@@ -83,17 +91,23 @@
               </p>
             </router-link>
             <router-link to="/roller-chain">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Roller Chain
               </p>
             </router-link>
             <router-link to="/drop-forged-chain">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Drop Forged Chain
               </p>
             </router-link>
             <router-link to="/drag-sprocket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Drag Sprocket
               </p>
             </router-link>
@@ -103,12 +117,16 @@
               Plastif Flight Attachment (BR)
             </p>
             <router-link to="/nylon-gear-wheel">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Nylon Gear & Wheel
               </p>
             </router-link>
             <router-link to="/plastic-flight-bf">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Plastic Flight Attachment (BF)
               </p>
             </router-link>
@@ -135,10 +153,13 @@ import spec from "@/assets/img/spare-parts/plastic-br-spec1.png";
 import spec2 from "@/assets/img/spare-parts/plastic-br-spec2.png";
 import draw from "@/assets/img/spare-parts/plastic-br-draw.png";
 
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
 export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon,
   },
   data() {
     return {
