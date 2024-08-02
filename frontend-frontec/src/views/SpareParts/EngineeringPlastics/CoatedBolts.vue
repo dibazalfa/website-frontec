@@ -62,7 +62,54 @@
           >
             Specifications
           </p>
-          <img :src="spec" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">Structure form</th>
+                <th class="border border-gray-300 p-2">Specification</th>
+                <th class="border border-gray-300 p-2">d</th>
+                <th class="border border-gray-300 p-2">D</th>
+                <th class="border border-gray-300 p-2">L</th>
+                <th class="border border-gray-300 p-2">L1</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2" rowspan="2">
+                  Hemispherical head structure
+                </td>
+                <td class="border border-gray-300 p-2">M8X30</td>
+                <td class="border border-gray-300 p-2">M8</td>
+                <td class="border border-gray-300 p-2">29</td>
+                <td class="border border-gray-300 p-2">30</td>
+                <td class="border border-gray-300 p-2">10.3</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">M8X35</td>
+                <td class="border border-gray-300 p-2">M8</td>
+                <td class="border border-gray-300 p-2">29</td>
+                <td class="border border-gray-300 p-2">35</td>
+                <td class="border border-gray-300 p-2">10.3</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2" rowspan="2">
+                  Flat head structure
+                </td>
+                <td class="border border-gray-300 p-2">M8X30</td>
+                <td class="border border-gray-300 p-2">M8</td>
+                <td class="border border-gray-300 p-2">29</td>
+                <td class="border border-gray-300 p-2">30</td>
+                <td class="border border-gray-300 p-2">5.5</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">M8X35</td>
+                <td class="border border-gray-300 p-2">M8</td>
+                <td class="border border-gray-300 p-2">29</td>
+                <td class="border border-gray-300 p-2">35</td>
+                <td class="border border-gray-300 p-2">5.5</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -73,11 +120,9 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/engineering-plastics">
-              <p class="text-[20px] font-bold p-4 border-b border-black">
-                Engineering Plastics
-              </p>
-            </router-link>
+            <p class="text-[20px] font-bold p-4 border-b border-black">
+              Engineering Plastics
+            </p>
             <router-link to="/uhmwpe-sheet-rod">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"

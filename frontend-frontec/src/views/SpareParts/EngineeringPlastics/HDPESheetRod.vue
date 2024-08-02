@@ -60,13 +60,91 @@
           >
             Specifications
           </p>
-          <img :src="spec" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">Name</th>
+                <th class="border border-gray-300 p-2">Length (mm)</th>
+                <th class="border border-gray-300 p-2">Width (mm)</th>
+                <th class="border border-gray-300 p-2">Thickness (mm)</th>
+                <th class="border border-gray-300 p-2">Color</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2">Sheet</td>
+                <td class="border border-gray-300 p-2">2000-3000</td>
+                <td class="border border-gray-300 p-2">1000-1500</td>
+                <td class="border border-gray-300 p-2">1-100</td>
+                <td class="border border-gray-300 p-2">White</td>
+              </tr>
+            </tbody>
+          </table>
           <p
             class="bg-black text-white w-48 px-6 py-3 shadow-lg rounded-full text-center font-bold uppercase mt-6"
           >
             performance
           </p>
-          <img :src="perform" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">Item</th>
+                <th class="border border-gray-300 p-2">Unit</th>
+                <th class="border border-gray-300 p-2">Value</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2">Density</td>
+                <td class="border border-gray-300 p-2">g/cm³</td>
+                <td class="border border-gray-300 p-2">0.95</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Water Absorption</td>
+                <td class="border border-gray-300 p-2">%</td>
+                <td class="border border-gray-300 p-2">&lt; 0.01</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Working Temperature</td>
+                <td class="border border-gray-300 p-2">°C</td>
+                <td class="border border-gray-300 p-2">-48~82</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Tensile Strength</td>
+                <td class="border border-gray-300 p-2">MPa</td>
+                <td class="border border-gray-300 p-2">29</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Elongation at Break</td>
+                <td class="border border-gray-300 p-2">%</td>
+                <td class="border border-gray-300 p-2">300</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Hardness</td>
+                <td class="border border-gray-300 p-2">Shore D</td>
+                <td class="border border-gray-300 p-2">60-70</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  Linear Expansion Coefficient
+                </td>
+                <td class="border border-gray-300 p-2">10³ cm/cm°C</td>
+                <td class="border border-gray-300 p-2">15-25</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  Thermal Deformation Temperature
+                </td>
+                <td class="border border-gray-300 p-2">°C</td>
+                <td class="border border-gray-300 p-2">85</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Dielectric Strength</td>
+                <td class="border border-gray-300 p-2">kv/mm</td>
+                <td class="border border-gray-300 p-2">&gt; 17.5</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -77,11 +155,9 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/engineering-plastics">
-              <p class="text-[20px] font-bold p-4 border-b border-black">
-                Engineering Plastics
-              </p>
-            </router-link>
+            <p class="text-[20px] font-bold p-4 border-b border-black">
+              Engineering Plastics
+            </p>
             <router-link to="/uhmwpe-sheet-rod">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"

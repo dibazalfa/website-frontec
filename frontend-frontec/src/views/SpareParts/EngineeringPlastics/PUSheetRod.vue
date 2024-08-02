@@ -56,7 +56,140 @@
           >
             Specifications
           </p>
-          <img :src="spec" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">
+                  Material Formula / Items
+                </th>
+                <th class="border border-gray-300 p-2">Prime S70</th>
+                <th class="border border-gray-300 p-2">Prime L82</th>
+                <th class="border border-gray-300 p-2">Prime F82</th>
+                <th class="border border-gray-300 p-2">Prime FRAS82</th>
+                <th class="border border-gray-300 p-2">Prime H92</th>
+              </tr>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">Colour</th>
+                <th class="border border-gray-300 p-2">Red</th>
+                <th class="border border-gray-300 p-2">Green</th>
+                <th class="border border-gray-300 p-2">Orange</th>
+                <th class="border border-gray-300 p-2">Blue</th>
+                <th class="border border-gray-300 p-2">Black</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  Hardness Durometer (shore A +/-2)
+                </td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">82</td>
+                <td class="border border-gray-300 p-2">82</td>
+                <td class="border border-gray-300 p-2">82</td>
+                <td class="border border-gray-300 p-2">92</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  Tensile Strength (MPa)
+                </td>
+                <td class="border border-gray-300 p-2">40.2</td>
+                <td class="border border-gray-300 p-2">44</td>
+                <td class="border border-gray-300 p-2">42.4</td>
+                <td class="border border-gray-300 p-2">41.1</td>
+                <td class="border border-gray-300 p-2">48</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2">100% Modulus (MPa)</td>
+                <td class="border border-gray-300 p-2">2.7</td>
+                <td class="border border-gray-300 p-2">5.3</td>
+                <td class="border border-gray-300 p-2">5.2</td>
+                <td class="border border-gray-300 p-2">5.2</td>
+                <td class="border border-gray-300 p-2">8.7</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2">300% Modulus (MPa)</td>
+                <td class="border border-gray-300 p-2">5.2</td>
+                <td class="border border-gray-300 p-2">7.8</td>
+                <td class="border border-gray-300 p-2">7.7</td>
+                <td class="border border-gray-300 p-2">7.7</td>
+                <td class="border border-gray-300 p-2">14.9</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2">
+                  Elongation at Break (%)
+                </td>
+                <td class="border border-gray-300 p-2">810</td>
+                <td class="border border-gray-300 p-2">680</td>
+                <td class="border border-gray-300 p-2">680</td>
+                <td class="border border-gray-300 p-2">680</td>
+                <td class="border border-gray-300 p-2">580</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2">
+                  Tear Strength (Right Angle / KN/m)
+                </td>
+                <td class="border border-gray-300 p-2">54.9</td>
+                <td class="border border-gray-300 p-2">68.3</td>
+                <td class="border border-gray-300 p-2">65.8</td>
+                <td class="border border-gray-300 p-2">65.8</td>
+                <td class="border border-gray-300 p-2">96</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2">
+                  Impact Resilience (%)
+                </td>
+                <td class="border border-gray-300 p-2">46</td>
+                <td class="border border-gray-300 p-2">34</td>
+                <td class="border border-gray-300 p-2">34</td>
+                <td class="border border-gray-300 p-2">34</td>
+                <td class="border border-gray-300 p-2">29</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2">
+                  DIN Abrasion Loss (mm3)
+                </td>
+                <td class="border border-gray-300 p-2">40</td>
+                <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">51</td>
+                <td class="border border-gray-300 p-2">51</td>
+                <td class="border border-gray-300 p-2">49</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Flame Retardant</td>
+                <td class="border border-gray-300 p-2">-</td>
+                <td class="border border-gray-300 p-2">-</td>
+                <td class="border border-gray-300 p-2" colspan="2">
+                  Duration of visible flame ≤ 30s Duration of visible afterglow
+                  ≤ 120s
+                </td>
+                <td class="border border-gray-300 p-2">-</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Flame Retardant</td>
+                <td class="border border-gray-300 p-2">-</td>
+                <td class="border border-gray-300 p-2">-</td>
+                <td class="border border-gray-300 p-2">-</td>
+                <td class="border border-gray-300 p-2">≤ 3×10^8</td>
+                <td class="border border-gray-300 p-2">-</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2">Application</td>
+                <td class="border border-gray-300 p-2">Conveyor Skirting</td>
+                <td class="border border-gray-300 p-2">
+                  Conveyor Skirting & Liner
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Conveyor Skirting & Liner (Flame Retardant)
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Conveyor Skirting & Liner (FRAS)
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Conveyor Skirting & Liner (Temperatures up to 120℃)
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -67,11 +200,9 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/engineering-plastics">
-              <p class="text-[20px] font-bold p-4 border-b border-black">
-                Engineering Plastics
-              </p>
-            </router-link>
+            <p class="text-[20px] font-bold p-4 border-b border-black">
+              Engineering Plastics
+            </p>
             <router-link to="/uhmwpe-sheet-rod">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"

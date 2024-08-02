@@ -63,7 +63,153 @@
           >
             Specifications
           </p>
-          <img :src="spec" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">Name / Size</th>
+                <th class="border border-gray-300 p-2">Length (mm)</th>
+                <th class="border border-gray-300 p-2">Width (mm)</th>
+                <th class="border border-gray-300 p-2">Thickness (mm)</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2">Sheet</td>
+                <td class="border border-gray-300 p-2">2000-3080-4000</td>
+                <td class="border border-gray-300 p-2">1220-1230</td>
+                <td class="border border-gray-300 p-2">6.5-200</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2" rowspan="5">Thermal</td>
+                <td class="border border-gray-300 p-2">Melting Point / ℃</td>
+                <td class="border border-gray-300 p-2">136</td>
+                <td class="border border-gray-300 p-2">D2117</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2">
+                  Thermal Deformation / ℃
+                </td>
+                <td class="border border-gray-300 p-2">85</td>
+                <td class="border border-gray-300 p-2">D648</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2">
+                  Linear Expansion Coefficient / 10^-4℃
+                </td>
+                <td class="border border-gray-300 p-2">1.15-2.5</td>
+                <td class="border border-gray-300 p-2">D696</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2">
+                  Thermal Conductivity / (W/(m.k))
+                </td>
+                <td class="border border-gray-300 p-2">8.5</td>
+                <td class="border border-gray-300 p-2">D177</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2">
+                  Volume Resistivity / (Ω.cm)
+                </td>
+                <td class="border border-gray-300 p-2">10</td>
+                <td class="border border-gray-300 p-2">D257</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2" rowspan="2">
+                  Electrical
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Breakdown Voltage / (KV/mm)
+                </td>
+                <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">D149</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="border border-gray-300 p-2">Dielectric Constant</td>
+                <td class="border border-gray-300 p-2">2.3</td>
+                <td class="border border-gray-300 p-2">D150</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">Category</th>
+                <th class="border border-gray-300 p-2">Item</th>
+                <th class="border border-gray-300 p-2">UHMWPE</th>
+                <th class="border border-gray-300 p-2">ASMT Test Method</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2" rowspan="4">Physical</td>
+                <td class="border border-gray-300 p-2">
+                  Relative Molecular Weight / Million
+                </td>
+                <td class="border border-gray-300 p-2">4.5-9.2</td>
+                <td class="border border-gray-300 p-2">D2857</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Density / (g/ cm3)</td>
+                <td class="border border-gray-300 p-2">0.935</td>
+                <td class="border border-gray-300 p-2">D1505</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Water Absorption / %</td>
+                <td class="border border-gray-300 p-2">&lt; 0.01</td>
+                <td class="border border-gray-300 p-2">D570</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  Friction Coefficient (no lubrication)
+                </td>
+                <td class="border border-gray-300 p-2">0.07-0.22</td>
+                <td class="border border-gray-300 p-2">D1894</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2" rowspan="6">
+                  Mechanical
+                </td>
+                <td class="border border-gray-300 p-2">
+                  Tensile strength @ break / MPa
+                </td>
+                <td class="border border-gray-300 p-2">40-45</td>
+                <td class="border border-gray-300 p-2">D638</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  Elongation @ Break / %
+                </td>
+                <td class="border border-gray-300 p-2">300-400</td>
+                <td class="border border-gray-300 p-2">D638</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  Flexural Modulus / MPa
+                </td>
+                <td class="border border-gray-300 p-2">600</td>
+                <td class="border border-gray-300 p-2">D747</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  Izod Impact Strength / (KJ/m2)
+                </td>
+                <td class="border border-gray-300 p-2">&ge; 140</td>
+                <td class="border border-gray-300 p-2">D250</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Hardness / ShoreD</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">D2240</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  Abrasion loss / (mg/1000 times)
+                </td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">D1175</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -74,11 +220,9 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/engineering-plastics">
               <p class="text-[20px] font-bold p-4 border-b border-black">
                 Engineering Plastics
               </p>
-            </router-link>
             <p
               class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
             >
