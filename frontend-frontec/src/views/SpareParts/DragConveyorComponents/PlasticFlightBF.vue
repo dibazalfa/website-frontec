@@ -67,19 +67,490 @@
           >
             Specifications - HDPE
           </p>
-          <img :src="spec" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">Specification</th>
+                <th class="border border-gray-300 p-2">L</th>
+                <th class="border border-gray-300 p-2">L1</th>
+                <th class="border border-gray-300 p-2">Î</th>
+                <th class="border border-gray-300 p-2">H</th>
+                <th class="border border-gray-300 p-2">h</th>
+                <th class="border border-gray-300 p-2">E1</th>
+                <th class="border border-gray-300 p-2">E2</th>
+                <th class="border border-gray-300 p-2">D</th>
+                <th class="border border-gray-300 p-2">d</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2">BF145×45</td>
+                <td class="border border-gray-300 p-2">145</td>
+                <td class="border border-gray-300 p-2">75</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">45</td>
+                <td class="border border-gray-300 p-2">36</td>
+                <td class="border border-gray-300 p-2">102</td>
+                <td class="border border-gray-300 p-2">/</td>
+                <td class="border border-gray-300 p-2">19</td>
+                <td class="border border-gray-300 p-2">2-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF184×45</td>
+                <td class="border border-gray-300 p-2">184</td>
+                <td class="border border-gray-300 p-2">75</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">45</td>
+                <td class="border border-gray-300 p-2">36</td>
+                <td class="border border-gray-300 p-2">102</td>
+                <td class="border border-gray-300 p-2">/</td>
+                <td class="border border-gray-300 p-2">19</td>
+                <td class="border border-gray-300 p-2">2-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF185×50</td>
+                <td class="border border-gray-300 p-2">185</td>
+                <td class="border border-gray-300 p-2">90</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">35</td>
+                <td class="border border-gray-300 p-2">115</td>
+                <td class="border border-gray-300 p-2">/</td>
+                <td class="border border-gray-300 p-2">15</td>
+                <td class="border border-gray-300 p-2">2-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF194×49</td>
+                <td class="border border-gray-300 p-2">194</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">49</td>
+                <td class="border border-gray-300 p-2">36</td>
+                <td class="border border-gray-300 p-2">90</td>
+                <td class="border border-gray-300 p-2">150</td>
+                <td class="border border-gray-300 p-2">16</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF208×49</td>
+                <td class="border border-gray-300 p-2">208</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">49</td>
+                <td class="border border-gray-300 p-2">36</td>
+                <td class="border border-gray-300 p-2">90</td>
+                <td class="border border-gray-300 p-2">150</td>
+                <td class="border border-gray-300 p-2">17</td>
+                <td class="border border-gray-300 p-2">4-φ10</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF240×49</td>
+                <td class="border border-gray-300 p-2">240</td>
+                <td class="border border-gray-300 p-2">72</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">49</td>
+                <td class="border border-gray-300 p-2">37</td>
+                <td class="border border-gray-300 p-2">95</td>
+                <td class="border border-gray-300 p-2">195</td>
+                <td class="border border-gray-300 p-2">19</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF240×49(M)</td>
+                <td class="border border-gray-300 p-2">240</td>
+                <td class="border border-gray-300 p-2">72</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">49</td>
+                <td class="border border-gray-300 p-2">37</td>
+                <td class="border border-gray-300 p-2">104</td>
+                <td class="border border-gray-300 p-2">195</td>
+                <td class="border border-gray-300 p-2">19</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF255×49</td>
+                <td class="border border-gray-300 p-2">255</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">49</td>
+                <td class="border border-gray-300 p-2">35</td>
+                <td class="border border-gray-300 p-2">105</td>
+                <td class="border border-gray-300 p-2">190</td>
+                <td class="border border-gray-300 p-2">16</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF284×45</td>
+                <td class="border border-gray-300 p-2">284</td>
+                <td class="border border-gray-300 p-2">75</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">45</td>
+                <td class="border border-gray-300 p-2">36</td>
+                <td class="border border-gray-300 p-2">102</td>
+                <td class="border border-gray-300 p-2">228</td>
+                <td class="border border-gray-300 p-2">19</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF305×45</td>
+                <td class="border border-gray-300 p-2">305</td>
+                <td class="border border-gray-300 p-2">75</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">45</td>
+                <td class="border border-gray-300 p-2">36</td>
+                <td class="border border-gray-300 p-2">102</td>
+                <td class="border border-gray-300 p-2">228</td>
+                <td class="border border-gray-300 p-2">19</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF305×50</td>
+                <td class="border border-gray-300 p-2">305</td>
+                <td class="border border-gray-300 p-2">90</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">38</td>
+                <td class="border border-gray-300 p-2">115</td>
+                <td class="border border-gray-300 p-2">245</td>
+                <td class="border border-gray-300 p-2">18</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF305×55</td>
+                <td class="border border-gray-300 p-2">305</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">55</td>
+                <td class="border border-gray-300 p-2">42.5</td>
+                <td class="border border-gray-300 p-2">95</td>
+                <td class="border border-gray-300 p-2">195</td>
+                <td class="border border-gray-300 p-2">22</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF305×55(ZC)</td>
+                <td class="border border-gray-300 p-2">305</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">55</td>
+                <td class="border border-gray-300 p-2">42.5</td>
+                <td class="border border-gray-300 p-2">102</td>
+                <td class="border border-gray-300 p-2">228</td>
+                <td class="border border-gray-300 p-2">22</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF310×50</td>
+                <td class="border border-gray-300 p-2">310</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">40</td>
+                <td class="border border-gray-300 p-2">148</td>
+                <td class="border border-gray-300 p-2">236</td>
+                <td class="border border-gray-300 p-2">20</td>
+                <td class="border border-gray-300 p-2">4-φ10</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF360×45</td>
+                <td class="border border-gray-300 p-2">360</td>
+                <td class="border border-gray-300 p-2">75</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">45</td>
+                <td class="border border-gray-300 p-2">36</td>
+                <td class="border border-gray-300 p-2">102</td>
+                <td class="border border-gray-300 p-2">228</td>
+                <td class="border border-gray-300 p-2">19</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF380×60</td>
+                <td class="border border-gray-300 p-2">380</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">16</td>
+                <td class="border border-gray-300 p-2">60</td>
+                <td class="border border-gray-300 p-2">45</td>
+                <td class="border border-gray-300 p-2">155</td>
+                <td class="border border-gray-300 p-2">255</td>
+                <td class="border border-gray-300 p-2">25</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF380×60B</td>
+                <td class="border border-gray-300 p-2">380</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">16</td>
+                <td class="border border-gray-300 p-2">60</td>
+                <td class="border border-gray-300 p-2">45</td>
+                <td class="border border-gray-300 p-2">155</td>
+                <td class="border border-gray-300 p-2">265</td>
+                <td class="border border-gray-300 p-2">22</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF380×90</td>
+                <td class="border border-gray-300 p-2">380</td>
+                <td class="border border-gray-300 p-2">90</td>
+                <td class="border border-gray-300 p-2">16</td>
+                <td class="border border-gray-300 p-2">90</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">170</td>
+                <td class="border border-gray-300 p-2">255-265</td>
+                <td class="border border-gray-300 p-2">44</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF480×90</td>
+                <td class="border border-gray-300 p-2">480</td>
+                <td class="border border-gray-300 p-2">90</td>
+                <td class="border border-gray-300 p-2">16</td>
+                <td class="border border-gray-300 p-2">90</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">170</td>
+                <td class="border border-gray-300 p-2">310</td>
+                <td class="border border-gray-300 p-2">44</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+            </tbody>
+          </table>
           <p
             class="bg-black text-white w-64 px-6 py-3 rounded-full text-center font-bold uppercase mt-6 shadow-lg"
           >
             Specifications - Nylon
           </p>
-          <img :src="spec2" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">Specification</th>
+                <th class="border border-gray-300 p-2">L</th>
+                <th class="border border-gray-300 p-2">L1</th>
+                <th class="border border-gray-300 p-2">Î</th>
+                <th class="border border-gray-300 p-2">H</th>
+                <th class="border border-gray-300 p-2">h</th>
+                <th class="border border-gray-300 p-2">E1</th>
+                <th class="border border-gray-300 p-2">E2</th>
+                <th class="border border-gray-300 p-2">D</th>
+                <th class="border border-gray-300 p-2">d</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2">BF180X92</td>
+                <td class="border border-gray-300 p-2">180</td>
+                <td class="border border-gray-300 p-2">58</td>
+                <td class="border border-gray-300 p-2">12</td>
+                <td class="border border-gray-300 p-2">92</td>
+                <td class="border border-gray-300 p-2">43</td>
+                <td class="border border-gray-300 p-2">120</td>
+                <td class="border border-gray-300 p-2">/</td>
+                <td class="border border-gray-300 p-2">26</td>
+                <td class="border border-gray-300 p-2">2-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF230X108</td>
+                <td class="border border-gray-300 p-2">230</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">12</td>
+                <td class="border border-gray-300 p-2">108</td>
+                <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">104</td>
+                <td class="border border-gray-300 p-2">194</td>
+                <td class="border border-gray-300 p-2">28</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF300X108</td>
+                <td class="border border-gray-300 p-2">300</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">12</td>
+                <td class="border border-gray-300 p-2">108</td>
+                <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">115</td>
+                <td class="border border-gray-300 p-2">245</td>
+                <td class="border border-gray-300 p-2">28</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF312X82</td>
+                <td class="border border-gray-300 p-2">312</td>
+                <td class="border border-gray-300 p-2">74</td>
+                <td class="border border-gray-300 p-2">14</td>
+                <td class="border border-gray-300 p-2">82</td>
+                <td class="border border-gray-300 p-2">62</td>
+                <td class="border border-gray-300 p-2">120</td>
+                <td class="border border-gray-300 p-2">240</td>
+                <td class="border border-gray-300 p-2">30</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF330X108</td>
+                <td class="border border-gray-300 p-2">330</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">12</td>
+                <td class="border border-gray-300 p-2">108</td>
+                <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">135</td>
+                <td class="border border-gray-300 p-2">275</td>
+                <td class="border border-gray-300 p-2">28</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF300X38</td>
+                <td class="border border-gray-300 p-2">300</td>
+                <td class="border border-gray-300 p-2">54</td>
+                <td class="border border-gray-300 p-2">10</td>
+                <td class="border border-gray-300 p-2">38</td>
+                <td class="border border-gray-300 p-2">29</td>
+                <td class="border border-gray-300 p-2">85</td>
+                <td class="border border-gray-300 p-2">165</td>
+                <td class="border border-gray-300 p-2">14.5</td>
+                <td class="border border-gray-300 p-2">4-φ7</td>
+              </tr>
+            </tbody>
+          </table>
           <p
             class="bg-black text-white w-72 px-6 py-3 rounded-full text-center font-bold uppercase mt-6 shadow-lg"
           >
             SPECIFICATIONS - UHMWPE
           </p>
-          <img :src="spec3" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">Specification</th>
+                <th class="border border-gray-300 p-2">L</th>
+                <th class="border border-gray-300 p-2">L1</th>
+                <th class="border border-gray-300 p-2">Î</th>
+                <th class="border border-gray-300 p-2">H</th>
+                <th class="border border-gray-300 p-2">h</th>
+                <th class="border border-gray-300 p-2">E1</th>
+                <th class="border border-gray-300 p-2">E2</th>
+                <th class="border border-gray-300 p-2">D</th>
+                <th class="border border-gray-300 p-2">d</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2">BF154X60X8C(M)</td>
+                <td class="border border-gray-300 p-2">154</td>
+                <td class="border border-gray-300 p-2">56</td>
+                <td class="border border-gray-300 p-2">8</td>
+                <td class="border border-gray-300 p-2">60</td>
+                <td class="border border-gray-300 p-2">47</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">/</td>
+                <td class="border border-gray-300 p-2">30</td>
+                <td class="border border-gray-300 p-2">2-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF194X60X8C(M)</td>
+                <td class="border border-gray-300 p-2">194</td>
+                <td class="border border-gray-300 p-2">56</td>
+                <td class="border border-gray-300 p-2">8</td>
+                <td class="border border-gray-300 p-2">60</td>
+                <td class="border border-gray-300 p-2">47</td>
+                <td class="border border-gray-300 p-2">120</td>
+                <td class="border border-gray-300 p-2">/</td>
+                <td class="border border-gray-300 p-2">30</td>
+                <td class="border border-gray-300 p-2">2-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF240X70X8C(M)</td>
+                <td class="border border-gray-300 p-2">240</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">8</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">56</td>
+                <td class="border border-gray-300 p-2">104</td>
+                <td class="border border-gray-300 p-2">194</td>
+                <td class="border border-gray-300 p-2">35</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF235X53X10C(TD)</td>
+                <td class="border border-gray-300 p-2">235</td>
+                <td class="border border-gray-300 p-2">80</td>
+                <td class="border border-gray-300 p-2">10</td>
+                <td class="border border-gray-300 p-2">53</td>
+                <td class="border border-gray-300 p-2">43</td>
+                <td class="border border-gray-300 p-2">110</td>
+                <td class="border border-gray-300 p-2">200</td>
+                <td class="border border-gray-300 p-2">23</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF235X57.5X10C(YC)</td>
+                <td class="border border-gray-300 p-2">235</td>
+                <td class="border border-gray-300 p-2">62</td>
+                <td class="border border-gray-300 p-2">10</td>
+                <td class="border border-gray-300 p-2">57.5</td>
+                <td class="border border-gray-300 p-2">45.5</td>
+                <td class="border border-gray-300 p-2">105</td>
+                <td class="border border-gray-300 p-2">185</td>
+                <td class="border border-gray-300 p-2">22.5</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF300X73X10C(YC)</td>
+                <td class="border border-gray-300 p-2">300</td>
+                <td class="border border-gray-300 p-2">65</td>
+                <td class="border border-gray-300 p-2">10</td>
+                <td class="border border-gray-300 p-2">73</td>
+                <td class="border border-gray-300 p-2">60.5</td>
+                <td class="border border-gray-300 p-2">141</td>
+                <td class="border border-gray-300 p-2">231</td>
+                <td class="border border-gray-300 p-2">30</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF305X53X10C(TD)</td>
+                <td class="border border-gray-300 p-2">305</td>
+                <td class="border border-gray-300 p-2">80</td>
+                <td class="border border-gray-300 p-2">10</td>
+                <td class="border border-gray-300 p-2">53</td>
+                <td class="border border-gray-300 p-2">43</td>
+                <td class="border border-gray-300 p-2">110</td>
+                <td class="border border-gray-300 p-2">200</td>
+                <td class="border border-gray-300 p-2">23</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF310X70X12C(M)</td>
+                <td class="border border-gray-300 p-2">310</td>
+                <td class="border border-gray-300 p-2">90</td>
+                <td class="border border-gray-300 p-2">12</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">56</td>
+                <td class="border border-gray-300 p-2">115</td>
+                <td class="border border-gray-300 p-2">245</td>
+                <td class="border border-gray-300 p-2">35</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF340X67X8-12C(M)</td>
+                <td class="border border-gray-300 p-2">340</td>
+                <td class="border border-gray-300 p-2">90</td>
+                <td class="border border-gray-300 p-2">8-12</td>
+                <td class="border border-gray-300 p-2">67</td>
+                <td class="border border-gray-300 p-2">53</td>
+                <td class="border border-gray-300 p-2">135</td>
+                <td class="border border-gray-300 p-2">275</td>
+                <td class="border border-gray-300 p-2">32</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">BF380X65X10C(YC)</td>
+                <td class="border border-gray-300 p-2">380</td>
+                <td class="border border-gray-300 p-2">75</td>
+                <td class="border border-gray-300 p-2">10</td>
+                <td class="border border-gray-300 p-2">65</td>
+                <td class="border border-gray-300 p-2">52</td>
+                <td class="border border-gray-300 p-2">211</td>
+                <td class="border border-gray-300 p-2">311</td>
+                <td class="border border-gray-300 p-2">25</td>
+                <td class="border border-gray-300 p-2">4-φ9</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -90,11 +561,9 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/drag-conveyor-components">
-              <p class="text-[20px] font-bold p-4 border-b border-black">
-                Drag Conveyor Components
-              </p>
-            </router-link>
+            <p class="text-[20px] font-bold p-4 border-b border-black">
+              Drag Conveyor Components
+            </p>
             <router-link to="/roller-chain">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
@@ -133,7 +602,8 @@
             <p
               class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
             >
-              Plastic Flight Attachment (BF)
+              Plastic Flight <br />
+              Attachment (BF)
             </p>
           </div>
           <p class="text-[20px] mx-auto mt-10">In Partnership with:</p>

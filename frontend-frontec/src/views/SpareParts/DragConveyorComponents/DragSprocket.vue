@@ -43,7 +43,119 @@
           >
             Specifications
           </p>
-          <img :src="spec" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">Chain Model</th>
+                <th class="border border-gray-300 p-2">Pitch(mm)</th>
+                <th class="border border-gray-300 p-2">Gear Number Z</th>
+                <th class="border border-gray-300 p-2">d1 (mm)</th>
+                <th class="border border-gray-300 p-2">d (mm)</th>
+                <th class="border border-gray-300 p-2">D (mm)</th>
+                <th class="border border-gray-300 p-2">D1 (mm)</th>
+                <th class="border border-gray-300 p-2">A (mm)</th>
+                <th class="border border-gray-300 p-2">B (mm)</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <!-- 66.675 Chain Model Rows -->
+              <tr>
+                <td class="border border-gray-300 p-2" rowspan="7">66.675</td>
+                <td class="border border-gray-300 p-2" rowspan="7">66.675</td>
+                <td class="border border-gray-300 p-2">6</td>
+                <td class="border border-gray-300 p-2">22.23</td>
+                <td class="border border-gray-300 p-2">133.41</td>
+                <td class="border border-gray-300 p-2">40</td>
+                <td class="border border-gray-300 p-2">75</td>
+                <td class="border border-gray-300 p-2">80</td>
+                <td class="border border-gray-300 p-2">22.8</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">7</td>
+                <td class="border border-gray-300 p-2">22.23</td>
+                <td class="border border-gray-300 p-2">153.74</td>
+                <td class="border border-gray-300 p-2">40</td>
+                <td class="border border-gray-300 p-2">75</td>
+                <td class="border border-gray-300 p-2">80</td>
+                <td class="border border-gray-300 p-2">22.8</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">8</td>
+                <td class="border border-gray-300 p-2">22.23</td>
+                <td class="border border-gray-300 p-2">174.31</td>
+                <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">22.8</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">9</td>
+                <td class="border border-gray-300 p-2">22.23</td>
+                <td class="border border-gray-300 p-2">195.04</td>
+                <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">22.8</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">10</td>
+                <td class="border border-gray-300 p-2">22.23</td>
+                <td class="border border-gray-300 p-2">215.87</td>
+                <td class="border border-gray-300 p-2">60</td>
+                <td class="border border-gray-300 p-2">110</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">22.8</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">11</td>
+                <td class="border border-gray-300 p-2">22.23</td>
+                <td class="border border-gray-300 p-2">236.78</td>
+                <td class="border border-gray-300 p-2">60</td>
+                <td class="border border-gray-300 p-2">110</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">22.8</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">12</td>
+                <td class="border border-gray-300 p-2">22.23</td>
+                <td class="border border-gray-300 p-2">257.74</td>
+                <td class="border border-gray-300 p-2">60</td>
+                <td class="border border-gray-300 p-2">110</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">22.8</td>
+              </tr>
+              <!-- 100 Chain Model Rows -->
+              <tr>
+                <td class="border border-gray-300 p-2" rowspan="3">100</td>
+                <td class="border border-gray-300 p-2" rowspan="3">100</td>
+                <td class="border border-gray-300 p-2">8</td>
+                <td class="border border-gray-300 p-2">36</td>
+                <td class="border border-gray-300 p-2">261.44</td>
+                <td class="border border-gray-300 p-2">60</td>
+                <td class="border border-gray-300 p-2">110</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">33.2</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">9</td>
+                <td class="border border-gray-300 p-2">36</td>
+                <td class="border border-gray-300 p-2">292.52</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">120</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">33.2</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">10</td>
+                <td class="border border-gray-300 p-2">36</td>
+                <td class="border border-gray-300 p-2">323.77</td>
+                <td class="border border-gray-300 p-2">70</td>
+                <td class="border border-gray-300 p-2">120</td>
+                <td class="border border-gray-300 p-2">100</td>
+                <td class="border border-gray-300 p-2">33.2</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -54,11 +166,9 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/drag-conveyor-components">
-              <p class="text-[20px] font-bold p-4 border-b border-black">
-                Drag Conveyor Components
-              </p>
-            </router-link>
+            <p class="text-[20px] font-bold p-4 border-b border-black">
+              Drag Conveyor Components
+            </p>
             <router-link to="/roller-chain">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
