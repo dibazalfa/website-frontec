@@ -11,11 +11,19 @@
     <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
-        <p
-          class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
-        >
-          Continuous Equal Thickness Screw Flight
-        </p>
+        <div class="flex items-center mt-7">
+          <router-link to="/engineering-plastics">
+            <font-awesome-icon
+              icon="circle-arrow-left"
+              class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
+            />
+          </router-link>
+          <p
+            class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          >
+            Continuous Equal Thickness Screw Flight
+          </p>
+        </div>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="product" alt="" class="object-contain" />
           <div
@@ -89,17 +97,17 @@
               </p>
             </router-link>
             <router-link to="/continous-screw-flight">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Continuous Screw Flight
               </p>
             </router-link>
             <router-link to="/sectional-screw-flight">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Sectional Screw Flight
               </p>
             </router-link>
             <router-link to="/complete-screw-flight">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Complete Screw Flight Unit
               </p>
             </router-link>
@@ -130,10 +138,13 @@ import product from "@/assets/img/spare-parts/cont-equal-screw.png";
 import spec from "@/assets/img/spare-parts/cont-equal-screw-spec.png";
 import draw from "@/assets/img/spare-parts/cont-equal-screw-draw.png";
 
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
 export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon
   },
   data() {
     return {

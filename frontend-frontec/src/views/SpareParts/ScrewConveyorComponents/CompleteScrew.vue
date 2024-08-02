@@ -11,11 +11,19 @@
     <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
-        <p
-          class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
-        >
-          Complete Screw Flight Unit
-        </p>
+        <div class="flex items-center mt-7">
+          <router-link to="/engineering-plastics">
+            <font-awesome-icon
+              icon="circle-arrow-left"
+              class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
+            />
+          </router-link>
+          <p
+            class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          >
+            Complete Screw Flight Unit
+          </p>
+        </div>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="product" alt="" class="object-contain" />
           <div
@@ -72,27 +80,36 @@
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
             <router-link to="/screw-conveyor-components">
-              <p class="text-[20px] font-bold p-4 border-b border-black">
+              <p
+                class="text-[20px] font-bold p-4 border-b border-black"
+              >
                 Screw Conveyor Components
               </p>
             </router-link>
             <router-link to="/continous-screw-flight">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Continuous Screw Flight
               </p>
             </router-link>
             <router-link to="/sectional-screw-flight">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Sectional Screw Flight
               </p>
             </router-link>
             <p
               class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
             >
-              Complete Screw Flight Unit
+              Complete Screw <br />
+              Flight Unit
             </p>
             <router-link to="/cont-equal-screw">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Continuous Equal Thickness Screw Flight
               </p>
             </router-link>
@@ -116,10 +133,13 @@ import sanwei from "@/assets/img/spare-parts/sanwei.png";
 
 import product from "@/assets/img/spare-parts/complete-screw.png";
 
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
 export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon,
   },
   data() {
     return {
