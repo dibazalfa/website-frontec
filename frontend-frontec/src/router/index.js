@@ -295,6 +295,26 @@ const router = createRouter({
       name: 'pu-sheet-rod',
       component: () => import('../views/SpareParts/EngineeringPlastics/PUSheetRod.vue')
     },
+    {
+      path: '/sieves-screens',
+      name: 'sieves-screens',
+      component: () => import('../views/SpareParts/SievesAndScreens/SievesAndScreens.vue')
+    },
+    {
+      path: '/sieves-cleaning-balls',
+      name: 'sieves-cleaning-balls',
+      component: () => import('../views/SpareParts/SievesAndScreens/SieveCleaningBalls.vue')
+    },
+    {
+      path: '/sieves-cleaners',
+      name: 'sieves-cleaners',
+      component: () => import('../views/SpareParts/SievesAndScreens/SieveCleaners.vue')
+    },
+    {
+      path: '/pan-cleaners',
+      name: 'pan-cleaners',
+      component: () => import('../views/SpareParts/SievesAndScreens/PanCleaners.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
