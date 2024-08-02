@@ -80,7 +80,53 @@
           >
             Specifications
           </p>
-          <img :src="spec" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">Pitch p (mm)</th>
+                <th class="border border-gray-300 p-2">
+                  Min. Inner Diameter d (mm)
+                </th>
+                <th class="border border-gray-300 p-2">
+                  Max. Outer Diameter D (mm)
+                </th>
+                <th class="border border-gray-300 p-2">
+                  Max. Band Width (D-d)/2 (mm)
+                </th>
+                <th class="border border-gray-300 p-2">Thickness T (mm)</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2">30 ~ 60</td>
+                <td class="border border-gray-300 p-2">20</td>
+                <td class="border border-gray-300 p-2">150</td>
+                <td class="border border-gray-300 p-2">40</td>
+                <td class="border border-gray-300 p-2">20 ~ 10</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">60 ~ 100</td>
+                <td class="border border-gray-300 p-2">25</td>
+                <td class="border border-gray-300 p-2">150</td>
+                <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">2 ~ 10</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">100 ~ 150</td>
+                <td class="border border-gray-300 p-2">35</td>
+                <td class="border border-gray-300 p-2">160</td>
+                <td class="border border-gray-300 p-2">55</td>
+                <td class="border border-gray-300 p-2">2 ~ 10</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">150 ~ 200</td>
+                <td class="border border-gray-300 p-2">40</td>
+                <td class="border border-gray-300 p-2">200</td>
+                <td class="border border-gray-300 p-2">60</td>
+                <td class="border border-gray-300 p-2">2 ~ 10</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -91,23 +137,27 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/screw-conveyor-components">
-              <p class="text-[20px] font-bold p-4 border-b border-black">
-                Screw Conveyor Components
-              </p>
-            </router-link>
+            <p class="text-[20px] font-bold p-4 border-b border-black">
+              Screw Conveyor Components
+            </p>
             <router-link to="/continous-screw-flight">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Continuous Screw Flight
               </p>
             </router-link>
             <router-link to="/sectional-screw-flight">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Sectional Screw Flight
               </p>
             </router-link>
             <router-link to="/complete-screw-flight">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Complete Screw Flight Unit
               </p>
             </router-link>
@@ -144,7 +194,7 @@ export default {
   components: {
     AppHeader,
     Footer,
-    FontAwesomeIcon
+    FontAwesomeIcon,
   },
   data() {
     return {

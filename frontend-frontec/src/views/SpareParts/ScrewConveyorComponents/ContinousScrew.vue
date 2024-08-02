@@ -67,7 +67,68 @@
           >
             Specifications
           </p>
-          <img :src="spec" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">
+                  Band Thickness T (mm)
+                </th>
+                <th class="border border-gray-300 p-2">
+                  Min. Inner Diameter d (mm)
+                </th>
+                <th class="border border-gray-300 p-2">
+                  Max. Outer Diameter D (mm)
+                </th>
+                <th class="border border-gray-300 p-2">
+                  Max. Band Width (D-d)/2 (mm)
+                </th>
+                <th class="border border-gray-300 p-2">Pitch/O.D. Ratio</th>
+                <th class="border border-gray-300 p-2">Max O.D./I.D. Ratio</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2">3</td>
+                <td class="border border-gray-300 p-2">20</td>
+                <td class="border border-gray-300 p-2">500</td>
+                <td class="border border-gray-300 p-2">165</td>
+                <td class="border border-gray-300 p-2">0.6-1.3</td>
+                <td class="border border-gray-300 p-2">4</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">3.5</td>
+                <td class="border border-gray-300 p-2">20</td>
+                <td class="border border-gray-300 p-2">500</td>
+                <td class="border border-gray-300 p-2">165</td>
+                <td class="border border-gray-300 p-2">0.6-1.3</td>
+                <td class="border border-gray-300 p-2">4</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">4.5</td>
+                <td class="border border-gray-300 p-2">28</td>
+                <td class="border border-gray-300 p-2">500</td>
+                <td class="border border-gray-300 p-2">165</td>
+                <td class="border border-gray-300 p-2">0.75-1.3</td>
+                <td class="border border-gray-300 p-2">4</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">5</td>
+                <td class="border border-gray-300 p-2">28</td>
+                <td class="border border-gray-300 p-2">500</td>
+                <td class="border border-gray-300 p-2">165</td>
+                <td class="border border-gray-300 p-2">0.8-1.3</td>
+                <td class="border border-gray-300 p-2">4</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">6</td>
+                <td class="border border-gray-300 p-2">40</td>
+                <td class="border border-gray-300 p-2">500</td>
+                <td class="border border-gray-300 p-2">165</td>
+                <td class="border border-gray-300 p-2">0.8-1.2</td>
+                <td class="border border-gray-300 p-2">4</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -78,11 +139,9 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/screw-conveyor-components">
-              <p class="text-[20px] font-bold p-4 border-b border-black">
-                Screw Conveyor Components
-              </p>
-            </router-link>
+            <p class="text-[20px] font-bold p-4 border-b border-black">
+              Screw Conveyor Components
+            </p>
             <p
               class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
             >

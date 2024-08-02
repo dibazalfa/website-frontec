@@ -74,7 +74,162 @@
           >
             Specifications
           </p>
-          <img :src="spec" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">Pitch p (mm)</th>
+                <th class="border border-gray-300 p-2">
+                  Min. Inner Diameter d (mm)
+                </th>
+                <th class="border border-gray-300 p-2">
+                  Max. Outer Diameter D (mm)
+                </th>
+                <th class="border border-gray-300 p-2">Coefficient K</th>
+                <th class="border border-gray-300 p-2">
+                  Min. Outer Diameter (mm)
+                </th>
+                <th class="border border-gray-300 p-2">Thickness T (mm)</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2">60 ~ 100</td>
+                <td class="border border-gray-300 p-2">25</td>
+                <td class="border border-gray-300 p-2">480</td>
+                <td class="border border-gray-300 p-2">1</td>
+                <td class="border border-gray-300 p-2" rowspan="20">
+                  Min. Outer Diameter = Pitch * K
+                </td>
+                <td class="border border-gray-300 p-2">3 ~ 16</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">100 ~ 150</td>
+                <td class="border border-gray-300 p-2">30</td>
+                <td class="border border-gray-300 p-2">480</td>
+                <td class="border border-gray-300 p-2">0.8</td>
+                <td class="border border-gray-300 p-2">3 ~ 18</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">150 ~ 200</td>
+                <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">520</td>
+                <td class="border border-gray-300 p-2">0.75</td>
+                <td class="border border-gray-300 p-2">3 ~ 20</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">200 ~ 250</td>
+                <td class="border border-gray-300 p-2">60</td>
+                <td class="border border-gray-300 p-2">630</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 25</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">250 ~ 300</td>
+                <td class="border border-gray-300 p-2">65</td>
+                <td class="border border-gray-300 p-2">670</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 25</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">300 ~ 350</td>
+                <td class="border border-gray-300 p-2">90</td>
+                <td class="border border-gray-300 p-2">900</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 30</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">350 ~ 400</td>
+                <td class="border border-gray-300 p-2">90</td>
+                <td class="border border-gray-300 p-2">950</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 30</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">400 ~ 450</td>
+                <td class="border border-gray-300 p-2">95</td>
+                <td class="border border-gray-300 p-2">950</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 30</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">450 ~ 500</td>
+                <td class="border border-gray-300 p-2">135</td>
+                <td class="border border-gray-300 p-2">1150</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 35</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">500 ~ 550</td>
+                <td class="border border-gray-300 p-2">150</td>
+                <td class="border border-gray-300 p-2">1300</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 40</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">550 ~ 650</td>
+                <td class="border border-gray-300 p-2">150</td>
+                <td class="border border-gray-300 p-2">1350</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 40</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">650 ~ 750</td>
+                <td class="border border-gray-300 p-2">200</td>
+                <td class="border border-gray-300 p-2">1400</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 45</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">750 ~ 850</td>
+                <td class="border border-gray-300 p-2">200</td>
+                <td class="border border-gray-300 p-2">1450</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 50</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">850 ~ 950</td>
+                <td class="border border-gray-300 p-2">250</td>
+                <td class="border border-gray-300 p-2">1450</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 55</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">950 ~ 1050</td>
+                <td class="border border-gray-300 p-2">300</td>
+                <td class="border border-gray-300 p-2">1500</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 55</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">1050 ~ 1200</td>
+                <td class="border border-gray-300 p-2">350</td>
+                <td class="border border-gray-300 p-2">1600</td>
+                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">3 ~ 55</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">1200 ~ 1250</td>
+                <td class="border border-gray-300 p-2">400</td>
+                <td class="border border-gray-300 p-2">1800</td>
+                <td class="border border-gray-300 p-2">0.8</td>
+                <td class="border border-gray-300 p-2">3 ~ 55</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">1250 ~ 1400</td>
+                <td class="border border-gray-300 p-2">450</td>
+                <td class="border border-gray-300 p-2">2000</td>
+                <td class="border border-gray-300 p-2">0.8</td>
+                <td class="border border-gray-300 p-2">3 ~ 55</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">1400 ~ 3000</td>
+                <td class="border border-gray-300 p-2">480</td>
+                <td class="border border-gray-300 p-2">3000</td>
+                <td class="border border-gray-300 p-2">0.65</td>
+                <td class="border border-gray-300 p-2">3 ~ 60</td>
+              </tr>
+            </tbody>
+          </table>
           <p
             class="bg-black text-white w-64 px-6 py-3 rounded-full text-center font-bold uppercase mt-6 shadow-lg"
           >
@@ -108,13 +263,13 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/screw-conveyor-components">
-              <p class="text-[20px] font-bold p-4 border-b border-black">
-                Screw Conveyor Components
-              </p>
-            </router-link>
+            <p class="text-[20px] font-bold p-4 border-b border-black">
+              Screw Conveyor Components
+            </p>
             <router-link to="/continous-screw-flight">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Continuous Screw Flight
               </p>
             </router-link>
@@ -124,12 +279,16 @@
               Sectional Screw Flight
             </p>
             <router-link to="/complete-screw-flight">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Complete Screw Flight Unit
               </p>
             </router-link>
             <router-link to="/cont-equal-screw">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Continuous Equal Thickness Screw Flight
               </p>
             </router-link>
@@ -161,7 +320,7 @@ export default {
   components: {
     AppHeader,
     Footer,
-    FontAwesomeIcon
+    FontAwesomeIcon,
   },
   data() {
     return {
