@@ -71,11 +71,9 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/belt-conveyor-components">
               <p class="text-[20px] font-bold p-4 border-b border-black">
                 Belt Conveyor Components
               </p>
-            </router-link>
             <router-link to="flat-surface-conveyor">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
