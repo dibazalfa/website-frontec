@@ -50,7 +50,50 @@
           >
             Specifications
           </p>
-          <img :src="spec" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-200 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-200 p-2">Performance</th>
+                <th class="border border-gray-200 p-2">Natural Rubber</th>
+                <th class="border border-gray-200 p-2">Silicone</th>
+                <th class="border border-gray-200 p-2">Polyurethane</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-200 p-2">Hardness (Shore A)</td>
+                <td class="border border-gray-200 p-2">55 to 85</td>
+                <td class="border border-gray-200 p-2">55 to 85</td>
+                <td class="border border-gray-200 p-2">70 to 85</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-200 p-2">
+                  Operating temperature ℃
+                </td>
+                <td class="border border-gray-200 p-2">-25 ~ +100</td>
+                <td class="border border-gray-200 p-2">0 ~ +120</td>
+                <td class="border border-gray-200 p-2">-40 ~ +120</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-200 p-2">Oil resistance</td>
+                <td class="border border-gray-200 p-2">General</td>
+                <td class="border border-gray-200 p-2">General</td>
+                <td class="border border-gray-200 p-2">Excellent</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-200 p-2">Flexibility</td>
+                <td class="border border-gray-200 p-2">Excellent</td>
+                <td class="border border-gray-200 p-2">General</td>
+                <td class="border border-gray-200 p-2">Medium</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-200 p-2">Abrasion resistance</td>
+                <td class="border border-gray-200 p-2">Medium</td>
+                <td class="border border-gray-200 p-2">Excellent</td>
+                <td class="border border-gray-200 p-2">Best</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -61,12 +104,10 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/engineering-plastics">
-              <p class="text-[20px] font-bold p-4 border-b border-black">
-                Parts for Sieves <br />
-                and Screens
-              </p>
-            </router-link>
+            <p class="text-[20px] font-bold p-4 border-b border-black">
+              Parts for Sieves <br />
+              and Screens
+            </p>
             <p
               class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
             >

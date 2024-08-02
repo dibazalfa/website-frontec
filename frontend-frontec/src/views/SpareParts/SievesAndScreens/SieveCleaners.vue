@@ -55,12 +55,10 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/engineering-plastics">
-              <p class="text-[20px] font-bold p-4 border-b border-black">
-                Parts for Sieves <br />
-                and Screens
-              </p>
-            </router-link>
+            <p class="text-[20px] font-bold p-4 border-b border-black">
+              Parts for Sieves <br />
+              and Screens
+            </p>
             <router-link to="/sieves-cleaning-balls">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
