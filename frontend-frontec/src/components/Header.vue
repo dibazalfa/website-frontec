@@ -232,7 +232,7 @@
                 <li>
                   <router-link
                     class="block py-2 px-3 hover:bg-gray-100"
-                    to="/our-products/spareparts"
+                    to="/spare-parts"
                     >Spareparts</router-link
                   >
                 </li>

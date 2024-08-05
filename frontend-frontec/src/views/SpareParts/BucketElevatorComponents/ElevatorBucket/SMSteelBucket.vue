@@ -71,7 +71,373 @@
           >
             parameters
           </p>
-          <img :src="params" alt="" class="object-contain mt-6" />
+          <table class="min-w-full bg-white border mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="px-4 py-2 border">Model</th>
+                <th class="px-4 py-2 border" colspan="4">
+                  Bucket Dimension (mm)
+                </th>
+                <th class="px-4 py-2 border" colspan="4">
+                  Mounting Holes (mm)
+                </th>
+                <th class="px-4 py-2 border" colspan="2">Capacity (L)</th>
+              </tr>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="px-4 py-2 border"></th>
+                <th class="px-4 py-2 border">Length A</th>
+                <th class="px-4 py-2 border">Proj. B</th>
+                <th class="px-4 py-2 border">Depth C</th>
+                <th class="px-4 py-2 border">Thickness</th>
+                <th class="px-4 py-2 border">From Top D</th>
+                <th class="px-4 py-2 border">Hole Centres E</th>
+                <th class="px-4 py-2 border">No. of Holes</th>
+                <th class="px-4 py-2 border">Hole Diameter</th>
+                <th class="px-4 py-2 border">Water Level (Z-Y)</th>
+                <th class="px-4 py-2 border">Total Level (X-Y)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="px-4 py-2 border">SM0808</td>
+                <td class="px-4 py-2 border">85</td>
+                <td class="px-4 py-2 border">80</td>
+                <td class="px-4 py-2 border">58</td>
+                <td class="px-4 py-2 border">1</td>
+                <td class="px-4 py-2 border">16</td>
+                <td class="px-4 py-2 border">43</td>
+                <td class="px-4 py-2 border">2</td>
+                <td class="px-4 py-2 border">8</td>
+                <td class="px-4 py-2 border">0.18</td>
+                <td class="px-4 py-2 border">0.21</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM1009</td>
+                <td class="px-4 py-2 border">106</td>
+                <td class="px-4 py-2 border">89</td>
+                <td class="px-4 py-2 border">66</td>
+                <td class="px-4 py-2 border">1</td>
+                <td class="px-4 py-2 border">20</td>
+                <td class="px-4 py-2 border">50</td>
+                <td class="px-4 py-2 border">2</td>
+                <td class="px-4 py-2 border">9</td>
+                <td class="px-4 py-2 border">0.25</td>
+                <td class="px-4 py-2 border">0.33</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM1312</td>
+                <td class="px-4 py-2 border">138</td>
+                <td class="px-4 py-2 border">120</td>
+                <td class="px-4 py-2 border">88</td>
+                <td class="px-4 py-2 border">1.5</td>
+                <td class="px-4 py-2 border">25</td>
+                <td class="px-4 py-2 border">70</td>
+                <td class="px-4 py-2 border">2</td>
+                <td class="px-4 py-2 border">9</td>
+                <td class="px-4 py-2 border">0.64</td>
+                <td class="px-4 py-2 border">0.82</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM1612</td>
+                <td class="px-4 py-2 border">170</td>
+                <td class="px-4 py-2 border">130</td>
+                <td class="px-4 py-2 border">124</td>
+                <td class="px-4 py-2 border">1.5-2.0</td>
+                <td class="px-4 py-2 border">35</td>
+                <td class="px-4 py-2 border">100</td>
+                <td class="px-4 py-2 border">2</td>
+                <td class="px-4 py-2 border">9</td>
+                <td class="px-4 py-2 border">0.89</td>
+                <td class="px-4 py-2 border">1.31</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM1614</td>
+                <td class="px-4 py-2 border">168</td>
+                <td class="px-4 py-2 border">147</td>
+                <td class="px-4 py-2 border">112</td>
+                <td class="px-4 py-2 border">1.5-2.0</td>
+                <td class="px-4 py-2 border">30</td>
+                <td class="px-4 py-2 border">100</td>
+                <td class="px-4 py-2 border">2</td>
+                <td class="px-4 py-2 border">9</td>
+                <td class="px-4 py-2 border">1.2</td>
+                <td class="px-4 py-2 border">1.58</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM1814</td>
+                <td class="px-4 py-2 border">188</td>
+                <td class="px-4 py-2 border">147</td>
+                <td class="px-4 py-2 border">112</td>
+                <td class="px-4 py-2 border">1.5-2.0</td>
+                <td class="px-4 py-2 border">30</td>
+                <td class="px-4 py-2 border">100</td>
+                <td class="px-4 py-2 border">2</td>
+                <td class="px-4 py-2 border">9</td>
+                <td class="px-4 py-2 border">1.38</td>
+                <td class="px-4 py-2 border">1.77</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM2314</td>
+                <td class="px-4 py-2 border">234</td>
+                <td class="px-4 py-2 border">147</td>
+                <td class="px-4 py-2 border">112</td>
+                <td class="px-4 py-2 border">1.5-2.5</td>
+                <td class="px-4 py-2 border">32</td>
+                <td class="px-4 py-2 border">120</td>
+                <td class="px-4 py-2 border">2</td>
+                <td class="px-4 py-2 border">9</td>
+                <td class="px-4 py-2 border">1.78</td>
+                <td class="px-4 py-2 border">2.3</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM2814</td>
+                <td class="px-4 py-2 border">288</td>
+                <td class="px-4 py-2 border">147</td>
+                <td class="px-4 py-2 border">112</td>
+                <td class="px-4 py-2 border">1.5-3.0</td>
+                <td class="px-4 py-2 border">32</td>
+                <td class="px-4 py-2 border">120</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">9</td>
+                <td class="px-4 py-2 border">2.26</td>
+                <td class="px-4 py-2 border">2.91</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM2015</td>
+                <td class="px-4 py-2 border">208</td>
+                <td class="px-4 py-2 border">152</td>
+                <td class="px-4 py-2 border">112</td>
+                <td class="px-4 py-2 border">1.5-3.0</td>
+                <td class="px-4 py-2 border">32</td>
+                <td class="px-4 py-2 border">100</td>
+                <td class="px-4 py-2 border">2</td>
+                <td class="px-4 py-2 border">9</td>
+                <td class="px-4 py-2 border">1.53</td>
+                <td class="px-4 py-2 border">2</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM2316</td>
+                <td class="px-4 py-2 border">234</td>
+                <td class="px-4 py-2 border">160</td>
+                <td class="px-4 py-2 border">122</td>
+                <td class="px-4 py-2 border">1.5-3.0</td>
+                <td class="px-4 py-2 border">32</td>
+                <td class="px-4 py-2 border">70</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">9</td>
+                <td class="px-4 py-2 border">2.1</td>
+                <td class="px-4 py-2 border">2.7</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM2616</td>
+                <td class="px-4 py-2 border">264</td>
+                <td class="px-4 py-2 border">165</td>
+                <td class="px-4 py-2 border">128</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">35</td>
+                <td class="px-4 py-2 border">80</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">2.55</td>
+                <td class="px-4 py-2 border">3.28</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM2816</td>
+                <td class="px-4 py-2 border">288</td>
+                <td class="px-4 py-2 border">165</td>
+                <td class="px-4 py-2 border">130</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">38</td>
+                <td class="px-4 py-2 border">80</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">10.5</td>
+                <td class="px-4 py-2 border">2.82</td>
+                <td class="px-4 py-2 border">3.64</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM3016</td>
+                <td class="px-4 py-2 border">308</td>
+                <td class="px-4 py-2 border">165</td>
+                <td class="px-4 py-2 border">135</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">36</td>
+                <td class="px-4 py-2 border">100</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">9</td>
+                <td class="px-4 py-2 border">2.9</td>
+                <td class="px-4 py-2 border">3.88</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM3316</td>
+                <td class="px-4 py-2 border">340</td>
+                <td class="px-4 py-2 border">165</td>
+                <td class="px-4 py-2 border">135</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">38</td>
+                <td class="px-4 py-2 border">110</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">3.65</td>
+                <td class="px-4 py-2 border">4.5</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM2818</td>
+                <td class="px-4 py-2 border">290</td>
+                <td class="px-4 py-2 border">182</td>
+                <td class="px-4 py-2 border">138</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">38</td>
+                <td class="px-4 py-2 border">80</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">3.5</td>
+                <td class="px-4 py-2 border">4.5</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM3018</td>
+                <td class="px-4 py-2 border">308</td>
+                <td class="px-4 py-2 border">182</td>
+                <td class="px-4 py-2 border">140</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">36</td>
+                <td class="px-4 py-2 border">100</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">9</td>
+                <td class="px-4 py-2 border">3.5</td>
+                <td class="px-4 py-2 border">4.5</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM3318</td>
+                <td class="px-4 py-2 border">340</td>
+                <td class="px-4 py-2 border">182</td>
+                <td class="px-4 py-2 border">140</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">38</td>
+                <td class="px-4 py-2 border">110</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">4</td>
+                <td class="px-4 py-2 border">5.2</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM3518</td>
+                <td class="px-4 py-2 border">362</td>
+                <td class="px-4 py-2 border">182</td>
+                <td class="px-4 py-2 border">140</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">38</td>
+                <td class="px-4 py-2 border">120</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">4.1</td>
+                <td class="px-4 py-2 border">5.5</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM3718</td>
+                <td class="px-4 py-2 border">385</td>
+                <td class="px-4 py-2 border">195</td>
+                <td class="px-4 py-2 border">140</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">38</td>
+                <td class="px-4 py-2 border">89</td>
+                <td class="px-4 py-2 border">4</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">4.9</td>
+                <td class="px-4 py-2 border">6.4</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM3021</td>
+                <td class="px-4 py-2 border">310</td>
+                <td class="px-4 py-2 border">218</td>
+                <td class="px-4 py-2 border">163</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">50</td>
+                <td class="px-4 py-2 border">100</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">5.2</td>
+                <td class="px-4 py-2 border">6.7</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM3321</td>
+                <td class="px-4 py-2 border">340</td>
+                <td class="px-4 py-2 border">215</td>
+                <td class="px-4 py-2 border">163</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">50</td>
+                <td class="px-4 py-2 border">120</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">5.65</td>
+                <td class="px-4 py-2 border">7.2</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM3521</td>
+                <td class="px-4 py-2 border">362</td>
+                <td class="px-4 py-2 border">215</td>
+                <td class="px-4 py-2 border">162</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">50</td>
+                <td class="px-4 py-2 border">120</td>
+                <td class="px-4 py-2 border">3</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">5.86</td>
+                <td class="px-4 py-2 border">7.6</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM3721</td>
+                <td class="px-4 py-2 border">383</td>
+                <td class="px-4 py-2 border">218</td>
+                <td class="px-4 py-2 border">160</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">50</td>
+                <td class="px-4 py-2 border">89</td>
+                <td class="px-4 py-2 border">4</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">6.48</td>
+                <td class="px-4 py-2 border">8.6</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM4521</td>
+                <td class="px-4 py-2 border">464</td>
+                <td class="px-4 py-2 border">215</td>
+                <td class="px-4 py-2 border">163</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">50</td>
+                <td class="px-4 py-2 border">89</td>
+                <td class="px-4 py-2 border">5</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">7.7</td>
+                <td class="px-4 py-2 border">10.19</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM4821</td>
+                <td class="px-4 py-2 border">480</td>
+                <td class="px-4 py-2 border">218</td>
+                <td class="px-4 py-2 border">163</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">50</td>
+                <td class="px-4 py-2 border">90</td>
+                <td class="px-4 py-2 border">5</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">8.5</td>
+                <td class="px-4 py-2 border">10.5</td>
+              </tr>
+              <tr>
+                <td class="px-4 py-2 border">SM5021</td>
+                <td class="px-4 py-2 border">515</td>
+                <td class="px-4 py-2 border">215</td>
+                <td class="px-4 py-2 border">163</td>
+                <td class="px-4 py-2 border">2.0-3.0</td>
+                <td class="px-4 py-2 border">50</td>
+                <td class="px-4 py-2 border">100</td>
+                <td class="px-4 py-2 border">5</td>
+                <td class="px-4 py-2 border">11</td>
+                <td class="px-4 py-2 border">8.91</td>
+                <td class="px-4 py-2 border">11.25</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
