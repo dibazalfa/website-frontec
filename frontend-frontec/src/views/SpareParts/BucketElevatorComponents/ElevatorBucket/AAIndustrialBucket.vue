@@ -12,7 +12,7 @@
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
         <div class="flex items-center mt-7">
-          <router-link to="/bolt-sets">
+          <router-link to="/elevator-bucket">
         <font-awesome-icon
           icon="circle-arrow-left"
           class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
@@ -102,177 +102,167 @@
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">2</td>
               <td class="border border-gray-300 px-4 py-2 center-text">AA5X4</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">134</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">105</td>
+              <td class="border border-gray-300 px-4 py-2 center-text"> 105</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.57</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.63</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">3</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA6X4</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">160</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">105</td>
+              <td class="border border-gray-300 px-4 py-2 center-text"> 105</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.68</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.75</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">4</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA7X4</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">184</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">105</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">105</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.84</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">0.92</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">5</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA7X5</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">180</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">130</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">134</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1.26</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1.39</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">6</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA8X5</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">206</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">130</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">134</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1.47</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1.62</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">7</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1800</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA9X5</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">232</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">130</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">134</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1.66</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">1.83</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">8</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA9X6</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">238</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">156</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">156</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.17</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.39</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">9</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA10X6</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">264</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">156</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">156</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.43</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.67</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA11X6</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">290</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">156</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">156</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.68</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.95</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">11</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA12X6</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">320</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">165</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">160</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">3.08</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">3.39</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA12X7</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">314</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">180</td>
+              <td class="border border-gray-300 px-4 py-2 center-text"> 180</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">4</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">4.4</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">13</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA14X7</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">365</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">180</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">180</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">4.89</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">5.38</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">14</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA14X8</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">365</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">206</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">206</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">5.8</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">6.38</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">15</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA16X8</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">416</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">206</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">206</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">6.66</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">7.33</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA18X8</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">460</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">206</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">206</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">7.66</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">8.43</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">17</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AA18X10</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">460</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">258</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">258</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">11</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">12.1</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">18</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AS13X7</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">340</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">195</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">200</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.17</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">2.28</td>
             </tr>
             <tr>
               <td class="border border-gray-300 px-4 py-2 center-text">19</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-4 py-2 center-text">20</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M10</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M12</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">≤ 1600</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
-              <td class="border border-gray-300 px-4 py-2 center-text">M16</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">AS18X7</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">470</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">175</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">185</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">4</td>
+              <td class="border border-gray-300 px-4 py-2 center-text">4.4</td>
             </tr>
           </tbody>
         </table>
-          <img :src="params" alt="" class="object-contain mt-6" />
         </div>
       </section>
 
@@ -288,11 +278,13 @@
                 Elevator Bucket
               </p>
             </router-link>
+            <router-link to="/aa-industrial-bucket">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
               >
                 AA Industrial Bucket
               </p>
+            </router-link>
             <router-link to="/cc-heavy-duty-bucket">
               <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 CC Heavy Duty Bucket
