@@ -12,9 +12,19 @@
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
         <!-- Main content goes here -->
-        <p class="text-[40px] mt-7 text-[#286F9B] font-bold text-shadow-md">
-          Pulley Slide Lagging
-        </p>
+        <div class="flex items-center mt-7">
+          <router-link to="/spare-parts">
+            <font-awesome-icon
+              icon="circle-arrow-left"
+              class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
+            />
+          </router-link>
+          <p
+            class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          >
+            Pulley Slide Lagging
+          </p>
+        </div>
         <img :src="pulley" alt="" class="mt-10 mx-auto" />
         <p
           class="bg-black text-white w-36 px-6 py-2 mt-10 rounded-full text-center font-bold uppercase"
@@ -99,7 +109,73 @@
         >
           BELT SUPPLIED REQUIREMENT
         </p>
-        <img :src="supply" alt="" class="mt-6" />
+        <table class="min-w-full bg-white mt-6">
+          <thead>
+            <tr class="w-full bg-[#286F9B] text-white">
+              <th class="px-4 py-2 border">Name</th>
+              <th class="px-4 py-2 border">Size</th>
+              <th class="px-4 py-2 border">Width mm</th>
+              <th class="px-4 py-2 border" colspan="3">Thickness mm</th>
+              <th class="px-4 py-2 border">Length L mm</th>
+            </tr>
+            <tr class="w-full bg-[#286F9B] text-white">
+              <th class="px-4 py-2 border"></th>
+              <th class="px-4 py-2 border"></th>
+              <th class="px-4 py-2 border"></th>
+              <th class="px-4 py-2 border">H</th>
+              <th class="px-4 py-2 border">H1</th>
+              <th class="px-4 py-2 border">H2</th>
+              <th class="px-4 py-2 border"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="w-full text-black">
+              <td class="px-4 py-2 border">Lagging Pad</td>
+              <td class="px-4 py-2 border">SRS15</td>
+              <td class="px-4 py-2 border">B=139</td>
+              <td class="px-4 py-2 border">15</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">1830</td>
+            </tr>
+            <tr class="w-full text-black">
+              <td class="px-4 py-2 border">Lagging Pad</td>
+              <td class="px-4 py-2 border">SRS19</td>
+              <td class="px-4 py-2 border">B=139</td>
+              <td class="px-4 py-2 border">19</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">1830</td>
+            </tr>
+            <tr class="w-full text-black">
+              <td class="px-4 py-2 border">Inclined Lagging Pad</td>
+              <td class="px-4 py-2 border">SRE19</td>
+              <td class="px-4 py-2 border">B=139</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">13</td>
+              <td class="px-4 py-2 border">19</td>
+              <td class="px-4 py-2 border">254</td>
+            </tr>
+            <tr class="w-full text-black">
+              <td class="px-4 py-2 border">Double Retainer</td>
+              <td class="px-4 py-2 border">SFK</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">1830</td>
+            </tr>
+            <tr class="w-full text-black">
+              <td class="px-4 py-2 border">Single Retainer</td>
+              <td class="px-4 py-2 border">SFA</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">–</td>
+              <td class="px-4 py-2 border">1830</td>
+            </tr>
+          </tbody>
+        </table>
         <p
           class="bg-black text-white w-64 px-6 py-2 mt-10 rounded-full text-center font-bold uppercase"
         >
@@ -164,11 +240,11 @@
                 Elevator Bucket
               </p>
             </router-link>
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
-              >
-                Pulley Slide Lagging
-              </p>
+            <p
+              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+            >
+              Pulley Slide Lagging
+            </p>
           </div>
           <p class="text-[20px] mx-auto mt-10">In Partnership with:</p>
           <img :src="sanwei" alt="" class="w-64 mx-auto mt-2" />
@@ -192,10 +268,14 @@ import laggingPad from "@/assets/img/spare-parts/lagging-pad.png";
 import supply from "@/assets/img/spare-parts/pulley-req.png";
 import install from "@/assets/img/spare-parts/pulley-instal.png";
 
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+
 export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon,
   },
   data() {
     return {
