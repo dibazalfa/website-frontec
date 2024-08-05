@@ -62,17 +62,22 @@
             />
           </svg>
         </button>
-        <nav :class="['md:flex', navbarOpen ? 'block' : 'hidden']" id="navbar-default">
+        <nav
+          :class="['md:flex', navbarOpen ? 'block' : 'hidden']"
+          id="navbar-default"
+        >
           <ul
             class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent md:dark:bg-transparent-900 dark:border-gray-700"
           >
             <li>
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 "
+                class="block py-2 px-3 rounded md:border-0 md:p-0"
                 to="/"
                 :class="[
-                  'hover:underline uppercase font-bold transition-colors duration-300',
-                  { 'text-black': isScrolled, 'text-white': !isScrolled }
+                  'hover:uppercase roboto-bold',
+                  'uppercase transition-colors duration-300',
+                  'underline-transition',
+                  { 'text-black': isScrolled, 'text-white': !isScrolled },
                 ]"
                 >{{ $t("navbar.about") }}</router-link
               >
@@ -83,11 +88,13 @@
               @mouseleave="hideSubNavbar"
             >
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 "
+                class="block py-2 px-3 rounded md:border-0 md:p-0"
                 to="/our-products"
                 :class="[
-                  'hover:underline uppercase font-bold transition-colors duration-300',
-                  { 'text-black': isScrolled, 'text-white': !isScrolled }
+                  'hover:uppercase roboto-bold',
+                  'uppercase transition-colors duration-300',
+                  'underline-transition',
+                  { 'text-black': isScrolled, 'text-white': !isScrolled },
                 ]"
                 >{{ $t("navbar.products") }}</router-link
               >
@@ -102,9 +109,7 @@
                   @mouseenter="showSubSubNavbar('materialHandling')"
                   @mouseleave="hideSubSubNavbar"
                 >
-                  <router-link
-                    class="block py-2 px-3 hover:bg-gray-100"
-                    to=""
+                  <router-link class="block py-2 px-3 hover:bg-gray-100" to=""
                     >Material Handling</router-link
                   >
                   <ul
@@ -155,9 +160,7 @@
                   @mouseenter="showSubSubNavbar('feedmill')"
                   @mouseleave="hideSubSubNavbar"
                 >
-                  <router-link
-                    class="block py-2 px-3 hover:bg-gray-100"
-                    to=""
+                  <router-link class="block py-2 px-3 hover:bg-gray-100" to=""
                     >Feedmill</router-link
                   >
                   <ul
@@ -201,9 +204,7 @@
                   @mouseenter="showSubSubNavbar('grainStorage')"
                   @mouseleave="hideSubSubNavbar"
                 >
-                  <router-link
-                    class="block py-2 px-3 hover:bg-gray-100"
-                    to=""
+                  <router-link class="block py-2 px-3 hover:bg-gray-100" to=""
                     >Grain Storage</router-link
                   >
                   <ul
@@ -239,34 +240,38 @@
             </li>
             <li>
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 "
+                class="block py-2 px-3 rounded md:border-0 md:p-0"
                 to="/our-companies"
                 :class="[
-                  'hover:underline uppercase font-bold transition-colors duration-300',
-                  { 'text-black': isScrolled, 'text-white': !isScrolled }
+                  'hover:uppercase roboto-bold',
+                  'uppercase transition-colors duration-300',
+                  'underline-transition',
+                  { 'text-black': isScrolled, 'text-white': !isScrolled },
                 ]"
                 >{{ $t("navbar.companies") }}</router-link
               >
             </li>
             <li>
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 "
+                class="block py-2 px-3 rounded md:border-0 md:p-0"
                 href="#contact-us"
                 to="/contact-us"
                 :class="[
                   'hover:underline uppercase font-bold transition-colors duration-300',
-                  { 'text-black': isScrolled, 'text-white': !isScrolled }
+                  { 'text-black': isScrolled, 'text-white': !isScrolled },
                 ]"
                 >{{ $t("navbar.contact") }}</router-link
               >
             </li>
             <li>
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 "
+                class="block py-2 px-3 rounded md:border-0 md:p-0"
                 to="/activities"
                 :class="[
-                  'hover:underline uppercase font-bold transition-colors duration-300',
-                  { 'text-black': isScrolled, 'text-white': !isScrolled }
+                  'hover:uppercase roboto-bold',
+                  'uppercase transition-colors duration-300',
+                  'underline-transition',
+                  { 'text-black': isScrolled, 'text-white': !isScrolled },
                 ]"
                 >{{ $t("navbar.activities") }}</router-link
               >
@@ -301,7 +306,7 @@ export default {
     const subSubNavbarOpen = ref({
       materialHandling: false,
       feedmill: false,
-      grainStorage: false
+      grainStorage: false,
     });
     const { locale } = useI18n();
     const currentLanguage = ref(locale.value);
@@ -342,7 +347,7 @@ export default {
       subSubNavbarOpen.value = {
         materialHandling: false,
         feedmill: false,
-        grainStorage: false
+        grainStorage: false,
       };
     };
 
