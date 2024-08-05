@@ -73,31 +73,30 @@
           <table class="min-w-full bg-white border border-gray-300 mt-6">
             <thead>
               <tr class="bg-[#286F9B] text-white">
-                <th class="px-4 py-2 border border-gray-300">Model</th>
-                <th class="px-4 py-2 border border-gray-300" colspan="4">
+                <th class="px-2 py-2 border border-gray-300" rowspan="2">Model</th>
+                <th class="px-2 py-2 border border-gray-300" colspan="4">
                   Bucket Dimension (mm)
                 </th>
-                <th class="px-4 py-2 border border-gray-300" colspan="4">
+                <th class="px-2 py-2 border border-gray-300" colspan="4">
                   Mounting Holes (mm)
                 </th>
-                <th class="px-4 py-2 border border-gray-300" colspan="2">
+                <th class="px-2 py-2 border border-gray-300" colspan="2">
                   Capacity (L)
                 </th>
               </tr>
               <tr class="bg-[#286F9B] text-white">
-                <th class="px-4 py-2 border border-gray-300"></th>
-                <th class="px-4 py-2 border border-gray-300">Length A</th>
-                <th class="px-4 py-2 border border-gray-300">Proj. B</th>
-                <th class="px-4 py-2 border border-gray-300">Depth C</th>
-                <th class="px-4 py-2 border border-gray-300">Thickness</th>
-                <th class="px-4 py-2 border border-gray-300">From Top D</th>
-                <th class="px-4 py-2 border border-gray-300">Hole Centres E</th>
-                <th class="px-4 py-2 border border-gray-300">No. of Holes</th>
-                <th class="px-4 py-2 border border-gray-300">Hole Diameter</th>
-                <th class="px-4 py-2 border border-gray-300">
+                <th class="px-2 py-2 border border-gray-300">Length A</th>
+                <th class="px-2 py-2 border border-gray-300">Proj. B</th>
+                <th class="px-2 py-2 border border-gray-300">Depth C</th>
+                <th class="px-2 py-2 border border-gray-300">Thickness</th>
+                <th class="px-2 py-2 border border-gray-300">From Top D</th>
+                <th class="px-2 py-2 border border-gray-300">Hole Centres E</th>
+                <th class="px-2 py-2 border border-gray-300">No. of Holes</th>
+                <th class="px-2 py-2 border border-gray-300">Hole Diameter</th>
+                <th class="px-2 py-2 border border-gray-300">
                   Water Level (Z-Y)
                 </th>
-                <th class="px-4 py-2 border border-gray-300">
+                <th class="px-2 py-2 border border-gray-300">
                   Total Level (X-Y)
                 </th>
               </tr>

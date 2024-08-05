@@ -64,7 +64,7 @@
           <table class="min-w-full bg-white border mt-6">
             <thead>
               <tr class="bg-[#286F9B] text-white">
-                <th class="px-7 py-2 border">Size (inch)</th>
+                <th class="px-7 py-2 border" rowspan="2">Size (inch)</th>
                 <th class="px-3 py-2 border" colspan="4">
                   Bucket Dimension (mm)
                 </th>
@@ -78,7 +78,6 @@
                 <th class="px-3 py-2 border" colspan="2">Capacity (L)</th>
               </tr>
               <tr class="bg-[#286F9B] text-white">
-                <th class="px-3 py-2 border"></th>
                 <th class="px-3 py-2 border">Length A</th>
                 <th class="px-3 py-2 border">Proj. B</th>
                 <th class="px-3 py-2 border">Depth C1</th>
