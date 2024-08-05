@@ -8,10 +8,18 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
+        inter: ['Roboto','Inter', 'sans-serif'],
       },
       textShadow: {
         'md': '0 4px 6px rgba(0, 0, 0, 0.1)',
+      },
+      fontWeight: {
+        thin: 100,
+        light: 300,
+        regular: 400,
+        medium: 500,
+        bold: 700,
+        black: 900,
       },
     },
   },
