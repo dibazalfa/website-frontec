@@ -257,7 +257,9 @@
                 href="#contact-us"
                 to="/contact-us"
                 :class="[
-                  'hover:underline uppercase font-bold transition-colors duration-300',
+                  'hover:uppercase roboto-bold',
+                  'uppercase transition-colors duration-300',
+                  'underline-transition',
                   { 'text-black': isScrolled, 'text-white': !isScrolled },
                 ]"
                 >{{ $t("navbar.contact") }}</router-link
