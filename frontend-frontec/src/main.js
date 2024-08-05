@@ -1,4 +1,6 @@
 import './assets/style.css'
+import './assets/fonts.css'
+import './assets/custom-styles.css';
 
 import { createApp } from 'vue'
 import { MotionPlugin } from '@vueuse/motion'

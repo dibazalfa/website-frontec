@@ -66,22 +66,26 @@
             class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent md:dark:bg-transparent-900 dark:border-gray-700"
           >
             <li>
-              <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 "
+                <router-link
+                class="block py-2 px-3 rounded md:border-0 md:p-0 roboto-bold"
                 to="/"
                 :class="[
-                  'hover:underline uppercase font-bold transition-colors duration-300',
+                  'hover:uppercase roboto-bold',
+                  'uppercase transition-colors duration-300',
+                  'underline-transition',
                   { 'text-black': isScrolled, 'text-white': !isScrolled }
                 ]"
                 >{{ $t("navbar.about") }}</router-link
               >
-            </li>
+              </li>
             <li class="relative group">
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 "
+                class="block py-2 px-3 rounded md:border-0 md:p-0 roboto-bold"
                 to="/our-products"
                 :class="[
-                  'hover:underline uppercase font-bold transition-colors duration-300',
+                  'hover:uppercase roboto-bold',
+                  'uppercase transition-colors duration-300',
+                  'underline-transition',
                   { 'text-black': isScrolled, 'text-white': !isScrolled }
                 ]"
                 @click="toggleDropdown"
@@ -90,10 +94,12 @@
             </li>
             <li>
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 "
+                class="block py-2 px-3 rounded md:border-0 md:p-0 roboto-bold"
                 to="/our-companies"
                 :class="[
-                  'hover:underline uppercase font-bold transition-colors duration-300',
+                  'hover:uppercase roboto-bold',
+                  'uppercase transition-colors duration-300',
+                  'underline-transition',
                   { 'text-black': isScrolled, 'text-white': !isScrolled }
                 ]"
                 >{{ $t("navbar.companies") }}</router-link
@@ -101,11 +107,13 @@
             </li>
             <li>
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 "
+                class="block py-2 px-3 rounded md:border-0 md:p-0 roboto-bold"
                 href="#contact-us"
                 to="/contact-us"
                 :class="[
-                  'hover:underline uppercase font-bold transition-colors duration-300',
+                  'hover:uppercase roboto-bold',
+                  'uppercase transition-colors duration-300',
+                  'underline-transition',
                   { 'text-black': isScrolled, 'text-white': !isScrolled }
                 ]"
                 >{{ $t("navbar.contact") }}</router-link
@@ -113,10 +121,12 @@
             </li>
             <li>
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 "
+                class="block py-2 px-3 rounded md:border-0 md:p-0 roboto-bold"
                 to="/activities"
                 :class="[
-                  'hover:underline uppercase font-bold transition-colors duration-300',
+                  'hover:uppercase roboto-bold',
+                  'uppercase transition-colors duration-300',
+                  'underline-transition',
                   { 'text-black': isScrolled, 'text-white': !isScrolled }
                 ]"
                 >{{ $t("navbar.activities") }}</router-link
