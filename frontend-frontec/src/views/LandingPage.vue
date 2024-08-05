@@ -6,10 +6,12 @@
       <!-- About Us Section -->
       <section id="about-us" class="bg-white flex flex-col min-h-screen p-4">
         <p
-          class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
+          class="bebas-neue-regular font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
         >
-          <span class="text-[#154214]">{{ t("landingPage.about") }}</span>
-          <span class="text-[#286f9b]">Frontec</span>
+          <span class="text-[#154214] bebas-neue-regular">{{
+            t("landingPage.about")
+          }}</span>
+          <span class="text-[#286f9b] bebas-neue-regular">Frontec</span>
         </p>
         <img :src="machining1" alt="" class="mx-auto mt-16 rounded-lg" />
         <div class="flex flex-col md:flex-row mx-auto mt-16 text-justify mb-14">
@@ -31,10 +33,10 @@
         class="bg-[#313C44] flex flex-col md:flex-row min-h-screen p-4"
       >
         <p
-          class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap my-auto mx-16"
+          class="text-shadow-md roboto-black text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap my-auto mx-16"
         >
-          <span class="text-white">{{ t("landingPage.why") }}</span>
-          <span class="text-[#F7F6BB]">Frontec?</span>
+          <span class="text-white roboto-black">{{ t("landingPage.why") }}</span>
+          <span class="text-[#F7F6BB] roboto-black">Frontec?</span>
         </p>
         <div class="text-white my-auto mx-auto flex flex-col space-y-8">
           <div class="flex flex-row">
@@ -250,6 +252,16 @@ export default {
 .text-shadow-md {
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.text-3d {
+  text-shadow:
+    1px 1px 2px rgba(71, 71, 71, 0.1),
+    2px 2px 4px rgba(71, 71, 71, 0.1),
+    3px 3px 6px rgba(71, 71, 71, 0.1),
+    4px 4px 8px rgba(71, 71, 71, 0.1),
+    5px 5px 10px rgba(71, 71, 71, 0.1);
+}
+
 
 @media (max-width: 768px) {
   .text-shadow-md {
