@@ -11,11 +11,19 @@
     <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
-        <p
-          class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
-        >
-          DK Heavy Duty Bucket
-        </p>
+        <div class="flex items-center mt-7">
+          <router-link to="/elevator-bucket">
+            <font-awesome-icon
+              icon="circle-arrow-left"
+              class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
+            />
+          </router-link>
+          <p
+            class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          >
+            DK Heavy Duty Bucket
+          </p>
+        </div>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="product" alt="" class="object-contain" />
           <div
@@ -74,18 +82,18 @@
               </p>
             </router-link>
             <router-link to="/aa-industrial-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 AA Industrial Bucket
               </p>
             </router-link>
             <router-link to="/cc-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 CC Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/d-heavy-duty-bucket">
               <p
-                class="text-[18px] px-4 py-8 border-b border-black"
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
               >
                 D Heavy Duty Bucket
               </p>
@@ -94,42 +102,42 @@
                 DK Heavy Duty Bucket
               </p>
             <router-link to="/dl-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 DL Bucket
               </p>
             </router-link>
             <router-link to="/dm-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 DM Bucket
               </p>
             </router-link>
             <router-link to="/eu-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 EU Bucket
               </p>
             </router-link>
             <router-link to="/sk-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 SK Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/m-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 M Bucket
               </p>
             </router-link>
             <router-link to="/fabricated-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Fabricated Steel Bucket
               </p>
             </router-link>
             <router-link to="/sm-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 SM Steel Bucket
               </p>
             </router-link>
             <router-link to="/ss-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 SS Steel Bucket
               </p>
             </router-link>
@@ -148,6 +156,7 @@ import AppHeader from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/spare-parts/bgSpareParts.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import product from "@/assets/img/spare-parts/dk-heavy.png";
 import spec from "@/assets/img/spare-parts/dk-heavy-spec.png";
@@ -157,6 +166,7 @@ export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon,
   },
   data() {
     return {

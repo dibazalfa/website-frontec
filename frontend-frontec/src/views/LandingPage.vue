@@ -6,12 +6,12 @@
       <!-- About Us Section -->
       <section id="about-us" class="bg-white flex flex-col min-h-screen p-4">
         <p
-          class="bebas-neue-regular font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
+          class="text-shadow-md montserrat-title text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
         >
-          <span class="text-[#154214] bebas-neue-regular">{{
+          <span class="text-[#154214] montserrat-title">{{
             t("landingPage.about")
           }}</span>
-          <span class="text-[#286f9b] bebas-neue-regular">Frontec</span>
+          <span class="text-[#286f9b] montserrat-title">Frontec</span>
         </p>
         <img :src="machining1" alt="" class="mx-auto mt-16 rounded-lg" />
         <div class="flex flex-col md:flex-row mx-auto mt-16 text-justify mb-14">
@@ -33,10 +33,10 @@
         class="bg-[#313C44] flex flex-col md:flex-row min-h-screen p-4"
       >
         <p
-          class="text-shadow-md roboto-black text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap my-auto mx-16"
+          class="text-shadow-md montserrat-title text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap my-auto mx-16"
         >
-          <span class="text-white roboto-black">{{ t("landingPage.why") }}</span>
-          <span class="text-[#F7F6BB] roboto-black">Frontec?</span>
+          <span class="text-white montserrat-title">{{ t("landingPage.why") }}</span>
+          <span class="text-[#F7F6BB] montserrat-title">Frontec?</span>
         </p>
         <div class="text-white my-auto mx-auto flex flex-col space-y-8">
           <div class="flex flex-row">
@@ -61,8 +61,9 @@
             </div>
           </div>
         </div>
-        <img class="m-auto w-full md:w-auto" :src="whyFrontec" alt="" />
+        <img class="m-auto w-full md:w-auto hidden md:block" :src="whyFrontec" alt="" />
       </section>
+      <br>
 
       <!-- Our Business Section -->
       <section
@@ -107,21 +108,22 @@
             class="p-4 md:p-14 lg:p-32 border-b-2 md:border-b-0 md:border-r-2 border-slate-300"
           >
             <span
-              class="text-shadow-md font-extrabold text-[40px] tracking-normal leading-normal whitespace-nowrap mx-auto text-[#313C44]"
+              class="text-shadow-md montserrat-title text-[40px] tracking-normal leading-normal whitespace-nowrap mx-auto text-[#313C44]"
               >{{ t("landingPage.vision-title") }}</span
             >
             <p class="mt-4">{{ t("landingPage.vision") }}</p>
           </div>
           <div class="p-4 md:p-14 lg:p-32 bg-[#313C44]">
             <span
-              class="text-shadow-md font-extrabold text-4xl tracking-normal leading-normal whitespace-nowrap mx-auto mt-16 text-[#F7F6BB]"
+              class="text-shadow-md montserrat-title text-4xl tracking-normal leading-normal whitespace-nowrap mx-auto mt-16 text-[#F7F6BB]"
               >{{ t("landingPage.mission-title") }}</span
             >
             <p class="text-white mt-4">{{ t("landingPage.mission") }}</p>
           </div>
         </div>
       </section>
-
+<br>
+<br>
       <!-- Catalog Section -->
       <section class="relative">
         <a
@@ -136,6 +138,7 @@
         </a>
         <img :src="catalog" alt="" class="mx-auto mb-6 md:w-1/2 catalog" />
       </section>
+      <br>
 
       <!-- Our Clients Section -->
       <section
@@ -144,7 +147,7 @@
       >
         <p
           v-html="t('landingPage.our-clients')"
-          class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mb-8"
+          class="text-shadow-md montserrat-title text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mb-8"
         ></p>
         <div class="flex overflow-x-scroll py-16 px-4 space-x-8">
           <img
@@ -262,6 +265,15 @@ export default {
     5px 5px 10px rgba(71, 71, 71, 0.1);
 }
 
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+
+.montserrat-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
 
 @media (max-width: 768px) {
   .text-shadow-md {
