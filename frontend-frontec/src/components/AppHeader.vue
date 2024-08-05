@@ -76,7 +76,11 @@
                 >{{ $t("navbar.about") }}</router-link
               >
             </li>
-            <li class="relative group">
+            <li
+              class="relative group"
+              @mouseenter="showSubNavbar"
+              @mouseleave="hideSubNavbar"
+            >
               <router-link
                 class="block py-2 px-3 rounded md:border-0 md:p-0 "
                 to="/our-products"
@@ -84,9 +88,153 @@
                   'hover:underline uppercase font-bold transition-colors duration-300',
                   { 'text-black': isScrolled, 'text-white': !isScrolled }
                 ]"
-                @click="toggleDropdown"
                 >{{ $t("navbar.products") }}</router-link
               >
+              <ul
+                v-show="subNavbarOpen"
+                class="absolute left-0 top-full w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+                @mouseenter="keepSubNavbar"
+                @mouseleave="hideSubNavbar"
+              >
+                <li
+                  class="relative group"
+                  @mouseenter="showSubSubNavbar('materialHandling')"
+                  @mouseleave="hideSubSubNavbar"
+                >
+                  <router-link
+                    class="block py-2 px-3 hover:bg-gray-100"
+                    to="/our-products/material-handling"
+                    >Material Handling</router-link
+                  >
+                  <ul
+                    v-show="subSubNavbarOpen.materialHandling"
+                    class="absolute left-full top-0 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+                    @mouseenter="keepSubSubNavbar('materialHandling')"
+                    @mouseleave="hideSubSubNavbar"
+                  >
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/material-handling/corn-dryer"
+                        >Corn Dryer</router-link
+                      >
+                    </li>
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/material-handling/bucket-elevator"
+                        >Bucket Elevator</router-link
+                      >
+                    </li>
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/material-handling/grader-cleaner"
+                        >Grader Cleaner</router-link
+                      >
+                    </li>
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/material-handling/screw-conveyor"
+                        >Screw Conveyor</router-link
+                      >
+                    </li>
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/material-handling/chain-conveyor"
+                        >Chain Conveyor</router-link
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  class="relative group"
+                  @mouseenter="showSubSubNavbar('feedmill')"
+                  @mouseleave="hideSubSubNavbar"
+                >
+                  <router-link
+                    class="block py-2 px-3 hover:bg-gray-100"
+                    to="/our-products/feedmill"
+                    >Feedmill</router-link
+                  >
+                  <ul
+                    v-show="subSubNavbarOpen.feedmill"
+                    class="absolute left-full top-0 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+                    @mouseenter="keepSubSubNavbar('feedmill')"
+                    @mouseleave="hideSubSubNavbar"
+                  >
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/feedmill/mixer"
+                        >Mixer</router-link
+                      >
+                    </li>
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/feedmill/dust-collector"
+                        >Dust Collector</router-link
+                      >
+                    </li>
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/feedmill/hammermill"
+                        >Hammermill</router-link
+                      >
+                    </li>
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/feedmill/cooler"
+                        >Cooler</router-link
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  class="relative group"
+                  @mouseenter="showSubSubNavbar('grainStorage')"
+                  @mouseleave="hideSubSubNavbar"
+                >
+                  <router-link
+                    class="block py-2 px-3 hover:bg-gray-100"
+                    to="/our-products/grain-storage"
+                    >Grain Storage</router-link
+                  >
+                  <ul
+                    v-show="subSubNavbarOpen.grainStorage"
+                    class="absolute left-full top-0 w-48 bg-white border border-gray-200 rounded-lg shadow-lg"
+                    @mouseenter="keepSubSubNavbar('grainStorage')"
+                    @mouseleave="hideSubSubNavbar"
+                  >
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/grain-storage/hopper-silo"
+                        >Hopper Silo</router-link
+                      >
+                    </li>
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/grain-storage/flat-bottom-silo"
+                        >Flat Bottom Silo</router-link
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <router-link
+                    class="block py-2 px-3 hover:bg-gray-100"
+                    to="/our-products/spareparts"
+                    >Spareparts</router-link
+                  >
+                </li>
+              </ul>
             </li>
             <li>
               <router-link
@@ -152,7 +300,12 @@ export default {
   setup() {
     const isScrolled = ref(false);
     const navbarOpen = ref(false);
-    const dropdownOpen = ref(false);
+    const subNavbarOpen = ref(false);
+    const subSubNavbarOpen = ref({
+      materialHandling: false,
+      feedmill: false,
+      grainStorage: false,
+    });
     const { locale } = useI18n();
     const currentLanguage = ref(locale.value);
 
@@ -171,8 +324,33 @@ export default {
       navbarOpen.value = !navbarOpen.value;
     };
 
-    const toggleDropdown = () => {
-      dropdownOpen.value = !dropdownOpen.value;
+    const showSubNavbar = () => {
+      subNavbarOpen.value = true;
+    };
+
+    const hideSubNavbar = () => {
+      subNavbarOpen.value = false;
+      hideSubSubNavbar();
+    };
+
+    const keepSubNavbar = () => {
+      subNavbarOpen.value = true;
+    };
+
+    const showSubSubNavbar = (menu) => {
+      subSubNavbarOpen.value[menu] = true;
+    };
+
+    const hideSubSubNavbar = () => {
+      subSubNavbarOpen.value = {
+        materialHandling: false,
+        feedmill: false,
+        grainStorage: false,
+      };
+    };
+
+    const keepSubSubNavbar = (menu) => {
+      subSubNavbarOpen.value[menu] = true;
     };
 
     onMounted(() => {
@@ -186,11 +364,17 @@ export default {
     return {
       isScrolled,
       navbarOpen,
-      dropdownOpen,
+      subNavbarOpen,
+      subSubNavbarOpen,
       currentLanguage,
       setLanguage,
       toggleNavbar,
-      toggleDropdown,
+      showSubNavbar,
+      hideSubNavbar,
+      keepSubNavbar,
+      showSubSubNavbar,
+      hideSubSubNavbar,
+      keepSubSubNavbar,
       t,
     };
   },
