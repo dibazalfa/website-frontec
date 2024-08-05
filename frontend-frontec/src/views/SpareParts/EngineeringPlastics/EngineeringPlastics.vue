@@ -11,7 +11,6 @@
     <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
-        <!-- Main content goes here -->
         <div class="flex items-center mt-7">
           <router-link to="/spare-parts">
             <font-awesome-icon
@@ -19,21 +18,23 @@
               class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
             />
           </router-link>
+          <!-- Main content goes here -->
           <p
             class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
           >
-            Screw Conveyor Components
+            Anti-Wear Products Engineering Plastics
           </p>
         </div>
+        <!-- Main content goes here -->
         <div class="flex flex-col md:flex-row mt-12">
-          <router-link to="/continous-screw-flight">
+          <router-link to="/uhmwpe-sheet-rod">
             <img
               :src="product1"
               alt=""
               class="object-contain hover:scale-105"
             />
           </router-link>
-          <router-link to="/sectional-screw-flight">
+          <router-link to="/pu-sheet-rod">
             <img
               :src="product2"
               alt=""
@@ -42,18 +43,27 @@
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-12">
-          <router-link to="/complete-screw-flight">
+          <router-link to="/ptfe-sheet-rod">
             <img
               :src="product3"
               alt=""
               class="object-contain hover:scale-105"
             />
           </router-link>
-          <router-link to="/cont-equal-screw">
+          <router-link to="/hdpe-sheet-rod">
             <img
               :src="product4"
               alt=""
               class="object-contain md:ml-16 hover:scale-105"
+            />
+          </router-link>
+        </div>
+        <div class="flex flex-col md:flex-row mt-12">
+          <router-link to="/coated-bolts">
+            <img
+              :src="product5"
+              alt=""
+              class="object-contain hover:scale-105"
             />
           </router-link>
         </div>
@@ -80,10 +90,11 @@ import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/spare-parts/bgSpareParts.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 
-import product1 from "@/assets/img/spare-parts/continous-text.png";
-import product2 from "@/assets/img/spare-parts/sectional-text.png";
-import product3 from "@/assets/img/spare-parts/complete-text.png";
-import product4 from "@/assets/img/spare-parts/cont-equal-text.png";
+import product1 from "@/assets/img/spare-parts/uhmwpe-sheet-text.png";
+import product2 from "@/assets/img/spare-parts/pu-sheet-text.png";
+import product3 from "@/assets/img/spare-parts/ptfe-sheet-text.png";
+import product4 from "@/assets/img/spare-parts/hdpe-sheet-text.png";
+import product5 from "@/assets/img/spare-parts/coated-bolts-text.png";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -101,6 +112,7 @@ export default {
       product2,
       product3,
       product4,
+      product5,
     };
   },
 };

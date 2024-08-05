@@ -265,6 +265,56 @@ const router = createRouter({
       name: 'cont-equal-screw',
       component: () => import('../views/SpareParts/ScrewConveyorComponents/ContEqualScrew.vue')
     },
+    {
+      path: '/engineering-plastics',
+      name: 'engineering-plastics',
+      component: () => import('../views/SpareParts/EngineeringPlastics/EngineeringPlastics.vue')
+    },
+    {
+      path: '/uhmwpe-sheet-rod',
+      name: 'uhmwpe-sheet-rod',
+      component: () => import('../views/SpareParts/EngineeringPlastics/UHMWPESheetRod.vue')
+    },
+    {
+      path: '/coated-bolts',
+      name: 'coated-bolts',
+      component: () => import('../views/SpareParts/EngineeringPlastics/CoatedBolts.vue')
+    },
+    {
+      path: '/hdpe-sheet-rod',
+      name: 'hdpe-sheet-rod',
+      component: () => import('../views/SpareParts/EngineeringPlastics/HDPESheetRod.vue')
+    },
+    {
+      path: '/ptfe-sheet-rod',
+      name: 'ptfe-sheet-rod',
+      component: () => import('../views/SpareParts/EngineeringPlastics/PTFESheetRod.vue')
+    },
+    {
+      path: '/pu-sheet-rod',
+      name: 'pu-sheet-rod',
+      component: () => import('../views/SpareParts/EngineeringPlastics/PUSheetRod.vue')
+    },
+    {
+      path: '/sieves-screens',
+      name: 'sieves-screens',
+      component: () => import('../views/SpareParts/SievesAndScreens/SievesAndScreens.vue')
+    },
+    {
+      path: '/sieves-cleaning-balls',
+      name: 'sieves-cleaning-balls',
+      component: () => import('../views/SpareParts/SievesAndScreens/SieveCleaningBalls.vue')
+    },
+    {
+      path: '/sieves-cleaners',
+      name: 'sieves-cleaners',
+      component: () => import('../views/SpareParts/SievesAndScreens/SieveCleaners.vue')
+    },
+    {
+      path: '/pan-cleaners',
+      name: 'pan-cleaners',
+      component: () => import('../views/SpareParts/SievesAndScreens/PanCleaners.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

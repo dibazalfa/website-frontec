@@ -11,11 +11,19 @@
     <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
-        <p
-          class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
-        >
-          Roller Chain
-        </p>
+        <div class="flex items-center mt-7">
+          <router-link to="/drag-conveyor-components">
+            <font-awesome-icon
+              icon="circle-arrow-left"
+              class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
+            />
+          </router-link>
+          <p
+            class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          >
+            Roller Chain
+          </p>
+        </div>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="product" alt="" class="object-contain" />
           <div
@@ -35,7 +43,129 @@
           >
             Specifications
           </p>
-          <img :src="spec" alt="" class="object-contain mt-6" />
+          <table class="min-w-full border border-gray-300 mt-6">
+            <thead>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2" rowspan="2">
+                  Fabric Type
+                </th>
+                <th class="border border-gray-300 p-2" rowspan="2">
+                  Ply Thickness (mm)
+                </th>
+                <th class="border border-gray-300 p-2" colspan="5">
+                  Nominal Tensile Strength at Overall Thickness (N/mm)
+                </th>
+                <th class="border border-gray-300 p-2" rowspan="2">
+                  Elongation at Break (%)
+                </th>
+                <th class="border border-gray-300 p-2" rowspan="2">
+                  Elongation at Rated Stress (%)
+                </th>
+                <th class="border border-gray-300 p-2" rowspan="2">
+                  Belt Width (mm)
+                </th>
+                <th class="border border-gray-300 p-2" rowspan="2">
+                  Belt Length (M)
+                </th>
+              </tr>
+              <tr class="bg-[#286F9B] text-white">
+                <th class="border border-gray-300 p-2">2ply</th>
+                <th class="border border-gray-300 p-2">3ply</th>
+                <th class="border border-gray-300 p-2">4ply</th>
+                <th class="border border-gray-300 p-2">5ply</th>
+                <th class="border border-gray-300 p-2">6ply</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-700">
+              <tr>
+                <td class="border border-gray-300 p-2">EP80</td>
+                <td class="border border-gray-300 p-2">0.60</td>
+                <td class="border border-gray-300 p-2">160</td>
+                <td class="border border-gray-300 p-2">240</td>
+                <td class="border border-gray-300 p-2">320</td>
+                <td class="border border-gray-300 p-2">400</td>
+                <td class="border border-gray-300 p-2">480</td>
+                <td class="border border-gray-300 p-2" rowspan="8">≥10</td>
+                <td class="border border-gray-300 p-2" rowspan="8">≤4</td>
+                <td class="border border-gray-300 p-2" rowspan="8">
+                  300 - 1500
+                </td>
+                <td class="border border-gray-300 p-2" rowspan="8">≤300</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">EP100</td>
+                <td class="border border-gray-300 p-2">0.70</td>
+                <td class="border border-gray-300 p-2">200</td>
+                <td class="border border-gray-300 p-2">300</td>
+                <td class="border border-gray-300 p-2">400</td>
+                <td class="border border-gray-300 p-2">500</td>
+                <td class="border border-gray-300 p-2">600</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">EP125</td>
+                <td class="border border-gray-300 p-2">0.70</td>
+                <td class="border border-gray-300 p-2">250</td>
+                <td class="border border-gray-300 p-2">375</td>
+                <td class="border border-gray-300 p-2">500</td>
+                <td class="border border-gray-300 p-2">625</td>
+                <td class="border border-gray-300 p-2">750</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">EP150</td>
+                <td class="border border-gray-300 p-2">0.80</td>
+                <td class="border border-gray-300 p-2">300</td>
+                <td class="border border-gray-300 p-2">450</td>
+                <td class="border border-gray-300 p-2">600</td>
+                <td class="border border-gray-300 p-2">750</td>
+                <td class="border border-gray-300 p-2">900</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">EP200</td>
+                <td class="border border-gray-300 p-2">1.0</td>
+                <td class="border border-gray-300 p-2">400</td>
+                <td class="border border-gray-300 p-2">600</td>
+                <td class="border border-gray-300 p-2">800</td>
+                <td class="border border-gray-300 p-2">1000</td>
+                <td class="border border-gray-300 p-2">1200</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">EP250</td>
+                <td class="border border-gray-300 p-2">1.20</td>
+                <td class="border border-gray-300 p-2">500</td>
+                <td class="border border-gray-300 p-2">750</td>
+                <td class="border border-gray-300 p-2">1000</td>
+                <td class="border border-gray-300 p-2">1250</td>
+                <td class="border border-gray-300 p-2">1500</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">EP300</td>
+                <td class="border border-gray-300 p-2">1.25</td>
+                <td class="border border-gray-300 p-2">0</td>
+                <td class="border border-gray-300 p-2">900</td>
+                <td class="border border-gray-300 p-2">1200</td>
+                <td class="border border-gray-300 p-2">1500</td>
+                <td class="border border-gray-300 p-2">1800</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">EP350</td>
+                <td class="border border-gray-300 p-2">1.30</td>
+                <td class="border border-gray-300 p-2">0</td>
+                <td class="border border-gray-300 p-2">0</td>
+                <td class="border border-gray-300 p-2">1400</td>
+                <td class="border border-gray-300 p-2">1750</td>
+                <td class="border border-gray-300 p-2">2100</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">EP400</td>
+                <td class="border border-gray-300 p-2">1.40</td>
+                <td class="border border-gray-300 p-2">0</td>
+                <td class="border border-gray-300 p-2">0</td>
+                <td class="border border-gray-300 p-2">1600</td>
+                <td class="border border-gray-300 p-2">2000</td>
+                <td class="border border-gray-300 p-2">2400</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -46,38 +176,46 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-            <router-link to="/drag-conveyor-components">
-              <p class="text-[20px] font-bold p-4 border-b border-black">
-                Drag Conveyor Components
-              </p>
-            </router-link>
+            <p class="text-[20px] font-bold p-4 border-b border-black">
+              Drag Conveyor Components
+            </p>
             <p
               class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
             >
               Roller Chain
             </p>
             <router-link to="/drop-forged-chain">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Drop Forged Chain
               </p>
             </router-link>
             <router-link to="/drag-sprocket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Drag Sprocket
               </p>
             </router-link>
             <router-link to="/plastic-flight-br">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Plastif Flight Attachment (BR)
               </p>
             </router-link>
             <router-link to="/nylon-gear-wheel">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Nylon Gear & Wheel
               </p>
             </router-link>
             <router-link to="/plastic-flight-bf">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Plastic Flight Attachment (BF)
               </p>
             </router-link>
@@ -103,10 +241,13 @@ import product from "@/assets/img/spare-parts/roller-chain.png";
 import spec from "@/assets/img/spare-parts/roller-chain-spec.png";
 import draw from "@/assets/img/spare-parts/roller-chain-draw.png";
 
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
 export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon,
   },
   data() {
     return {

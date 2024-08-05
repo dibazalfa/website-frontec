@@ -12,7 +12,7 @@
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
         <div class="flex items-center mt-7">
-          <router-link to="/belt-conveyor-components">
+          <router-link to="/sieves-screens">
             <font-awesome-icon
               icon="circle-arrow-left"
               class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
@@ -21,7 +21,7 @@
           <p
             class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
           >
-            Patterned Conveyor Belt
+            Sieve Cleaning Balls
           </p>
         </div>
         <div class="flex flex-col md:flex-row mt-12">
@@ -29,35 +29,21 @@
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:pl-10 text-[16px] md:text-[18px]"
           >
-            <p
-              class="bg-black text-white w-36 px-6 py-3 rounded-full text-center font-bold uppercase shadow-lg"
-            >
-              Features
-            </p>
+            <div class="flex flex-row">
+              <p
+                class="bg-black text-white w-48 px-6 py-3 rounded-full text-center font-bold uppercase shadow-lg"
+              >
+                description
+              </p>
+            </div>
             <ul class="list-disc mt-8 ml-6">
               <li>
-                Suitable to convey materials such as powder, granules as well as
-                packaged materials at angleless than 40 degrees.
+                FDA approved Polyurethane (PU) (except cotton canvas pad) with
+                good rebound resilience, superior abrasion
               </li>
               <li>
-                The carcass can be made from Polyester EP, Nylon NN, Cotton CC,
-                and Polyester Cotton TC;
-              </li>
-              <li>
-                Patterned Belt includes various patterns such as “Cross”, “V”,
-                “Doted”, “Crescent”, etc.
-              </li>
-              <li>
-                Excluding the pattern measurements, the overall belt
-                specifications and rubber cover properties of the patterned
-                conveyor belt remain the same as the flat surface conveyor belt
-                under the condition of the same carcass and rubber cover
-                materials.
-              </li>
-              <li>
-                The belts include general use, oil-resistant, acid-alkali
-                resistant, cold-resistant, static conductive, fire retardant,
-                wear-resistant and heat resistant types etc.
+                resistant, moisture resistant, oil resistant and low temperature
+                resistant features ensures long service life.
               </li>
             </ul>
           </div>
@@ -72,25 +58,26 @@
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
               <p class="text-[20px] font-bold p-4 border-b border-black">
-                Belt Conveyor Components
+                Parts for Sieves <br />
+                and Screens
               </p>
-            <router-link to="flat-surface-conveyor">
+            <router-link to="/sieves-cleaning-balls">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
               >
-                Flat Surface Conveyor
+                Sieves Cleaning Balls
               </p>
             </router-link>
             <p
               class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
             >
-              Patterned Conveyor
+              Pan Cleaners
             </p>
-            <router-link to="/impact-bar">
+            <router-link to="/sieves-cleaners">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
               >
-                Impact Bar
+                Sieves Cleaners
               </p>
             </router-link>
           </div>
@@ -111,7 +98,7 @@ import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/spare-parts/bgSpareParts.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 
-import product from "@/assets/img/spare-parts/patterned.png";
+import product from "@/assets/img/spare-parts/pan-cleaners.png";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
