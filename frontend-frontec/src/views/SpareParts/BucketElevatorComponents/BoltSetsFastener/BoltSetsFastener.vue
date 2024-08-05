@@ -12,47 +12,101 @@
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
         <!-- Main content goes here -->
-        <p class="text-[40px] mt-7 text-[#286F9B] font-bold text-shadow-md">
-          Bolt Sets & Fastener
-        </p>
+        <div class="flex items-center mt-7">
+          <router-link to="/spare-parts">
+            <font-awesome-icon
+              icon="circle-arrow-left"
+              class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
+            />
+          </router-link>
+          <p
+            class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          >
+            Bolt Sets & Fastener
+          </p>
+        </div>
         <div class="flex flex-col md:flex-row mt-12">
           <router-link to="/fang-bolt">
-            <img :src="bolt1" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
+            <img
+              :src="bolt1"
+              alt=""
+              class="object-contain hover:scale-105 transform transition-transform duration-300"
+            />
           </router-link>
           <router-link to="/euro-bolt">
-            <img :src="bolt2" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
+            <img
+              :src="bolt2"
+              alt=""
+              class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300"
+            />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/domed-washer">
-            <img :src="bolt3" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
+            <img
+              :src="bolt3"
+              alt=""
+              class="object-contain hover:scale-105 transform transition-transform duration-300"
+            />
           </router-link>
           <router-link to="/large-flat-washer">
-            <img :src="bolt4" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
+            <img
+              :src="bolt4"
+              alt=""
+              class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300"
+            />
           </router-link>
         </div>
-        <div class="flex flex-col md:flex-row mt-10 hover:scale-105 transform transition-transform duration-300">
+        <div
+          class="flex flex-col md:flex-row mt-10 hover:scale-105 transform transition-transform duration-300"
+        >
           <router-link to="/spring-washer">
-            <img :src="bolt5" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
+            <img
+              :src="bolt5"
+              alt=""
+              class="object-contain hover:scale-105 transform transition-transform duration-300"
+            />
           </router-link>
           <router-link to="/hexagon-nut">
-            <img :src="bolt6" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
+            <img
+              :src="bolt6"
+              alt=""
+              class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300"
+            />
           </router-link>
         </div>
-        <div class="flex flex-col md:flex-row mt-10 hover:scale-105 transform transition-transform duration-300">
+        <div
+          class="flex flex-col md:flex-row mt-10 hover:scale-105 transform transition-transform duration-300"
+        >
           <router-link to="/nyloc-nut">
-            <img :src="bolt7" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
+            <img
+              :src="bolt7"
+              alt=""
+              class="object-contain hover:scale-105 transform transition-transform duration-300"
+            />
           </router-link>
           <router-link to="/flange-nut">
-            <img :src="bolt8" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
+            <img
+              :src="bolt8"
+              alt=""
+              class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300"
+            />
           </router-link>
         </div>
         <div class="flex flex-col md:flex-row mt-10">
           <router-link to="/belt-fastener-s123">
-            <img :src="bolt9" alt="" class="object-contain hover:scale-105 transform transition-transform duration-300" />
+            <img
+              :src="bolt9"
+              alt=""
+              class="object-contain hover:scale-105 transform transition-transform duration-300"
+            />
           </router-link>
           <router-link to="/belt-fastener-s45">
-            <img :src="bolt10" alt="" class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300" />
+            <img
+              :src="bolt10"
+              alt=""
+              class="object-contain md:ml-12 hover:scale-105 transform transition-transform duration-300"
+            />
           </router-link>
         </div>
       </section>
@@ -68,7 +122,9 @@
               Bucket Elevator Components
             </p>
             <router-link to="/elevator-belt">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Elevator Belt
               </p>
             </router-link>
@@ -78,12 +134,16 @@
               Bolt Sets & Fastener
             </p>
             <router-link to="/elevator-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Elevator Bucket
               </p>
             </router-link>
             <router-link to="/pulley-slide-lagging">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Pulley Slide Lagging
               </p>
             </router-link>
@@ -116,10 +176,14 @@ import bolt8 from "@/assets/img/spare-parts/bolt8.png";
 import bolt9 from "@/assets/img/spare-parts/bolt9.png";
 import bolt10 from "@/assets/img/spare-parts/bolt10.png";
 
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+
 export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon
   },
   data() {
     return {
