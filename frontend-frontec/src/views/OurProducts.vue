@@ -157,7 +157,7 @@ import background from "@/assets/img/our-products/our-products.png";
 import materialHandling from "@/assets/img/our-products/material-handling.png";
 import feedMill from "@/assets/img/our-products/feedmill.png";
 import grainStorage from "@/assets/img/our-products/grain-storage.png";
-import spareParts from "@/assets/img/spare-parts/bgSpareParts.png";
+import spareParts from "@/assets/img/our-products/spare-parts.png";
 
 import bucketElevator from "@/assets/img/material-handling/Bucket Elevator.png";
 import chainConveyor from "@/assets/img/material-handling/Chain Conveyor.png";
