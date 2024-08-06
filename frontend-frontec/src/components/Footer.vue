@@ -3,7 +3,7 @@
     <div
       class="container mx-auto flex flex-col items-center justify-between md:flex-row"
     >
-      <div class="flex space-x-4 ml-20">
+      <div class="flex space-x-4 md:mb-0 mb-2 md:ml-20">
         <a
           href="https://www.facebook.com/pages/CV.%2520Frontec%2520Agritama%2520Engineering/1689781144429808/"
         >
@@ -19,8 +19,10 @@
         </a>
       </div>
       <p>&copy; 2024 Frontec Group. All rights reserved.</p>
-      <div>
-        <router-link to="/contact-us" class="text-white font-bold mr-20"
+      <div class="md:mt-0 mt-1">
+        <router-link
+          to="/contact-us"
+          class="text-white font-bold mx-auto md:mr-20"
           >Contact Us</router-link
         >
       </div>
