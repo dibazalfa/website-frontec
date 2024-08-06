@@ -20,7 +20,7 @@
         </p>
       </section>
       <section class="flex flex-col m-auto">
-        <div class="my-auto mx-48 pb-4">
+        <div class="my-auto mx-4 sm:mx-12 md:mx-24 lg:mx-48 pb-4">
           <img
             @click="toggleActive('materialHandling')"
             :src="materialHandling"
@@ -29,55 +29,55 @@
           />
           <div
             v-if="isActive.materialHandling"
-            class="p-12 border-2 border-slate-300 rounded-lg flex"
+            class="p-4 sm:p-8 md:p-12 border-2 border-slate-300 rounded-lg flex flex-col sm:flex-row"
           >
-            <div class="flex flex-col hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto">
               <img :src="cornDryer" alt="" class="hover-img rounded-full" />
               <p class="mx-auto">Corn Dryer</p>
             </div>
-            <div class="flex flex-col hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto">
               <img :src="bucketElevator" alt="" class="hover-img rounded-full" />
               <p class="mx-auto">Bucket Elevator</p>
             </div>
-            <div class="flex flex-col hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto">
               <img :src="graderCleaner" alt="" class="hover-img rounded-full" />
               <p class="mx-auto">Grader Cleaner</p>
             </div>
-            <div class="flex flex-col hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto">
               <img :src="screwConveyor" alt="" class="hover-img rounded-full" />
               <p class="mx-auto">Screw Conveyor</p>
             </div>
-            <div class="flex flex-col hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto">
               <img :src="chainConveyor" alt="" class="hover-img rounded-full" />
               <p class="mx-auto">Chain Conveyor</p>
             </div>
           </div>
         </div>
-        <div class="my-auto mx-48 pb-4">
+        <div class="my-auto mx-4 sm:mx-12 md:mx-24 lg:mx-48 pb-4">
           <img @click="toggleActive('feedMill')" :src="feedMill" alt="" class="hover-scale" />
           <div
             v-if="isActive.feedMill"
-            class="p-12 border-2 border-slate-300 rounded-lg flex"
+            class="p-4 sm:p-8 md:p-12 border-2 border-slate-300 rounded-lg flex flex-col sm:flex-row"
           >
-            <div class="flex flex-col hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto">
               <img :src="mixer" alt="" class="hover-img rounded-full" />
               <p class="mx-auto">Mixer</p>
             </div>
-            <div class="flex flex-col hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto">
               <img :src="dustCollector" alt="" class="hover-img rounded-full" />
               <p class="mx-auto">Dust Collector</p>
             </div>
-            <div class="flex flex-col hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto">
               <img :src="hammermill" alt="" class="hover-img rounded-full" />
               <p class="mx-auto">Hammermill</p>
             </div>
-            <div class="flex flex-col hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto">
               <img :src="cooler" alt="" class="hover-img rounded-full" />
               <p class="mx-auto">Cooler</p>
             </div>
           </div>
         </div>
-        <div class="my-auto mx-48 pb-4">
+        <div class="my-auto mx-4 sm:mx-12 md:mx-24 lg:mx-48 pb-4">
           <img
             @click="toggleActive('grainStorage')"
             :src="grainStorage"
@@ -86,25 +86,25 @@
           />
           <div
             v-if="isActive.grainStorage"
-            class="p-12 border-2 border-slate-300 rounded-lg flex"
+            class="p-4 sm:p-8 md:p-12 border-2 border-slate-300 rounded-lg flex flex-col sm:flex-row"
           >
-            <div class="flex flex-col ml-64 mr-5 hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto">
               <img :src="hopperSilo" alt="" class="hover-img rounded-full" />
               <p class="mx-auto mt-2">Hopper Silo</p>
             </div>
-            <div class="flex flex-col mr-64 ml-5 hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto">
               <img :src="flatBottomSilo" alt="" class="hover-img rounded-full" />
               <p class="mx-auto mt-2">Flat Bottom Silo</p>
             </div>
           </div>
         </div>
-        <div class="my-auto mx-48 pb-4">
+        <div class="my-auto mx-4 sm:mx-12 md:mx-24 lg:mx-48 pb-4">
           <img @click="toggleActive('spareParts')" :src="spareParts" alt="" class="hover-scale rounded-lg crop-img" />
           <div
             v-if="isActive.spareParts"
-            class="p-12 border-2 border-slate-300 rounded-lg grid grid-cols-4 gap-8"
+            class="p-4 sm:p-8 md:p-12 border-2 border-slate-300 rounded-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
           >
-            <div class="flex flex-col items-center hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col items-center hover:scale-105 transform transition duration-300 mx-auto">
               <router-link to="/elevator-belt">
                 <img
                   class="w-32 h-32 object-cover rounded-full hover-img"
@@ -114,7 +114,7 @@
               </router-link>
               <p class="text-center">Bucket Elevator Components</p>
             </div>
-            <div class="flex flex-col items-center hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col items-center hover:scale-105 transform transition duration-300 mx-auto">
               <router-link to="/belt-conveyor-components">
                 <img
                   class="w-32 h-32 object-cover rounded-full hover-img"
@@ -124,7 +124,7 @@
               </router-link>
               <p class="text-center">Belt Conveyor Components</p>
             </div>
-            <div class="flex flex-col items-center hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col items-center hover:scale-105 transform transition duration-300 mx-auto">
               <router-link to="/drag-conveyor-components">
                 <img
                   class="w-32 h-32 object-cover rounded-full hover-img"
@@ -134,7 +134,7 @@
               </router-link>
               <p class="text-center">Drag Conveyor Components</p>
             </div>
-            <div class="flex flex-col items-center hover:scale-105 transform transition duration-300">
+            <div class="flex flex-col items-center hover:scale-105 transform transition duration-300 mx-auto">
               <router-link to="/spare-parts">
                 <img class="w-32 h-32 object-cover rounded-full hover-img" :src="seeAll" alt="" />
                 <p class="text-center">See All</p>
@@ -147,6 +147,7 @@
     </main>
   </div>
 </template>
+
 
 <script>
 import AppHeader from "../components/Header.vue";
