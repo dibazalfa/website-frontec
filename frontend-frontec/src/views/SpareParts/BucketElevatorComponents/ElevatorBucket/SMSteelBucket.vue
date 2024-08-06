@@ -74,27 +74,26 @@
           <table class="min-w-full bg-white border mt-6">
             <thead>
               <tr class="bg-[#286F9B] text-white">
-                <th class="px-4 py-2 border">Model</th>
-                <th class="px-4 py-2 border" colspan="4">
+                <th class="px-2 py-2 border" rowspan="2">Model</th>
+                <th class="px-2 py-2 border" colspan="4">
                   Bucket Dimension (mm)
                 </th>
-                <th class="px-4 py-2 border" colspan="4">
+                <th class="px-2 py-2 border" colspan="4">
                   Mounting Holes (mm)
                 </th>
-                <th class="px-4 py-2 border" colspan="2">Capacity (L)</th>
+                <th class="px-2 py-2 border" colspan="2">Capacity (L)</th>
               </tr>
               <tr class="bg-[#286F9B] text-white">
-                <th class="px-4 py-2 border"></th>
-                <th class="px-4 py-2 border">Length A</th>
-                <th class="px-4 py-2 border">Proj. B</th>
-                <th class="px-4 py-2 border">Depth C</th>
-                <th class="px-4 py-2 border">Thickness</th>
-                <th class="px-4 py-2 border">From Top D</th>
-                <th class="px-4 py-2 border">Hole Centres E</th>
-                <th class="px-4 py-2 border">No. of Holes</th>
-                <th class="px-4 py-2 border">Hole Diameter</th>
-                <th class="px-4 py-2 border">Water Level (Z-Y)</th>
-                <th class="px-4 py-2 border">Total Level (X-Y)</th>
+                <th class="px-2 py-2 border">Length A</th>
+                <th class="px-2 py-2 border">Proj. B</th>
+                <th class="px-2 py-2 border">Depth C</th>
+                <th class="px-2 py-2 border">Thickness</th>
+                <th class="px-2 py-2 border">From Top D</th>
+                <th class="px-2 py-2 border">Hole Centres E</th>
+                <th class="px-2 py-2 border">No. of Holes</th>
+                <th class="px-2 py-2 border">Hole Diameter</th>
+                <th class="px-2 py-2 border">Water Level (Z-Y)</th>
+                <th class="px-2 py-2 border">Total Level (X-Y)</th>
               </tr>
             </thead>
             <tbody>
