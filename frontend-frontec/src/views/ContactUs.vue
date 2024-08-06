@@ -16,7 +16,7 @@
         </p>
       </section>
       <section class="flex flex-col mt-10 md:flex-row">
-        <div class="flex flex-row md:flex-col w-1/3 ml-16">
+        <div class="flex flex-row md:flex-col w-1/3 ml-16 md:ml-0">
           <img :src="FAE" alt="FAE" class="md:p-2 md:w-48 w-32 md:self-end md:mr-12 mr-2" />
           <img :src="FGN" alt="FGN" class="md:p-2 md:w-48 w-32 md:self-end md:mr-12" />
         </div>
