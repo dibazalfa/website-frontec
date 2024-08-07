@@ -30,7 +30,6 @@
           <div class="flex flex-col pl-3 md:pl-6">
             <router-link :to="currentTab.route">
               <p
-                class="uppercase font-bold text-xl md:text-3xl hover:underline"
                 class="uppercase font-bold text-3xl hover:underline hover:scale-105 transform transition-transform duration-300"
                 @mouseover="isHovered = true"
                 @mouseleave="isHovered = false"
