@@ -14,7 +14,7 @@
       </section>
       <section class="flex justify-center items-center min-h-[75vh]">
         <div
-          class="w-2/5 h-96 p-4 flex flex-row items-center justify-center rounded-tl-3xl rounded-bl-3xl border-2 border-slate-300 border-r-0"
+          class="w-2/5 h-96 p-4 flex flex-col md:flex-row items-center justify-center rounded-tl-3xl rounded-bl-3xl border-2 border-slate-300 border-r-0"
           :style="{
             background: `linear-gradient(to right, white, ${
               isHovered ? currentTab.color : originalColor
@@ -24,12 +24,12 @@
           <img
             :src="currentTab.image"
             alt="Placeholder Image"
-            class="tab-image mb-4"
+            class="tab-image mb-0 md:mb-4"
           />
-          <div class="flex flex-col pl-6">
+          <div class="flex flex-col pl-3 md:pl-6">
             <router-link :to="currentTab.route">
               <p
-                class="uppercase font-bold text-3xl hover:underline"
+                class="uppercase font-bold text-xl md:text-3xl hover:underline"
                 @mouseover="isHovered = true"
                 @mouseleave="isHovered = false"
               >
@@ -79,7 +79,7 @@ export default {
   data() {
     return {
       isHovered: false,
-      originalColor: "white", 
+      originalColor: "white",
       background,
       sanwei,
       tabs: [

@@ -204,7 +204,7 @@
                 <td class="border border-gray-300 p-2">1050 ~ 1200</td>
                 <td class="border border-gray-300 p-2">350</td>
                 <td class="border border-gray-300 p-2">1600</td>
-                <td class="border border-gray-300 p-2">0.7</td>
+                <td class="border border-gray-300 p-2">0.8</td>
                 <td class="border border-gray-300 p-2">3 ~ 55</td>
               </tr>
               <tr>
