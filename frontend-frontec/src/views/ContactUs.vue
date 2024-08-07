@@ -16,11 +16,11 @@
         </p>
       </section>
       <section class="flex flex-col mt-10 md:flex-row">
-        <div class="flex flex-col w-1/3 mx-auto">
-          <img :src="FAE" alt="FAE" class="p-2 w-48 self-end mr-12" />
-          <img :src="FGN" alt="FGN" class="p-2 w-48 self-end mr-12" />
+        <div class="flex flex-row md:flex-col w-1/3 ml-16 md:ml-0">
+          <img :src="FAE" alt="FAE" class="md:p-2 md:w-48 w-32 md:self-end md:mr-12 mr-2" />
+          <img :src="FGN" alt="FGN" class="md:p-2 md:w-48 w-32 md:self-end md:mr-12" />
         </div>
-        <div class="flex flex-col w-1/3 mx-auto">
+        <div class="flex flex-col w-1/3 mx-auto md:mt-0 mt-4">
           <p class="font-bold">Head Office</p>
           <p>
             Komp. Pergudangan Safe & Lock Block C-2376, Jl. Lingkar Timur,
@@ -35,20 +35,20 @@
             <p>marketing@frontec.co.id</p>
           </div>
         </div>
-        <div class="flex flex-col w-1/3 mx-auto">
+        <div class="flex flex-col w-1/3 mx-auto md:mt-0 mt-4">
           <div class="flex flex-row">
             <a
               href="https://www.facebook.com/pages/CV.%2520Frontec%2520Agritama%2520Engineering/1689781144429808/"
             >
-              <img :src="facebook" class="object-contain w-16 h-16 p-2" />
+              <img :src="facebook" class="object-contain w-16 h-16 p-2 hover:scale-105" />
             </a>
             <a href="https://www.instagram.com/frontec.co/">
-              <img :src="instagram" class="object-contain w-16 h-16 p-2" />
+              <img :src="instagram" class="object-contain w-16 h-16 p-2 hover:scale-105" />
             </a>
             <a
               href="https://www.linkedin.com/company/frontec-agritama-engineering/mycompany/verification/"
             >
-              <img :src="linkedin" class="object-contain w-16 h-16 p-2" />
+              <img :src="linkedin" class="object-contain w-16 h-16 p-2 hover:scale-105" />
             </a>
           </div>
           <div class="mt-3 w-52">
@@ -60,7 +60,7 @@
               <img
                 alt="Chat on WhatsApp"
                 :src="whatsapp"
-                class="object-contain"
+                class="object-contain hover:scale-105"
               />
             </a>
           </div>
