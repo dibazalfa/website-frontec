@@ -7,10 +7,7 @@
     />
     <!-- Content Sections -->
     <main class="flex-1 overflow-x-hidden">
-      <section
-        id="about-us"
-        class="relative bg-white flex flex-col min-h-screen p-4"
-      >
+      <section id="about-us" class="relative bg-white flex flex-col min-h-screen p-4">
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] sm:text-[30px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
         >
@@ -21,78 +18,30 @@
             class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[24px] md:text-[32px] w-2/3 p-4 z-10 mt-48"
             v-html="t('activities.motto')"
           ></p>
-          <p
-            class="absolute top-1/2 left-0 transform -translate-y-1/2 text-[30vw] sm:text-[15vw] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-24"
-          >
-            TRUST
-          </p>
-          <p
-            class="absolute top-1/2 right-0 transform -translate-y-1/2 text-[15vw] sm:text-[10vw] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-72"
-          >
-            COMMITMENT
-          </p>
+          <p class="absolute top-0 left-0 mt-[200px] ml-[20px] text-[30vw] sm:text-[15vw] font-bold text-[#D9D9D9] opacity-30 leading-none z-0">
+          TRUST
+        </p>
         </div>
       </section>
-      <section class="flex flex-col min-h-screen pb-20">
-        <div class="flex flex-wrap justify-center mx-auto">
-          <div class="mr-5 mb-5">
-            <img :src="img1" alt="img1" class="object-contain max-w-full" />
+      <section class="flex flex-col min-h-screen pb-20 relative">
+        <div class="carousel relative w-[80%] h-[300px] mx-auto perspective-1000" @mousedown="startDrag" @mousemove="onDrag" @mouseup="endDrag" @mouseleave="endDrag" @touchstart="startDrag" @touchmove="onDrag" @touchend="endDrag">
+          <div class="carousel-inner relative w-full h-full transform-style-3d transition-transform duration-500" :style="{ transform: `rotateY(-${currentSlide * (360 / images.length)}deg)` }">
+            <div v-for="(img, index) in images" :key="index" class="carousel-item absolute w-full h-full" :style="carouselItemStyle(index)">
+              <img :src="img" :alt="'img' + (index + 1)" class="object-contain w-full h-full" />
+            </div>
           </div>
-          <div class="flex flex-col justify-end mb-5">
-            <img
-              :src="img2"
-              alt="img2"
-              class="object-contain self-end max-w-full"
-            />
-          </div>
-        </div>
-        <div class="relative flex flex-wrap justify-between">
-          <div class="ml-[94px] mt-[450px] relative z-10">
-            <img :src="img4" alt="img4" class="object-contain max-w-full" />
-          </div>
-          <div class="absolute right-0 mr-[74px] z-10">
-            <img :src="img3" alt="img3" class="object-contain max-w-full" />
-          </div>
-          <div class="ml-[94px] mt-[20px] relative z-10">
-            <img :src="img6" alt="img6" class="object-contain max-w-full" />
-          </div>
-          <div class="absolute right-0 mr-[72px] z-20 mt-[800px]">
-            <img :src="img5" alt="img5" class="object-contain max-w-full" />
+          <div class="carousel-controls absolute w-full flex justify-between top-1/2 transform -translate-y-1/2 px-4">
+            <button @click="prevSlide" class="carousel-control-prev bg-gray-800 text-white p-2 rounded-full">‹</button>
+            <button @click="nextSlide" class="carousel-control-next bg-gray-800 text-white p-2 rounded-full">›</button>
           </div>
         </div>
-        <p
-          class="ml-4 absolute left-0 transform -translate-y-1/2 text-[30vw] sm:text-[15vw] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[600px]"
-        >
-          TRUST
-        </p>
-        <p
-          class="absolute right-0 mr-10 transform -translate-y-1/2 text-[15vw] sm:text-[10vw] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[800px]"
-        >
-          COMMITMENT
-        </p>
-        <p
-          class="ml-4 absolute left-0 transform -translate-y-1/2 text-[30vw] sm:text-[15vw] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[980px]"
-        >
-          TRUST
-        </p>
-        <p
-          class="absolute right-0 mr-10 transform -translate-y-1/2 text-[15vw] sm:text-[10vw] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[1200px]"
-        >
-          COMMITMENT
-        </p>
-        <p
-          class="ml-4 absolute left-0 transform -translate-y-1/2 text-[30vw] sm:text-[15vw] font-bold text-[#D9D9D9] opacity-30 leading-none z-0 mt-[1750px]"
-        >
-          TRUST
-        </p>
-        <p
-          class="absolute right-0 mr-10 transform -translate-y-1/2 text-[15vw] sm:text-[10vw] font-bold text-[#D9D9D9] opacity-30 text-end leading-none z-0 mt-[1950px]"
-        >
+        <br>
+        <p class="absolute bottom-0 right-0 mb-[100px] mr-[20px] text-[18vw] sm:text-[12vw] font-bold text-[#D9D9D9] opacity-30 leading-none z-0">
           COMMITMENT
         </p>
       </section>
     </main>
-    <Footer class="mt-auto"></Footer>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -125,13 +74,54 @@ export default {
   data() {
     return {
       background,
-      img1,
-      img2,
-      img3,
-      img4,
-      img5,
-      img6,
+      images: [img1, img2, img3, img4, img5, img6],
+      currentSlide: 0,
+      isDragging: false,
+      startX: 0,
+      dragX: 0,
     };
+  },
+  mounted() {
+    this.showSlide(this.currentSlide);
+  },
+  methods: {
+    showSlide(index) {
+      const totalSlides = this.images.length;
+      this.currentSlide = (index + totalSlides) % totalSlides;
+    },
+    nextSlide() {
+      this.showSlide(this.currentSlide + 1);
+    },
+    prevSlide() {
+      this.showSlide(this.currentSlide - 1);
+    },
+    carouselItemStyle(index) {
+      const angle = 360 / this.images.length;
+      return {
+        transform: `rotateY(${index * angle}deg) translateZ(400px)`,
+        margin: '0 20px', // Adjust margin to add space between items
+      };
+    },
+    startDrag(event) {
+      this.isDragging = true;
+      this.startX = event.clientX || event.touches[0].clientX;
+    },
+    onDrag(event) {
+      if (!this.isDragging) return;
+      const x = event.clientX || event.touches[0].clientX;
+      this.dragX = x - this.startX;
+      const inner = document.querySelector('.carousel-inner');
+      const angle = 360 / this.images.length;
+      const rotation = this.currentSlide * angle + this.dragX / 5;
+      inner.style.transform = `rotateY(-${rotation}deg)`;
+    },
+    endDrag() {
+      if (!this.isDragging) return;
+      const draggedSlides = Math.round(this.dragX / 200);
+      this.showSlide(this.currentSlide - draggedSlides);
+      this.isDragging = false;
+      this.dragX = 0;
+    },
   },
 };
 </script>
@@ -143,5 +133,32 @@ export default {
 
 .text-shadow-md {
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  position: relative;
+  perspective: 1000px;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px); /* Adjust width to account for margin */
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  cursor: pointer;
 }
 </style>
