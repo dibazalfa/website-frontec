@@ -43,129 +43,239 @@
           >
             Specifications
           </p>
-          <table class="min-w-full border border-gray-300 mt-6">
-            <thead>
-              <tr class="bg-[#286F9B] text-white">
-                <th class="border border-gray-300 p-2" rowspan="2">
-                  Fabric Type
-                </th>
-                <th class="border border-gray-300 p-2" rowspan="2">
-                  Ply Thickness (mm)
-                </th>
-                <th class="border border-gray-300 p-2" colspan="5">
-                  Nominal Tensile Strength at Overall Thickness (N/mm)
-                </th>
-                <th class="border border-gray-300 p-2" rowspan="2">
-                  Elongation at Break (%)
-                </th>
-                <th class="border border-gray-300 p-2" rowspan="2">
-                  Elongation at Rated Stress (%)
-                </th>
-                <th class="border border-gray-300 p-2" rowspan="2">
-                  Belt Width (mm)
-                </th>
-                <th class="border border-gray-300 p-2" rowspan="2">
-                  Belt Length (M)
-                </th>
-              </tr>
-              <tr class="bg-[#286F9B] text-white">
-                <th class="border border-gray-300 p-2">2ply</th>
-                <th class="border border-gray-300 p-2">3ply</th>
-                <th class="border border-gray-300 p-2">4ply</th>
-                <th class="border border-gray-300 p-2">5ply</th>
-                <th class="border border-gray-300 p-2">6ply</th>
-              </tr>
-            </thead>
-            <tbody class="bg-white text-gray-700">
-              <tr>
-                <td class="border border-gray-300 p-2">EP80</td>
-                <td class="border border-gray-300 p-2">0.60</td>
-                <td class="border border-gray-300 p-2">160</td>
-                <td class="border border-gray-300 p-2">240</td>
-                <td class="border border-gray-300 p-2">320</td>
-                <td class="border border-gray-300 p-2">400</td>
-                <td class="border border-gray-300 p-2">480</td>
-                <td class="border border-gray-300 p-2" rowspan="8">≥10</td>
-                <td class="border border-gray-300 p-2" rowspan="8">≤4</td>
-                <td class="border border-gray-300 p-2" rowspan="8">
-                  300 - 1500
-                </td>
-                <td class="border border-gray-300 p-2" rowspan="8">≤300</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 p-2">EP100</td>
-                <td class="border border-gray-300 p-2">0.70</td>
-                <td class="border border-gray-300 p-2">200</td>
-                <td class="border border-gray-300 p-2">300</td>
-                <td class="border border-gray-300 p-2">400</td>
-                <td class="border border-gray-300 p-2">500</td>
-                <td class="border border-gray-300 p-2">600</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 p-2">EP125</td>
-                <td class="border border-gray-300 p-2">0.70</td>
-                <td class="border border-gray-300 p-2">250</td>
-                <td class="border border-gray-300 p-2">375</td>
-                <td class="border border-gray-300 p-2">500</td>
-                <td class="border border-gray-300 p-2">625</td>
-                <td class="border border-gray-300 p-2">750</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 p-2">EP150</td>
-                <td class="border border-gray-300 p-2">0.80</td>
-                <td class="border border-gray-300 p-2">300</td>
-                <td class="border border-gray-300 p-2">450</td>
-                <td class="border border-gray-300 p-2">600</td>
-                <td class="border border-gray-300 p-2">750</td>
-                <td class="border border-gray-300 p-2">900</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 p-2">EP200</td>
-                <td class="border border-gray-300 p-2">1.0</td>
-                <td class="border border-gray-300 p-2">400</td>
-                <td class="border border-gray-300 p-2">600</td>
-                <td class="border border-gray-300 p-2">800</td>
-                <td class="border border-gray-300 p-2">1000</td>
-                <td class="border border-gray-300 p-2">1200</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 p-2">EP250</td>
-                <td class="border border-gray-300 p-2">1.20</td>
-                <td class="border border-gray-300 p-2">500</td>
-                <td class="border border-gray-300 p-2">750</td>
-                <td class="border border-gray-300 p-2">1000</td>
-                <td class="border border-gray-300 p-2">1250</td>
-                <td class="border border-gray-300 p-2">1500</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 p-2">EP300</td>
-                <td class="border border-gray-300 p-2">1.25</td>
-                <td class="border border-gray-300 p-2">0</td>
-                <td class="border border-gray-300 p-2">900</td>
-                <td class="border border-gray-300 p-2">1200</td>
-                <td class="border border-gray-300 p-2">1500</td>
-                <td class="border border-gray-300 p-2">1800</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 p-2">EP350</td>
-                <td class="border border-gray-300 p-2">1.30</td>
-                <td class="border border-gray-300 p-2">0</td>
-                <td class="border border-gray-300 p-2">0</td>
-                <td class="border border-gray-300 p-2">1400</td>
-                <td class="border border-gray-300 p-2">1750</td>
-                <td class="border border-gray-300 p-2">2100</td>
-              </tr>
-              <tr>
-                <td class="border border-gray-300 p-2">EP400</td>
-                <td class="border border-gray-300 p-2">1.40</td>
-                <td class="border border-gray-300 p-2">0</td>
-                <td class="border border-gray-300 p-2">0</td>
-                <td class="border border-gray-300 p-2">1600</td>
-                <td class="border border-gray-300 p-2">2000</td>
-                <td class="border border-gray-300 p-2">2400</td>
-              </tr>
-            </tbody>
-          </table>
+          <table class="table-auto border-collapse border border-gray-300 mt-6">
+  <thead>
+    <tr class="header-color center-text">
+      <th class="border border-gray-300 py-2" rowspan="2">Minimum tensile strength (KN)</th>
+      <th class="border border-gray-300 py-2" rowspan="2">Specification</th>
+      <th class="border border-gray-300 py-2">Pitch (mm)</th>
+      <th class="border border-gray-300 py-2">Width between inner plates (mm)</th>
+      <th class="border border-gray-300 py-2">Roller diameter (mm)</th>
+      <th class="border border-gray-300 py-2">Bush diameter (mm)</th>
+      <th class="border border-gray-300 py-2">Pin diameter (mm)</th>
+      <th class="border border-gray-300 py-2" colspan="2">Plate (mm)</th>
+      <th class="border border-gray-300 py-2" colspan="3">Accessories parameters (mm)</th>
+    </tr>
+    <tr class="header-color center-text">
+      <th class="border border-gray-300 py-2">P</th>
+      <th class="border border-gray-300 py-2">W</th>
+      <th class="border border-gray-300 py-2">D1</th>
+      <th class="border border-gray-300 py-2">D</th>
+      <th class="border border-gray-300 py-2">d</th>
+      <th class="border border-gray-300 py-2">H</th>
+      <th class="border border-gray-300 py-2">T</th>
+      <th class="border border-gray-300 py-2">L</th>
+      <th class="border border-gray-300 py-2">L1</th>
+      <th class="border border-gray-300 py-2">L2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text" rowspan="12">140</td>
+      <td class="border border-gray-300 px-4 center-text">mc66.5b355-4lf1-140-32</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="5">66.5</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="12">25.5</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="15">22.23</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="15">12.7</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="12">35</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="12">5</td>
+      <td class="border border-gray-300 px-4 center-text">140</td>
+      <td class="border border-gray-300 px-4 center-text">102</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc66.5b355-41f1-160-32</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">160</td>
+      <td class="border border-gray-300 px-4 center-text">102</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc66.5b355-41f2-230-32</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">230</td>
+      <td class="border border-gray-300 px-4 center-text">95</td>
+      <td class="border border-gray-300 px-4 center-text">195</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc66.5b355-41f2-270-32</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">270</td>
+      <td class="border border-gray-300 px-4 center-text">102</td>
+      <td class="border border-gray-300 px-4 center-text">228</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc66.5b355-41fh2-270-32</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">270</td>
+      <td class="border border-gray-300 px-4 center-text">102</td>
+      <td class="border border-gray-300 px-4 center-text">228</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc66.67b355-41f2-182-32</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="4">66.675</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">182</td>
+      <td class="border border-gray-300 px-4 center-text">90</td>
+      <td class="border border-gray-300 px-4 center-text">152</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc66.67b355-41f2-230-32</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">230</td>
+      <td class="border border-gray-300 px-4 center-text">95</td>
+      <td class="border border-gray-300 px-4 center-text">195</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc66.67b355-41f2-295-32</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">295</td>
+      <td class="border border-gray-300 px-4 center-text">95</td>
+      <td class="border border-gray-300 px-4 center-text">195</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc66.67b355-4lfh2-295-32</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">295</td>
+      <td class="border border-gray-300 px-4 center-text">95</td>
+      <td class="border border-gray-300 px-4 center-text">195</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc68b355-4f1-136-32</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="3">68</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">136</td>
+      <td class="border border-gray-300 px-4 center-text">100</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc68b355-4lf1-170-32</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">170</td>
+      <td class="border border-gray-300 px-4 center-text">120</td>
+      <td class="border border-gray-300 px-4 center-text"></td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc68b355-41f2-220-32</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">220</td>
+      <td class="border border-gray-300 px-4 center-text">95</td>
+      <td class="border border-gray-300 px-4 center-text">195</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text" rowspan="3">150</td>
+      <td class="border border-gray-300 px-4 center-text">mc100b306-21f2-170-20</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="3">100</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="3">26.5</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="3">30</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="10">6</td>
+      <td class="border border-gray-300 px-4 center-text">170</td>
+      <td class="border border-gray-300 px-4 center-text">90</td>
+      <td class="border border-gray-300 px-4 center-text">140</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc100b306-21f2-210-20</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">210</td>
+      <td class="border border-gray-300 px-4 center-text">100</td>
+      <td class="border border-gray-300 px-4 center-text">180</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc100b306-21f2-280-20</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+      <td class="border border-gray-300 px-4 center-text">280</td>
+      <td class="border border-gray-300 px-4 center-text">120</td>
+      <td class="border border-gray-300 px-4 center-text">240</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text" rowspan="7">180</td>
+      <td class="border border-gray-300 px-4 center-text">mc100s406-41f1-170-20</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="6">100</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="6">38</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="6">36</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="6">24</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="6">15.7</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="7">40</td>
+      <td class="border border-gray-300 px-4 center-text">170</td>
+      <td class="border border-gray-300 px-4 center-text">115</td>
+      <td class="border border-gray-300 px-4 center-text">/</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">MC100S406-4LF2-225-20</td>
+      <td class="border border-gray-300 px-4 center-text">225</td>
+      <td class="border border-gray-300 px-4 center-text">104</td>
+      <td class="border border-gray-300 px-4 center-text">194</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc100s406-41f1-294-20</td>
+      <td class="border border-gray-300 px-4 center-text">294</td>
+      <td class="border border-gray-300 px-4 center-text">115</td>
+      <td class="border border-gray-300 px-4 center-text">245</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc100s406-41f2-325-20</td>
+      <td class="border border-gray-300 px-4 center-text">325</td>
+      <td class="border border-gray-300 px-4 center-text">135</td>
+      <td class="border border-gray-300 px-4 center-text">275</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc100s406-41th2-370-20</td>
+      <td class="border border-gray-300 px-4 center-text">370</td>
+      <td class="border border-gray-300 px-4 center-text">155</td>
+      <td class="border border-gray-300 px-4 center-text">255</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc100s406-41th2-440-20</td>
+      <td class="border border-gray-300 px-4 center-text">440</td>
+      <td class="border border-gray-300 px-4 center-text">190</td>
+      <td class="border border-gray-300 px-4 center-text">380</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc100s406-41th2-440-20</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="3">125</td>
+      <td class="border border-gray-300 px-4 center-text">32</td>
+      <td class="border border-gray-300 px-4 center-text">28.6</td>
+      <td class="border border-gray-300 px-4 center-text">19.7</td>
+      <td class="border border-gray-300 px-4 center-text">14.3</td>
+      <td class="border border-gray-300 px-4 center-text">230</td>
+      <td class="border border-gray-300 px-4 center-text">95</td>
+      <td class="border border-gray-300 px-4 center-text">195</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text" rowspan="2">200</td>
+      <td class="border border-gray-300 px-4 center-text">MC1258406-2LF2-230-16</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="2">50</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="2">/</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="2">32</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="2">19.1</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="3">50</td>
+      <td class="border border-gray-300 px-4 center-text" rowspan="3">8</td>
+      <td class="border border-gray-300 px-4 center-text">285</td>
+      <td class="border border-gray-300 px-4 center-text">155</td>
+      <td class="border border-gray-300 px-4 center-text">255</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">mc125b508-41f2-285-12</td>
+      <td class="border border-gray-300 px-4 center-text">356</td>
+      <td class="border border-gray-300 px-4 center-text">170</td>
+      <td class="border border-gray-300 px-4 center-text">310</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 center-text">220</td>
+      <td class="border border-gray-300 px-4 center-text">me160s508-21f2-385-8</td>
+      <td class="border border-gray-300 px-4 center-text">160</td>
+      <td class="border border-gray-300 px-4 center-text">36</td>
+      <td class="border border-gray-300 px-4 center-text">36</td>
+      <td class="border border-gray-300 px-4 center-text">24</td>
+      <td class="border border-gray-300 px-4 center-text">15.7</td>
+      <td class="border border-gray-300 px-4 center-text">385</td>
+      <td class="border border-gray-300 px-4 center-text">130</td>
+      <td class="border border-gray-300 px-4 center-text">330</td>
+    </tr>
+  </tbody>
+</table>
         </div>
       </section>
 

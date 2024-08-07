@@ -19,6 +19,7 @@
             background: `linear-gradient(to right, white, ${
               isHovered ? currentTab.color : originalColor
             })`,
+            transition: 'background 0.5s ease-in-out',
           }"
         >
           <img
@@ -29,7 +30,7 @@
           <div class="flex flex-col pl-6">
             <router-link :to="currentTab.route">
               <p
-                class="uppercase font-bold text-3xl hover:underline"
+                class="uppercase font-bold text-3xl hover:underline hover:scale-105 transform transition-transform duration-300"
                 @mouseover="isHovered = true"
                 @mouseleave="isHovered = false"
               >
@@ -79,7 +80,7 @@ export default {
   data() {
     return {
       isHovered: false,
-      originalColor: "white", 
+      originalColor: "white",
       background,
       sanwei,
       tabs: [
