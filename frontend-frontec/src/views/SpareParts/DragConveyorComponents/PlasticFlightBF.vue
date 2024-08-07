@@ -282,19 +282,19 @@
                 <td class="border border-gray-300 p-2">16</td>
                 <td class="border border-gray-300 p-2">60</td>
                 <td class="border border-gray-300 p-2">45</td>
-                <td class="border border-gray-300 p-2">155</td>
-                <td class="border border-gray-300 p-2">265</td>
-                <td class="border border-gray-300 p-2">22</td>
+                <td class="border border-gray-300 p-2">102</td>
+                <td class="border border-gray-300 p-2">228</td>
+                <td class="border border-gray-300 p-2">25</td>
                 <td class="border border-gray-300 p-2">4-φ9</td>
               </tr>
               <tr>
                 <td class="border border-gray-300 p-2">BF380×90</td>
                 <td class="border border-gray-300 p-2">380</td>
                 <td class="border border-gray-300 p-2">90</td>
-                <td class="border border-gray-300 p-2">16</td>
+                <td class="border border-gray-300 p-2">15</td>
                 <td class="border border-gray-300 p-2">90</td>
                 <td class="border border-gray-300 p-2">70</td>
-                <td class="border border-gray-300 p-2">170</td>
+                <td class="border border-gray-300 p-2">155</td>
                 <td class="border border-gray-300 p-2">255-265</td>
                 <td class="border border-gray-300 p-2">44</td>
                 <td class="border border-gray-300 p-2">4-φ9</td>

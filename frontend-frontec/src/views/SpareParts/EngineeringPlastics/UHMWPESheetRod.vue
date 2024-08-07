@@ -80,7 +80,7 @@
                 <td class="border border-gray-300 p-2">6.5-200</td>
               </tr>
               <tr class="bg-white">
-                <td class="border border-gray-300 p-2" rowspan="5">Thermal</td>
+                <td class="border border-gray-300 p-2" rowspan="4">Thermal</td>
                 <td class="border border-gray-300 p-2">Melting Point / ℃</td>
                 <td class="border border-gray-300 p-2">136</td>
                 <td class="border border-gray-300 p-2">D2117</td>
@@ -107,6 +107,9 @@
                 <td class="border border-gray-300 p-2">D177</td>
               </tr>
               <tr class="bg-white">
+                <td class="border border-gray-300 p-2" rowspan="3">
+                  Electrical
+                </td>
                 <td class="border border-gray-300 p-2">
                   Volume Resistivity / (Ω.cm)
                 </td>
@@ -114,15 +117,13 @@
                 <td class="border border-gray-300 p-2">D257</td>
               </tr>
               <tr class="bg-white">
-                <td class="border border-gray-300 p-2" rowspan="2">
-                  Electrical
-                </td>
                 <td class="border border-gray-300 p-2">
                   Breakdown Voltage / (KV/mm)
                 </td>
                 <td class="border border-gray-300 p-2">50</td>
                 <td class="border border-gray-300 p-2">D149</td>
               </tr>
+
               <tr class="bg-white">
                 <td class="border border-gray-300 p-2">Dielectric Constant</td>
                 <td class="border border-gray-300 p-2">2.3</td>
@@ -220,9 +221,9 @@
           <div
             class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
           >
-              <p class="text-[20px] font-bold p-4 border-b border-black">
-                Engineering Plastics
-              </p>
+            <p class="text-[20px] font-bold p-4 border-b border-black">
+              Engineering Plastics
+            </p>
             <p
               class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
             >

@@ -175,7 +175,7 @@
                 <td class="border border-gray-300 p-2">φ25</td>
                 <td class="border border-gray-300 p-2">φ170.1</td>
                 <td class="border border-gray-300 p-2">25</td>
-                <td class="border border-gray-300 p-2">56</td>
+                <td class="border border-gray-300 p-2">57</td>
               </tr>
             </tbody>
           </table>

@@ -307,27 +307,37 @@
               </p>
             </router-link>
             <router-link to="/aa-industrial-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 AA Industrial Bucket
               </p>
             </router-link>
             <router-link to="/cc-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 CC Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/d-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 D Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/dk-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 DK Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/dl-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 DL Bucket
               </p>
             </router-link>
@@ -337,32 +347,44 @@
               DM Bucket
             </p>
             <router-link to="/eu-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 EU Bucket
               </p>
             </router-link>
             <router-link to="/sk-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 SK Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/m-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 M Bucket
               </p>
             </router-link>
             <router-link to="/fabricated-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 Fabricated Steel Bucket
               </p>
             </router-link>
             <router-link to="/sm-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 SM Steel Bucket
               </p>
             </router-link>
             <router-link to="/ss-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
                 SS Steel Bucket
               </p>
             </router-link>
