@@ -11,11 +11,19 @@
     <main class="flex-1 flex flex-col md:flex-row">
       <!-- Main Content Section -->
       <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
-        <p
-          class="text-[24px] mt-7 md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
-        >
-          DL Bucket
-        </p>
+        <div class="flex items-center mt-7">
+          <router-link to="/elevator-bucket">
+            <font-awesome-icon
+              icon="circle-arrow-left"
+              class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
+            />
+          </router-link>
+          <p
+            class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+          >
+            DL Bucket
+          </p>
+        </div>
         <div class="flex flex-col md:flex-row mt-12">
           <img :src="product" alt="" class="object-contain" />
           <div
@@ -69,7 +77,83 @@
           >
             parameters
           </p>
-          <img :src="params" alt="" class="object-contain mt-6" />
+          <table class="table-auto border-collapse border border-gray-300 mt-6">
+            <thead>
+              <tr class="header-color center-text">
+                <th class="border border-gray-300 py-2" rowspan="2">Model</th>
+                <th class="border border-gray-300 py-2" colspan="3">
+                  Bucket Dimension (mm)
+                </th>
+                <th class="border border-gray-300 py-2" colspan="3">
+                  Capacity (L)
+                </th>
+              </tr>
+              <tr class="header-color center-text">
+                <th class="border border-gray-300 py-2">Length A</th>
+                <th class="border border-gray-300 py-2">Proj. B</th>
+                <th class="border border-gray-300 py-2">Depth C</th>
+                <th class="border border-gray-300 py-2">Water Level (Z-Y)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 px-4 center-text">DL2412</td>
+                <td class="border border-gray-300 px-4 center-text">246</td>
+                <td class="border border-gray-300 px-4 center-text">132</td>
+                <td class="border border-gray-300 px-4 center-text">61</td>
+                <td class="border border-gray-300 px-4 center-text">1.2</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 center-text">DL4013</td>
+                <td class="border border-gray-300 px-4 center-text">406</td>
+                <td class="border border-gray-300 px-4 center-text">133</td>
+                <td class="border border-gray-300 px-4 center-text">69</td>
+                <td class="border border-gray-300 px-4 center-text">2</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 center-text">DL3115</td>
+                <td class="border border-gray-300 px-4 center-text">310</td>
+                <td class="border border-gray-300 px-4 center-text">160</td>
+                <td class="border border-gray-300 px-4 center-text">78</td>
+                <td class="border border-gray-300 px-4 center-text">2.3</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 center-text">DL2619</td>
+                <td class="border border-gray-300 px-4 center-text">260</td>
+                <td class="border border-gray-300 px-4 center-text">190</td>
+                <td class="border border-gray-300 px-4 center-text">78.5</td>
+                <td class="border border-gray-300 px-4 center-text">2.34</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 center-text">DL3219</td>
+                <td class="border border-gray-300 px-4 center-text">330</td>
+                <td class="border border-gray-300 px-4 center-text">200</td>
+                <td class="border border-gray-300 px-4 center-text">110</td>
+                <td class="border border-gray-300 px-4 center-text">3.19</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 center-text">DL3319</td>
+                <td class="border border-gray-300 px-4 center-text">330</td>
+                <td class="border border-gray-300 px-4 center-text">198</td>
+                <td class="border border-gray-300 px-4 center-text">103</td>
+                <td class="border border-gray-300 px-4 center-text">4</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 center-text">DL3821</td>
+                <td class="border border-gray-300 px-4 center-text">380</td>
+                <td class="border border-gray-300 px-4 center-text">213</td>
+                <td class="border border-gray-300 px-4 center-text">125</td>
+                <td class="border border-gray-300 px-4 center-text">4.8</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 center-text">DL6323</td>
+                <td class="border border-gray-300 px-4 center-text">632</td>
+                <td class="border border-gray-300 px-4 center-text">236</td>
+                <td class="border border-gray-300 px-4 center-text">120</td>
+                <td class="border border-gray-300 px-4 center-text">11</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -86,62 +170,62 @@
               </p>
             </router-link>
             <router-link to="/aa-industrial-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 AA Industrial Bucket
               </p>
             </router-link>
             <router-link to="/cc-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 CC Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/d-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 D Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/dk-heavy-duty-bucket">
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black"
-              >
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 DK Heavy Duty Bucket
               </p>
             </router-link>
-              <p class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white">
-                DL Bucket
-              </p>
+            <p
+              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+            >
+              DL Bucket
+            </p>
             <router-link to="/dm-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 DM Bucket
               </p>
             </router-link>
             <router-link to="/eu-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 EU Bucket
               </p>
             </router-link>
             <router-link to="/sk-heavy-duty-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 SK Heavy Duty Bucket
               </p>
             </router-link>
             <router-link to="/m-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 M Bucket
               </p>
             </router-link>
             <router-link to="/fabricated-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Fabricated Steel Bucket
               </p>
             </router-link>
             <router-link to="/sm-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 SM Steel Bucket
               </p>
             </router-link>
             <router-link to="/ss-steel-bucket">
-              <p class="text-[18px] px-4 py-8 border-b border-black">
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 SS Steel Bucket
               </p>
             </router-link>
@@ -160,7 +244,7 @@ import AppHeader from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/spare-parts/bgSpareParts.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
-
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import product from "@/assets/img/spare-parts/dl-bucket.png";
 import spec from "@/assets/img/spare-parts/dl-bucket-spec.png";
 import params from "@/assets/img/spare-parts/dl-bucket-params.png";
@@ -169,6 +253,7 @@ export default {
   components: {
     AppHeader,
     Footer,
+    FontAwesomeIcon,
   },
   data() {
     return {
@@ -237,5 +322,14 @@ section {
     height: auto;
     position: relative; /* Disable sticky on mobile if needed */
   }
+}
+
+.header-color {
+  background-color: #286f9b;
+  color: white; /* Optional: to make the text color white */
+}
+
+.center-text {
+  text-align: center;
 }
 </style>
