@@ -10,10 +10,10 @@
       ]"
     >
       <div
-        class="container mx-auto px-4 py-3 flex justify-between items-center max-w-screen-xl flex-wrap p-4"
+        class="container mx-auto px-4 py-3 flex justify-between items-center max-w-screen-xl flex-wrap"
       >
         <!-- Language Switcher -->
-        <div class="flex flex-col md:flex-row items-center ml-16">
+        <div class="flex items-center space-x-1 py-5">
           <div
             @click="setLanguage('id')"
             :class="[
@@ -65,6 +65,7 @@
         <nav
           :class="['md:flex', navbarOpen ? 'block' : 'hidden']"
           id="navbar-default"
+          class="w-full md:w-auto"
         >
           <ul
             class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent md:dark:bg-transparent-900 dark:border-gray-700"
@@ -254,7 +255,6 @@
             <li>
               <router-link
                 class="block py-2 px-3 rounded md:border-0 md:p-0"
-                href="#contact-us"
                 to="/contact-us"
                 :class="[
                   'hover:uppercase roboto-bold',
@@ -281,7 +281,10 @@
           </ul>
         </nav>
         <!-- Company Logo -->
-        <div class="flex flex-col items-center space-y-4 mr-6">
+        <div
+          v-if="!navbarOpen"
+          class="flex items-center space-x-4"
+        >
           <img :src="faeLogo" alt="Logo 1" class="w-auto h-8" />
           <img :src="fgnLogo" alt="Logo 2" class="w-auto h-8" />
         </div>
