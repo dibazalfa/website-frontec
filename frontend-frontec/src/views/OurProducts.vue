@@ -32,54 +32,53 @@
             class="p-4 sm:p-8 md:p-12 border-2 border-slate-300 rounded-lg flex flex-col sm:flex-row"
           >
             <div
-              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
+              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
               <img
                 src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
                 alt=""
-                class="hover-img rounded-full w-40"
+                class="hover-img rounded-full w-40 h-40 object-cover"
               />
-              <p class="mx-auto">Belt Conveyor</p>
+              <p class="mx-auto mt-2">Belt Conveyor</p>
             </div>
             <div
-              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
+              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
               <img
                 :src="bucketElevator"
                 alt=""
-                class="hover-img rounded-full w-40"
+                class="hover-img rounded-full w-40 h-40 object-cover"
               />
-              <p class="mx-auto">Bucket Elevator</p>
+              <p class="mx-auto mt-2">Bucket Elevator</p>
             </div>
             <div
-              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
+              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
               <img
                 :src="screwConveyor"
                 alt=""
-                class="hover-img rounded-full w-40"
+                class="hover-img rounded-full w-40 h-40 object-cover"
               />
-              <p class="mx-auto">Screw Conveyor</p>
+              <p class="mx-auto mt-2">Screw Conveyor</p>
             </div>
             <div
-              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
+              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
               <img
                 :src="chainConveyor"
                 alt=""
-                class="hover-img rounded-full w-40"
+                class="hover-img rounded-full w-40 h-40 object-cover"
               />
-              <p class="mx-auto">Chain Conveyor</p>
+              <p class="mx-auto mt-2">Chain Conveyor</p>
             </div>
             <div
-              class="flex hover:scale-105 transform transition duration-300 mx-auto border border-black rounded-full w-40 h-40 hover:bg-gray-200"
+              class="flex hover:scale-105 transform transition duration-300 mx-auto border border-black rounded-full w-40 h-40 hover:bg-gray-200 items-center justify-center"
             >
-              <p class="m-auto font-bold text-2xl">SEE ALL</p>
-              <!-- <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="" class="hover-img " /> -->
-              <!-- <p class="mx-auto">Material Handling</p> -->
+              <p class="font-bold text-2xl">SEE ALL</p>
             </div>
           </div>
         </div>
+
         <div class="my-auto mx-4 sm:mx-12 md:mx-24 lg:mx-48 pb-4">
           <img
             @click="toggleActive('feedMill')"
@@ -92,50 +91,53 @@
             class="p-4 sm:p-8 md:p-12 border-2 border-slate-300 rounded-lg flex flex-col sm:flex-row"
           >
             <div
-              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
+              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
               <img
                 :src="cornDryer"
                 alt=""
-                class="hover-img rounded-full w-40"
+                class="hover-img rounded-full w-40 h-40 object-cover"
               />
-              <p class="mx-auto">Corn Dryer</p>
+              <p class="mx-auto mt-2">Corn Dryer</p>
             </div>
             <div
-              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
+              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
               <img
                 :src="hammermill"
                 alt=""
-                class="hover-img rounded-full w-40"
+                class="hover-img rounded-full w-40 h-40 object-cover"
               />
-              <p class="mx-auto">Hammermill</p>
+              <p class="mx-auto mt-2">Hammermill</p>
             </div>
             <div
-              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
+              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
-              <img :src="cooler" alt="" class="hover-img rounded-full w-40" />
-              <p class="mx-auto">Cooler</p>
+              <img
+                :src="cooler"
+                alt=""
+                class="hover-img rounded-full w-40 h-40 object-cover"
+              />
+              <p class="mx-auto mt-2">Cooler</p>
             </div>
             <div
-              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
+              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
               <img
                 src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
                 alt=""
-                class="hover-img rounded-full w-40"
+                class="hover-img rounded-full w-40 h-40 object-cover"
               />
-              <p class="mx-auto">Feedmill</p>
+              <p class="mx-auto mt-2">Feedmill</p>
             </div>
             <div
-              class="flex hover:scale-105 transform transition duration-300 mx-auto border border-black rounded-full w-40 h-40 hover:bg-gray-200"
+              class="flex hover:scale-105 transform transition duration-300 mx-auto border border-black rounded-full w-40 h-40 hover:bg-gray-200 items-center justify-center"
             >
-              <p class="m-auto font-bold text-2xl">SEE ALL</p>
-              <!-- <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="" class="hover-img " /> -->
-              <!-- <p class="mx-auto">Feedmill</p> -->
+              <p class="font-bold text-2xl">SEE ALL</p>
             </div>
           </div>
         </div>
+
         <div class="my-auto mx-4 sm:mx-12 md:mx-24 lg:mx-48 pb-4">
           <img
             @click="toggleActive('grainStorage')"
@@ -205,47 +207,47 @@
             >
               <router-link to="/elevator-belt">
                 <img
-                  class="w-32 h-32 object-cover rounded-full hover-img"
+                  class="w-40 h-40 object-cover rounded-full hover-img"
                   :src="bucketElevatorComponents"
                   alt=""
                 />
               </router-link>
-              <p class="text-center">Bucket Elevator Components</p>
+              <p class="text-center mt-2">Bucket Elevator Components</p>
             </div>
             <div
               class="flex flex-col items-center hover:scale-105 transform transition duration-300 mx-auto"
             >
               <router-link to="/belt-conveyor-components">
                 <img
-                  class="w-32 h-32 object-cover rounded-full hover-img"
+                  class="w-40 h-40 object-cover rounded-full hover-img"
                   :src="beltConveyorComponents"
                   alt=""
                 />
               </router-link>
-              <p class="text-center">Belt Conveyor Components</p>
+              <p class="text-center mt-2">Belt Conveyor Components</p>
             </div>
             <div
               class="flex flex-col items-center hover:scale-105 transform transition duration-300 mx-auto"
             >
               <router-link to="/drag-conveyor-components">
                 <img
-                  class="w-32 h-32 object-cover rounded-full hover-img"
+                  class="w-40 h-40 object-cover rounded-full hover-img"
                   :src="dragConveyorComponents"
                   alt=""
                 />
               </router-link>
-              <p class="text-center">Drag Conveyor Components</p>
+              <p class="text-center mt-2">Drag Conveyor Components</p>
             </div>
             <div
               class="flex flex-col items-center hover:scale-105 transform transition duration-300 mx-auto"
             >
               <router-link to="/spare-parts">
                 <img
-                  class="w-32 h-32 object-cover rounded-full hover-img"
+                  class="w-40 h-40 object-cover rounded-full hover-img"
                   :src="seeAll"
                   alt=""
                 />
-                <p class="text-center">See All</p>
+                <p class="text-center mt-2">See All</p>
               </router-link>
             </div>
           </div>
