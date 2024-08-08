@@ -281,10 +281,7 @@
           </ul>
         </nav>
         <!-- Company Logo -->
-        <div
-          v-if="!navbarOpen"
-          class="flex items-center space-x-4"
-        >
+        <div v-if="!navbarOpen" class="flex items-center space-x-4">
           <img :src="faeLogo" alt="Logo 1" class="w-auto h-8" />
           <img :src="fgnLogo" alt="Logo 2" class="w-auto h-8" />
         </div>
