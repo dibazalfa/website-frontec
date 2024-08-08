@@ -1,5 +1,5 @@
 <template>
-  <header class="relative min-h-screen">
+  <header>
     <CarouselBackground class="absolute inset-0 z-0" />
     <div
       :class="[
@@ -7,7 +7,7 @@
           'fixed w-full bg-white shadow-lg': isScrolled,
           'bg-transparent': !isScrolled,
         },
-        'transition-all duration-300 ease-in-out z-10 top-0 left-0 right-0',
+        'transition-all duration-300 ease-in-out z-50 top-0 left-0 right-0',
       ]"
     >
       <div
@@ -42,7 +42,7 @@
         <button
           @click="toggleNavbar"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 z-20"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
