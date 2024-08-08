@@ -18,9 +18,7 @@
               class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
             />
           </router-link>
-          <p
-            class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
-          >
+          <p class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md">
             Patterned Conveyor Belt
           </p>
         </div>
@@ -33,46 +31,42 @@
           <div class="text-center mt-0 mb-4">
             <p class="roboto-light text-gray-600">Click one of the images below to highlight</p>
           </div>
-          <div class="flex space-x-4 flex-wrap justify-center">
+          <div class="flex space-x-2 flex-wrap justify-center">
             <img
               :src="product1"
               alt="Product 1"
-              class="object-contain border-4 border-white cursor-pointer w-24 h-24 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+              class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-24 md:h-24 thumbnail-border hover:scale-105 transform transition-transform duration-300"
               @click="highlightProduct('product1')"
             />
             <img
               :src="product2"
               alt="Product 2"
-              class="object-contain border-4 border-white cursor-pointer w-24 h-24 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+              class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-24 md:h-24 thumbnail-border hover:scale-105 transform transition-transform duration-300"
               @click="highlightProduct('product2')"
             />
             <img
               :src="product3"
               alt="Product 3"
-              class="object-contain border-4 border-white cursor-pointer w-24 h-24 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+              class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-24 md:h-24 thumbnail-border hover:scale-105 transform transition-transform duration-300"
               @click="highlightProduct('product3')"
             />
             <img
               :src="product4"
               alt="Product 4"
-              class="object-contain border-4 border-white cursor-pointer w-24 h-24 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+              class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-24 md:h-24 thumbnail-border hover:scale-105 transform transition-transform duration-300"
               @click="highlightProduct('product4')"
             />
           </div>
         </div>
         <br />
-        <div
-          class="flex flex-col text-justify mt-6 md:mt-0 md:pl-10 text-[16px] md:text-[18px]"
-        >
-          <p
-            class="bg-black text-white w-36 px-6 py-3 rounded-full text-center font-bold uppercase shadow-lg mx-auto md:mx-0"
-          >
+        <div class="flex flex-col text-justify mt-6 md:mt-0 md:pl-10 text-[16px] md:text-[18px]">
+          <p class="bg-black text-white w-36 px-6 py-3 rounded-full text-center font-bold uppercase shadow-lg mx-auto md:mx-0">
             Features
           </p>
           <ul class="list-disc mt-8 ml-6">
             <li>
               Suitable to convey materials such as powder, granules as well as
-              packaged materials at angleless than 40 degrees.
+              packaged materials at angles less than 40 degrees.
             </li>
             <li>
               The carcass can be made from Polyester EP, Nylon NN, Cotton CC,
@@ -103,33 +97,27 @@
         <!-- Sidebar content goes here -->
         <div class="flex flex-col mt-10">
           <div
-            class="mt-10 bg-white rounded-lg shadow-md w-64 mx-auto text-center border border-black border-1"
+            class="mt-10 bg-white rounded-lg shadow-md w-full md:w-64 mx-auto text-center border border-black"
           >
             <p class="text-[20px] font-bold p-4 border-b border-black">
               Belt Conveyor Components
             </p>
             <router-link to="/flat-surface-conveyor">
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
-              >
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Flat Surface Conveyor
               </p>
             </router-link>
-            <p
-              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
-            >
+            <p class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white">
               Patterned Conveyor
             </p>
             <router-link to="/impact-bar">
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
-              >
+              <p class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200">
                 Impact Bar
               </p>
             </router-link>
           </div>
           <p class="text-[20px] mx-auto mt-10">In Partnership with:</p>
-          <img :src="sanwei" alt="" class="w-64 mx-auto mt-2" />
+          <img :src="sanwei" alt="Sanwei" class="w-64 mx-auto mt-2" />
         </div>
       </aside>
     </main>
@@ -245,8 +233,6 @@ section {
 .thumbnail-border {
   border: 4px solid #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100px;
-  height: 100px;
 }
 
 .bg-gradient-to-r {
@@ -255,5 +241,9 @@ section {
 
 .hover\:scale-125:hover {
   transform: scale(1.25);
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
 }
 </style>

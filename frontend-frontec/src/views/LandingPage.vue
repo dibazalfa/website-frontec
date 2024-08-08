@@ -4,7 +4,7 @@
     <!-- Content Sections -->
     <main class="overflow-x-hidden">
       <!-- About Us Section -->
-      <section id="about-us" class="bg-white flex flex-col min-h-screen p-4">
+      <section id="about-us" class="bg-white flex flex-col min-h-screen p-4 fade-in">
         <p
           class="text-shadow-md montserrat-title text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
         >
@@ -30,7 +30,7 @@
       <!-- Why Frontec Section -->
       <section
         id="why-frontec"
-        class="bg-[#313C44] flex flex-col md:flex-row min-h-screen p-4"
+        class="bg-[#313C44] flex flex-col md:flex-row min-h-screen p-4 fade-in"
       >
         <p
           class="text-shadow-md montserrat-title text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap my-auto mx-16"
@@ -68,7 +68,7 @@
       <!-- Our Business Section -->
       <section
         id="our-business"
-        class="flex flex-col md:flex-row min-h-[75vh] py-4 mx-4 md:mx-28 text-justify"
+        class="flex flex-col md:flex-row min-h-[75vh] py-4 mx-4 md:mx-28 text-justify fade-in"
       >
         <img
           class="my-auto ml-4 md:ml-20 w-full md:w-auto"
@@ -99,7 +99,7 @@
       <!-- Vision and Mission Section -->
       <section
         id="vision-mission"
-        class="flex flex-col md:flex-row justify-center items-center min-h-[75vh] p-4"
+        class="flex flex-col md:flex-row justify-center items-center min-h-[75vh] p-4 fade-in"
       >
         <div
           class="flex flex-col md:flex-row border-solid border-2 border-slate-300 rounded-lg max-w-6xl mx-auto"
@@ -125,7 +125,7 @@
 <br>
 <br>
       <!-- Catalog Section -->
-      <section class="relative">
+      <section class="relative fade-in">
         <a
           href="https://drive.google.com/file/d/1yXQ8PPwHfbyeWdui-PTyobgi-HlJkzZ8/view"
           target="_blank"
@@ -143,7 +143,7 @@
       <!-- Our Clients Section -->
       <section
         id="our-clients"
-        class="flex flex-col min-h-[70vh] items-center p-4"
+        class="flex flex-col min-h-[70vh] items-center p-4 fade-in"
       >
         <p
           v-html="t('landingPage.our-clients')"
@@ -210,7 +210,28 @@ export default {
       t,
     };
   },
+  mounted() {
+    this.initIntersectionObserver();
+  },
   methods: {
+    initIntersectionObserver() {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            } else {
+              entry.target.classList.remove("show");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll(".fade-in").forEach((section) => {
+        observer.observe(section);
+      });
+    },
     getClientSrc(index) {
       return this[`client${index}`];
     },
@@ -265,14 +286,23 @@ export default {
     5px 5px 10px rgba(71, 71, 71, 0.1);
 }
 
-/* <uniquifier>: Use a unique and descriptive class name
-<weight>: Use a value from 100 to 900 */
-
 .montserrat-title {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
+}
+
+/* Fade-in and fade-out animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
@@ -281,3 +311,4 @@ export default {
   }
 }
 </style>
+
