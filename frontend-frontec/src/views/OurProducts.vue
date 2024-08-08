@@ -34,8 +34,12 @@
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
             >
-              <img :src="cornDryer" alt="" class="hover-img rounded-full" />
-              <p class="mx-auto">Corn Dryer</p>
+              <img
+                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                alt=""
+                class="hover-img rounded-full w-40"
+              />
+              <p class="mx-auto">Belt Conveyor</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
@@ -43,27 +47,36 @@
               <img
                 :src="bucketElevator"
                 alt=""
-                class="hover-img rounded-full"
+                class="hover-img rounded-full w-40"
               />
               <p class="mx-auto">Bucket Elevator</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
             >
-              <img :src="graderCleaner" alt="" class="hover-img rounded-full" />
-              <p class="mx-auto">Grader Cleaner</p>
-            </div>
-            <div
-              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
-            >
-              <img :src="screwConveyor" alt="" class="hover-img rounded-full" />
+              <img
+                :src="screwConveyor"
+                alt=""
+                class="hover-img rounded-full w-40"
+              />
               <p class="mx-auto">Screw Conveyor</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
             >
-              <img :src="chainConveyor" alt="" class="hover-img rounded-full" />
+              <img
+                :src="chainConveyor"
+                alt=""
+                class="hover-img rounded-full w-40"
+              />
               <p class="mx-auto">Chain Conveyor</p>
+            </div>
+            <div
+              class="flex hover:scale-105 transform transition duration-300 mx-auto border border-black rounded-full w-40 h-40 hover:bg-gray-200"
+            >
+              <p class="m-auto font-bold text-2xl">SEE ALL</p>
+              <!-- <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="" class="hover-img " /> -->
+              <!-- <p class="mx-auto">Material Handling</p> -->
             </div>
           </div>
         </div>
@@ -81,26 +94,45 @@
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
             >
-              <img :src="mixer" alt="" class="hover-img rounded-full" />
-              <p class="mx-auto">Mixer</p>
+              <img
+                :src="cornDryer"
+                alt=""
+                class="hover-img rounded-full w-40"
+              />
+              <p class="mx-auto">Corn Dryer</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
             >
-              <img :src="dustCollector" alt="" class="hover-img rounded-full" />
-              <p class="mx-auto">Dust Collector</p>
-            </div>
-            <div
-              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
-            >
-              <img :src="hammermill" alt="" class="hover-img rounded-full" />
+              <img
+                :src="hammermill"
+                alt=""
+                class="hover-img rounded-full w-40"
+              />
               <p class="mx-auto">Hammermill</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
             >
-              <img :src="cooler" alt="" class="hover-img rounded-full" />
+              <img :src="cooler" alt="" class="hover-img rounded-full w-40" />
               <p class="mx-auto">Cooler</p>
+            </div>
+            <div
+              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
+            >
+              <img
+                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                alt=""
+                class="hover-img rounded-full w-40"
+              />
+              <p class="mx-auto">Feedmill</p>
+            </div>
+            <div
+              class="flex hover:scale-105 transform transition duration-300 mx-auto border border-black rounded-full w-40 h-40 hover:bg-gray-200"
+            >
+              <p class="m-auto font-bold text-2xl">SEE ALL</p>
+              <!-- <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="" class="hover-img " /> -->
+              <!-- <p class="mx-auto">Feedmill</p> -->
             </div>
           </div>
         </div>
@@ -118,18 +150,42 @@
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
             >
-              <img :src="hopperSilo" alt="" class="hover-img rounded-full" />
-              <p class="mx-auto mt-2">Hopper Silo</p>
+              <img
+                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                alt=""
+                class="hover-img rounded-full w-40"
+              />
+              <p class="mx-auto mt-2">Grain Storage</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
             >
               <img
-                :src="flatBottomSilo"
+                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
                 alt=""
-                class="hover-img rounded-full"
+                class="hover-img rounded-full w-40"
               />
-              <p class="mx-auto mt-2">Flat Bottom Silo</p>
+              <p class="mx-auto mt-2">Grain Storage</p>
+            </div>
+            <div
+              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
+            >
+              <img
+                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                alt=""
+                class="hover-img rounded-full w-40"
+              />
+              <p class="mx-auto mt-2">Grain Storage</p>
+            </div>
+            <div
+              class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
+            >
+              <img
+                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                alt=""
+                class="hover-img rounded-full w-40"
+              />
+              <p class="mx-auto mt-2">Grain Storage</p>
             </div>
           </div>
         </div>
