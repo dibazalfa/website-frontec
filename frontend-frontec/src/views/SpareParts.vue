@@ -7,15 +7,15 @@
     />
     <main>
       <div class="flex flex-col md:flex-row">
-        <section class="bg-white flex flex-col p-4 w-1/3 mt-10 ml-12">
+        <section class="bg-white flex flex-col p-4 w-full md:w-1/3 mt-10 mx-auto md:ml-12">
           <p class="mx-auto mt-10 font-[Inter-ExtraBold,Helvetica]">
             In partnership with:
           </p>
           <img :src="sanwei" alt="" class="mx-auto mt-10" />
         </section>
-        <section class="flex justify-center items-center min-h-[75vh] w-2/3">
+        <section class="flex justify-center items-center min-h-[75vh] w-2/3 mx-auto">
           <div
-            class="w-7/12 h-96 p-4 flex flex-col md:flex-row items-center justify-center rounded-tl-3xl rounded-bl-3xl border-2 border-slate-300 border-r-0"
+            class="w-full md:w-7/12 h-96 p-4 flex flex-col md:flex-row items-center justify-center rounded-tl-3xl rounded-bl-3xl border-2 border-slate-300 border-r-0"
             :style="{
               background: `linear-gradient(to right, white, ${
                 isHovered ? currentTab.color : originalColor
@@ -31,7 +31,7 @@
             <div class="flex flex-col pl-3 md:pl-6">
               <router-link :to="currentTab.route">
                 <p
-                  class="uppercase font-bold text-xl md:text-3xl hover:underline hover:scale-105 transform transition-transform duration-300"
+                  class="uppercase font-bold text-2xl md:text-3xl hover:underline hover:scale-105 transform transition-transform duration-300"
                   @mouseover="isHovered = true"
                   @mouseleave="isHovered = false"
                 >
