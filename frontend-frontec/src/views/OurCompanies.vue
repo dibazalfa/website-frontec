@@ -6,7 +6,7 @@
       :isScrolled="isScrolled"
     />
     <main class="overflow-x-hidden">
-      <section class="bg-white flex flex-col p-4 md:p-8 lg:p-12">
+      <section class="bg-white flex flex-col p-4 md:p-8 lg:p-12 fade-in">
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[30px] sm:text-[35px] md:text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto"
         >
@@ -15,10 +15,7 @@
         </p>
       </section>
       <section
-        v-motion
-        :initial="{ opacity: 0, x: 0, y: 10 }"
-        :enter="{ opacity: 1, x: 0, y: -10, transition: { duration: 1000, ease: 'easeOut' } }"
-        class="flex justify-center p-4"
+        class="flex justify-center p-4 fade-in"
       >
         <iframe
           class="w-full max-w-xl"
@@ -31,27 +28,21 @@
         </iframe>
       </section>
       <section class="flex justify-center mt-16 px-4">
-        <div class="flex flex-col items-center w-full md:w-3/4 lg:w-2/3 relative">
-          <div class="hidden lg:block absolute w-px bg-gray-300 top-0 bottom-0 h-full mx-24"></div>
+        <div class="flex flex-col items-center w-full md:w-3/4 lg:w-2/3 relative fade-in">
+          <div class="hidden lg:block absolute w-px bg-gray-300 top-0 bottom-0 h-full mx-24 tracker"></div>
           <div class="flex flex-col md:flex-row items-center w-full">
             <div
-              v-motion
-              :initial="{ opacity: 0, x: -100 }"
-              :enter="{ opacity: 1, x: 0, transition: { duration: 1800, ease: 'easeIn' } }"
-              class="w-full md:w-1/2 p-4 flex flex-col items-center"
+              class="w-full md:w-1/2 p-4 flex flex-col items-center fade-in"
             >
               <img :src="FAE" class="object-contain mb-8 w-full max-w-xs" />
               <p class="text-justify">
-                  {{ t('companies.fae1') }}
+                {{ t('companies.fae1') }}
                 <br /><br />
-                  {{ t('companies.fae2') }}
+                {{ t('companies.fae2') }}
               </p>
             </div>
             <div
-              v-motion
-              :initial="{ opacity: 0, x: 100 }"
-              :enter="{ opacity: 1, x: 0, transition: { duration: 1800, ease: 'easeIn' } }"
-              class="hidden lg:block md:w-1/2 p-4 flex flex-col items-center lg:items-start lg:ml-12"
+              class="hidden lg:block md:w-1/2 p-4 flex flex-col items-center lg:items-start lg:ml-12 fade-in"
             >
               <div class="flex justify-center items-center w-72 h-72 border-4 border-[#1327C3] rounded-full">
                 <p class="text-[30px] font-serif font-bold text-[#1327C3] leading-none">Est. 2008</p>
@@ -60,10 +51,7 @@
           </div>
           <div class="flex flex-col md:flex-row items-center w-full mt-14">
             <div
-              v-motion
-              :initial="{ opacity: 0, x: -100 }"
-              :enter="{ opacity: 1, x: 0, transition: { duration: 2800, ease: 'easeIn' } }"
-              class="w-full md:w-1/2 p-4 flex flex-col items-center"
+              class="w-full md:w-1/2 p-4 flex flex-col items-center fade-in"
             >
               <img :src="FGN" class="object-contain mb-8 w-full max-w-xs" />
               <p class="text-justify">
@@ -71,10 +59,7 @@
               </p>
             </div>
             <div
-              v-motion
-              :initial="{ opacity: 0, x: 100 }"
-              :enter="{ opacity: 1, x: 0, transition: { duration: 2800, ease: 'easeIn' } }"
-              class="hidden lg:block md:w-1/2 p-4 flex flex-col items-center lg:items-start lg:ml-12"
+              class="hidden lg:block md:w-1/2 p-4 flex flex-col items-center lg:items-start lg:ml-12 fade-in"
             >
               <div class="flex justify-center items-center w-72 h-72 border-4 border-[#007D17] rounded-full">
                 <p class="text-[30px] font-serif font-bold text-[#007D17] leading-none">Est. 2013</p>
@@ -88,11 +73,11 @@
   </div>
 </template>
 
+
 <script>
 import AppHeader from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import { useI18n } from "vue-i18n";
-import { MotionPlugin } from '@vueuse/motion';
 
 import background from "@/assets/img/companies/background.png";
 import FAE from "@/assets/img/header/faeLogo.png";
@@ -110,6 +95,29 @@ export default {
     return {
       t,
     };
+  },
+  mounted() {
+    this.initIntersectionObserver();
+  },
+  methods: {
+    initIntersectionObserver() {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            } else {
+              entry.target.classList.remove("show");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll(".fade-in").forEach((section) => {
+        observer.observe(section);
+      });
+    },
   },
   data() {
     return {
@@ -140,5 +148,36 @@ export default {
 
 .shadow-lg {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tracker {
+  background: linear-gradient(180deg, transparent 0%, #1327C3 50%, transparent 100%);
+  animation: tracker-move 3s linear infinite;
+}
+
+@keyframes tracker-move {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-shadow-md {
+    font-size: 1.5rem;
+  }
 }
 </style>
