@@ -6,7 +6,8 @@
       :isScrolled="isScrolled"
     />
     <!-- Content Sections -->
-    <main class="overflow-x-hidden">
+    <main
+      :class="['overflow-x-hidden transition-all duration-1000 ease-out', { 'opacity-100 translate-y-0': visible, 'opacity-0 translate-y-10': !visible }]">
       <section class="flex flex-row mx-auto">
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
@@ -106,7 +107,6 @@ export default {
   name: "ContactUs",
   setup() {
     const { t } = useI18n();
-
     return {
       t,
     };
@@ -122,7 +122,25 @@ export default {
       instagram,
       linkedin,
       whatsapp,
+      lastScrollY: 0,
+      visible: false,
     };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+    this.handleScroll(); // Call it once to set the initial state based on the scroll position
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > this.lastScrollY && currentScrollY > 100) { // Adding a threshold for when to show the effect
+        this.visible = true;
+      }
+      this.lastScrollY = currentScrollY;
+    },
   },
 };
 </script>
@@ -134,5 +152,19 @@ export default {
 
 .text-shadow-md {
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.opacity-0 {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.opacity-100 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.transition-all {
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 </style>

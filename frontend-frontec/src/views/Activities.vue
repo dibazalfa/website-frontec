@@ -7,7 +7,8 @@
     />
     <!-- Content Sections -->
     <main class="flex-1 overflow-x-hidden">
-      <section id="about-us" class="relative bg-white flex flex-col min-h-screen p-4">
+      <section id="about-us" ref="aboutUs" class="relative bg-white flex flex-col min-h-screen p-4"
+        :class="['transition-all duration-1000 ease-out', { 'opacity-100 translate-y-0': visibleAboutUs, 'opacity-0 translate-y-10': !visibleAboutUs }]">
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] sm:text-[30px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
         >
@@ -19,11 +20,12 @@
             v-html="t('activities.motto')"
           ></p>
           <p class="absolute top-0 left-0 mt-[200px] ml-[20px] text-[30vw] sm:text-[15vw] font-bold text-[#D9D9D9] opacity-30 leading-none z-0">
-          TRUST
-        </p>
+            TRUST
+          </p>
         </div>
       </section>
-      <section class="flex flex-col min-h-screen pb-20 relative">
+      <section ref="carousel" class="flex flex-col min-h-screen pb-20 relative"
+        :class="['transition-all duration-1000 ease-out', { 'opacity-100 translate-y-0': visibleCarousel, 'opacity-0 translate-y-10': !visibleCarousel }]">
         <div class="carousel relative w-[80%] h-[300px] mx-auto perspective-1000" @mousedown="startDrag" @mousemove="onDrag" @mouseup="endDrag" @mouseleave="endDrag" @touchstart="startDrag" @touchmove="onDrag" @touchend="endDrag">
           <div class="carousel-inner relative w-full h-full transform-style-3d transition-transform duration-500" :style="{ transform: `rotateY(-${currentSlide * (360 / images.length)}deg)` }">
             <div v-for="(img, index) in images" :key="index" class="carousel-item absolute w-full h-full" :style="carouselItemStyle(index)">
@@ -79,12 +81,38 @@ export default {
       isDragging: false,
       startX: 0,
       dragX: 0,
+      visibleAboutUs: false,
+      visibleCarousel: false,
     };
   },
   mounted() {
-    this.showSlide(this.currentSlide);
+    window.addEventListener("scroll", this.handleScroll);
+    this.handleScroll(); // Call it once to set the initial state based on the scroll position
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
+    handleScroll() {
+      const aboutUsSection = this.$refs.aboutUs;
+      const carouselSection = this.$refs.carousel;
+      const windowHeight = window.innerHeight;
+      const scrollY = window.scrollY;
+
+      if (aboutUsSection) {
+        const aboutUsRect = aboutUsSection.getBoundingClientRect();
+        if (aboutUsRect.top < windowHeight - 100) {
+          this.visibleAboutUs = true;
+        }
+      }
+
+      if (carouselSection) {
+        const carouselRect = carouselSection.getBoundingClientRect();
+        if (carouselRect.top < windowHeight - 100) {
+          this.visibleCarousel = true;
+        }
+      }
+    },
     showSlide(index) {
       const totalSlides = this.images.length;
       this.currentSlide = (index + totalSlides) % totalSlides;
@@ -133,6 +161,20 @@ export default {
 
 .text-shadow-md {
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.opacity-0 {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.opacity-100 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.transition-all {
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .carousel {
