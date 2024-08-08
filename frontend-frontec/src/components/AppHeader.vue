@@ -10,9 +10,11 @@
         'transition-all duration-300 ease-in-out z-10 top-0 left-0 right-0',
       ]"
     >
-      <div class="container mx-auto px-4 py-3 flex justify-between items-center max-w-screen-xl flex-wrap p-4">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center max-w-screen-xl flex-wrap"
+      >
         <!-- Language Switcher -->
-        <div class="flex flex-col md:flex-row items-center ml-16 z-20">
+        <div class="flex items-center space-x-1 py-5 mr-6 z-20">
           <div
             @click="setLanguage('id')"
             :class="[
@@ -40,7 +42,7 @@
         <button
           @click="toggleNavbar"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 z-20"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -61,19 +63,23 @@
             />
           </svg>
         </button>
-        <nav :class="['md:flex', navbarOpen ? 'block' : 'hidden']" id="navbar-default" class="z-20">
+        <nav
+          :class="['md:flex', navbarOpen ? 'block' : 'hidden']"
+          id="navbar-default"
+          class="w-full md:w-auto"
+        >
           <ul
             class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent md:dark:bg-transparent-900 dark:border-gray-700"
           >
             <li>
-                <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 roboto-bold"
+              <router-link
+                class="block py-2 px-3 rounded md:border-0 md:p-0"
                 to="/"
                 :class="[
                   'hover:uppercase roboto-bold',
                   'uppercase transition-colors duration-300',
                   'underline-transition',
-                  { 'text-black': isScrolled, 'text-white': !isScrolled }
+                  { 'text-black': isScrolled, 'text-white': !isScrolled },
                 ]"
                 >{{ $t("navbar.about") }}</router-link
               >
@@ -84,13 +90,13 @@
               @mouseleave="hideSubNavbar"
             >
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 roboto-bold"
+                class="block py-2 px-3 rounded md:border-0 md:p-0"
                 to="/our-products"
                 :class="[
                   'hover:uppercase roboto-bold',
                   'uppercase transition-colors duration-300',
                   'underline-transition',
-                  { 'text-black': isScrolled, 'text-white': !isScrolled }
+                  { 'text-black': isScrolled, 'text-white': !isScrolled },
                 ]"
                 >{{ $t("navbar.products") }}</router-link
               >
@@ -105,9 +111,7 @@
                   @mouseenter="showSubSubNavbar('materialHandling')"
                   @mouseleave="hideSubSubNavbar"
                 >
-                  <router-link
-                    class="block py-2 px-3 hover:bg-gray-100"
-                    to="/our-products/material-handling"
+                  <router-link class="block py-2 px-3 hover:bg-gray-100" to=""
                     >Material Handling</router-link
                   >
                   <ul
@@ -119,35 +123,35 @@
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/our-products/material-handling/corn-dryer"
+                        to="/corn-dryer"
                         >Corn Dryer</router-link
                       >
                     </li>
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/our-products/material-handling/bucket-elevator"
+                        to="/bucket-elevator"
                         >Bucket Elevator</router-link
                       >
                     </li>
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/our-products/material-handling/grader-cleaner"
+                        to="/grader-cleaner"
                         >Grader Cleaner</router-link
                       >
                     </li>
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/our-products/material-handling/screw-conveyor"
+                        to="/screw-conveyor"
                         >Screw Conveyor</router-link
                       >
                     </li>
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/our-products/material-handling/chain-conveyor"
+                        to="/chain-conveyor"
                         >Chain Conveyor</router-link
                       >
                     </li>
@@ -158,9 +162,7 @@
                   @mouseenter="showSubSubNavbar('feedmill')"
                   @mouseleave="hideSubSubNavbar"
                 >
-                  <router-link
-                    class="block py-2 px-3 hover:bg-gray-100"
-                    to="/our-products/feedmill"
+                  <router-link class="block py-2 px-3 hover:bg-gray-100" to=""
                     >Feedmill</router-link
                   >
                   <ul
@@ -172,28 +174,28 @@
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/our-products/feedmill/mixer"
+                        to="/mixer"
                         >Mixer</router-link
                       >
                     </li>
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/our-products/feedmill/dust-collector"
+                        to="/dust-collector"
                         >Dust Collector</router-link
                       >
                     </li>
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/our-products/feedmill/hammermill"
+                        to="/hammermill"
                         >Hammermill</router-link
                       >
                     </li>
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/our-products/feedmill/cooler"
+                        to="/cooler"
                         >Cooler</router-link
                       >
                     </li>
@@ -204,9 +206,7 @@
                   @mouseenter="showSubSubNavbar('grainStorage')"
                   @mouseleave="hideSubSubNavbar"
                 >
-                  <router-link
-                    class="block py-2 px-3 hover:bg-gray-100"
-                    to="/our-products/grain-storage"
+                  <router-link class="block py-2 px-3 hover:bg-gray-100" to=""
                     >Grain Storage</router-link
                   >
                   <ul
@@ -218,14 +218,14 @@
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/our-products/grain-storage/hopper-silo"
+                        to="/hopper-silo"
                         >Hopper Silo</router-link
                       >
                     </li>
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/our-products/grain-storage/flat-bottom-silo"
+                        to="/flat-bottom-silo"
                         >Flat Bottom Silo</router-link
                       >
                     </li>
@@ -234,7 +234,7 @@
                 <li>
                   <router-link
                     class="block py-2 px-3 hover:bg-gray-100"
-                    to="/our-products/spareparts"
+                    to="/spare-parts"
                     >Spareparts</router-link
                   >
                 </li>
@@ -242,40 +242,39 @@
             </li>
             <li>
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 roboto-bold"
+                class="block py-2 px-3 rounded md:border-0 md:p-0"
                 to="/our-companies"
                 :class="[
                   'hover:uppercase roboto-bold',
                   'uppercase transition-colors duration-300',
                   'underline-transition',
-                  { 'text-black': isScrolled, 'text-white': !isScrolled }
+                  { 'text-black': isScrolled, 'text-white': !isScrolled },
                 ]"
                 >{{ $t("navbar.companies") }}</router-link
               >
             </li>
             <li>
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 roboto-bold"
-                href="#contact-us"
+                class="block py-2 px-3 rounded md:border-0 md:p-0"
                 to="/contact-us"
                 :class="[
                   'hover:uppercase roboto-bold',
                   'uppercase transition-colors duration-300',
                   'underline-transition',
-                  { 'text-black': isScrolled, 'text-white': !isScrolled }
+                  { 'text-black': isScrolled, 'text-white': !isScrolled },
                 ]"
                 >{{ $t("navbar.contact") }}</router-link
               >
             </li>
             <li>
               <router-link
-                class="block py-2 px-3 rounded md:border-0 md:p-0 roboto-bold"
+                class="block py-2 px-3 rounded md:border-0 md:p-0"
                 to="/activities"
                 :class="[
                   'hover:uppercase roboto-bold',
                   'uppercase transition-colors duration-300',
                   'underline-transition',
-                  { 'text-black': isScrolled, 'text-white': !isScrolled }
+                  { 'text-black': isScrolled, 'text-white': !isScrolled },
                 ]"
                 >{{ $t("navbar.activities") }}</router-link
               >
@@ -283,7 +282,7 @@
           </ul>
         </nav>
         <!-- Company Logo -->
-        <div class="flex flex-col items-center space-y-4 mr-6 z-20">
+        <div v-if="!navbarOpen" class="flex items-center space-x-4 z-20">
           <img :src="faeLogo" alt="Logo 1" class="w-auto h-8" />
           <img :src="fgnLogo" alt="Logo 2" class="w-auto h-8" />
         </div>
@@ -295,7 +294,7 @@
 <script>
 import { ref, onMounted, onUnmounted } from "vue";
 import { useI18n } from "vue-i18n";
-import CarouselBackground from './CarouselBackground.vue'; 
+import CarouselBackground from "./CarouselBackground.vue";
 
 import faeLogo from "@/assets/img/header/faeLogo.png";
 import fgnLogo from "@/assets/img/header/fgnLogo.png";
