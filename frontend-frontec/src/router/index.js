@@ -315,6 +315,16 @@ const router = createRouter({
       name: 'pan-cleaners',
       component: () => import('../views/SpareParts/SievesAndScreens/PanCleaners.vue')
     },
+    {
+      path: '/our-products/material-handling',
+      name: 'our-products/material-handling',
+      component: () => import('../views/OurProducts/MaterialHandling/MaterialHandling.vue')
+    },
+    {
+      path: '/our-products/material-handling/bucket-elevator',
+      name: 'our-products/material-handling/bucket-elevator',
+      component: () => import('../views/OurProducts/MaterialHandling/BucketElevator.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
