@@ -25,58 +25,57 @@
           </p>
         </div>
 
-          <!-- Drag Sprocket Images -->
-          <div class="flex flex-col">
-            <div
-              class="flex flex-col justify-center items-center h-screen p-64"
-            >
-              <img
-                :src="highlightedProduct"
-                alt="Highlighted Product"
-                class="object-contain mb-6 frame-border"
-              />
-              <div class="text-center mt-0 mb-4">
-                <p class="roboto-light text-gray-600">
-                  Click one of the images below to highlight
-                </p>
-              </div>
-              <div class="flex justify-center space-x-2">
-                <img
-                  :src="product1"
-                  alt="Product 1"
-                  class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
-                  @click="highlightProduct('product1')"
-                />
-                <img
-                  :src="product2"
-                  alt="Product 2"
-                  class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
-                  @click="highlightProduct('product2')"
-                />
-                <img
-                  :src="product3"
-                  alt="Product 3"
-                  class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
-                  @click="highlightProduct('product3')"
-                />
-                <img
-                  :src="product4"
-                  alt="Product 4"
-                  class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
-                  @click="highlightProduct('product4')"
-                />
-                <img
-                  :src="product5"
-                  alt="Product 5"
-                  class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
-                  @click="highlightProduct('product5')"
-                />
-              </div>
+        <!-- Drag Sprocket Images -->
+        <div class="flex flex-col">
+          <div
+            class="flex flex-col justify-center items-center h-full p-4 md:p-24 lg:p-64"
+          >
+            <img
+              :src="highlightedProduct"
+              alt="Highlighted Product"
+              class="object-contain mb-6 frame-border w-full max-w-xs md:max-w-md lg:max-w-lg"
+            />
+            <div class="text-center mt-0 mb-4">
+              <p class="roboto-light text-gray-600 text-sm md:text-base">
+                Click one of the images below to highlight
+              </p>
             </div>
+            <div class="flex justify-center space-x-2">
+              <img
+                :src="product1"
+                alt="Product 1"
+                class="object-contain border-4 border-white cursor-pointer w-12 h-12 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+                @click="highlightProduct('product1')"
+              />
+              <img
+                :src="product2"
+                alt="Product 2"
+                class="object-contain border-4 border-white cursor-pointer w-12 h-12 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+                @click="highlightProduct('product2')"
+              />
+              <img
+                :src="product3"
+                alt="Product 3"
+                class="object-contain border-4 border-white cursor-pointer w-12 h-12 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+                @click="highlightProduct('product3')"
+              />
+              <img
+                :src="product4"
+                alt="Product 4"
+                class="object-contain border-4 border-white cursor-pointer w-12 h-12 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+                @click="highlightProduct('product4')"
+              />
+              <img
+                :src="product5"
+                alt="Product 5"
+                class="object-contain border-4 border-white cursor-pointer w-12 h-12 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+                @click="highlightProduct('product5')"
+              />
+            </div>
+          </div>
 
           <!-- Drawing Section -->
           <div class="flex flex-col mt-4 text-[16px] md:text-[18px] w-full">
-            <!-- Change mt-6 to mt-4 -->
             <p
               class="bg-black text-white w-36 px-6 py-3 rounded-full text-center font-bold uppercase shadow-lg mx-auto"
             >
@@ -85,7 +84,7 @@
             <img
               :src="draw"
               alt="Drawing"
-              class="object-contain mt-6 mx-auto"
+              class="object-contain mt-6 mx-auto w-full max-w-xs md:max-w-md lg:max-w-lg"
             />
           </div>
         </div>
