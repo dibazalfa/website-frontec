@@ -45,7 +45,7 @@
               class="object-contain md:ml-16 hover:scale-105"
             /> -->
             <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px] md:ml-16"
+              class="hover:scale-105 flex border border-black w-[382px] h-[378px] md:ml-16 md:mt-0 mt-12"
             >
               <p class="m-auto">Bucket Elevator</p>
             </div>
@@ -71,7 +71,7 @@
               class="object-contain md:ml-16 hover:scale-105"
             /> -->
             <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px] md:ml-16"
+              class="hover:scale-105 flex border border-black w-[382px] h-[378px] md:ml-16 md:mt-0 mt-12"
             >
               <p class="m-auto">Chain Conveyor</p>
             </div>
@@ -97,7 +97,7 @@
               class="object-contain md:ml-16 hover:scale-105"
             /> -->
             <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px] md:ml-16"
+              class="hover:scale-105 flex border border-black w-[382px] h-[378px] md:ml-16 md:mt-0 mt-12"
             >
               <p class="m-auto">Slidegate</p>
             </div>
