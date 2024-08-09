@@ -233,7 +233,7 @@
       <td class="border border-gray-300 px-4 center-text">380</td>
     </tr>
     <tr>
-      <td class="border border-gray-300 px-4 center-text">mc100s406-41th2-440-20</td>
+      <td class="border border-gray-300 px-4 center-text">MC100s406-2LF2-230-16</td>
       <td class="border border-gray-300 px-4 center-text" rowspan="3">125</td>
       <td class="border border-gray-300 px-4 center-text">32</td>
       <td class="border border-gray-300 px-4 center-text">28.6</td>
@@ -245,7 +245,7 @@
     </tr>
     <tr>
       <td class="border border-gray-300 px-4 center-text" rowspan="2">200</td>
-      <td class="border border-gray-300 px-4 center-text">MC1258406-2LF2-230-16</td>
+      <td class="border border-gray-300 px-4 center-text">mc125b508-41f2-285-12</td>
       <td class="border border-gray-300 px-4 center-text" rowspan="2">50</td>
       <td class="border border-gray-300 px-4 center-text" rowspan="2">/</td>
       <td class="border border-gray-300 px-4 center-text" rowspan="2">32</td>
@@ -312,7 +312,7 @@
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
               >
-                Plastif Flight Attachment (BR)
+                Plastic Flight Attachment (BR)
               </p>
             </router-link>
             <router-link to="/nylon-gear-wheel">

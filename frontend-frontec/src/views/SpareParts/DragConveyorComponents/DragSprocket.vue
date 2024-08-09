@@ -24,22 +24,76 @@
             Drag Sprocket
           </p>
         </div>
-        <div class="flex flex-col md:flex-row mt-12">
-          <img :src="product" alt="" class="object-contain" />
-          <div
-            class="flex flex-col text-justify mt-6 md:mt-0 md:pl-10 text-[16px] md:text-[18px]"
-          >
+
+          <!-- Drag Sprocket Images -->
+          <div class="flex flex-col">
+            <div
+              class="flex flex-col justify-center items-center h-screen p-64"
+            >
+              <img
+                :src="highlightedProduct"
+                alt="Highlighted Product"
+                class="object-contain mb-6 frame-border"
+              />
+              <div class="text-center mt-0 mb-4">
+                <p class="roboto-light text-gray-600">
+                  Click one of the images below to highlight
+                </p>
+              </div>
+              <div class="flex justify-center space-x-2">
+                <img
+                  :src="product1"
+                  alt="Product 1"
+                  class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+                  @click="highlightProduct('product1')"
+                />
+                <img
+                  :src="product2"
+                  alt="Product 2"
+                  class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+                  @click="highlightProduct('product2')"
+                />
+                <img
+                  :src="product3"
+                  alt="Product 3"
+                  class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+                  @click="highlightProduct('product3')"
+                />
+                <img
+                  :src="product4"
+                  alt="Product 4"
+                  class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+                  @click="highlightProduct('product4')"
+                />
+                <img
+                  :src="product5"
+                  alt="Product 5"
+                  class="object-contain border-4 border-white cursor-pointer w-16 h-16 md:w-20 md:h-20 thumbnail-border hover:scale-105 transform transition-transform duration-300"
+                  @click="highlightProduct('product5')"
+                />
+              </div>
+            </div>
+
+          <!-- Drawing Section -->
+          <div class="flex flex-col mt-4 text-[16px] md:text-[18px] w-full">
+            <!-- Change mt-6 to mt-4 -->
             <p
-              class="bg-black text-white w-36 px-6 py-3 rounded-full text-center font-bold uppercase shadow-lg"
+              class="bg-black text-white w-36 px-6 py-3 rounded-full text-center font-bold uppercase shadow-lg mx-auto"
             >
               Drawing
             </p>
-            <img :src="draw" alt="" class="object-contain mt-6" />
+            <img
+              :src="draw"
+              alt="Drawing"
+              class="object-contain mt-6 mx-auto"
+            />
           </div>
         </div>
-        <div class="flex flex-col">
+
+        <!-- Specifications Section -->
+        <div class="flex flex-col mt-12">
           <p
-            class="bg-black text-white w-48 px-6 py-3 rounded-full text-center font-bold uppercase mt-6 shadow-lg"
+            class="bg-black text-white w-48 px-6 py-3 rounded-full text-center font-bold uppercase shadow-lg"
           >
             Specifications
           </p>
@@ -192,7 +246,7 @@
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
               >
-                Plastif Flight Attachment (BR)
+                Plastic Flight Attachment (BR)
               </p>
             </router-link>
             <router-link to="/nylon-gear-wheel">
@@ -227,8 +281,11 @@ import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/spare-parts/bgSpareParts.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 
-import product from "@/assets/img/spare-parts/drag-sprocket.png";
-import spec from "@/assets/img/spare-parts/drag-sprocket-spec.png";
+import product1 from "@/assets/img/spare-parts/drag-sprocket1.jpg";
+import product2 from "@/assets/img/spare-parts/drag-sprock-2.jpg";
+import product3 from "@/assets/img/spare-parts/drag-sprock-3.jpg";
+import product4 from "@/assets/img/spare-parts/drag-sprock-4.jpg";
+import product5 from "@/assets/img/spare-parts/drag-sprock-5.jpg";
 import draw from "@/assets/img/spare-parts/drag-sprocket-draw.png";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -243,10 +300,19 @@ export default {
     return {
       background,
       sanwei,
-      product,
-      spec,
       draw,
+      product1,
+      product2,
+      product3,
+      product4,
+      product5,
+      highlightedProduct: product1,
     };
+  },
+  methods: {
+    highlightProduct(product) {
+      this.highlightedProduct = this[product];
+    },
   },
 };
 </script>
@@ -260,60 +326,25 @@ export default {
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.bg-gray-100 {
-  background-color: #f7fafc;
+.frame-border {
+  border: 8px solid #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.h-full {
-  height: 100%;
+.thumbnail-border {
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.top-0 {
-  top: 0;
+.hover\:scale-125:hover {
+  transform: scale(1.25);
 }
 
-.p-4 {
-  padding: 1rem;
+.hover\:scale-105:hover {
+  transform: scale(1.05);
 }
 
-/* Styling for the main content and sidebar */
-.main {
-  flex: 1;
-  overflow-y: hidden;
-  display: flex;
-  flex-direction: row;
-}
-
-section {
-  overflow-y: auto; /* Enables scrolling on the main content */
-}
-
-.sidebar {
-  position: relative;
-  top: 0;
-  overflow-y: auto;
-}
-
-.sticky-element {
-  position: sticky;
-  top: 10px;
-  z-index: 10;
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative; /* Disable sticky on mobile if needed */
-  }
-}
-
-.header-color {
-  background-color: #286f9b;
-  color: white; /* Optional: to make the text color white */
-}
-
-.center-text {
-  text-align: center;
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #286f9b, #96c4df);
 }
 </style>

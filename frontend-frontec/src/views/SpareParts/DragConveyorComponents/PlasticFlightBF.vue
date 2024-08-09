@@ -589,7 +589,7 @@
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
               >
-                Plastif Flight Attachment (BR)
+                Plastic Flight Attachment (BR)
               </p>
             </router-link>
             <router-link to="/nylon-gear-wheel">

@@ -43,81 +43,96 @@
           >
             Specifications
           </p>
-          <table class="min-w-full border border-gray-300 mt-6">
+          <table class="min-w-full border border-gray-300 mt-6 center-text">
             <thead>
               <tr class="bg-[#286F9B] text-white">
-                <th class="border border-gray-300 p-2">Size</th>
+                <th class="border border-gray-300 p-2" rowspan="2">Rated Strength KN</th><th class="border border-gray-300 p-2" rowspan="2">Size</th>
                 <th class="border border-gray-300 p-2">Pitch (mm)</th>
                 <th class="border border-gray-300 p-2">Head Width (mm)</th>
-                <th class="border border-gray-300 p-2"></th>
+                <th class="border border-gray-300 p-2">(mm)</th>
                 <th class="border border-gray-300 p-2">Pin Diameter (mm)</th>
                 <th class="border border-gray-300 p-2">Plate Height (mm)</th>
+                <th class="border border-gray-300 p-2">Plate Thickness (mm)</th>
               </tr>
               <tr class="bg-[#286F9B] text-white">
-                <th class="border border-gray-300 p-2"></th>
                 <th class="border border-gray-300 p-2">P</th>
                 <th class="border border-gray-300 p-2">B</th>
                 <th class="border border-gray-300 p-2">b</th>
                 <th class="border border-gray-300 p-2">D1</th>
                 <th class="border border-gray-300 p-2">H</th>
+                <th class="border border-gray-300 p-2">T</th>
               </tr>
             </thead>
             <tbody class="bg-white text-gray-700">
               <tr>
+                <td class="border border-gray-300 p-2">140</td>
                 <td class="border border-gray-300 p-2">P100</td>
                 <td class="border border-gray-300 p-2">101.6</td>
                 <td class="border border-gray-300 p-2">33</td>
                 <td class="border border-gray-300 p-2">13</td>
                 <td class="border border-gray-300 p-2">14</td>
                 <td class="border border-gray-300 p-2">30</td>
+                <td class="border border-gray-300 p-2">9</td>
               </tr>
               <tr>
+                <td class="border border-gray-300 p-2">150</td>
                 <td class="border border-gray-300 p-2">P125</td>
                 <td class="border border-gray-300 p-2">125</td>
                 <td class="border border-gray-300 p-2">34</td>
                 <td class="border border-gray-300 p-2">17</td>
                 <td class="border border-gray-300 p-2">17</td>
                 <td class="border border-gray-300 p-2">35</td>
+                <td class="border border-gray-300 p-2">8</td>
               </tr>
               <tr>
+                <td class="border border-gray-300 p-2">270</td>
                 <td class="border border-gray-300 p-2">P142</td>
                 <td class="border border-gray-300 p-2">142</td>
                 <td class="border border-gray-300 p-2">42</td>
                 <td class="border border-gray-300 p-2">19</td>
                 <td class="border border-gray-300 p-2">25</td>
                 <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">15</td>
               </tr>
               <tr>
+                <td class="border border-gray-300 p-2">340</td>
                 <td class="border border-gray-300 p-2">P142H</td>
                 <td class="border border-gray-300 p-2">142</td>
                 <td class="border border-gray-300 p-2">62</td>
                 <td class="border border-gray-300 p-2">28</td>
                 <td class="border border-gray-300 p-2">25</td>
                 <td class="border border-gray-300 p-2">50</td>
+                <td class="border border-gray-300 p-2">15</td>
               </tr>
               <tr>
+                <td class="border border-gray-300 p-2">240</td>
                 <td class="border border-gray-300 p-2">P160</td>
                 <td class="border border-gray-300 p-2">160</td>
                 <td class="border border-gray-300 p-2">48</td>
                 <td class="border border-gray-300 p-2">22.5</td>
                 <td class="border border-gray-300 p-2">20</td>
-                <td class="border border-gray-300 p-2">40</td>
+                <td class="border border-gray-300 p-2">45</td>
+                <td class="border border-gray-300 p-2">15</td>
               </tr>
               <tr>
+                <td class="border border-gray-300 p-2">200</td>
                 <td class="border border-gray-300 p-2">P200</td>
                 <td class="border border-gray-300 p-2">200</td>
                 <td class="border border-gray-300 p-2">42</td>
                 <td class="border border-gray-300 p-2">20</td>
                 <td class="border border-gray-300 p-2">20</td>
                 <td class="border border-gray-300 p-2">45</td>
+                <td class="border border-gray-300 p-2">12</td>
               </tr>
               <tr>
+                <td class="border border-gray-300 p-2">390</td>
                 <td class="border border-gray-300 p-2">P200H</td>
                 <td class="border border-gray-300 p-2">200</td>
                 <td class="border border-gray-300 p-2">50</td>
                 <td class="border border-gray-300 p-2">23</td>
                 <td class="border border-gray-300 p-2">32</td>
                 <td class="border border-gray-300 p-2">64</td>
+                <td class="border border-gray-300 p-2">15</td>
               </tr>
             </tbody>
           </table>
@@ -158,7 +173,7 @@
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
               >
-                Plastif Flight Attachment (BR)
+                Plastic Flight Attachment (BR)
               </p>
             </router-link>
             <router-link to="/nylon-gear-wheel">

@@ -31,14 +31,14 @@
             <img
               :src="product1"
               alt=""
-              class="object-contain hover:scale-105"
+              class="object-contain hover:scale-105 transform transition-transform duration-300"
             />
           </router-link>
           <router-link to="/pu-sheet-rod">
             <img
               :src="product2"
               alt=""
-              class="object-contain md:ml-16 hover:scale-105"
+              class="object-contain md:ml-16 hover:scale-105 transform transition-transform duration-300"
             />
           </router-link>
         </div>
@@ -47,14 +47,14 @@
             <img
               :src="product3"
               alt=""
-              class="object-contain hover:scale-105"
+              class="object-contain hover:scale-105 transform transition-transform duration-300"
             />
           </router-link>
           <router-link to="/hdpe-sheet-rod">
             <img
               :src="product4"
               alt=""
-              class="object-contain md:ml-16 hover:scale-105"
+              class="object-contain md:ml-16 hover:scale-105 transform transition-transform duration-300"
             />
           </router-link>
         </div>
@@ -63,7 +63,7 @@
             <img
               :src="product5"
               alt=""
-              class="object-contain hover:scale-105"
+              class="object-contain hover:scale-105 transform transition-transform duration-300"
             />
           </router-link>
         </div>
