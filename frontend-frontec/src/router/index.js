@@ -357,87 +357,87 @@ const router = createRouter({
     },
     {
       path: '/our-products/feedmill/corn-dryer',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/corn-dryer',
       component: () => import('../views/OurProducts/Feedmill/Corndryer.vue')
     },
     {
       path: '/our-products/feedmill/drum-grader-cleaner',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/drum-grader-cleaner',
       component: () => import('../views/OurProducts/Feedmill/Drumgradercleaner.vue')
     },
     {
       path: '/our-products/feedmill/hammermill',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/hammermill',
       component: () => import('../views/OurProducts/Feedmill/Hammermill.vue')
     },
     {
       path: '/our-products/feedmill/cooler',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/cooler',
       component: () => import('../views/OurProducts/Feedmill/Cooler.vue')
     },
     {
       path: '/our-products/feedmill/pelletmill',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/pelletmill',
       component: () => import('../views/OurProducts/Feedmill/Pelletmill.vue')
     },
     {
       path: '/our-products/feedmill/conditioner',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/conditioner',
       component: () => import('../views/OurProducts/Feedmill/Conditioner.vue')
     },
     {
       path: '/our-products/feedmill/crumbler',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/crumbler',
       component: () => import('../views/OurProducts/Feedmill/Crumbler.vue')
     },
     {
       path: '/our-products/feedmill/mixer',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/mixer',
       component: () => import('../views/OurProducts/Feedmill/Mixer.vue')
     },
     {
       path: '/our-products/feedmill/dust-filler',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/dust-filler',
       component: () => import('../views/OurProducts/Feedmill/Dustfiller.vue')
     },
     {
       path: '/our-products/feedmill/rotary-distributor',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/rotary-distributor',
       component: () => import('../views/OurProducts/Feedmill/Rotarydistributor.vue')
     },
     {
       path: '/our-products/feedmill/magnet-separator',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/magnet-separator',
       component: () => import('../views/OurProducts/Feedmill/Magnetseparator.vue')
     },
     {
       path: '/our-products/feedmill/feed-cleaner',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/feed-cleaner',
       component: () => import('../views/OurProducts/Feedmill/Feedcleaner.vue')
     },
     {
       path: '/our-products/feedmill/shifter',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/shifter',
       component: () => import('../views/OurProducts/Feedmill/Shifter.vue')
     },
     {
       path: '/our-products/feedmill/bagging-scale',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/bagging-scale',
       component: () => import('../views/OurProducts/Feedmill/Baggingscale.vue')
     },
     {
       path: '/our-products/feedmill/sewing-machine',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/sewing-machine',
       component: () => import('../views/OurProducts/Feedmill/Sewingmachine.vue')
     },
     {
       path: '/our-products/feedmill/airlock',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/airlock',
       component: () => import('../views/OurProducts/Feedmill/Airlock.vue')
     },
     {
       path: '/our-products/feedmill/cyclone',
-      name: 'our-products/feedmill',
+      name: 'our-products/feedmill/cyclone',
       component: () => import('../views/OurProducts/Feedmill/Cyclone.vue')
     },
     {
