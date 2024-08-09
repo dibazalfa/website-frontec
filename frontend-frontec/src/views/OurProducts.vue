@@ -18,7 +18,9 @@
           <span class="text-[#154214]">Our </span>
           <span class="text-[#286f9b]">Products</span>
         </p>
-        <p class="roboto-light text-gray-600 flex flex-col m-auto mt-6">Click one of the categories below for product details:</p>
+        <p class="roboto-light text-gray-600 flex flex-col m-auto mt-6">
+          Click one of the categories below for product details:
+        </p>
       </section>
       <section class="flex flex-col m-auto">
         <div class="my-auto mx-4 sm:mx-12 md:mx-24 lg:mx-48 pb-4">
@@ -155,42 +157,50 @@
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
             >
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-                alt=""
-                class="hover-img rounded-full w-40"
-              />
-              <p class="mx-auto mt-2">Grain Storage</p>
+              <router-link to="/our-products/grain-storage/flat-bottom-silo">
+                <img
+                  src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                  alt=""
+                  class="hover-img rounded-full w-40"
+                />
+              </router-link>
+              <p class="mx-auto mt-2">Flat Bottom Silo</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
             >
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-                alt=""
-                class="hover-img rounded-full w-40"
-              />
-              <p class="mx-auto mt-2">Grain Storage</p>
+              <router-link to="/our-products/grain-storage/conical-hopper-silo">
+                <img
+                  src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                  alt=""
+                  class="hover-img rounded-full w-40"
+                />
+              </router-link>
+              <p class="mx-auto mt-2">Conical Hopper Silo</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
             >
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-                alt=""
-                class="hover-img rounded-full w-40"
-              />
-              <p class="mx-auto mt-2">Grain Storage</p>
+              <router-link to="/our-products/grain-storage/cooler-bin">
+                <img
+                  src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                  alt=""
+                  class="hover-img rounded-full w-40"
+                />
+              </router-link>
+              <p class="mx-auto mt-2">Cooler Bin</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto"
             >
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-                alt=""
-                class="hover-img rounded-full w-40"
-              />
-              <p class="mx-auto mt-2">Grain Storage</p>
+              <router-link to="/our-products/grain-storage/steel-structure">
+                <img
+                  src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                  alt=""
+                  class="hover-img rounded-full w-40"
+                />
+              </router-link>
+                <p class="mx-auto mt-2">Steel Structure</p>
             </div>
           </div>
         </div>

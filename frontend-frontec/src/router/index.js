@@ -440,6 +440,31 @@ const router = createRouter({
       name: 'our-products/feedmill',
       component: () => import('../views/OurProducts/Feedmill/Cyclone.vue')
     },
+    {
+      path: '/our-products/grain-storage',
+      name: 'our-products/grain-storage',
+      component: () => import('../views/OurProducts/GrainStorage/GrainStorage.vue')
+    },
+    {
+      path: '/our-products/grain-storage/flat-bottom-silo',
+      name: 'our-products/grain-storage/flat-bottom-silo',
+      component: () => import('../views/OurProducts/GrainStorage/FlatBottomSilo.vue')
+    },
+    {
+      path: '/our-products/grain-storage/conical-hopper-silo',
+      name: 'our-products/grain-storage/conical-hopper-silo',
+      component: () => import('../views/OurProducts/GrainStorage/ConicalHopperSilo.vue')
+    },
+    {
+      path: '/our-products/grain-storage/cooler-bin',
+      name: 'our-products/grain-storage/cooler-bin',
+      component: () => import('../views/OurProducts/GrainStorage/CoolerBin.vue')
+    },
+    {
+      path: '/our-products/grain-storage/steel-structure',
+      name: 'our-products/grain-storage/steel-structure',
+      component: () => import('../views/OurProducts/GrainStorage/SteelStructure.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
