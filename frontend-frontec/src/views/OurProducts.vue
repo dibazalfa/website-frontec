@@ -18,6 +18,7 @@
           <span class="text-[#154214]">Our </span>
           <span class="text-[#286f9b]">Products</span>
         </p>
+        <p class="roboto-light text-gray-600 flex flex-col m-auto mt-6">Click one of the categories below for product details:</p>
       </section>
       <section class="flex flex-col m-auto">
         <div class="my-auto mx-4 sm:mx-12 md:mx-24 lg:mx-48 pb-4">
