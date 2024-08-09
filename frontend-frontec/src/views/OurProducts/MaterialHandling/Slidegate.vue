@@ -21,7 +21,7 @@
           <p
             class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
           >
-            Bucket Elevator
+            Slidegate
           </p>
         </div>
         <div class="flex flex-col md:flex-row mt-12">
@@ -32,16 +32,7 @@
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
           >
-            <p>
-              Bucket elevator designed for transporting feed and grain
-              vertically. The elevators designed in modules and can be assemble
-              to 40 m height. Casing pipe made from 1.5 – 2.0 mm mild steel
-              while top and bottom made from 2.0 – 4.0 mm mild steel with hot
-              dip galvanize or powder coating finished. Gearmotor supplied with
-              top brand motor manufacturer or based on customer requirement.
-              Bucket elevator available in several capacities range from 10 tph
-              up to 500 tph or can be made based on customer needs.
-            </p>
+            <p>ini deskripsi</p>
           </div>
         </div>
         <div class="flex flex-col">
@@ -79,11 +70,13 @@
                 Belt Conveyor
               </p>
             </router-link>
-            <p
-              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
-            >
-              Bucket Elevator
-            </p>
+            <router-link to="/our-products/material-handling/bucket-elevator">
+              <p
+                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
+              >
+                Bucket Elevator
+              </p>
+            </router-link>
             <router-link to="/our-products/material-handling/screw-conveyor">
               <p
                 class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
@@ -105,13 +98,11 @@
                 Valve Box / Diverter
               </p>
             </router-link>
-            <router-link to="/our-products/material-handling/slidegate">
-              <p
-                class="text-[18px] px-4 py-8 border-b border-black hover:bg-gray-200"
-              >
-                Slidegate
-              </p>
-            </router-link>
+            <p
+              class="text-[18px] px-4 py-8 border-b border-black bg-gradient-to-r from-[#286F9B] to-[#96c4df] font-bold text-white"
+            >
+              Slidegate
+            </p>
           </div>
           <p class="text-[20px] mx-auto mt-10">In Partnership with:</p>
           <img :src="sanwei" alt="" class="w-64 mx-auto mt-2" />

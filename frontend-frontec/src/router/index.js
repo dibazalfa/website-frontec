@@ -325,6 +325,31 @@ const router = createRouter({
       name: 'our-products/material-handling/bucket-elevator',
       component: () => import('../views/OurProducts/MaterialHandling/BucketElevator.vue')
     },
+    {
+      path: '/our-products/material-handling/belt-conveyor',
+      name: 'our-products/material-handling/belt-conveyor',
+      component: () => import('../views/OurProducts/MaterialHandling/BeltConveyor.vue')
+    },
+    {
+      path: '/our-products/material-handling/screw-conveyor',
+      name: 'our-products/material-handling/screw-conveyor',
+      component: () => import('../views/OurProducts/MaterialHandling/ScrewConveyor.vue')
+    },
+    {
+      path: '/our-products/material-handling/chain-conveyor',
+      name: 'our-products/material-handling/chain-conveyor',
+      component: () => import('../views/OurProducts/MaterialHandling/ChainConveyor.vue')
+    },
+    {
+      path: '/our-products/material-handling/valve-box',
+      name: 'our-products/material-handling/valve-box',
+      component: () => import('../views/OurProducts/MaterialHandling/ValveBox.vue')
+    },
+    {
+      path: '/our-products/material-handling/slidegate',
+      name: 'our-products/material-handling/slidegate',
+      component: () => import('../views/OurProducts/MaterialHandling/Slidegate.vue')
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
