@@ -138,7 +138,9 @@
             <div
               class="flex hover:scale-105 transform transition duration-300 mx-auto border border-black rounded-full w-40 h-40 hover:bg-gray-200 items-center justify-center"
             >
+            <router-link to="/our-products/feedmill">
               <p class="font-bold text-2xl">SEE ALL</p>
+            </router-link>
             </div>
           </div>
         </div>
