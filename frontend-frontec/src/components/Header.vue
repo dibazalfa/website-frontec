@@ -217,15 +217,29 @@
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/hopper-silo"
-                        >Hopper Silo</router-link
+                        to="/our-products/grain-storage/flat-bottom-silo"
+                        >Flat Bottom Silo</router-link
                       >
                     </li>
                     <li>
                       <router-link
                         class="block py-2 px-3 hover:bg-gray-100"
-                        to="/flat-bottom-silo"
-                        >Flat Bottom Silo</router-link
+                        to="/our-products/grain-storage/conical-hopper-silo"
+                        >Conical Hopper Silo</router-link
+                      >
+                    </li>
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/grain-storage/cooler-bin"
+                        >Cooler Bin</router-link
+                      >
+                    </li>
+                    <li>
+                      <router-link
+                        class="block py-2 px-3 hover:bg-gray-100"
+                        to="/our-products/grain-storage/steel-structure"
+                        >Steel Structure</router-link
                       >
                     </li>
                   </ul>
