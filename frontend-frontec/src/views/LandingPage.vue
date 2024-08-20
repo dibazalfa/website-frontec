@@ -80,11 +80,11 @@
         class="flex flex-col md:flex-row min-h-[75vh] py-4 mx-4 md:mx-28 text-justify fade-in"
       >
         <img
-          class="my-auto mx-auto md:mx-auto w-full md:w-auto"
+          class="my-auto mx-auto md:mx-auto w-11/12 md:w-auto"
           :src="business"
           alt=""
         />
-        <div class="my-auto ml-4 md:ml-16 mr-4 md:mr-20">
+        <div class="my-auto ml-4 md:ml-16 mr-4 md:mr-20 mt-4">
           <p>{{ t("landingPage.desc1") }}</p>
           <ul class="list-disc list-inside font-bold">
             <li>Poultry</li>
