@@ -4,7 +4,10 @@
     <!-- Content Sections -->
     <main class="overflow-x-hidden">
       <!-- About Us Section -->
-      <section id="about-us" class="bg-white flex flex-col min-h-screen p-4 fade-in">
+      <section
+        id="about-us"
+        class="bg-white flex flex-col min-h-screen p-4 fade-in"
+      >
         <p
           class="text-shadow-md montserrat-title text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
         >
@@ -35,7 +38,9 @@
         <p
           class="text-shadow-md montserrat-title text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap my-auto mx-16"
         >
-          <span class="text-white montserrat-title">{{ t("landingPage.why") }}</span>
+          <span class="text-white montserrat-title">{{
+            t("landingPage.why")
+          }}</span>
           <span class="text-[#F7F6BB] montserrat-title">Frontec?</span>
         </p>
         <div class="text-white my-auto mx-auto flex flex-col space-y-8">
@@ -61,9 +66,13 @@
             </div>
           </div>
         </div>
-        <img class="m-auto w-full md:w-auto hidden md:block" :src="whyFrontec" alt="" />
+        <img
+          class="m-auto w-full md:w-auto hidden md:block"
+          :src="whyFrontec"
+          alt=""
+        />
       </section>
-      <br>
+      <br />
 
       <!-- Our Business Section -->
       <section
@@ -71,7 +80,7 @@
         class="flex flex-col md:flex-row min-h-[75vh] py-4 mx-4 md:mx-28 text-justify fade-in"
       >
         <img
-          class="my-auto ml-4 md:ml-20 w-full md:w-auto"
+          class="my-auto mx-auto md:mx-auto w-full md:w-auto"
           :src="business"
           alt=""
         />
@@ -122,8 +131,8 @@
           </div>
         </div>
       </section>
-<br>
-<br>
+      <br />
+      <br />
       <!-- Catalog Section -->
       <section class="relative fade-in">
         <a
@@ -138,7 +147,7 @@
         </a>
         <img :src="catalog" alt="" class="mx-auto mb-6 md:w-1/2 catalog" />
       </section>
-      <br>
+      <br />
 
       <!-- Our Clients Section -->
       <section
@@ -278,12 +287,9 @@ export default {
 }
 
 .text-3d {
-  text-shadow:
-    1px 1px 2px rgba(71, 71, 71, 0.1),
-    2px 2px 4px rgba(71, 71, 71, 0.1),
-    3px 3px 6px rgba(71, 71, 71, 0.1),
-    4px 4px 8px rgba(71, 71, 71, 0.1),
-    5px 5px 10px rgba(71, 71, 71, 0.1);
+  text-shadow: 1px 1px 2px rgba(71, 71, 71, 0.1),
+    2px 2px 4px rgba(71, 71, 71, 0.1), 3px 3px 6px rgba(71, 71, 71, 0.1),
+    4px 4px 8px rgba(71, 71, 71, 0.1), 5px 5px 10px rgba(71, 71, 71, 0.1);
 }
 
 .montserrat-title {
@@ -311,4 +317,3 @@ export default {
   }
 }
 </style>
-
