@@ -343,32 +343,44 @@ export default {
     };
 
     const showSubNavbar = () => {
-      subNavbarOpen.value = true;
+      if (window.innerWidth > 768) { // Pastikan ukuran lebih besar dari phone size
+        subNavbarOpen.value = true;
+      }
     };
 
     const hideSubNavbar = () => {
-      subNavbarOpen.value = false;
-      hideSubSubNavbar();
+      if (window.innerWidth > 768) {
+        subNavbarOpen.value = false;
+        hideSubSubNavbar();
+      }
     };
 
     const keepSubNavbar = () => {
-      subNavbarOpen.value = true;
+      if (window.innerWidth > 768) {
+        subNavbarOpen.value = true;
+      }
     };
 
     const showSubSubNavbar = (menu) => {
-      subSubNavbarOpen.value[menu] = true;
+      if (window.innerWidth > 768) {
+        subSubNavbarOpen.value[menu] = true;
+      }
     };
 
     const hideSubSubNavbar = () => {
-      subSubNavbarOpen.value = {
-        materialHandling: false,
-        feedmill: false,
-        grainStorage: false,
-      };
+      if (window.innerWidth > 768) {
+        subSubNavbarOpen.value = {
+          materialHandling: false,
+          feedmill: false,
+          grainStorage: false,
+        };
+      }
     };
 
     const keepSubSubNavbar = (menu) => {
-      subSubNavbarOpen.value[menu] = true;
+      if (window.innerWidth > 768) {
+        subSubNavbarOpen.value[menu] = true;
+      }
     };
 
     onMounted(() => {
