@@ -110,7 +110,9 @@
                   @mouseenter="showSubSubNavbar('materialHandling')"
                   @mouseleave="hideSubSubNavbar"
                 >
-                  <router-link class="block py-2 px-3 hover:bg-gray-100" to=""
+                  <router-link
+                    class="block py-2 px-3 hover:bg-gray-100"
+                    to="/our-products/material-handling"
                     >Material Handling</router-link
                   >
                   <ul
@@ -161,7 +163,9 @@
                   @mouseenter="showSubSubNavbar('feedmill')"
                   @mouseleave="hideSubSubNavbar"
                 >
-                  <router-link class="block py-2 px-3 hover:bg-gray-100" to=""
+                  <router-link
+                    class="block py-2 px-3 hover:bg-gray-100"
+                    to="/our-products/feedmill"
                     >Feedmill</router-link
                   >
                   <ul
@@ -205,7 +209,9 @@
                   @mouseenter="showSubSubNavbar('grainStorage')"
                   @mouseleave="hideSubSubNavbar"
                 >
-                  <router-link class="block py-2 px-3 hover:bg-gray-100" to=""
+                  <router-link
+                    class="block py-2 px-3 hover:bg-gray-100"
+                    to="/our-products/grain-storage"
                     >Grain Storage</router-link
                   >
                   <ul
@@ -343,7 +349,8 @@ export default {
     };
 
     const showSubNavbar = () => {
-      if (window.innerWidth > 768) { // Pastikan ukuran lebih besar dari phone size
+      if (window.innerWidth > 768) {
+        // Pastikan ukuran lebih besar dari phone size
         subNavbarOpen.value = true;
       }
     };
