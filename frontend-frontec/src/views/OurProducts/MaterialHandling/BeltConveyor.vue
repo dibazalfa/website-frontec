@@ -32,7 +32,17 @@
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
           >
-            <p>ini deskripsi</p>
+            <p>
+              A belt conveyor is an essential tool that aids workers in
+              completing tasks efficiently. These conveyors come with a variety
+              of specifications that allow them to transport solid objects with
+              diverse characteristics, such as hot, oily, sharp, and more. Belt
+              conveyors are particularly useful for moving large quantities and
+              heavy objects. They are indispensable for transferring products or
+              raw materials from one location to another. Beyond their speed and
+              ease of use, belt conveyors significantly reduce the manpower
+              required to move these items.
+            </p>
           </div>
         </div>
         <div class="flex flex-col">
