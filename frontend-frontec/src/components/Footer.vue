@@ -6,14 +6,16 @@
       <div class="flex space-x-4 md:mb-0 mb-2 md:ml-20">
         <a
           href="https://www.facebook.com/pages/CV.%2520Frontec%2520Agritama%2520Engineering/1689781144429808/"
+          target="_blank"
         >
           <img :src="facebook" alt="Facebook" class="h-8" />
         </a>
-        <a href="https://www.instagram.com/frontec.co/">
+        <a href="https://www.instagram.com/frontec.co/" target="_blank">
           <img :src="instagram" alt="instagram" class="h-8" />
         </a>
         <a
           href="https://www.linkedin.com/company/frontec-agritama-engineering/mycompany/verification/"
+          target="_blank"
         >
           <img :src="linkedin" alt="linkedin" class="h-8" />
         </a>

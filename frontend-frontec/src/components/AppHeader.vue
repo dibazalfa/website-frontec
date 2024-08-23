@@ -111,7 +111,9 @@
                   @mouseenter="showSubSubNavbar('materialHandling')"
                   @mouseleave="hideSubSubNavbar"
                 >
-                  <router-link class="block py-2 px-3 hover:bg-gray-100" to=""
+                  <router-link
+                    class="block py-2 px-3 hover:bg-gray-100"
+                    to="/our-products/material-handling"
                     >Material Handling</router-link
                   >
                   <ul
@@ -162,7 +164,9 @@
                   @mouseenter="showSubSubNavbar('feedmill')"
                   @mouseleave="hideSubSubNavbar"
                 >
-                  <router-link class="block py-2 px-3 hover:bg-gray-100" to=""
+                  <router-link
+                    class="block py-2 px-3 hover:bg-gray-100"
+                    to="/our-products/feedmill"
                     >Feedmill</router-link
                   >
                   <ul
@@ -206,7 +210,9 @@
                   @mouseenter="showSubSubNavbar('grainStorage')"
                   @mouseleave="hideSubSubNavbar"
                 >
-                  <router-link class="block py-2 px-3 hover:bg-gray-100" to=""
+                  <router-link
+                    class="block py-2 px-3 hover:bg-gray-100"
+                    to="/our-products/grain-storage"
                     >Grain Storage</router-link
                   >
                   <ul
@@ -318,7 +324,7 @@ import en from "@/assets/img/header/english.png";
 export default {
   name: "AppHeader",
   components: {
-    CarouselBackground, // Register the CarouselBackground component
+    CarouselBackground, // Register the CarouselBackground component
   },
   setup() {
     const isScrolled = ref(false);
@@ -348,32 +354,45 @@ export default {
     };
 
     const showSubNavbar = () => {
-      subNavbarOpen.value = true;
+      if (window.innerWidth > 768) {
+        // Pastikan ukuran lebih besar dari phone size
+        subNavbarOpen.value = true;
+      }
     };
 
     const hideSubNavbar = () => {
-      subNavbarOpen.value = false;
-      hideSubSubNavbar();
+      if (window.innerWidth > 768) {
+        subNavbarOpen.value = false;
+        hideSubSubNavbar();
+      }
     };
 
     const keepSubNavbar = () => {
-      subNavbarOpen.value = true;
+      if (window.innerWidth > 768) {
+        subNavbarOpen.value = true;
+      }
     };
 
     const showSubSubNavbar = (menu) => {
-      subSubNavbarOpen.value[menu] = true;
+      if (window.innerWidth > 768) {
+        subSubNavbarOpen.value[menu] = true;
+      }
     };
 
     const hideSubSubNavbar = () => {
-      subSubNavbarOpen.value = {
-        materialHandling: false,
-        feedmill: false,
-        grainStorage: false,
-      };
+      if (window.innerWidth > 768) {
+        subSubNavbarOpen.value = {
+          materialHandling: false,
+          feedmill: false,
+          grainStorage: false,
+        };
+      }
     };
 
     const keepSubSubNavbar = (menu) => {
-      subSubNavbarOpen.value[menu] = true;
+      if (window.innerWidth > 768) {
+        subSubNavbarOpen.value[menu] = true;
+      }
     };
 
     onMounted(() => {

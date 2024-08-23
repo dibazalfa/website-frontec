@@ -25,14 +25,50 @@
           </p>
         </div>
         <div class="flex flex-col md:flex-row mt-12">
-          <!-- <img :src="pvc" alt="" class="object-contain" /> -->
-          <div class="flex w-[382px] h-[378px] border border-black">
-            <p class="m-auto font-bold">INI GAMBAR</p>
+          <div
+            class="relative flex w-[382px] h-[378px] border border-black flex-shrink-0"
+          >
+            <img
+              :src="
+                currentImageIndex === 1
+                  ? product1
+                  : currentImageIndex === 2
+                  ? product2
+                  : product3
+              "
+              alt="Product Image"
+              class="object-contain w-full h-full"
+            />
+
+            <!-- Tombol Navigasi -->
+            <button
+              class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2"
+              @click="previousImage"
+            >
+              &#10094;
+            </button>
+            <button
+              class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2"
+              @click="nextImage"
+            >
+              &#10095;
+            </button>
           </div>
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
           >
-            <p>ini deskripsi</p>
+            <p>
+              In material handling, a slidegate refers to a specific type of
+              gate or valve used to control the flow of materials in chutes,
+              hoppers, or bins. It consists of a sliding mechanism that opens or
+              closes an aperture, allowing or restricting the passage of
+              materials. Slidegates are commonly used in industries such as
+              mining, agriculture, and manufacturing where precise control over
+              material flow is necessary. They are designed to handle various
+              types of materials, from powders and granular materials to larger
+              particles, and they are often operated manually or with automated
+              systems depending on the application's needs.
+            </p>
           </div>
         </div>
         <div class="flex flex-col">
@@ -121,6 +157,9 @@ import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/material-handling/background.png";
 import pvc from "@/assets/img/spare-parts/pvc.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
+import product1 from "@/assets/img/material-handling/manual-slidegate.png";
+import product2 from "@/assets/img/material-handling/pneumatic-slidegate.png";
+import product3 from "@/assets/img/material-handling/combo-slidegate.png";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 export default {
@@ -134,7 +173,21 @@ export default {
       background,
       pvc,
       sanwei,
+      product1,
+      product2,
+      product3,
+      currentImageIndex: 1,
     };
+  },
+  methods: {
+    nextImage() {
+      this.currentImageIndex =
+        this.currentImageIndex === 3 ? 1 : this.currentImageIndex + 1;
+    },
+    previousImage() {
+      this.currentImageIndex =
+        this.currentImageIndex === 1 ? 3 : this.currentImageIndex - 1;
+    },
   },
 };
 </script>

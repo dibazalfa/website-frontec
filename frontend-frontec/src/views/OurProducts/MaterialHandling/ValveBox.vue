@@ -25,14 +25,43 @@
           </p>
         </div>
         <div class="flex flex-col md:flex-row mt-12">
-          <!-- <img :src="pvc" alt="" class="object-contain" /> -->
-          <div class="flex w-[382px] h-[378px] border border-black">
-            <p class="m-auto font-bold">INI GAMBAR</p>
+          <div
+            class="relative flex w-[382px] h-[378px] border border-black flex-shrink-0"
+          >
+            <img
+              :src="currentImageIndex === 1 ? product1 : product2"
+              alt="Product Image"
+              class="object-contain w-full h-full"
+            />
+
+            <!-- Tombol Navigasi -->
+            <button
+              class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2"
+              @click="previousImage"
+            >
+              &#10094;
+            </button>
+            <button
+              class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2"
+              @click="nextImage"
+            >
+              &#10095;
+            </button>
           </div>
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
           >
-            <p>ini deskripsi</p>
+            <p>
+              a valve box typically refers to a specialized container or
+              enclosure used to house valves that are part of a material
+              handling system. These boxes are crucial for controlling the flow
+              of materials through pipes or ducts in industrial settings such as
+              manufacturing plants, warehouses, or distribution centers. The
+              valve box helps protect the valves from environmental elements,
+              ensures easy access for maintenance or adjustments, and helps
+              maintain the integrity and efficiency of the material handling
+              process.
+            </p>
           </div>
         </div>
         <div class="flex flex-col">
@@ -121,6 +150,8 @@ import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/material-handling/background.png";
 import pvc from "@/assets/img/spare-parts/pvc.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
+import product1 from "@/assets/img/material-handling/equal.png";
+import product2 from "@/assets/img/material-handling/unequel.png";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 export default {
@@ -134,10 +165,26 @@ export default {
       background,
       pvc,
       sanwei,
+      product1,
+      product2,
+      currentImageIndex: 1,
     };
+  },
+  methods: {
+    nextImage() {
+      this.currentImageIndex = this.currentImageIndex === 1 ? 2 : 1;
+    },
+    previousImage() {
+      this.currentImageIndex = this.currentImageIndex === 1 ? 2 : 1;
+    },
   },
 };
 </script>
+
+<style scoped>
+/* Additional styling */
+</style>
+
 
 <style scoped>
 .header {

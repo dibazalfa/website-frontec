@@ -26,13 +26,18 @@
         </div>
         <div class="flex flex-col md:flex-row mt-12">
           <!-- <img :src="pvc" alt="" class="object-contain" /> -->
-          <div class="flex w-[382px] h-[378px] border border-black">
+          <div class="flex w-[382px] h-[378px] border border-black flex-shrink-0">
             <p class="m-auto font-bold">INI GAMBAR</p>
           </div>
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
           >
-            <p>ini deskripsi</p>
+            <p>
+              Screw conveyor available in 2 different screw flight diameters 200
+              mm and 250 mm made from mild steel with hot dip and powder coating
+              finished. But it can be made base on customer needs. Screw
+              conveyor used for horizontal.
+            </p>
           </div>
         </div>
         <div class="flex flex-col">
@@ -42,7 +47,13 @@
             Features
           </p>
           <!-- TARUH SINI JGN LUPA mt-6 -->
-          <p class="mt-6">ini fitur</p>
+          <p class="mt-6">
+            <ul class="list-disc ml-6">
+              <li>Galvanized or Coating Finishing</li>
+              <li>No sound is noisy</li>
+              <li>Has up to a 55 degree incline to storage location and/or disposal location </li>
+            </ul>
+          </p>
           <p
             class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >

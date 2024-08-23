@@ -7,7 +7,14 @@
     />
     <!-- Content Sections -->
     <main
-      :class="['overflow-x-hidden transition-all duration-1000 ease-out', { 'opacity-100 translate-y-0': visible, 'opacity-0 translate-y-10': !visible }]">
+      :class="[
+        'overflow-x-hidden transition-all duration-1000 ease-out',
+        {
+          'opacity-100 translate-y-0': visible,
+          'opacity-0 translate-y-10': !visible,
+        },
+      ]"
+    >
       <section class="flex flex-row mx-auto">
         <p
           class="text-shadow-md font-[Inter-ExtraBold,Helvetica] font-extrabold text-transparent text-[40px] tracking-[0] leading-normal whitespace-nowrap mx-auto mt-16"
@@ -18,8 +25,16 @@
       </section>
       <section class="flex flex-col mt-10 md:flex-row">
         <div class="flex flex-row md:flex-col w-1/3 ml-16 md:ml-0">
-          <img :src="FAE" alt="FAE" class="md:p-2 md:w-48 w-32 md:self-end md:mr-12 mr-2" />
-          <img :src="FGN" alt="FGN" class="md:p-2 md:w-48 w-32 md:self-end md:mr-12" />
+          <img
+            :src="FAE"
+            alt="FAE"
+            class="md:p-2 md:w-48 w-32 md:self-end md:mr-12 mr-2"
+          />
+          <img
+            :src="FGN"
+            alt="FGN"
+            class="md:p-2 md:w-48 w-32 md:self-end md:mr-12"
+          />
         </div>
         <div class="flex flex-col w-1/3 mx-auto md:mt-0 mt-4">
           <p class="font-bold">Head Office</p>
@@ -40,16 +55,27 @@
           <div class="flex flex-row">
             <a
               href="https://www.facebook.com/pages/CV.%2520Frontec%2520Agritama%2520Engineering/1689781144429808/"
+              target="_blank"
             >
-              <img :src="facebook" class="object-contain w-16 h-16 p-2 hover:scale-105" />
+              <img
+                :src="facebook"
+                class="object-contain w-16 h-16 p-2 hover:scale-105"
+              />
             </a>
-            <a href="https://www.instagram.com/frontec.co/">
-              <img :src="instagram" class="object-contain w-16 h-16 p-2 hover:scale-105" />
+            <a href="https://www.instagram.com/frontec.co/" target="_blank">
+              <img
+                :src="instagram"
+                class="object-contain w-16 h-16 p-2 hover:scale-105"
+              />
             </a>
             <a
               href="https://www.linkedin.com/company/frontec-agritama-engineering/mycompany/verification/"
+              target="_blank"
             >
-              <img :src="linkedin" class="object-contain w-16 h-16 p-2 hover:scale-105" />
+              <img
+                :src="linkedin"
+                class="object-contain w-16 h-16 p-2 hover:scale-105"
+              />
             </a>
           </div>
           <div class="mt-3 w-52">
@@ -136,7 +162,8 @@ export default {
   methods: {
     handleScroll() {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > this.lastScrollY && currentScrollY > 100) { // Adding a threshold for when to show the effect
+      if (currentScrollY > this.lastScrollY && currentScrollY > 100) {
+        // Adding a threshold for when to show the effect
         this.visible = true;
       }
       this.lastScrollY = currentScrollY;
