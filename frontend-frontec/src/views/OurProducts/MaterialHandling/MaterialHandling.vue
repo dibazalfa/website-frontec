@@ -9,101 +9,72 @@
 
     <!-- Main Content -->
     <main class="flex-1 flex flex-col md:flex-row">
-      <!-- Main Content Section -->
-      <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
-        <!-- Main content goes here -->
-        <div class="flex items-center mt-7">
-          <router-link to="/our-products">
-            <font-awesome-icon
-              icon="circle-arrow-left"
-              class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
-            />
-          </router-link>
-          <p
-            class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
-          >
-            Material Handling
+  <!-- Main Content Section -->
+  <section class="flex-1 p-4 mt-10 md:mt-0 md:ml-24 overflow-y-auto">
+    <!-- Main content goes here -->
+    <div class="flex items-center mt-7">
+      <router-link to="/our-products">
+        <font-awesome-icon
+          icon="circle-arrow-left"
+          class="text-3xl mr-6 cursor-pointer mt-2 hover:scale-125 transform transition-transform duration-300"
+        />
+      </router-link>
+      <p class="text-2xl md:text-4xl text-[#286F9B] font-bold text-shadow-md">
+        Material Handling
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+      <!-- Product 1 -->
+      <router-link to="/our-products/material-handling/belt-conveyor">
+        <div class="flex items-center justify-center shadow-lg flex w-[382px] h-[378px] flex-shrink-0 shadow-lg transform transition-transform duration-300 rounded-md overflow-hidden hover:scale-105">
+          <img :src="product1" alt="PVC Solid Woven Conveyor" class="absolute inset-0 object-cover w-full h-full"/>
+          <p class="mt-72 relative text-white font-bold bg-[#313C44] px-4 py-2 rounded-full shadow">
+            BELT CONVEYOR
           </p>
         </div>
-        <div class="flex flex-col md:flex-row mt-12">
-          <router-link to="/our-products/material-handling/belt-conveyor">
-            <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px]"
-            >
-              <p class="m-auto">Belt Conveyor</p>
-            </div>
-            <!-- <img
-              :src="product1"
-              alt=""
-              class="object-contain hover:scale-105"
-            /> -->
-          </router-link>
-          <router-link to="/our-products/material-handling/bucket-elevator">
-            <!-- <img
-              :src="product2"
-              alt=""
-              class="object-contain md:ml-16 hover:scale-105"
-            /> -->
-            <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px] md:ml-16 md:mt-0 mt-12"
-            >
-              <p class="m-auto">Bucket Elevator</p>
-            </div>
-          </router-link>
+      </router-link>
+      <!-- Product 2 -->
+      <router-link to="/our-products/material-handling/bucket-elevator">
+        <div class="flex items-center justify-center w-[382px] h-[378px] flex-shrink-0 shadow-lg transform transition-transform duration-300 hover:scale-105">
+          <p class="mt-72 relative text-white font-bold bg-[#313C44] px-4 py-2 rounded-full shadow">
+            BUCKET ELEVATOR
+          </p>
         </div>
-        <div class="flex flex-col md:flex-row mt-12">
-          <router-link to="/our-products/material-handling/screw-conveyor">
-            <!-- <img
-              :src="product3"
-              alt=""
-              class="object-contain hover:scale-105"
-            /> -->
-            <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px]"
-            >
-              <p class="m-auto">Screw Conveyor</p>
-            </div>
-          </router-link>
-          <router-link to="/our-products/material-handling/chain-conveyor">
-            <!-- <img
-              :src="product4"
-              alt=""
-              class="object-contain md:ml-16 hover:scale-105"
-            /> -->
-            <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px] md:ml-16 md:mt-0 mt-12"
-            >
-              <p class="m-auto">Chain Conveyor</p>
-            </div>
-          </router-link>
+      </router-link>
+      <!-- Product 3 -->
+      <router-link to="/our-products/material-handling/screw-conveyor">
+        <div class="relative flex items-center justify-center border border-black w-full h-[378px] transform transition-transform duration-300 hover:scale-105">
+          <p class="relative text-white font-bold bg-black bg-opacity-50 px-4 py-2 rounded-full shadow">
+            Screw Conveyor
+          </p>
         </div>
-        <div class="flex flex-col md:flex-row mt-12">
-          <router-link to="/our-products/material-handling/valve-box">
-            <!-- <img
-              :src="product5"
-              alt=""
-              class="object-contain hover:scale-105"
-            /> -->
-            <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px]"
-            >
-              <p class="m-auto">Valve Box / Diverter</p>
-            </div>
-          </router-link>
-          <router-link to="/our-products/material-handling/slidegate">
-            <!-- <img
-              :src="product4"
-              alt=""
-              class="object-contain md:ml-16 hover:scale-105"
-            /> -->
-            <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px] md:ml-16 md:mt-0 mt-12"
-            >
-              <p class="m-auto">Slidegate</p>
-            </div>
-          </router-link>
+      </router-link>
+      <!-- Product 4 -->
+      <router-link to="/our-products/material-handling/chain-conveyor">
+        <div class="relative flex items-center justify-center border border-black w-full h-[378px] transform transition-transform duration-300 hover:scale-105">
+          <p class="relative text-white font-bold bg-black bg-opacity-50 px-4 py-2 rounded-full shadow">
+            Chain Conveyor
+          </p>
         </div>
-      </section>
+      </router-link>
+      <!-- Product 5 -->
+      <router-link to="/our-products/material-handling/valve-box">
+        <div class="relative flex items-center justify-center border border-black w-full h-[378px] transform transition-transform duration-300 hover:scale-105">
+          <p class="relative text-white font-bold bg-black bg-opacity-50 px-4 py-2 rounded-full shadow">
+            Valve Box / Diverter
+          </p>
+        </div>
+      </router-link>
+      <!-- Product 6 -->
+      <router-link to="/our-products/material-handling/slidegate">
+        <div class="relative flex items-center justify-center border border-black w-full h-[378px] transform transition-transform duration-300 hover:scale-105">
+          <p class="relative text-white font-bold bg-black bg-opacity-50 px-4 py-2 rounded-full shadow">
+            Slidegate
+          </p>
+        </div>
+      </router-link>
+    </div>
+  </section>
 
       <!-- Sidebar -->
       <aside class="w-full md:w-1/3 min-h-screen p-4 md:sticky md:top-0 h-full">
@@ -126,7 +97,7 @@ import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/material-handling/background.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 
-import product1 from "@/assets/img/spare-parts/roller-chain-text.png";
+import product1 from "@/assets/img/material-handling/belt-conveyor.jpg";
 import product2 from "@/assets/img/spare-parts/drop-forged-text.png";
 import product3 from "@/assets/img/spare-parts/drag-sprocket-text.png";
 import product4 from "@/assets/img/spare-parts/plastic-br-text.png";
