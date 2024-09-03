@@ -27,7 +27,7 @@
       <!-- Product 1 -->
       <router-link to="/our-products/material-handling/belt-conveyor">
         <div class="flex items-center justify-center shadow-lg flex w-[382px] h-[378px] flex-shrink-0 shadow-lg transform transition-transform duration-300 rounded-md overflow-hidden hover:scale-105">
-          <img :src="product1" alt="PVC Solid Woven Conveyor" class="absolute inset-0 object-cover w-full h-full"/>
+          <img :src="product1" alt="PVC Solid Woven Conveyor" class="absolute object-cover w-full mb-8"/>
           <p class="mt-72 relative text-white font-bold bg-[#313C44] px-4 py-2 rounded-full shadow">
             BELT CONVEYOR
           </p>
