@@ -25,14 +25,15 @@
           </p>
         </div>
         <div class="flex flex-col md:flex-row mt-12">
-          <!-- <img :src="pvc" alt="" class="object-contain" /> -->
-          <div class="flex w-[382px] h-[378px] border border-black">
-            <p class="m-auto font-bold">INI GAMBAR</p>
+          <div class="flex w-[382px] h-[378px] flex-shrink-0 shadow-lg">
+            <p class="m-auto font-bold">
+              <img :src="product" alt="" class="object-contain" />
+            </p>
           </div>
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
           >
-            <p>ini deskripsi</p>
+            <p>a cooler bin plays a critical role in the agricultural and feed processing industries by providing a controlled environment for cooling down bulk materials after processing. By reducing heat buildup and ensuring proper temperature management, cooler bins help preserve product quality, enhance storage conditions, and support efficient production operations within agricultural and industrial facilities.</p>
           </div>
         </div>
         <div class="flex flex-col">
@@ -106,6 +107,7 @@ import AppHeader from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/material-handling/background.png";
 import pvc from "@/assets/img/spare-parts/pvc.png";
+import product from "@/assets/img/grain-storage/coolerbin.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -120,6 +122,7 @@ export default {
       background,
       pvc,
       sanwei,
+      product
     };
   },
 };

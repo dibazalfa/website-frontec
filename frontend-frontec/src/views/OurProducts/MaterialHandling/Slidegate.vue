@@ -26,7 +26,7 @@
         </div>
         <div class="flex flex-col md:flex-row mt-12">
           <div
-            class="relative flex w-[382px] h-[378px] border border-black flex-shrink-0"
+            class="relative flex w-[382px] h-[378px] flex-shrink-0 shadow-lg"
           >
             <img
               :src="

@@ -26,19 +26,20 @@
         </div>
         <div class="flex flex-col md:flex-row mt-12">
           <!-- <img :src="pvc" alt="" class="object-contain" /> -->
-          <div class="flex w-[382px] h-[378px] border border-black flex-shrink-0">
-            <!-- <p class="m-auto font-bold">INI GAMBAR</p> -->
-             <img :src="product" alt="">
+          <div class="flex w-[382px] h-[378px] flex-shrink-0 shadow-lg">
+            <p class="m-auto font-bold">
+              <img :src="product" alt="" class="w-[200px] object-contain"/>
+            </p>
           </div>
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
           >
             <p>
               Bucket elevator designed for transporting feed and grain
-              vertically. The elevators designed in modules and can be assemble
-              to 40 m height. Casing pipe made from 1.5 – 2.0 mm mild steel
+              vertically. The elevators are designed in modules and can be assembled up 
+              to 40 m height. Casing pipe are made from 1.5 – 2.0 mm mild steel
               while top and bottom made from 2.0 – 4.0 mm mild steel with hot
-              dip galvanize or powder coating finished. Gearmotor supplied with
+              dip galvanize or powder coating finishing. Gearmotor is supplied with
               top brand motor manufacturer or based on customer requirement.
               Bucket elevator available in several capacities range from 10 tph
               up to 500 tph or can be made based on customer needs.
@@ -137,7 +138,7 @@ import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/material-handling/background.png";
 import pvc from "@/assets/img/spare-parts/pvc.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
-import product from "@/assets/img/material-handling/Bucket Elevator.png";
+import product from "@/assets/img/material-handling/bucket-elevator.png";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 export default {

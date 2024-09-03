@@ -26,22 +26,24 @@
         </div>
         <div class="flex flex-col md:flex-row mt-12">
           <!-- <img :src="pvc" alt="" class="object-contain" /> -->
-          <div class="flex w-[382px] h-[378px] border border-black">
-            <p class="m-auto font-bold">INI GAMBAR</p>
+          <div class="flex w-[382px] h-[378px] flex-shrink-0 shadow-lg">
+            <p class="m-auto font-bold">
+              <img :src="product" alt="" class="object-contain" />
+            </p>
           </div>
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
           >
             <p>
-              A belt conveyor is an essential tool that aids workers in
-              completing tasks efficiently. These conveyors come with a variety
-              of specifications that allow them to transport solid objects with
-              diverse characteristics, such as hot, oily, sharp, and more. Belt
-              conveyors are particularly useful for moving large quantities and
-              heavy objects. They are indispensable for transferring products or
-              raw materials from one location to another. Beyond their speed and
-              ease of use, belt conveyors significantly reduce the manpower
-              required to move these items.
+              Belt conveyor is a conveyor machine that uses a belt as a medium
+              to move goods. Each belt conveyor usually has a motor that is
+              intended to rotate the drive roller (drum pulley) that is tightly
+              attached to the belt so that the belt will move following the
+              rotation of the drive roller (drum pulley). Belt conveyors have 2
+              types of rollers (drum pulleys), one is the drive roller (drive
+              drum pulley) attached to the belt conveyor motor, then the second
+              is the drive roller (tail drum pulley) attached to the other end
+              of the belt conveyor (which does not have a motor).
             </p>
           </div>
         </div>
@@ -132,6 +134,7 @@ import background from "@/assets/img/material-handling/background.png";
 import pvc from "@/assets/img/spare-parts/pvc.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import product from "@/assets/img/material-handling/belt-conveyor.jpg";
 
 export default {
   components: {
@@ -144,6 +147,7 @@ export default {
       background,
       pvc,
       sanwei,
+      product
     };
   },
 };
