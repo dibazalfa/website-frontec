@@ -38,7 +38,7 @@
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
               <img
-                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                :src="beltConveyor"
                 alt=""
                 class="hover-img rounded-full w-40 h-40 object-cover"
               />
@@ -138,9 +138,9 @@
             <div
               class="flex hover:scale-105 transform transition duration-300 mx-auto border border-black rounded-full w-40 h-40 hover:bg-gray-200 items-center justify-center"
             >
-            <router-link to="/our-products/feedmill">
-              <p class="font-bold text-2xl">SEE ALL</p>
-            </router-link>
+              <router-link to="/our-products/feedmill">
+                <p class="font-bold text-2xl">SEE ALL</p>
+              </router-link>
             </div>
           </div>
         </div>
@@ -202,7 +202,7 @@
                   class="hover-img rounded-full w-40"
                 />
               </router-link>
-                <p class="mx-auto mt-2">Steel Structure</p>
+              <p class="mx-auto mt-2">Steel Structure</p>
             </div>
           </div>
         </div>
@@ -283,6 +283,7 @@ import feedMill from "@/assets/img/our-products/feedmill.png";
 import grainStorage from "@/assets/img/our-products/grain-storage.png";
 import spareParts from "@/assets/img/our-products/spare-parts.png";
 
+import beltConveyor from "@/assets/img/material-handling/belt-conveyor.png";
 import bucketElevator from "@/assets/img/material-handling/Bucket Elevator.png";
 import chainConveyor from "@/assets/img/material-handling/Chain Conveyor.png";
 import cornDryer from "@/assets/img/material-handling/Corn Dryer.png";
@@ -320,6 +321,7 @@ export default {
       feedMill,
       grainStorage,
       spareParts,
+      beltConveyor,
       bucketElevator,
       chainConveyor,
       cornDryer,
