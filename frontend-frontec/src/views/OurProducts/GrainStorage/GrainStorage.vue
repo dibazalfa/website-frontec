@@ -20,60 +20,78 @@
             />
           </router-link>
           <p
-            class="text-[24px] md:text-[40px] text-[#286F9B] font-bold text-shadow-md"
+            class="text-2xl md:text-4xl text-[#286F9B] font-bold text-shadow-md"
           >
             Grain Storage
           </p>
         </div>
-        <div class="flex flex-col md:flex-row mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+          <!-- Product 1 -->
           <router-link to="/our-products/grain-storage/flat-bottom-silo">
             <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px]"
+              class="flex items-center justify-center shadow-lg flex w-[382px] h-[378px] flex-shrink-0 shadow-lg transform transition-transform duration-300 rounded-md overflow-hidden hover:scale-105"
             >
-              <p class="m-auto">Flat Bottom Silo</p>
-            </div>
-            <!-- <img
+              <img
                 :src="product1"
                 alt=""
-                class="object-contain hover:scale-105"
-              /> -->
+                class="absolute object-cover w-full mb-8"
+              />
+              <p
+                class="mt-72 relative text-white font-bold bg-[#313C44] px-4 py-2 rounded-full shadow"
+              >
+                Flat Bottom Silo
+              </p>
+            </div>
           </router-link>
+          <!-- Product 2 -->
           <router-link to="/our-products/grain-storage/conical-hopper-silo">
-            <!-- <img
+            <div
+              class="flex items-center justify-center w-[382px] h-[378px] flex-shrink-0 shadow-lg transform transition-transform duration-300 hover:scale-105"
+            >
+              <img
                 :src="product2"
                 alt=""
-                class="object-contain md:ml-16 hover:scale-105"
-              /> -->
-            <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px] md:ml-16 md:mt-0 mt-12"
-            >
-              <p class="m-auto">Conical Hopper Silo</p>
+                class="absolute object-cover w-full mb-8"
+              />
+              <p
+                class="mt-72 relative text-white font-bold bg-[#313C44] px-4 py-2 rounded-full shadow"
+              >
+                Conical Hopper Silo
+              </p>
             </div>
           </router-link>
-        </div>
-        <div class="flex flex-col md:flex-row mt-12">
+          <!-- Product 3 -->
           <router-link to="/our-products/grain-storage/cooler-bin">
-            <!-- <img
+            <div
+              class="flex items-center justify-center w-[382px] h-[378px] flex-shrink-0 shadow-lg transform transition-transform duration-300 hover:scale-105"
+            >
+              <img
                 :src="product3"
                 alt=""
-                class="object-contain hover:scale-105"
-              /> -->
-            <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px]"
-            >
-              <p class="m-auto">Cooler Bin</p>
+                class="absolute object-cover w-full mb-8"
+              />
+              <p
+                class="mt-72 relative text-white font-bold bg-[#313C44] px-4 py-2 rounded-full shadow"
+              >
+                Cooler Bin
+              </p>
             </div>
           </router-link>
+          <!-- Product 4 -->
           <router-link to="/our-products/grain-storage/steel-structure">
-            <!-- <img
-                :src="product4"
-                alt=""
-                class="object-contain md:ml-16 hover:scale-105"
-              /> -->
             <div
-              class="hover:scale-105 flex border border-black w-[382px] h-[378px] md:ml-16 md:mt-0 mt-12"
+              class="flex items-center justify-center w-[382px] h-[378px] flex-shrink-0 shadow-lg transform transition-transform duration-300 hover:scale-105"
             >
-              <p class="m-auto">Steel Structure</p>
+              <img
+                :src="product4"
+                alt="PVC Solid Woven Conveyor"
+                class="absolute object-cover w-full mb-8 h-full"
+              />
+              <p
+                class="mt-72 relative text-white font-bold bg-[#313C44] px-4 py-2 rounded-full shadow"
+              >
+                Steel Structure
+              </p>
             </div>
           </router-link>
         </div>
@@ -100,12 +118,10 @@ import Footer from "@/components/Footer.vue";
 import background from "@/assets/img/material-handling/background.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 
-import product1 from "@/assets/img/spare-parts/roller-chain-text.png";
-import product2 from "@/assets/img/spare-parts/drop-forged-text.png";
-import product3 from "@/assets/img/spare-parts/drag-sprocket-text.png";
-import product4 from "@/assets/img/spare-parts/plastic-br-text.png";
-import product5 from "@/assets/img/spare-parts/nylon-gear-text.png";
-import product6 from "@/assets/img/spare-parts/plastic-bf-text.png";
+import product1 from "@/assets/img/grain-storage/flat-bottom-silo.jpg";
+import product2 from "@/assets/img/grain-storage/conical-bottom.jpg";
+import product3 from "@/assets/img/grain-storage/coolerbin.png";
+import product4 from "@/assets/img/grain-storage/steel-structure.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -123,8 +139,6 @@ export default {
       product2,
       product3,
       product4,
-      product5,
-      product6,
     };
   },
 };

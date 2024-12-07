@@ -161,9 +161,9 @@
             >
               <router-link to="/our-products/grain-storage/flat-bottom-silo">
                 <img
-                  src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                  :src="flatBottomSilo"
                   alt=""
-                  class="hover-img rounded-full w-40"
+                  class="hover-img rounded-full w-40 h-40"
                 />
               </router-link>
               <p class="mx-auto mt-2">Flat Bottom Silo</p>
@@ -173,9 +173,9 @@
             >
               <router-link to="/our-products/grain-storage/conical-hopper-silo">
                 <img
-                  src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                  :src="conicalBottom"
                   alt=""
-                  class="hover-img rounded-full w-40"
+                  class="hover-img rounded-full w-40 h-40"
                 />
               </router-link>
               <p class="mx-auto mt-2">Conical Hopper Silo</p>
@@ -185,9 +185,9 @@
             >
               <router-link to="/our-products/grain-storage/cooler-bin">
                 <img
-                  src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                  :src="coolerbin"
                   alt=""
-                  class="hover-img rounded-full w-40"
+                  class="hover-img rounded-full w-40 h-40"
                 />
               </router-link>
               <p class="mx-auto mt-2">Cooler Bin</p>
@@ -197,9 +197,9 @@
             >
               <router-link to="/our-products/grain-storage/steel-structure">
                 <img
-                  src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                  :src="steelStructure"
                   alt=""
-                  class="hover-img rounded-full w-40"
+                  class="hover-img rounded-full w-40 h-40"
                 />
               </router-link>
               <p class="mx-auto mt-2">Steel Structure</p>
@@ -295,8 +295,11 @@ import dustCollector from "@/assets/img/feedmill/Dust Collector.png";
 import hammermill from "@/assets/img/feedmill/Hammermill.png";
 import mixer from "@/assets/img/feedmill/Mixer.png";
 
-import flatBottomSilo from "@/assets/img/grain-storage/Flat Bottom Silo.png";
+import flatBottomSilo from "@/assets/img/grain-storage/flat-bottom-silo.jpg";
 import hopperSilo from "@/assets/img/grain-storage/Hopper Silo.png";
+import conicalBottom from "@/assets/img/grain-storage/conical-bottom.jpg";
+import coolerbin from "@/assets/img/grain-storage/coolerbin.png";
+import steelStructure from "@/assets/img/grain-storage/steel-structure.jpg";
 
 import beltConveyorComponents from "@/assets/img/spare-parts/Belt Conveyor Components.png";
 import bucketElevatorComponents from "@/assets/img/spare-parts/Bucket Elevator Components.png";
@@ -333,6 +336,9 @@ export default {
       mixer,
       flatBottomSilo,
       hopperSilo,
+      conicalBottom,
+      coolerbin,
+      steelStructure,
       beltConveyorComponents,
       bucketElevatorComponents,
       dragConveyorComponents,

@@ -24,8 +24,8 @@
             Conical Hopper Silo
           </p>
         </div>
-          <!-- <img :src="pvc" alt="" class="object-contain" /> -->
-          <div class="flex flex-col md:flex-row mt-12">
+        <!-- <img :src="pvc" alt="" class="object-contain" /> -->
+        <div class="flex flex-col md:flex-row mt-12">
           <div class="flex w-[382px] h-[378px] flex-shrink-0 shadow-lg">
             <p class="m-auto font-bold">
               <img :src="product" alt="" class="object-fill w-full h-full" />
@@ -34,7 +34,15 @@
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
           >
-            <p>a cooler bin plays a critical role in the agricultural and feed processing industries by providing a controlled environment for cooling down bulk materials after processing. By reducing heat buildup and ensuring proper temperature management, cooler bins help preserve product quality, enhance storage conditions, and support efficient production operations within agricultural and industrial facilities.</p>
+            <p>
+              a cooler bin plays a critical role in the agricultural and feed
+              processing industries by providing a controlled environment for
+              cooling down bulk materials after processing. By reducing heat
+              buildup and ensuring proper temperature management, cooler bins
+              help preserve product quality, enhance storage conditions, and
+              support efficient production operations within agricultural and
+              industrial facilities.
+            </p>
           </div>
         </div>
         <div class="flex flex-col">
@@ -123,7 +131,7 @@ export default {
       background,
       pvc,
       sanwei,
-      product
+      product,
     };
   },
 };

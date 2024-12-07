@@ -26,8 +26,9 @@
         </div>
         <div class="flex flex-col md:flex-row mt-12">
           <!-- <img :src="pvc" alt="" class="object-contain" /> -->
-          <div class="flex w-[382px] h-[378px] border border-black">
-            <p class="m-auto font-bold">INI GAMBAR</p>
+          <div class="flex w-[382px] h-[378px]">
+            <!-- <p class="m-auto font-bold">INI GAMBAR</p> -->
+            <img :src="product" alt="" />
           </div>
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
@@ -109,6 +110,8 @@ import pvc from "@/assets/img/spare-parts/pvc.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
+import product from "@/assets/img/grain-storage/flat-bottom-silo.jpg";
+
 export default {
   components: {
     AppHeader,
@@ -120,6 +123,7 @@ export default {
       background,
       pvc,
       sanwei,
+      product,
     };
   },
 };
