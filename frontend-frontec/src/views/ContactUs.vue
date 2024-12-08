@@ -115,7 +115,7 @@ import AppHeader from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import { useI18n } from "vue-i18n";
 
-import background from "@/assets/img/contactUs/background.png";
+import background from "@/assets/img/contactUs/background.jpg";
 import FAE from "@/assets/img/header/faeLogo.png";
 import FGN from "@/assets/img/header/fgnLogo.png";
 import phone from "@/assets/img/contactUs/phone.png";
