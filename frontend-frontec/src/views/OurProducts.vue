@@ -37,41 +37,49 @@
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
-              <img
-                :src="beltConveyor"
-                alt=""
-                class="hover-img rounded-full w-40 h-40 object-cover"
-              />
+              <router-link to="/our-products/material-handling/belt-conveyor">
+                <img
+                  :src="beltConveyor"
+                  alt=""
+                  class="hover-img rounded-full w-40 h-40 object-cover"
+                />
+              </router-link>
               <p class="mx-auto mt-2">Belt Conveyor</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
-              <img
-                :src="bucketElevator"
-                alt=""
-                class="hover-img rounded-full w-40 h-40 object-cover"
-              />
+              <router-link to="/our-products/material-handling/bucket-elevator">
+                <img
+                  :src="bucketElevator"
+                  alt=""
+                  class="hover-img rounded-full w-40 h-40 object-cover"
+                />
+              </router-link>
               <p class="mx-auto mt-2">Bucket Elevator</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
-              <img
-                :src="screwConveyor"
-                alt=""
-                class="hover-img rounded-full w-40 h-40 object-cover"
-              />
+              <router-link to="/our-products/material-handling/screw-conveyor">
+                <img
+                  :src="screwConveyor"
+                  alt=""
+                  class="hover-img rounded-full w-40 h-40 object-cover"
+                />
+              </router-link>
               <p class="mx-auto mt-2">Screw Conveyor</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
-              <img
-                :src="chainConveyor"
-                alt=""
-                class="hover-img rounded-full w-40 h-40 object-cover"
-              />
+              <router-link to="/our-products/material-handling/chain-conveyor">
+                <img
+                  :src="chainConveyor"
+                  alt=""
+                  class="hover-img rounded-full w-40 h-40 object-cover"
+                />
+              </router-link>
               <p class="mx-auto mt-2">Chain Conveyor</p>
             </div>
             <div
@@ -98,42 +106,50 @@
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
-              <img
-                :src="cornDryer"
-                alt=""
-                class="hover-img rounded-full w-40 h-40 object-cover"
-              />
+              <router-link to="/our-products/feedmill/corn-dryer">
+                <img
+                  :src="cornDryer"
+                  alt=""
+                  class="hover-img rounded-full w-40 h-40 object-cover"
+                />
+              </router-link>
               <p class="mx-auto mt-2">Corn Dryer</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
-              <img
-                :src="hammermill"
-                alt=""
-                class="hover-img rounded-full w-40 h-40 object-cover"
-              />
+              <router-link to="/our-products/feedmill/hammermill">
+                <img
+                  :src="hammermill"
+                  alt=""
+                  class="hover-img rounded-full w-40 h-40 object-cover"
+                />
+              </router-link>
               <p class="mx-auto mt-2">Hammermill</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
-              <img
-                :src="cooler"
-                alt=""
-                class="hover-img rounded-full w-40 h-40 object-cover"
-              />
+              <router-link to="/our-products/feedmill/cooler">
+                <img
+                  :src="cooler"
+                  alt=""
+                  class="hover-img rounded-full w-40 h-40 object-cover"
+                />
+              </router-link>
               <p class="mx-auto mt-2">Cooler</p>
             </div>
             <div
               class="flex flex-col hover:scale-105 transform transition duration-300 mx-auto items-center"
             >
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-                alt=""
-                class="hover-img rounded-full w-40 h-40 object-cover"
-              />
-              <p class="mx-auto mt-2">Feedmill</p>
+              <router-link to="/our-products/feedmill/mixer">
+                <img
+                  :src="mixer"
+                  alt=""
+                  class="hover-img rounded-full w-40 h-40 object-cover"
+                />
+              </router-link>
+              <p class="mx-auto mt-2">Mixer</p>
             </div>
             <div
               class="flex hover:scale-105 transform transition duration-300 mx-auto border border-black rounded-full w-40 h-40 hover:bg-gray-200 items-center justify-center"
