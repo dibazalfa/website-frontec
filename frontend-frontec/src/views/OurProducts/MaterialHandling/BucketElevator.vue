@@ -60,13 +60,13 @@
               <li>Body MS 2.5/3mm, lining by rock wool and cladding surface</li>
             </ul>
           </p>
-          <p
-            class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
-          >
-            Specifications
-          </p>
-          <!-- TARUH SINI JGN LUPA mt-6 -->
-          <p class="mt-6">ini spec</p>
+          <!-- <p -->
+            <!-- class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6" -->
+          <!-- > -->
+            <!-- Specifications -->
+          <!-- </p>
+          TARUH SINI JGN LUPA mt-6
+          <p class="mt-6">ini spec</p> -->
         </div>
       </section>
 

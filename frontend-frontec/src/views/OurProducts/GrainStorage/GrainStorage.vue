@@ -34,7 +34,7 @@
               <img
                 :src="product1"
                 alt=""
-                class="absolute object-cover w-full mb-8"
+                class="absolute object-ccontain w-full mb-8"
               />
               <p
                 class="mt-72 relative text-white font-bold bg-[#313C44] px-4 py-2 rounded-full shadow"
@@ -51,7 +51,7 @@
               <img
                 :src="product2"
                 alt=""
-                class="absolute object-cover w-full mb-8"
+                class="absolute object-contain w-full mb-8"
               />
               <p
                 class="mt-72 relative text-white font-bold bg-[#313C44] px-4 py-2 rounded-full shadow"
@@ -68,7 +68,7 @@
               <img
                 :src="product3"
                 alt=""
-                class="absolute object-cover w-full mb-8"
+                class="absolute object-contain w-full mb-4"
               />
               <p
                 class="mt-72 relative text-white font-bold bg-[#313C44] px-4 py-2 rounded-full shadow"
@@ -85,7 +85,7 @@
               <img
                 :src="product4"
                 alt="PVC Solid Woven Conveyor"
-                class="absolute object-cover w-full mb-8 h-full"
+                class="absolute object-contain w-full mb-4 h-full"
               />
               <p
                 class="mt-72 relative text-white font-bold bg-[#313C44] px-4 py-2 rounded-full shadow"

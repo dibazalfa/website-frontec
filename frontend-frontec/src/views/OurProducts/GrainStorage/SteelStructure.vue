@@ -25,33 +25,47 @@
           </p>
         </div>
         <div class="flex flex-col md:flex-row mt-12">
-          <!-- <img :src="pvc" alt="" class="object-contain" /> -->
-          <div class="flex w-[382px] h-[378px]">
-            <!-- <p class="m-auto font-bold">INI GAMBAR</p> -->
-            <img :src="product" alt="" />
+          <div class="flex w-[382px] h-[378px] flex-shrink-0 shadow-lg">
+            <p class="m-auto font-bold">
+              <!-- <p class="m-auto font-bold">INI GAMBAR</p> -->
+              <img
+                :src="product"
+                alt=""
+                class="object-contain w-full h-full max-w-full max-h-full"
+              />
+            </p>
           </div>
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
           >
-            <p>ini deskripsi</p>
+            <p>
+              A steel structure refers to a storage facility made primarily of
+              steel materials (such as steel beams, columns, frames, and
+              sheeting) that is used to store grains like wheat, corn, rice,
+              barley, and other agricultural products. Steel structures offer
+              several advantages over traditional construction materials such as
+              wood, concrete, or masonry, and they are widely used in the
+              construction of grain silos, warehouses, and other storage systems
+              in modern agricultural operations.
+            </p>
           </div>
         </div>
-        <div class="flex flex-col">
+        <!-- <div class="flex flex-col">
           <p
             class="bg-black text-white w-32 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
             Features
           </p>
-          <!-- TARUH SINI JGN LUPA mt-6 -->
+          TARUH SINI JGN LUPA mt-6
           <p class="mt-6">ini fitur</p>
           <p
             class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
             Specifications
           </p>
-          <!-- TARUH SINI JGN LUPA mt-6 -->
+          TARUH SINI JGN LUPA mt-6
           <p class="mt-6">ini spec</p>
-        </div>
+        </div> -->
       </section>
 
       <!-- Sidebar -->
@@ -105,7 +119,7 @@
 <script>
 import AppHeader from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import background from "@/assets/img/material-handling/background.png";
+import background from "@/assets/img/our-products/grain-storage.png";
 import pvc from "@/assets/img/spare-parts/pvc.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";

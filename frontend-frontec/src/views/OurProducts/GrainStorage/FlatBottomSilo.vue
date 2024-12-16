@@ -25,33 +25,37 @@
           </p>
         </div>
         <div class="flex flex-col md:flex-row mt-12">
+          <div class="flex w-[382px] h-[378px] flex-shrink-0 shadow-lg">
           <!-- <img :src="pvc" alt="" class="object-contain" /> -->
-          <div class="flex w-[382px] h-[378px]">
-            <!-- <p class="m-auto font-bold">INI GAMBAR</p> -->
-            <img :src="product" alt="" />
+            <p class="m-auto font-bold">
+              <!-- <p class="m-auto font-bold">INI GAMBAR</p> -->
+              <img :src="product" alt="" class="object-fill w-full h-full" />
+            </p>
           </div>
           <div
             class="flex flex-col text-justify mt-6 md:mt-0 md:px-10 text-[16px] md:text-[18px]"
           >
-            <p>ini deskripsi</p>
+            <p>A flat-bottom silo is a type of storage structure commonly used in the agricultural and feedmill industries for storing bulk materials such as grains, animal feed, and other raw ingredients. The silo is called "flat-bottom" because it has a horizontal, flat base (in contrast to a cone-bottom silo, which has a sloped bottom to facilitate the discharge of materials).
+
+            Flat-bottom silos are typically used for the long-term storage of bulk materials and are designed to provide efficient, safe, and stable storage while allowing easy handling and retrieval of materials when needed.</p>
           </div>
         </div>
-        <div class="flex flex-col">
+        <!-- <div class="flex flex-col">
           <p
             class="bg-black text-white w-32 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
             Features
           </p>
-          <!-- TARUH SINI JGN LUPA mt-6 -->
+          TARUH SINI JGN LUPA mt-6
           <p class="mt-6">ini fitur</p>
           <p
             class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
             Specifications
           </p>
-          <!-- TARUH SINI JGN LUPA mt-6 -->
+          TARUH SINI JGN LUPA mt-6
           <p class="mt-6">ini spec</p>
-        </div>
+        </div> -->
       </section>
 
       <!-- Sidebar -->
@@ -105,7 +109,7 @@
 <script>
 import AppHeader from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import background from "@/assets/img/material-handling/background.png";
+import background from "@/assets/img/our-products/grain-storage.png";
 import pvc from "@/assets/img/spare-parts/pvc.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";

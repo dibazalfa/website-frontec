@@ -71,22 +71,22 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col">
+        <!-- <div class="flex flex-col">
           <p
             class="bg-black text-white w-32 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
             Features
-          </p>
+          </p> -->
           <!-- TARUH SINI JGN LUPA mt-6 -->
-          <p class="mt-6">ini fitur</p>
+          <!-- <p class="mt-6">ini fitur</p>
           <p
             class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
             Specifications
-          </p>
+          </p> -->
           <!-- TARUH SINI JGN LUPA mt-6 -->
-          <p class="mt-6">ini spec</p>
-        </div>
+          <!-- <p class="mt-6">ini spec</p>
+        </div> -->
       </section>
 
       <!-- Sidebar -->

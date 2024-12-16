@@ -56,13 +56,13 @@
               <li>Has up to a 55 degree incline to storage location and/or disposal location </li>
             </ul>
           </p>
-          <p
+          <!-- <p
             class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
             Specifications
-          </p>
+          </p> -->
           <!-- TARUH SINI JGN LUPA mt-6 -->
-          <p class="mt-6">ini spec</p>
+          <!-- <p class="mt-6">ini spec</p> -->
         </div>
       </section>
 

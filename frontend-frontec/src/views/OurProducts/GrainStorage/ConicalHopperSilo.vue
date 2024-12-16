@@ -45,22 +45,22 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col">
+        <!-- <div class="flex flex-col">
           <p
             class="bg-black text-white w-32 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
             Features
           </p>
-          <!-- TARUH SINI JGN LUPA mt-6 -->
+          TARUH SINI JGN LUPA mt-6
           <p class="mt-6">ini fitur</p>
           <p
             class="bg-black text-white w-48 px-6 py-2 rounded-full text-center font-bold uppercase mt-6"
           >
             Specifications
           </p>
-          <!-- TARUH SINI JGN LUPA mt-6 -->
+          TARUH SINI JGN LUPA mt-6
           <p class="mt-6">ini spec</p>
-        </div>
+        </div> -->
       </section>
 
       <!-- Sidebar -->
@@ -114,7 +114,7 @@
 <script>
 import AppHeader from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import background from "@/assets/img/material-handling/background.png";
+import background from "@/assets/img/our-products/grain-storage.png";
 import pvc from "@/assets/img/spare-parts/pvc.png";
 import sanwei from "@/assets/img/spare-parts/sanwei.png";
 import product from "@/assets/img/grain-storage/conical-bottom.jpg";
